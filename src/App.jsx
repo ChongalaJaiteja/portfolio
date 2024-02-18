@@ -7,7 +7,7 @@ import { ThemeContextProvider } from "./context/themeContext";
 const App = () => (
     <ThemeContextProvider>
         <BrowserRouter>
-            {/* <NavBar /> */}
+            <NavBar />
             <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="*" element={<NotFound />} />

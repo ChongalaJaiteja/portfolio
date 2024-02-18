@@ -7,8 +7,9 @@ import * as StyledComponent from "./styledComponent";
 const Home = () => {
     const roles = ["Web Developer", "Competitive Programmer", "AI Enthusiast"];
 
-    console.log("hi");
-
+    const openResume = () => {
+        window.open("/resume.pdf", "_blank");
+    };
     return (
         <StyledComponent.HomeBgContainer>
             <StyledComponent.AnimatedDevContainer>
@@ -27,7 +28,13 @@ const Home = () => {
                 <StyledComponent.GreetingHeading>
                     Hi, My name is{" "}
                     <StyledComponent.MyNameSpan>
-                        Jai Teja
+                        <Typewriter
+                            words={[" Jai Teja"]}
+                            loop={1}
+                            cursor
+                            typeSpeed={80}
+                            delaySpeed={1000}
+                        />
                     </StyledComponent.MyNameSpan>
                     <br />I am a{" "}
                     <StyledComponent.MyNameSpan>
@@ -59,7 +66,7 @@ const Home = () => {
                     ))}
                 </StyledComponent.contactLinksListContainer>
 
-                <StyledComponent.ResumeBtn>
+                <StyledComponent.ResumeBtn onClick={openResume}>
                     <StyledComponent.ResumeBtnText>
                         Resume
                     </StyledComponent.ResumeBtnText>
