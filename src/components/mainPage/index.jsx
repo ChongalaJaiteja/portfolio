@@ -1,13 +1,14 @@
 import NavBar from "../navbar";
+import Home from "../home";
 import * as StyledComponent from "./styledComponent";
 
-const Header = () => {
+const MainPage = () => {
     return (
         <>
-            <NavBar />
-            <h1>Header</h1>
+            <Home />
+            {/* <NavBar /> */}
         </>
     );
 };
 
-export default Header;
+export default MainPage;

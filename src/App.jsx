@@ -1,14 +1,19 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Header from "./components/header";
+import MainPage from "./components/mainPage";
 import NotFound from "./components/notFound";
+import NavBar from "./components/navbar";
+import { ThemeContextProvider } from "./context/themeContext";
 
 const App = () => (
-    <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<Header />} />
-            <Route path="*" element={<NotFound />} />
-        </Routes>
-    </BrowserRouter>
+    <ThemeContextProvider>
+        <BrowserRouter>
+            {/* <NavBar /> */}
+            <Routes>
+                <Route path="/" element={<MainPage />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </BrowserRouter>
+    </ThemeContextProvider>
 );
 
 export default App;
