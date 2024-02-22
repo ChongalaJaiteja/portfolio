@@ -1,14 +1,14 @@
 import { MdOutlineFileDownload } from "react-icons/md";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const HomeBgContainer = styled.div`
     background-image: ${({ theme }) =>
         theme.isLightTheme ? `url("/cloudBg.png")` : `url("/cloudDark.png")`};
-    min-height: 100vh;
     display: flex;
+    min-height: 80vh;
     flex-direction: column;
     align-items: center;
-    padding: 0.8em clamp(0.5em, 1vw + 1em, 1.6em);
+    padding: 1.4em clamp(0.5em, 1vw + 1em, 1.6em);
     gap: 1em;
     @media (min-width: 620px) {
         flex-direction: row;
@@ -18,8 +18,7 @@ export const HomeBgContainer = styled.div`
 `;
 
 export const AnimatedDevContainer = styled.div`
-    /* flex: 1 1 50%; */
-    width: 90%;
+    width: 97%;
     max-width: 28rem;
     @media (min-width: 620px) {
         & {
@@ -31,7 +30,6 @@ export const AnimatedDevContainer = styled.div`
 `;
 
 export const HomeContentContainer = styled.div`
-    /* flex: 1 1 40%; */
     width: min(100%, 39rem);
     margin-bottom: 3em;
 `;
@@ -39,6 +37,34 @@ export const HomeContentContainer = styled.div`
 export const GreetingHeading = styled.h1`
     color: ${({ theme }) => theme.color};
     font-size: clamp(0.5rem, 1vw + 1.2rem, 2.4rem);
+`;
+
+export const Shake = keyframes`
+    0% {
+        transform: translateX(-3px) rotate(-2deg);
+    }
+    20% {
+        transform: translateX(3px) rotate(44deg);
+    }
+    40% {
+        transform: translateX(0px) rotate(20deg);
+    }
+    60% {
+        transform: translateX(0px) rotate(20deg);
+    }
+    80% {
+        transform: translateX(0px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0px) rotate(-2deg);
+    }
+`;
+
+export const HiEmoji = styled.span`
+    font-size: clamp(0.2rem, 1vw + 1.66rem, 15rem);
+    display: inline-block;
+    /* animation: ${Shake} 1.5s linear 0s infinite; */
+    transition: transform 1s;
 `;
 
 export const MyNameSpan = styled.span`
@@ -50,7 +76,7 @@ export const HomeContentPara = styled.p`
     font-size: clamp(0.5rem, 1vw + 0.64rem, 1.23rem);
 `;
 
-export const contactLinksListContainer = styled.ul`
+export const ContactLinksListContainer = styled.ul`
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -59,15 +85,15 @@ export const contactLinksListContainer = styled.ul`
     flex-flow: row wrap;
 `;
 
-export const contactListItem = styled.li`
+export const ContactListItem = styled.li`
     &:hover {
         transform: scale(1.1);
     }
 `;
 
-export const contactListItemLink = styled.a``;
+export const ContactListItemLink = styled.a``;
 
-export const contactListItemImg = styled.img`
+export const ContactListItemImg = styled.img`
     width: clamp(0.5rem, 1vw + 1.67rem, 2.7rem);
 `;
 

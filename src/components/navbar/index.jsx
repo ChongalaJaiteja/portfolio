@@ -1,33 +1,111 @@
-import { Spin as Hamburger } from "hamburger-react";
-import { useState } from "react";
+import Hamburger from "hamburger-react";
+import { useState, useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
+import { Link } from "react-scroll";
+import { navLinkOptions } from "../../constants";
 import { useThemeContext } from "../../context/themeContext";
 import * as StyledComponent from "./styledComponent";
 
 const NavBar = () => {
     const { toggleTheme, isLightTheme } = useThemeContext();
-    const [isOpen, setOpen] = useState(false);
+    const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+    const [isScrollingDown, setIsScrollingDown] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > 40) {
+                setIsScrollingDown(true);
+            } else {
+                setIsScrollingDown(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
-        <StyledComponent.NavBar>
-            <h1>Jai teja</h1>
-            <StyledComponent.HamburgIconAndThemeChangeBgContainer>
-                <StyledComponent.HamburgerBgContainer>
-                    <Hamburger
-                        toggled={isOpen}
-                        toggle={setOpen}
-                        label="Show menu"
-                        size={30}
-                    />
-                </StyledComponent.HamburgerBgContainer>
-                <StyledComponent.ChangeThemeBgContainer onClick={toggleTheme}>
-                    {isLightTheme ? (
-                        <StyledComponent.DarkModeIcon />
-                    ) : (
-                        <StyledComponent.LightModeIcon />
-                    )}
-                </StyledComponent.ChangeThemeBgContainer>
-            </StyledComponent.HamburgIconAndThemeChangeBgContainer>
-        </StyledComponent.NavBar>
+        <>
+            <StyledComponent.NavBar isScrollingDown={isScrollingDown}>
+                <StyledComponent.NavBarHeading
+                    isScrollingDown={isScrollingDown}
+                >
+                    Jai teja
+                </StyledComponent.NavBarHeading>
+
+                <StyledComponent.NavListItemBgContainerLg
+                    isScrollingDown={isScrollingDown}
+                >
+                    {navLinkOptions.map((option) => (
+                        <StyledComponent.StyledActiveLink
+                            key={option.id}
+                            to={option.route}
+                            spy={true}
+                            smooth={true}
+                            activeStyle={{
+                                background: "#2eafff",
+                                color: "white",
+                            }}
+                        >
+                            <StyledComponent.NavListItemLg>
+                                {option.name}
+                            </StyledComponent.NavListItemLg>
+                        </StyledComponent.StyledActiveLink>
+                    ))}
+                </StyledComponent.NavListItemBgContainerLg>
+                <StyledComponent.HamburgIconAndThemeChangeBgContainer>
+                    <StyledComponent.HamburgerBgContainer>
+                        <Hamburger
+                            size={22}
+                            duration={0.5}
+                            distance={"lg"}
+                            toggled={isHamburgerOpen}
+                            toggle={setIsHamburgerOpen}
+                        />
+                    </StyledComponent.HamburgerBgContainer>
+                    <StyledComponent.ChangeThemeBgContainer
+                        onClick={toggleTheme}
+                        isScrollingDown={isScrollingDown}
+                    >
+                        {isLightTheme ? (
+                            <StyledComponent.DarkModeIcon />
+                        ) : (
+                            <StyledComponent.LightModeIcon />
+                        )}
+                    </StyledComponent.ChangeThemeBgContainer>
+                </StyledComponent.HamburgIconAndThemeChangeBgContainer>
+            </StyledComponent.NavBar>
+
+            <AnimatePresence>
+                {isHamburgerOpen && (
+                    <StyledComponent.StyledMenuContainer
+                        initial={{ x: 100 }}
+                        animate={{ x: 0, transition: { type: "spring" } }}
+                        exit={{ x: 200, transition: { type: "spring" } }}
+                    >
+                        <StyledComponent.NavListItemBgContainer>
+                            {navLinkOptions.map((option) => (
+                                <Link
+                                    key={option.id}
+                                    to={option.route}
+                                    spy={true}
+                                    smooth={true}
+                                    onClick={() => setIsHamburgerOpen(false)}
+                                >
+                                    <StyledComponent.NavListItem>
+                                        {option.name}
+                                    </StyledComponent.NavListItem>
+                                </Link>
+                            ))}
+                        </StyledComponent.NavListItemBgContainer>
+                    </StyledComponent.StyledMenuContainer>
+                )}
+            </AnimatePresence>
+        </>
     );
 };
 

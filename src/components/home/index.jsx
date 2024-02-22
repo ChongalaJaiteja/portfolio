@@ -5,13 +5,13 @@ import { contactLinks } from "../../constants";
 import * as StyledComponent from "./styledComponent";
 
 const Home = () => {
-    const roles = ["Web Developer", "Competitive Programmer", "AI Enthusiast"];
+    const roles = ["Web Developer", "Competitive Coder", "AI Enthusiast"];
 
     const openResume = () => {
         window.open("/resume.pdf", "_blank");
     };
     return (
-        <StyledComponent.HomeBgContainer>
+        <StyledComponent.HomeBgContainer id="/">
             <StyledComponent.AnimatedDevContainer>
                 <lottie-player
                     src="https://lottie.host/a5408547-31b3-4c65-9ae0-3b369cc6e275/UxKJmuE8jW.json"
@@ -26,15 +26,10 @@ const Home = () => {
 
             <StyledComponent.HomeContentContainer>
                 <StyledComponent.GreetingHeading>
-                    Hi, My name is{" "}
+                    Hi <StyledComponent.HiEmoji>👋</StyledComponent.HiEmoji>, My
+                    name is{" "}
                     <StyledComponent.MyNameSpan>
-                        <Typewriter
-                            words={[" Jai Teja"]}
-                            loop={1}
-                            cursor
-                            typeSpeed={80}
-                            delaySpeed={1000}
-                        />
+                        Jai Teja
                     </StyledComponent.MyNameSpan>
                     <br />I am a{" "}
                     <StyledComponent.MyNameSpan>
@@ -53,18 +48,18 @@ const Home = () => {
                     computer science.
                 </StyledComponent.HomeContentPara>
 
-                <StyledComponent.contactLinksListContainer>
+                <StyledComponent.ContactLinksListContainer>
                     {contactLinks.map(({ id, link, url, name }) => (
-                        <StyledComponent.contactListItem key={id}>
-                            <StyledComponent.contactListItemLink href={link}>
-                                <StyledComponent.contactListItemImg
+                        <StyledComponent.ContactListItem key={id}>
+                            <StyledComponent.ContactListItemLink href={link}>
+                                <StyledComponent.ContactListItemImg
                                     src={url}
                                     alt={name}
                                 />
-                            </StyledComponent.contactListItemLink>
-                        </StyledComponent.contactListItem>
+                            </StyledComponent.ContactListItemLink>
+                        </StyledComponent.ContactListItem>
                     ))}
-                </StyledComponent.contactLinksListContainer>
+                </StyledComponent.ContactLinksListContainer>
 
                 <StyledComponent.ResumeBtn onClick={openResume}>
                     <StyledComponent.ResumeBtnText>

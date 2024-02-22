@@ -22,3 +22,51 @@ export const contactLinks = [
         link: "https://www.linkedin.com/in/jai-teja-chongala/",
     },
 ];
+
+export const navLinkOptions = [
+    {
+        id: uuidv4(),
+        name: "Home",
+        route: "/",
+    },
+    {
+        id: uuidv4(),
+        name: "About",
+        route: "about",
+    },
+    {
+        id: uuidv4(),
+        name: "Qualification",
+        route: "qualification",
+    },
+    {
+        id: uuidv4(),
+        name: "Skills",
+        route: "skills",
+    },
+    {
+        id: uuidv4(),
+        name: "Projects",
+        route: "projects",
+    },
+    {
+        id: uuidv4(),
+        name: "Experience",
+        route: "experience",
+    },
+    {
+        id: uuidv4(),
+        name: "Contact",
+        route: "contact",
+    },
+];
+
+// About Page
+
+export const aboutMe = `os suscipit! Temporibus illum sit saepe sequi ipsum.Perferendis, nostrum. Numquam quisquam neque labore nulla
+distinctio nihil est ad, quasi voluptas minima corrupti,
+velit culpa quam. Beatae ducimus illum veritatis ipsam fuga
+animi officia modi, eius cum, consequuntur corrupti nihil!
+Obcaecati quidem harum quisquam ipsam numquam laborum
+blanditiis explicabo adipisci nam deserunt amet ea corrupti
+debitis deleniti, dolores aspernatur quos, quis nobis nihil`;
