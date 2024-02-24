@@ -1,7 +1,7 @@
 import { animateScroll } from "react-scroll";
 import { useState, useEffect } from "react";
-import * as StyledComponent from "./styledComponent";
 import { AnimatePresence } from "framer-motion";
+import * as StyledComponent from "./styledComponent";
 
 const ScrollTop = () => {
     const animateIcon = {
@@ -11,7 +11,11 @@ const ScrollTop = () => {
         animate: {
             y: 0,
         },
-        transition: { duration: 0.4, ease: "easeInOut" },
+        transition: {
+            duration: 0.4,
+            ease: "easeInOut",
+            type: "spring",
+        },
         exit: { y: 23 },
     };
     const scrollToTop = () => {

@@ -15,7 +15,7 @@ export const NavBar = styled.nav`
     justify-content: space-between;
     padding: clamp(0.2em, 1vw + 0.38em, 1em) clamp(0.3em, 1vw + 1em, 2.1em);
     --fs-theme-mode-logo: clamp(1rem, 1vw + 1.3rem, 1.8rem);
-    @media (min-width: 620px) {
+    @media (min-width: 760px) {
         border-radius: ${({ isScrollingDown }) =>
             isScrollingDown ? "32px" : "0px"};
         position: ${({ isScrollingDown }) =>
@@ -33,7 +33,7 @@ export const NavBar = styled.nav`
 
 export const NavBarHeading = styled.h1`
     font-size: clamp(0.4rem, 1vw + 1rem, 1.6rem);
-    @media (min-width: 620px) {
+    @media (min-width: 760px) {
         display: ${({ isScrollingDown }) =>
             isScrollingDown ? "none" : "auto"};
     }
@@ -41,14 +41,13 @@ export const NavBarHeading = styled.h1`
 
 export const NavListItemBgContainerLg = styled.ul`
     display: none;
-    @media (min-width: 620px) {
+    @media (min-width: 760px) {
         display: flex;
         justify-content: space-evenly;
-        gap: 0.9em;
         list-style-type: none;
         padding: 0;
         width: ${({ isScrollingDown }) =>
-            isScrollingDown ? "100%" : "min(63%, 40rem)"};
+            isScrollingDown ? "100%" : "min(73%, 40rem)"};
         margin-left: ${({ isScrollingDown }) =>
             isScrollingDown ? "none" : "auto"};
         margin-right: ${({ isScrollingDown }) =>
@@ -77,13 +76,13 @@ export const HamburgIconAndThemeChangeBgContainer = styled.div`
 `;
 
 export const HamburgerBgContainer = styled.div`
-    @media (min-width: 620px) {
+    @media (min-width: 760px) {
         display: none;
     }
 `;
 
 export const ChangeThemeBgContainer = styled.div`
-    @media (min-width: 620px) {
+    @media (min-width: 760px) {
         display: ${({ isScrollingDown }) =>
             isScrollingDown ? "none" : "block"};
     }
@@ -97,14 +96,15 @@ to {
     rotate: -5deg;
 }
 `;
-export const DarkModeIcon = styled(BsMoonFill)`
+export const DarkModeIcon = styled(motion(BsMoonFill))`
     font-size: var(--fs-theme-mode-logo);
     cursor: pointer;
     color: #272826;
     animation: ${RotateThemeIcon} 0.3s linear forwards;
 `;
 
-export const LightModeIcon = styled(BsFillSunFill)`
+// TODO: add motion component
+export const LightModeIcon = styled(motion(BsFillSunFill))`
     font-size: var(--fs-theme-mode-logo);
     cursor: pointer;
     color: yellow;
@@ -114,10 +114,10 @@ export const LightModeIcon = styled(BsFillSunFill)`
 
 export const StyledMenuContainer = styled(motion.div)`
     position: fixed;
-    z-index: 2;
-    top: 13%;
+    z-index: 3;
+    top: 14%;
     right: 4%;
-    @media (min-width: 620px) {
+    @media (min-width: 760px) {
         display: none;
     }
 `;

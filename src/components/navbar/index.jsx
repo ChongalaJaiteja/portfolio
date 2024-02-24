@@ -23,7 +23,6 @@ const NavBar = () => {
         };
 
         window.addEventListener("scroll", handleScroll);
-
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
@@ -58,6 +57,7 @@ const NavBar = () => {
                         </StyledComponent.StyledActiveLink>
                     ))}
                 </StyledComponent.NavListItemBgContainerLg>
+
                 <StyledComponent.HamburgIconAndThemeChangeBgContainer>
                     <StyledComponent.HamburgerBgContainer>
                         <Hamburger
@@ -72,6 +72,7 @@ const NavBar = () => {
                         onClick={toggleTheme}
                         isScrollingDown={isScrollingDown}
                     >
+                        {/* TODO: add motion component */}
                         {isLightTheme ? (
                             <StyledComponent.DarkModeIcon />
                         ) : (
