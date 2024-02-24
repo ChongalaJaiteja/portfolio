@@ -1,7 +1,7 @@
 import { Typewriter } from "react-simple-typewriter";
 import * as LottiePlayer from "@lottiefiles/lottie-player";
 import developerImg from "../../assets/webdev.svg";
-import { contactLinks } from "../../constants";
+import { contactLinks } from "../../utils/constants";
 import * as StyledComponent from "./styledComponent";
 
 const Home = () => {
@@ -12,7 +12,26 @@ const Home = () => {
     };
     return (
         <StyledComponent.HomeBgContainer id="/">
-            <StyledComponent.AnimatedDevContainer>
+            <StyledComponent.AnimatedDevContainer
+                variants={{
+                    initial: {
+                        opacity: 0,
+                        x: 13,
+                    },
+                    animate: {
+                        opacity: 1,
+                        x: 0,
+                    },
+                    transition: {
+                        duration: 1.5,
+                        type: "spring",
+                    },
+                }}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ amount: 0.5, once: true }}
+                transition="transition"
+            >
                 <lottie-player
                     src="https://lottie.host/a5408547-31b3-4c65-9ae0-3b369cc6e275/UxKJmuE8jW.json"
                     background="transparent"
@@ -24,7 +43,26 @@ const Home = () => {
                 ></lottie-player>
             </StyledComponent.AnimatedDevContainer>
 
-            <StyledComponent.HomeContentContainer>
+            <StyledComponent.HomeContentContainer
+                variants={{
+                    initial: {
+                        opacity: 0,
+                        x: -13,
+                    },
+                    animate: {
+                        opacity: 1,
+                        x: 0,
+                    },
+                    transition: {
+                        duration: 1.5,
+                        type: "spring",
+                    },
+                }}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ amount: 0.5, once: true }}
+                transition="transition"
+            >
                 <StyledComponent.GreetingHeading>
                     Hi <StyledComponent.HiEmoji>👋</StyledComponent.HiEmoji>, My
                     name is{" "}

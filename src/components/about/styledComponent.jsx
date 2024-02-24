@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { motion } from "framer-motion";
 
 export const AboutPageBgContainer = styled.div`
     background-color: ${({ theme }) => theme.backgroundColor};
@@ -9,6 +10,7 @@ export const AboutPageBgContainer = styled.div`
 export const AboutPageHeading = styled.h1`
     text-align: center;
     position: relative;
+    font-size: clamp(0.5rem, 1vw + 1.61rem, 2.32rem);
 
     /* &:after {
         content: "";
@@ -19,14 +21,14 @@ export const AboutPageHeading = styled.h1`
         width: 80px;
         height: 10px;
         transform: skew(-20deg) translateX(-80%);
-        background: #2eafff;
+        background: ${({ theme }) => theme.primaryAccentColor};
         opacity: 0.6;
         z-index: -1;
     } */
 `;
 
 export const AboutPageContentBgContainer = styled.div`
-    margin-top: 2.3em;
+    margin-top: 2.56rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +41,7 @@ export const AboutPageContentBgContainer = styled.div`
     }
 `;
 
-export const AboutPageDescription = styled.p`
+export const AboutPageDescription = styled(motion.p)`
     flex: 1 1 100%;
     @media (min-width: 620px) {
         order: -1;
@@ -50,7 +52,7 @@ export const AboutPageDescription = styled.p`
     }
 `;
 
-export const AboutPageProfileBgContainer = styled.div`
+export const AboutPageProfileBgContainer = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +104,7 @@ export const AboutPageProfileBorderContainer = styled.div`
         inset: 0;
         z-index: -1;
         border-radius: 50%;
-        background-color: #2eafff;
+        background-color: ${({ theme }) => theme.primaryAccentColor};
         animation: ${Pulse1} 2s infinite linear;
     }
 
@@ -112,7 +114,7 @@ export const AboutPageProfileBorderContainer = styled.div`
         inset: 0;
         z-index: -1;
         border-radius: 50%;
-        background-color: #2eafff;
+        background-color: ${({ theme }) => theme.primaryAccentColor};
         animation: ${Pulse2} 2s 0.5s infinite linear;
     }
 `;

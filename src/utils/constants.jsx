@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
+import * as StyledComponent from "./constantsStyledComponent";
 
 //Home page
 
@@ -70,3 +71,46 @@ animi officia modi, eius cum, consequuntur corrupti nihil!
 Obcaecati quidem harum quisquam ipsam numquam laborum
 blanditiis explicabo adipisci nam deserunt amet ea corrupti
 debitis deleniti, dolores aspernatur quos, quis nobis nihil`;
+
+// Qualification Page
+
+export const qualificationData = [
+    {
+        id: uuidv4(),
+        imageUrl: "/nxtwave.png",
+        icon: <StyledComponent.GraduateIcon />,
+        title: "Fellow at NxtWave’s CCBP 4.0 Academy",
+        subtitle: "Hyderabad, India",
+        date: "2021 - present (IRC Program)",
+        content:
+            "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+    },
+    {
+        id: uuidv4(),
+        imageUrl: "/gmrit.jpeg",
+        icon: <StyledComponent.GraduateIcon />,
+        title: "GMR Institute of technology",
+        subtitle: "Rajam, India",
+        date: "2021 - present (Undergraduate Degree)",
+        content:
+            "Creative Direction, User Experience, Visual Design, SEO, Online Marketing",
+    },
+    {
+        id: uuidv4(),
+        imageUrl: "/sriviswa.avif",
+        icon: <StyledComponent.CollegeIcon />,
+        title: "Sri viswa IIT and Medical academy",
+        subtitle: "Vishakapatnam, India",
+        date: "2019 - 2021 (Secondary Education)",
+        content: "User Experience, Visual Design",
+    },
+    {
+        id: uuidv4(),
+        imageUrl: "/ravindra-bharathi-school.png",
+        icon: <StyledComponent.SchoolIcon />,
+        title: "Ravindra Bharathi School",
+        subtitle: "Bobbili, India",
+        date: "2006 - 2019 (Primary Education)",
+        content: "User Experience, Visual Design",
+    },
+];

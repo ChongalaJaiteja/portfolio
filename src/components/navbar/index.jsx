@@ -2,7 +2,7 @@ import Hamburger from "hamburger-react";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import { Link } from "react-scroll";
-import { navLinkOptions } from "../../constants";
+import { navLinkOptions } from "../../utils/constants";
 import { useThemeContext } from "../../context/themeContext";
 import * as StyledComponent from "./styledComponent";
 
@@ -14,7 +14,8 @@ const NavBar = () => {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
-            if (currentScrollY > 40) {
+            const threshHold = 40;
+            if (currentScrollY > threshHold) {
                 setIsScrollingDown(true);
             } else {
                 setIsScrollingDown(false);

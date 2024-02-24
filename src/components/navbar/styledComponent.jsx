@@ -6,12 +6,12 @@ import { BsMoonFill, BsFillSunFill } from "react-icons/bs";
 
 export const NavBar = styled.nav`
     color: ${({ theme }) => theme.color};
-    background-color: ${({ theme }) => theme.backgroundColor};
+    background-color: ${({ theme }) => theme.containerBackground};
     display: flex;
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 200;
+    z-index: 10;
     justify-content: space-between;
     padding: clamp(0.2em, 1vw + 0.38em, 1em) clamp(0.3em, 1vw + 1em, 2.1em);
     --fs-theme-mode-logo: clamp(1rem, 1vw + 1.3rem, 1.8rem);
@@ -21,11 +21,11 @@ export const NavBar = styled.nav`
         position: ${({ isScrollingDown }) =>
             isScrollingDown ? "fixed" : "sticky"};
         width: ${({ isScrollingDown }) =>
-            isScrollingDown ? "min(82%,30rem)" : "auto"};
+            isScrollingDown ? "min(82%,45rem)" : "auto"};
         inset: ${({ isScrollingDown }) =>
             isScrollingDown ? "2% 0 auto 0" : "auto"};
         margin: ${({ isScrollingDown }) => (isScrollingDown ? "auto" : "none")};
-        opacity: ${({ isScrollingDown }) => (isScrollingDown ? 0.86 : 1)};
+        opacity: ${({ isScrollingDown }) => (isScrollingDown ? 0.9 : 1)};
         justify-content: ${({ isScrollingDown }) =>
             isScrollingDown ? "space-between" : "space-evenly"};
     }
@@ -56,7 +56,11 @@ export const NavListItemBgContainerLg = styled.ul`
     }
 `;
 
-export const StyledActiveLink = styled(Link)`
+export const StyledActiveLink = styled(Link).attrs(({ theme }) => ({
+    activeStyle: {
+        background: theme.primaryAccentColor,
+    },
+}))`
     border-radius: 20px;
 `;
 
@@ -110,7 +114,7 @@ export const LightModeIcon = styled(BsFillSunFill)`
 
 export const StyledMenuContainer = styled(motion.div)`
     position: fixed;
-    z-index: 44;
+    z-index: 2;
     top: 13%;
     right: 4%;
     @media (min-width: 620px) {
@@ -134,7 +138,7 @@ export const NavListItem = styled.li`
     padding: 0.5em 3em 0.5em 0.4em;
     color: ${({ theme }) => theme.color};
     &:hover {
-        background-color: #2eafff;
-        color: ${({ theme }) => (theme.isLightTheme ? "white" : "black")};
+        background-color: ${({ theme }) => theme.primaryAccentColor};
+        color: white;
     }
 `;

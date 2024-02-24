@@ -39,7 +39,7 @@ const theme = {
 
 // Define common colors that can be used across themes
 const commonColors = {
-    primaryAccentColor: "#007BFF",
+    primaryAccentColor: "#2eafff",
     secondaryAccentColor: "#FF4500",
     successAccentColor: "#28A745",
     warningAccentColor: "#FFC107",

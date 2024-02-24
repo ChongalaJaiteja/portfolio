@@ -1,43 +1,18 @@
-import { animateScroll } from "react-scroll";
-import { useState, useEffect } from "react";
+import PageProgress from "../pageProgress";
 import Home from "../home";
 import About from "../about";
 import Qualification from "../qualification";
+import ScrollTop from "../scrollTop";
 import * as StyledComponent from "./styledComponent";
 
 const MainPage = () => {
-    const scrollToTop = () => {
-        const options = {
-            duration: 500,
-            smooth: true,
-        };
-
-        animateScroll.scrollToTop(options);
-    };
-    const [isScrollingDown, setIsScrollingDown] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrolledPastThreshold = window.scrollY > 80;
-            if (isScrollingDown !== scrolledPastThreshold) {
-                setIsScrollingDown(scrolledPastThreshold);
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, [isScrollingDown]);
     return (
         <>
+            <PageProgress />
             <Home />
             <About />
             <Qualification />
-            {isScrollingDown && (
-                <StyledComponent.MoveTopIcon onClick={scrollToTop} />
-            )}
+            <ScrollTop />
         </>
     );
 };

@@ -1,4 +1,5 @@
 import { MdOutlineFileDownload } from "react-icons/md";
+import { motion } from "framer-motion";
 import styled, { keyframes } from "styled-components";
 
 export const HomeBgContainer = styled.div`
@@ -17,7 +18,7 @@ export const HomeBgContainer = styled.div`
     }
 `;
 
-export const AnimatedDevContainer = styled.div`
+export const AnimatedDevContainer = styled(motion.div)`
     width: 97%;
     max-width: 28rem;
     @media (min-width: 620px) {
@@ -29,7 +30,7 @@ export const AnimatedDevContainer = styled.div`
     }
 `;
 
-export const HomeContentContainer = styled.div`
+export const HomeContentContainer = styled(motion.div)`
     width: min(100%, 39rem);
     margin-bottom: 3em;
 `;
@@ -68,7 +69,7 @@ export const HiEmoji = styled.span`
 `;
 
 export const MyNameSpan = styled.span`
-    color: #2eafff;
+    color: ${({ theme }) => theme.primaryAccentColor};
 `;
 
 export const HomeContentPara = styled.p`
@@ -98,7 +99,7 @@ export const ContactListItemImg = styled.img`
 `;
 
 export const ResumeBtn = styled.button`
-    background-color: #2eafff;
+    background-color: ${({ theme }) => theme.primaryAccentColor};
     color: white;
     border: none;
     border-radius: 10px;
