@@ -48,8 +48,10 @@ const ScrollTop = () => {
             {isScrollingDown && (
                 <AnimatePresence>
                     <StyledComponent.MoveToTopIconBgContainer
+                        key="move-to-top"
                         onClick={scrollToTop}
                         variants={animateIcon}
+                        whileTap={{ scale: 1.3 }}
                         initial="initial"
                         animate="animate"
                         transition="transition"

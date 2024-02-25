@@ -1,6 +1,9 @@
 import { v4 as uuidv4 } from "uuid";
 import * as StyledComponent from "./constantsStyledComponent";
-
+import Home from "../components/home";
+import About from "../components/about";
+import Qualification from "../components/qualification";
+import SkillsAndProjects from "../components/skillsAndProjects";
 //Home page
 
 export const contactLinks = [
@@ -28,38 +31,39 @@ export const navLinkOptions = [
     {
         id: uuidv4(),
         name: "Home",
-        route: "/",
+        route: "home",
+        component: Home,
     },
     {
         id: uuidv4(),
         name: "About",
         route: "about",
+        component: About,
     },
     {
         id: uuidv4(),
         name: "Qualification",
         route: "qualification",
+        component: Qualification,
     },
     {
         id: uuidv4(),
-        name: "Skills",
-        route: "skills",
+        name: "Skills & Projects",
+        route: "skills-projects",
+        component: SkillsAndProjects,
     },
-    {
-        id: uuidv4(),
-        name: "Projects",
-        route: "projects",
-    },
-    {
-        id: uuidv4(),
-        name: "Experience",
-        route: "experience",
-    },
-    {
-        id: uuidv4(),
-        name: "Contact",
-        route: "contact",
-    },
+    // {
+    //     id: uuidv4(),
+    //     name: "Experience",
+    //     route: "experience",
+    //     component: SkillsAndProjects,
+    // },
+    // {
+    //     id: uuidv4(),
+    //     name: "Contact",
+    //     route: "contact",
+    //     component: SkillsAndProjects,
+    // },
 ];
 
 // About Page
@@ -91,6 +95,7 @@ export const qualificationData = [
         icon: <StyledComponent.GraduateIcon />,
         title: "GMR Institute of technology",
         subtitle: "Rajam, India",
+        score: "CGPA : 8.79",
         date: "2021 - present (Undergraduate Degree)",
         content:
             "Creative Direction, User Experience, Visual Design, SEO, Online Marketing",
@@ -100,8 +105,9 @@ export const qualificationData = [
         imageUrl: "/sriviswa.avif",
         icon: <StyledComponent.CollegeIcon />,
         title: "Sri viswa IIT and Medical academy",
-        subtitle: "Vishakapatnam, India",
+        subtitle: "Visakhapatnam, India",
         date: "2019 - 2021 (Secondary Education)",
+        score: "Percentage: 94.7%",
         content: "User Experience, Visual Design",
     },
     {
@@ -111,6 +117,24 @@ export const qualificationData = [
         title: "Ravindra Bharathi School",
         subtitle: "Bobbili, India",
         date: "2006 - 2019 (Primary Education)",
+        score: "Grade : 9.8",
         content: "User Experience, Visual Design",
+    },
+];
+
+//Skills & Project Page
+
+export const SkillsAndProjectPageCategory = [
+    {
+        id: uuidv4(),
+        title: "Development",
+        icon: <StyledComponent.DevelopmentIcon />,
+        bgColor: "#9AD0C2",
+    },
+    {
+        id: uuidv4(),
+        title: "Programming",
+        icon: <StyledComponent.ProgrammingIcon />,
+        bgColor: "#FF8080",
     },
 ];

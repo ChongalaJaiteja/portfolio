@@ -6,15 +6,18 @@ export const HomeBgContainer = styled.div`
     background-image: ${({ theme }) =>
         theme.isLightTheme ? `url("/cloudBg.png")` : `url("/cloudDark.png")`};
     display: flex;
-    min-height: 80vh;
     flex-direction: column;
     align-items: center;
-    padding: 1.4em clamp(0.5em, 1vw + 1em, 1.6em);
+    padding: 1.4em var(--total-page-pd-sm);
     gap: 1em;
     @media (min-width: 620px) {
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding-inline: var(--total-page-pd-md);
+    }
+    @media (min-width: 1050px) {
+        padding-inline: var(--total-page-pd-lg);
     }
 `;
 

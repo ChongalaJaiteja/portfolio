@@ -4,14 +4,15 @@ import { motion } from "framer-motion";
 export const AboutPageBgContainer = styled.div`
     background-color: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.color};
-    padding-top: clamp(1.4em, 1vw + 2.5em, 6em);
+    padding-top: var(--page-section-pt);
+    margin-bottom: var(--page-section-mb);
 `;
 
 export const AboutPageHeading = styled.h1`
     text-align: center;
     position: relative;
-    font-size: clamp(0.5rem, 1vw + 1.61rem, 2.32rem);
-
+    font-size: var(--page-section-heading-fs);
+    margin-bottom: var(--page-section-heading-mb);
     /* &:after {
         content: "";
         position: absolute;
@@ -27,13 +28,22 @@ export const AboutPageHeading = styled.h1`
     } */
 `;
 
+export const AboutPageSectionBodyContainer = styled.div`
+    padding: 0em var(--total-page-pd-sm);
+    @media (min-width: 620px) {
+        padding-inline: var(--total-page-pd-md);
+    }
+    @media (min-width: 1050px) {
+        padding-inline: var(--total-page-pd-lg);
+    }
+`;
+
 export const AboutPageContentBgContainer = styled.div`
-    margin-top: 2.56rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 0em clamp(0.5em, 1vw + 1.6em, 3em);
+
     @media (min-width: 620px) {
         flex-direction: row;
         align-items: center;

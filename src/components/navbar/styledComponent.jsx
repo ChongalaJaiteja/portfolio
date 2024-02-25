@@ -43,7 +43,7 @@ export const NavListItemBgContainerLg = styled.ul`
     display: none;
     @media (min-width: 760px) {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         list-style-type: none;
         padding: 0;
         width: ${({ isScrollingDown }) =>
@@ -61,6 +61,10 @@ export const StyledActiveLink = styled(Link).attrs(({ theme }) => ({
     },
 }))`
     border-radius: 20px;
+    &:hover {
+        opacity: 0.77;
+        background-color: ${({ theme }) => theme.primaryAccentColor};
+    }
 `;
 
 export const NavListItemLg = styled.li`
@@ -116,6 +120,7 @@ export const StyledMenuContainer = styled(motion.div)`
     position: fixed;
     z-index: 3;
     top: 14%;
+    width: clamp(0.8rem, 1vw +40%, 10rem);
     right: 4%;
     @media (min-width: 760px) {
         display: none;
@@ -142,3 +147,4 @@ export const NavListItem = styled.li`
         color: white;
     }
 `;
+

@@ -2,6 +2,8 @@ import styled, { css } from "styled-components";
 import { FaUserGraduate } from "react-icons/fa6";
 import { FaSchoolFlag } from "react-icons/fa6";
 import { LuSchool2 } from "react-icons/lu";
+import { FaLaptopCode } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 
 const IconColor = css`
     color: white;
@@ -16,4 +18,11 @@ export const SchoolIcon = styled(FaSchoolFlag)`
 
 export const CollegeIcon = styled(LuSchool2)`
     ${IconColor};
+`;
+export const DevelopmentIcon = styled(FaLaptopCode)`
+    font-size: clamp(0.4rem, 1vw + 1.3rem, 1.8rem);
+`;
+
+export const ProgrammingIcon = styled(FaCode)`
+    font-size: clamp(0.4rem, 1vw + 1.3rem, 1.8rem);
 `;

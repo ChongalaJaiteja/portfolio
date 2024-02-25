@@ -1,17 +1,17 @@
 import PageProgress from "../pageProgress";
-import Home from "../home";
-import About from "../about";
-import Qualification from "../qualification";
 import ScrollTop from "../scrollTop";
-import * as StyledComponent from "./styledComponent";
+import { navLinkOptions } from "../../utils/constants";
 
 const MainPage = () => {
     return (
         <>
             <PageProgress />
-            <Home />
-            <About />
-            <Qualification />
+            {navLinkOptions.map(({ component: Component, route }) => (
+                <Component
+                    key={route.toUpperCase()}
+                    route={route.toUpperCase()}
+                />
+            ))}
             <ScrollTop />
         </>
     );

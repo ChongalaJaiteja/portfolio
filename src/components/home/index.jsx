@@ -1,17 +1,16 @@
 import { Typewriter } from "react-simple-typewriter";
 import * as LottiePlayer from "@lottiefiles/lottie-player";
-import developerImg from "../../assets/webdev.svg";
 import { contactLinks } from "../../utils/constants";
 import * as StyledComponent from "./styledComponent";
 
-const Home = () => {
+const Home = ({ route }) => {
     const roles = ["Web Developer", "Competitive Coder", "AI Enthusiast"];
 
     const openResume = () => {
         window.open("/resume.pdf", "_blank");
     };
     return (
-        <StyledComponent.HomeBgContainer id="/">
+        <StyledComponent.HomeBgContainer id={route}>
             <StyledComponent.AnimatedDevContainer
                 variants={{
                     initial: {
@@ -106,7 +105,6 @@ const Home = () => {
                     {/* <StyledComponent.DownloadBtnIcon /> */}
                 </StyledComponent.ResumeBtn>
             </StyledComponent.HomeContentContainer>
-            {/* <img src={developerImg} /> */}
         </StyledComponent.HomeBgContainer>
     );
 };

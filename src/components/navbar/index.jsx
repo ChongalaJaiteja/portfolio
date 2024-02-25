@@ -43,7 +43,7 @@ const NavBar = () => {
                     {navLinkOptions.map((option) => (
                         <StyledComponent.StyledActiveLink
                             key={option.id}
-                            to={option.route}
+                            to={option.route.toUpperCase()}
                             spy={true}
                             smooth={true}
                             activeStyle={{
@@ -93,7 +93,7 @@ const NavBar = () => {
                             {navLinkOptions.map((option) => (
                                 <Link
                                     key={option.id}
-                                    to={option.route}
+                                    to={option.route.toUpperCase()}
                                     spy={true}
                                     smooth={true}
                                     onClick={() => setIsHamburgerOpen(false)}

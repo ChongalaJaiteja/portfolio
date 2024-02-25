@@ -4,23 +4,26 @@ import {
     VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { MdLocationPin } from "react-icons/md";
+import { FaAward } from "react-icons/fa6";
 
 export const QualificationBgContainer = styled.div`
     background-color: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.color};
-    padding-top: clamp(1.4em, 1vw + 2.8em, 7em);
-    min-height: 100vh;
+    padding-top: var(--page-section-pt);
+    margin-bottom: var(--page-section-mb);
 `;
 
 export const QualificationMainHeading = styled.h1`
     text-align: center;
-    font-size: clamp(0.5rem, 1vw + 1.61rem, 2.32rem);
+    font-size: var(--page-section-heading-fs);
+    margin-bottom: var(--page-section-heading-mb);
 `;
 
-export const QualificationListContainer = styled.div`
-    margin-top: 2.3em;
-    padding: clamp(0.4em, 1vw + 1rem, 1.2em) clamp(0.4em, 1vw + 1rem, 2rem);
+export const QualificationSectionBodyContainer = styled.div`
+    padding: clamp(0.4em, 1vw + 1rem, 1.2em) var(--total-page-pd-sm);
 `;
+
+export const QualificationListContainer = styled.div``;
 export const VerticalTimelineContainer = styled(VerticalTimeline).attrs(
     ({ theme }) => ({
         lineColor: theme.isLightTheme ? theme.primaryAccentColor : "white",
@@ -95,6 +98,10 @@ export const QualificationCardSubTitle = styled.h4`
     color: grey;
     align-items: center;
     gap: 0.27em;
+`;
+export const ScoreIcon = styled(FaAward)`
+    color: #ffd95a;
+    font-size: clamp(0.3rem, 1vw + 0.62rem, 1.33rem);
 `;
 
 export const QualificationCardDescription = styled.p`
