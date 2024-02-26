@@ -5,7 +5,6 @@ export const SkillsAndProjectsPageBgContainer = styled.div`
     background-color: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.color};
     padding-top: var(--page-section-pt);
-    margin-bottom: var(--page-section-mb);
 `;
 export const SkillsAndProjectsPageHeading = styled.h1`
     text-align: center;

@@ -51,7 +51,7 @@ const ThemeContext = createContext();
 export const useThemeContext = () => useContext(ThemeContext);
 
 export const ThemeContextProvider = ({ children }) => {
-    const [isLightTheme, setIsLightTheme] = useState(true);
+    const [isLightTheme, setIsLightTheme] = useState(false);
     const toggleTheme = () => {
         setIsLightTheme((prev) => !prev);
     };
