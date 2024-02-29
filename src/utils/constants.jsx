@@ -5,7 +5,7 @@ import About from "../components/about";
 import Qualification from "../components/qualification";
 import SkillsAndProjects from "../components/skillsAndProjects";
 import Experience from "../components/experience";
-import Contact from "../components/contact";
+// import Contact from "../components/contact";
 
 //Home page
 export const contactLinks = [
@@ -54,12 +54,12 @@ export const navLinkOptions = [
         route: "skills-projects",
         component: SkillsAndProjects,
     },
-    // {
-    //     id: uuidv4(),
-    //     name: "Experience",
-    //     route: "experience",
-    //     component: Experience,
-    // },
+    {
+        id: uuidv4(),
+        name: "Experience",
+        route: "experience",
+        component: Experience,
+    },
     // {
     //     id: uuidv4(),
     //     name: "Contact",
@@ -126,7 +126,7 @@ export const qualificationData = [
 
 //Skills & Project Page
 
-export const SkillsAndProjectPageCategory = [
+export const skillsAndProjectPageCategory = [
     {
         id: uuidv4(),
         title: "Development",
@@ -140,6 +140,19 @@ export const SkillsAndProjectPageCategory = [
         icon: <StyledComponent.ProgrammingIcon />,
         route: "/programming",
         bgColor: "#FF8080",
+    },
+];
+
+export const programming = [
+    {
+        skills: [
+            {
+                id: uuidv4(),
+                name: "Html",
+                icon: "",
+            },
+        ],
+        projects: [{}],
     },
 ];
 

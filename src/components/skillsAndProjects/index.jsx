@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { SkillsAndProjectPageCategory } from "../../utils/constants";
+import { skillsAndProjectPageCategory } from "../../utils/constants";
 import * as StyledComponent from "./styledComponent";
 
 const SkillsAndProjects = ({ route }) => {
@@ -39,7 +39,7 @@ const SkillsAndProjects = ({ route }) => {
                         <StyledComponent.SkillsAndProjectsPageImg src="/webdev.svg" />
                     </StyledComponent.SkillsAndProjectsPageImgBgContainer>
                     <StyledComponent.SkillsAndProjectsPageCardsBgContainer>
-                        {SkillsAndProjectPageCategory.map((category, index) => (
+                        {skillsAndProjectPageCategory.map((category, index) => (
                             <StyledComponent.SkillsAndProjectsPageCard
                                 key={category.id}
                                 bgColor={category.bgColor}
