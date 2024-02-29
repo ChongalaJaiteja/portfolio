@@ -4,27 +4,29 @@ import { motion } from "framer-motion";
 export const AboutPageBgContainer = styled.div`
     background-color: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.color};
-    padding-top: var(--page-section-pt);
+    padding-block: var(--page-section-pt) var(--page-section-pb);
+    width: 100%;
 `;
 
 export const AboutPageHeading = styled.h1`
-    text-align: center;
     position: relative;
+    display: inline-block;
     font-size: var(--page-section-heading-fs);
     margin-bottom: var(--page-section-heading-mb);
-    /* &:after {
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    &:after {
         content: "";
         position: absolute;
-        left: 45%;
-        bottom: -9%;
-        background-color: red;
-        width: 80px;
-        height: 10px;
-        transform: skew(-20deg) translateX(-80%);
-        background: ${({ theme }) => theme.primaryAccentColor};
-        opacity: 0.6;
-        z-index: -1;
-    } */
+        width: 100%;
+        border-top: 5px solid ${({ theme }) => theme.primaryAccentColor};
+        left: -10%;
+        transform: rotate(-2deg);
+        bottom: -14px;
+        border-radius: 50%;
+        height: 12px;
+    }
 `;
 
 export const AboutPageSectionBodyContainer = styled.div`

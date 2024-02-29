@@ -46,10 +46,7 @@ const NavBar = () => {
                             to={option.route.toUpperCase()}
                             spy={true}
                             smooth={true}
-                            activeStyle={{
-                                background: "#2eafff",
-                                color: "white",
-                            }}
+                            activeClassName="active"
                         >
                             <StyledComponent.NavListItemLg>
                                 {option.name}

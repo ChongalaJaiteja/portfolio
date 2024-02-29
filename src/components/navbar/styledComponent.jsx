@@ -55,15 +55,35 @@ export const NavListItemBgContainerLg = styled.ul`
     }
 `;
 
-export const StyledActiveLink = styled(Link).attrs(({ theme }) => ({
-    activeStyle: {
-        background: theme.primaryAccentColor,
-    },
-}))`
-    border-radius: 20px;
-    &:hover {
-        opacity: 0.77;
+export const onHoverOption = keyframes`
+from {
+    right: 100%;
+} to {
+    right: 0;
+}
+`;
+
+export const StyledActiveLink = styled(Link)`
+    position: relative;
+    &.active:after {
+        content: "";
         background-color: ${({ theme }) => theme.primaryAccentColor};
+        padding: 0.1em;
+        position: absolute;
+        top: 90%;
+        left: 0;
+        border-radius: 20px;
+        animation: ${onHoverOption} 0.15s ease-in 0s 1 forwards;
+    }
+    &:hover:after {
+        content: "";
+        background-color: ${({ theme }) => theme.primaryAccentColor};
+        padding: 0.1em;
+        position: absolute;
+        top: 90%;
+        left: 0;
+        border-radius: 20px;
+        animation: ${onHoverOption} 0.15s ease-in 0s 1 forwards;
     }
 `;
 
@@ -147,4 +167,3 @@ export const NavListItem = styled.li`
         color: white;
     }
 `;
-

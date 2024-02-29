@@ -1,17 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
+import { AboutPageHeading } from "../about/styledComponent";
+import { Link } from "react-router-dom";
 
 export const SkillsAndProjectsPageBgContainer = styled.div`
     background-color: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.color};
-    padding-top: var(--page-section-pt);
+    padding-block: var(--page-section-pt) var(--page-section-pb);
 `;
-export const SkillsAndProjectsPageHeading = styled.h1`
-    text-align: center;
-    position: relative;
-    font-size: var(--page-section-heading-fs);
-    margin-bottom: var(--page-section-heading-mb);
-`;
+export const SkillsAndProjectsPageHeading = styled(AboutPageHeading)``;
 
 export const SkillsAndProjectsSectionBodyContainer = styled.div`
     padding: 0em var(--total-page-pd-sm);
@@ -27,30 +24,40 @@ export const SkillsAndProjectsPageContentBgContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1em;
-    outline: auto;
+    /* outline: auto; */
     @media (min-width: 620px) {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
     }
 `;
 
-export const SkillsAndProjectsPageImgBgContainer = styled.div`
-    outline: auto;
+export const SkillsAndProjectsPageImgBgContainer = styled(motion.div)`
+    /* outline: auto; */
     @media (min-width: 620px) {
         flex: 1 1 calc(60% - 1em);
         order: 1;
-        max-width: 30rem;
+        max-width: 35rem;
     }
+`;
+
+export const AnimateSkillsAndProjectImg = keyframes`
+from {
+    transform: translateY(0);
+} to {
+    transform: translateY(-10px);
+}
 `;
 
 export const SkillsAndProjectsPageImg = styled.img`
     width: 100%;
+    animation: ${AnimateSkillsAndProjectImg} 2.3s linear infinite
+        alternate-reverse;
 `;
 
 export const SkillsAndProjectsPageCardsBgContainer = styled.ul`
     padding: 0;
-    outline: auto;
+    /* outline: auto; */
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -58,16 +65,21 @@ export const SkillsAndProjectsPageCardsBgContainer = styled.ul`
 
     @media (min-width: 620px) {
         flex: 1 1 calc(40% - 1em);
+        max-width: 32rem;
     }
 `;
 
 export const SkillsAndProjectsPageCard = styled(motion.li)`
-    outline: auto;
+    border: 3px solid
+        ${({ theme }) => (theme.isLightTheme ? "#FBF9F1" : "white")};
     cursor: pointer;
-    color: white;
     background-color: ${({ bgColor }) => bgColor};
-    padding: 1em;
     border-radius: 10px;
+`;
+
+export const StyledLink = styled(Link)`
+    padding: 1em;
+    color: white;
     display: flex;
     align-items: center;
     gap: 1em;

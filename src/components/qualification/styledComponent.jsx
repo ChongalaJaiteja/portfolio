@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { AboutPageHeading } from "../about/styledComponent";
 import {
     VerticalTimeline,
     VerticalTimelineElement,
@@ -9,14 +10,10 @@ import { FaAward } from "react-icons/fa6";
 export const QualificationBgContainer = styled.div`
     background-color: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.color};
-    padding-top: var(--page-section-pt);
+    padding-block: var(--page-section-pt) var(--page-section-pb);
 `;
 
-export const QualificationMainHeading = styled.h1`
-    text-align: center;
-    font-size: var(--page-section-heading-fs);
-    margin-bottom: var(--page-section-heading-mb);
-`;
+export const QualificationMainHeading = styled(AboutPageHeading)``;
 
 export const QualificationSectionBodyContainer = styled.div`
     padding: clamp(0.4em, 1vw + 1rem, 1.2em) var(--total-page-pd-sm);
@@ -105,4 +102,12 @@ export const ScoreIcon = styled(FaAward)`
 
 export const QualificationCardDescription = styled.p`
     /* color: red; */
+`;
+
+export const QualificationCardLink = styled.a`
+    padding-left: 0.3em;
+    display: inline;
+    &:hover {
+        text-decoration: underline;
+    }
 `;

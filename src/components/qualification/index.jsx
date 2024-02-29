@@ -1,7 +1,3 @@
-import {
-    VerticalTimeline,
-    VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { qualificationData } from "../../utils/constants";
 import * as StyledComponent from "./styledComponent";
@@ -25,6 +21,8 @@ const Qualification = ({ route }) => {
                                 content,
                                 icon,
                                 imageUrl,
+                                infoIcon,
+                                websiteUrl,
                             }) => (
                                 <StyledComponent.VerticalTimelineElementContainer
                                     key={id}
@@ -48,15 +46,22 @@ const Qualification = ({ route }) => {
                                                 <StyledComponent.LocationIcon />
                                                 {subtitle}
                                             </StyledComponent.QualificationCardSubTitle>
+
                                             {score && (
                                                 <StyledComponent.QualificationCardSubTitle>
                                                     <StyledComponent.ScoreIcon />
                                                     {score}
                                                 </StyledComponent.QualificationCardSubTitle>
                                             )}
-
                                             <StyledComponent.QualificationCardDescription>
                                                 {content}
+                                                <StyledComponent.QualificationCardLink
+                                                    href={websiteUrl}
+                                                    alt={title}
+                                                    target="_blank"
+                                                >
+                                                    More Info.
+                                                </StyledComponent.QualificationCardLink>
                                             </StyledComponent.QualificationCardDescription>
                                         </StyledComponent.QualificationCardContentContainer>
                                     </StyledComponent.QualificationCardContainer>

@@ -1,4 +1,3 @@
-import { aboutMe } from "../../utils/constants";
 import * as StyledComponent from "./styledComponent";
 
 const About = ({ route }) => {
@@ -55,7 +54,26 @@ const About = ({ route }) => {
                         viewport={{ amount: 0.5, once: true }}
                         transition="transition"
                     >
-                        {aboutMe}
+                        I am a full stack developer, I build full stack
+                        websites,I will solve all your business problems.
+                        <br />
+                        <br />
+                        I am a specialized MERN stack developer. your go-to
+                        solution for crafting full-stack websites. With a
+                        passion for problem-solving and innovation. I excel in
+                        creating seamless digital experiences tailored to your
+                        business needs.
+                        <br />
+                        <br />
+                        Specializing in MongoDB. Express.js. React.js. and
+                        Node.js,I leverage the power of the MERN stack to
+                        deliver robust and dynamic solutions that exceed
+                        expectations. Whether you need a sleek website. I have
+                        the skills to bring your vision to life.
+                        <br /> My commitment to clean, efficient code ensures
+                        easy maintenance and scalability. while my understanding
+                        of business challenges enables me to develop custom
+                        solutions that address your specific needs.
                     </StyledComponent.AboutPageDescription>
                 </StyledComponent.AboutPageContentBgContainer>
             </StyledComponent.AboutPageSectionBodyContainer>

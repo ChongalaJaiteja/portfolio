@@ -4,8 +4,10 @@ import Home from "../components/home";
 import About from "../components/about";
 import Qualification from "../components/qualification";
 import SkillsAndProjects from "../components/skillsAndProjects";
-//Home page
+import Experience from "../components/experience";
+import Contact from "../components/contact";
 
+//Home page
 export const contactLinks = [
     {
         id: uuidv4(),
@@ -56,25 +58,15 @@ export const navLinkOptions = [
     //     id: uuidv4(),
     //     name: "Experience",
     //     route: "experience",
-    //     component: SkillsAndProjects,
+    //     component: Experience,
     // },
     // {
     //     id: uuidv4(),
     //     name: "Contact",
     //     route: "contact",
-    //     component: SkillsAndProjects,
+    //     component: Contact,
     // },
 ];
-
-// About Page
-
-export const aboutMe = `os suscipit! Temporibus illum sit saepe sequi ipsum.Perferendis, nostrum. Numquam quisquam neque labore nulla
-distinctio nihil est ad, quasi voluptas minima corrupti,
-velit culpa quam. Beatae ducimus illum veritatis ipsam fuga
-animi officia modi, eius cum, consequuntur corrupti nihil!
-Obcaecati quidem harum quisquam ipsam numquam laborum
-blanditiis explicabo adipisci nam deserunt amet ea corrupti
-debitis deleniti, dolores aspernatur quos, quis nobis nihil`;
 
 // Qualification Page
 
@@ -83,42 +75,52 @@ export const qualificationData = [
         id: uuidv4(),
         imageUrl: "/nxtwave.png",
         icon: <StyledComponent.GraduateIcon />,
+        infoIcon: <StyledComponent.InfoIcon />,
+        websiteUrl: "https://www.ccbp.in/",
         title: "Fellow at NxtWave’s CCBP 4.0 Academy",
         subtitle: "Hyderabad, India",
         date: "2021 - present (IRC Program)",
         content:
-            "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            "NxtWave is an ed-tech startup based in Hyderabad, India that offers online training programs in Industry 4.0 careers",
     },
     {
         id: uuidv4(),
         imageUrl: "/gmrit.jpeg",
         icon: <StyledComponent.GraduateIcon />,
+        infoIcon: <StyledComponent.InfoIcon />,
+        websiteUrl: "https://gmrit.edu.in/",
         title: "GMR Institute of technology",
         subtitle: "Rajam, India",
         score: "CGPA : 8.79",
         date: "2021 - present (Undergraduate Degree)",
         content:
-            "Creative Direction, User Experience, Visual Design, SEO, Online Marketing",
+            "GMRIT is one of the most reputed college which offers admission to engineering courses in various streams",
     },
     {
         id: uuidv4(),
         imageUrl: "/sriviswa.avif",
         icon: <StyledComponent.CollegeIcon />,
+        infoIcon: <StyledComponent.InfoIcon />,
+        websiteUrl: "https://www.sriviswa.com/",
         title: "Sri viswa IIT and Medical academy",
         subtitle: "Visakhapatnam, India",
         date: "2019 - 2021 (Secondary Education)",
         score: "Percentage: 94.7%",
-        content: "User Experience, Visual Design",
+        content:
+            "Sri Viswa IIT and Medical Academy is among the renowned junior colleges offering the best education",
     },
     {
         id: uuidv4(),
         imageUrl: "/ravindra-bharathi-school.png",
         icon: <StyledComponent.SchoolIcon />,
+        infoIcon: <StyledComponent.InfoIcon />,
+        websiteUrl: "https://rbschools.in/",
         title: "Ravindra Bharathi School",
         subtitle: "Bobbili, India",
         date: "2006 - 2019 (Primary Education)",
         score: "Grade : 9.8",
-        content: "User Experience, Visual Design",
+        content:
+            "Ravindra Bharathi School, a prestigious institution in India, offers English medium education from primary to secondary levels",
     },
 ];
 
@@ -129,12 +131,44 @@ export const SkillsAndProjectPageCategory = [
         id: uuidv4(),
         title: "Development",
         icon: <StyledComponent.DevelopmentIcon />,
+        route: "/development",
         bgColor: "#9AD0C2",
     },
     {
         id: uuidv4(),
         title: "Programming",
         icon: <StyledComponent.ProgrammingIcon />,
+        route: "/programming",
         bgColor: "#FF8080",
+    },
+];
+
+//experience Page
+
+export const experienceList = [
+    {
+        id: uuidv4(),
+        imageUrl: "/coding_club_gmrit_logo.jpeg",
+        icon: <StyledComponent.DevelopmentIcon />,
+        infoIcon: <StyledComponent.InfoIcon />,
+        websiteUrl: "https://rbschools.in/",
+        title: "Technical coordinator",
+        subtitle: "GMRIT",
+        date: "2022 - present",
+        content:
+            "Ravindra Bharathi School, a prestigious institution in India, offers English medium education from primary to secondary levels",
+    },
+    {
+        id: uuidv4(),
+        imageUrl: "/nxtwave.png",
+        icon: <StyledComponent.TeachingAssistantIcon />,
+        infoIcon: <StyledComponent.InfoIcon />,
+        websiteUrl:
+            "https://portal.ccbp.in/teaching-assistant-profile?uid=jai-teja",
+        title: "Teaching Assistant",
+        subtitle: "On Site",
+        date: "2021 - present",
+        content:
+            "Ravindra Bharathi School, a prestigious institution in India, offers English medium education from primary to secondary levels",
     },
 ];
