@@ -1,24 +1,18 @@
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
-import { AboutPageHeading } from "../about/styledComponent";
+import {
+    AboutPageHeading,
+    AboutPageBgContainer,
+    AboutPageSectionBodyContainer,
+} from "../about/styledComponent";
 import { Link } from "react-router-dom";
 
-export const SkillsAndProjectsPageBgContainer = styled.div`
-    background-color: ${({ theme }) => theme.backgroundColor};
-    color: ${({ theme }) => theme.color};
-    padding-block: var(--page-section-pt) var(--page-section-pb);
-`;
+export const SkillsAndProjectsPageBgContainer = styled(AboutPageBgContainer)``;
 export const SkillsAndProjectsPageHeading = styled(AboutPageHeading)``;
 
-export const SkillsAndProjectsSectionBodyContainer = styled.div`
-    padding: 0em var(--total-page-pd-sm);
-    @media (min-width: 620px) {
-        padding-inline: var(--total-page-pd-md);
-    }
-    @media (min-width: 1050px) {
-        padding-inline: var(--total-page-pd-lg);
-    }
-`;
+export const SkillsAndProjectsSectionBodyContainer = styled(
+    AboutPageSectionBodyContainer
+)``;
 
 export const SkillsAndProjectsPageContentBgContainer = styled.div`
     display: flex;

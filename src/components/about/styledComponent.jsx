@@ -5,7 +5,6 @@ export const AboutPageBgContainer = styled.div`
     background-color: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.color};
     padding-block: var(--page-section-pt) var(--page-section-pb);
-    width: 100%;
 `;
 
 export const AboutPageHeading = styled.h1`
@@ -60,6 +59,9 @@ export const AboutPageDescription = styled(motion.p)`
     }
     @media (min-width: 900px) {
         flex: 1 1 calc(60% - 1rem);
+    }
+    &:first-letter {
+        font-size
     }
 `;
 

@@ -1,20 +1,21 @@
 import styled from "styled-components";
-import { AboutPageHeading } from "../about/styledComponent";
+import {
+    AboutPageHeading,
+    AboutPageBgContainer,
+    AboutPageSectionBodyContainer,
+} from "../about/styledComponent";
 import {
     VerticalTimelineContainer,
     VerticalTimelineElementContainer,
 } from "../qualification/styledComponent";
+
 import { MdLocationPin } from "react-icons/md";
 
-export const ExperienceBgContainer = styled.div`
-    background-color: ${({ theme }) => theme.backgroundColor};
-    color: ${({ theme }) => theme.color};
-    padding-block: var(--page-section-pt) var(--page-section-pb);
-`;
+export const ExperienceBgContainer = styled(AboutPageBgContainer)``;
 
 export const ExperienceMainHeading = styled(AboutPageHeading)``;
 
-export const ExperienceSectionBodyContainer = styled.div`
+export const ExperienceSectionBodyContainer = styled(AboutPageSectionBodyContainer)`
     padding: clamp(0.4em, 1vw + 1rem, 1.2em) var(--total-page-pd-sm);
 `;
 
