@@ -6,6 +6,8 @@ import { FaLaptopCode } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { IoInformationCircle } from "react-icons/io5";
 import { FaChalkboardTeacher } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 
 const IconColor = css`
     color: white;
@@ -37,4 +39,8 @@ export const InfoIcon = styled(IoInformationCircle)`
 
 export const TeachingAssistantIcon = styled(FaChalkboardTeacher)`
     font-size: clamp(0.1rem, 1vw + 0.72rem, 1.5rem);
+`;
+
+export const NavLinkIcon = styled(FaExternalLinkAlt)`
+    font-size: clamp(0.1em, 1vw + 0.6em, 1em);
 `;

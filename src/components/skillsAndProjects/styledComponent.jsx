@@ -61,7 +61,7 @@ export const SkillsAndProjectsPageCardsBgContainer = styled.ul`
         flex: 1 1 calc(40% - 1em);
         max-width: 32rem;
     }
-`;
+`;  
 
 export const SkillsAndProjectsPageCard = styled(motion.li)`
     border: 3px solid

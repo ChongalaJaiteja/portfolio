@@ -164,24 +164,28 @@ export const experienceList = [
         imageUrl: "/coding_club_gmrit_logo.jpeg",
         icon: <StyledComponent.DevelopmentIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
-        websiteUrl: "https://rbschools.in/",
+        navIcon: <StyledComponent.NavLinkIcon />,
+        experienceLink: "https://gmrit.edu.in/studentActivities/codingClub.php",
         title: "Technical coordinator",
-        subtitle: "GMRIT",
+        location: "GMRIT",
         date: "2022 - present",
         content:
             "Ravindra Bharathi School, a prestigious institution in India, offers English medium education from primary to secondary levels",
+        skills: ["leadership", "teamwork", "communication", "problem solving"],
     },
     {
         id: uuidv4(),
         imageUrl: "/nxtwave.png",
         icon: <StyledComponent.TeachingAssistantIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
-        websiteUrl:
+        navIcon: <StyledComponent.NavLinkIcon />,
+        experienceLink:
             "https://portal.ccbp.in/teaching-assistant-profile?uid=jai-teja",
         title: "Teaching Assistant",
-        subtitle: "On Site",
+        location: "On Site",
         date: "2021 - present",
         content:
             "Ravindra Bharathi School, a prestigious institution in India, offers English medium education from primary to secondary levels",
+        skills: ["JavaScript", "Python"],
     },
 ];
