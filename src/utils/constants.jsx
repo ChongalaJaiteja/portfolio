@@ -72,7 +72,6 @@ export const navLinkOptions = [
 
 export const qualificationData = [
     {
-        id: uuidv4(),
         imageUrl: "/nxtwave.png",
         icon: <StyledComponent.GraduateIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
@@ -84,7 +83,6 @@ export const qualificationData = [
             "NxtWave is an ed-tech startup based in Hyderabad, India that offers online training programs in Industry 4.0 careers",
     },
     {
-        id: uuidv4(),
         imageUrl: "/gmrit.jpeg",
         icon: <StyledComponent.GraduateIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
@@ -97,7 +95,6 @@ export const qualificationData = [
             "GMRIT is one of the most reputed college which offers admission to engineering courses in various streams",
     },
     {
-        id: uuidv4(),
         imageUrl: "/sriviswa.avif",
         icon: <StyledComponent.CollegeIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
@@ -110,7 +107,6 @@ export const qualificationData = [
             "Sri Viswa IIT and Medical Academy is among the renowned junior colleges offering the best education",
     },
     {
-        id: uuidv4(),
         imageUrl: "/ravindra-bharathi-school.png",
         icon: <StyledComponent.SchoolIcon />,
         infoIcon: <StyledComponent.InfoIcon />,

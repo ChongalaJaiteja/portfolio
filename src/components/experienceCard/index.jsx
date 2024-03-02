@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
+import "react-vertical-timeline-component/style.min.css";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import ExperienceCardSkillItem from "../experienceCardSkillItem";
 import * as StyledComponent from "./styledComponent";
 
-const ExperienceCard = ({ experienceCardDetails }) => {
+const ExperienceSectionCard = (props) => {
     const {
         id,
         imageUrl,
@@ -17,7 +18,7 @@ const ExperienceCard = ({ experienceCardDetails }) => {
         date,
         content,
         skills,
-    } = experienceCardDetails;
+    } = props.experience;
 
     const [showSkillsMap, setShowSkillsMap] = useState({});
 
@@ -27,6 +28,7 @@ const ExperienceCard = ({ experienceCardDetails }) => {
             [id]: !prevMap[id],
         }));
     };
+
     return (
         <StyledComponent.ExperienceVerticalTimelineElementContainer
             className="vertical-timeline-element--work"
@@ -66,20 +68,21 @@ const ExperienceCard = ({ experienceCardDetails }) => {
                         <StyledComponent.ArrowRightIcon />
                         Skills
                     </StyledComponent.ExperienceCardSkillsTitle>
-                    {showSkillsMap[id] && (
-                        <StyledComponent.ExperienceCardSkillsContainer>
-                            {skills.map((skill) => (
-                                <ExperienceCardSkillItem
-                                    key={uuidv4()}
-                                    skillName={skill}
-                                />
-                            ))}
-                        </StyledComponent.ExperienceCardSkillsContainer>
-                    )}
+                    {Object.keys(showSkillsMap).length !== 0 &&
+                        showSkillsMap[id] && (
+                            <StyledComponent.ExperienceCardSkillsContainer>
+                                {skills.map((skill) => (
+                                    <ExperienceCardSkillItem
+                                        key={uuidv4()}
+                                        skillName={skill}
+                                    />
+                                ))}
+                            </StyledComponent.ExperienceCardSkillsContainer>
+                        )}
                 </StyledComponent.ExperienceCardContentContainer>
             </StyledComponent.ExperienceCardContainer>
         </StyledComponent.ExperienceVerticalTimelineElementContainer>
     );
 };
 
-export default ExperienceCard;
+export default ExperienceSectionCard;

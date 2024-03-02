@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import { VerticalTimelineElementContainer } from "../qualification/styledComponent";
 import { MdArrowRight } from "react-icons/md";
 import { MdLocationPin } from "react-icons/md";
+import { VerticalTimelineElementContainer } from "../qualification/styledComponent";
+
 export const ExperienceVerticalTimelineElementContainer = styled(
     VerticalTimelineElementContainer
 )``;
@@ -85,8 +86,6 @@ export const ExperienceCardSkillsContainer = styled.ul`
     list-style-type: none;
     padding: 0;
     display: flex;
-    /* outline: auto; */
-    /* justify-content: space-around; */
     flex-wrap: wrap;
     gap: 0.5em;
 `;

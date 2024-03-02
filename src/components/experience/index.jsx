@@ -1,8 +1,8 @@
-import "react-vertical-timeline-component/style.min.css";
 import { v4 as uuidv4 } from "uuid";
+import "react-vertical-timeline-component/style.min.css";
 import * as StyledComponent from "./styledComponent";
 import { experienceList } from "../../utils/constants";
-import ExperienceCard from "../experienceCard";
+import ExperienceSectionCard from "../experienceCard";
 const Experience = ({ route }) => {
     return (
         <StyledComponent.ExperienceBgContainer id={route}>
@@ -13,9 +13,9 @@ const Experience = ({ route }) => {
                 <StyledComponent.ExperienceListContainer>
                     <StyledComponent.ExperienceVerticalTimelineContainer>
                         {experienceList.map((experience) => (
-                            <ExperienceCard
+                            <ExperienceSectionCard
                                 key={experience.id}
-                                experienceCardDetails={experience}
+                                experience={experience}
                             />
                         ))}
                     </StyledComponent.ExperienceVerticalTimelineContainer>

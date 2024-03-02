@@ -1,7 +1,7 @@
 import "react-vertical-timeline-component/style.min.css";
 import { qualificationData } from "../../utils/constants";
 import * as StyledComponent from "./styledComponent";
-
+import { v4 as uuidv4 } from "uuid";
 const Qualification = ({ route }) => {
     return (
         <StyledComponent.QualificationBgContainer id={route}>
@@ -13,7 +13,6 @@ const Qualification = ({ route }) => {
                     <StyledComponent.VerticalTimelineContainer>
                         {qualificationData.map(
                             ({
-                                id,
                                 date,
                                 title,
                                 subtitle,
@@ -25,7 +24,7 @@ const Qualification = ({ route }) => {
                                 websiteUrl,
                             }) => (
                                 <StyledComponent.VerticalTimelineElementContainer
-                                    key={id}
+                                    key={uuidv4()}
                                     className="vertical-timeline-element--work"
                                     date={date}
                                     icon={icon}
