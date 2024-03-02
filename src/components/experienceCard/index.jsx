@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import ExperienceCardSkillItem from "../experienceCardSkillItem";
 import * as StyledComponent from "./styledComponent";
 
-const ExperienceSectionCard = (props) => {
+const ExperienceSectionCard = ({ experience }) => {
     const {
         id,
         imageUrl,
@@ -18,7 +18,7 @@ const ExperienceSectionCard = (props) => {
         date,
         content,
         skills,
-    } = props.experience;
+    } = experience;
 
     const [showSkillsMap, setShowSkillsMap] = useState({});
 

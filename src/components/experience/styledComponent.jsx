@@ -4,7 +4,7 @@ import {
     AboutPageBgContainer,
     AboutPageSectionBodyContainer,
 } from "../about/styledComponent";
-import { VerticalTimelineContainer } from "../qualification/styledComponent";
+import { VerticalTimeline } from "react-vertical-timeline-component";
 
 export const ExperienceBgContainer = styled(AboutPageBgContainer)``;
 
@@ -19,5 +19,7 @@ export const ExperienceSectionBodyContainer = styled(
 export const ExperienceListContainer = styled.div``;
 
 export const ExperienceVerticalTimelineContainer = styled(
-    VerticalTimelineContainer
-)``;
+    VerticalTimeline
+).attrs(({ theme }) => ({
+    lineColor: theme.isLightTheme ? theme.primaryAccentColor : "white",
+}))``;

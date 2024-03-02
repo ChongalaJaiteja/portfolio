@@ -18,7 +18,6 @@ export const SkillsAndProjectsPageContentBgContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1em;
-    /* outline: auto; */
     @media (min-width: 620px) {
         flex-direction: row;
         justify-content: space-around;
@@ -61,7 +60,7 @@ export const SkillsAndProjectsPageCardsBgContainer = styled.ul`
         flex: 1 1 calc(40% - 1em);
         max-width: 32rem;
     }
-`;  
+`;
 
 export const SkillsAndProjectsPageCard = styled(motion.li)`
     border: 3px solid

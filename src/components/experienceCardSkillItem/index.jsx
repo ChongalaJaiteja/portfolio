@@ -2,9 +2,9 @@ import * as StyledComponent from "./styledComponent";
 
 const ExperienceCardSkillItem = ({ skillName }) => {
     return (
-        <StyledComponent.ExperienceCardSkillItem>
+        <StyledComponent.ExperienceCardSkillIte m>
             {skillName}
-        </StyledComponent.ExperienceCardSkillItem>
+        </StyledComponent.ExperienceCardSkillIte>
     );
 };
 
