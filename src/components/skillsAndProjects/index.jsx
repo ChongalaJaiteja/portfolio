@@ -1,19 +1,10 @@
 import { Link } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 import { skillsAndProjectPageCategory } from "../../utils/constants";
+import SkillsAndProjectPageCard from "../skillsAndProjectsPageCard";
 import * as StyledComponent from "./styledComponent";
 
 const SkillsAndProjects = ({ route }) => {
-    const animateSkillsAndProjectsCard = {
-        initial: { opacity: 0, y: 100 },
-        animate: {
-            opacity: 1,
-            y: 0,
-            transition: (index) => ({
-                delay: 0.5 * index,
-            }),
-        },
-    };
-
     const animateSkillsAndProjectImg = {
         initial: { x: 20, opacity: 0 },
         animate: {
@@ -40,22 +31,10 @@ const SkillsAndProjects = ({ route }) => {
                     </StyledComponent.SkillsAndProjectsPageImgBgContainer>
                     <StyledComponent.SkillsAndProjectsPageCardsBgContainer>
                         {skillsAndProjectPageCategory.map((category, index) => (
-                            <StyledComponent.SkillsAndProjectsPageCard
-                                key={category.id}
-                                bgColor={category.bgColor}
-                                variants={animateSkillsAndProjectsCard}
-                                initial="initial"
-                                whileInView="animate"
-                                custom={index}
-                                viewport={{ once: true }}
-                            >
-                                <StyledComponent.StyledLink to={category.route}>
-                                    {category.icon}
-                                    <StyledComponent.SkillsAndProjectsPageCardMainHeading>
-                                        {category.title}
-                                    </StyledComponent.SkillsAndProjectsPageCardMainHeading>
-                                </StyledComponent.StyledLink>
-                            </StyledComponent.SkillsAndProjectsPageCard>
+                            <SkillsAndProjectPageCard
+                                key={uuidv4()}
+                                categoryDetails={{ ...category, index }}
+                            />
                         ))}
                     </StyledComponent.SkillsAndProjectsPageCardsBgContainer>
                 </StyledComponent.SkillsAndProjectsPageContentBgContainer>

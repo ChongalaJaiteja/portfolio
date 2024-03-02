@@ -1,26 +1,11 @@
 import styled from "styled-components";
 import { MdArrowRight } from "react-icons/md";
 import { MdLocationPin } from "react-icons/md";
-import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import { QualificationVerticalTimelineElementContainer } from "../qualificationCard/styledComponent";
 
 export const ExperienceVerticalTimelineElementContainer = styled(
-    VerticalTimelineElement
-).attrs(({ theme }) => ({
-    contentStyle: {
-        background: `${theme.containerBackground}`,
-        color: `${theme.color}`,
-        borderRadius: "12px",
-        boxShadow: "3px 3px 10px 5px rgba(0, 0, 0, 0.1)",
-    },
-    contentArrowStyle: {
-        borderRight: `9px solid ${theme.containerBackground}`,
-    },
-    iconStyle: {
-        background: theme.primaryAccentColor,
-    },
-}))`
-    cursor: pointer;
-`;
+    QualificationVerticalTimelineElementContainer
+)``;
 
 export const ExperienceCardContainer = styled.div`
     display: flex;

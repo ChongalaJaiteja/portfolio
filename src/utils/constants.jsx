@@ -124,14 +124,12 @@ export const qualificationData = [
 
 export const skillsAndProjectPageCategory = [
     {
-        id: uuidv4(),
         title: "Development",
         icon: <StyledComponent.DevelopmentIcon />,
         route: "/development",
         bgColor: "#9AD0C2",
     },
     {
-        id: uuidv4(),
         title: "Programming",
         icon: <StyledComponent.ProgrammingIcon />,
         route: "/programming",
