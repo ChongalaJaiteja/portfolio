@@ -43,16 +43,15 @@ const About = ({ route }) => {
                             animate: {
                                 opacity: 1,
                                 x: 0,
-                            },
-                            transition: {
-                                duration: 1.5,
-                                type: "spring",
+                                transition: {
+                                    duration: 1.7,
+                                    type: "spring",
+                                },
                             },
                         }}
                         initial="initial"
                         whileInView="animate"
                         viewport={{ amount: 0.5, once: true }}
-                        transition="transition"
                     >
                         I am a full stack developer, I build full stack
                         websites,I will solve all your business problems.

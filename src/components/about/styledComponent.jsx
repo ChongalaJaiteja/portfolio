@@ -52,6 +52,7 @@ export const AboutPageContentBgContainer = styled.div`
 `;
 
 export const AboutPageDescription = styled(motion.p)`
+    font-size: clamp(0.2rem, 1vw + 0.63rem, 1.1rem);
     flex: 1 1 100%;
     @media (min-width: 620px) {
         order: -1;
@@ -59,9 +60,6 @@ export const AboutPageDescription = styled(motion.p)`
     }
     @media (min-width: 900px) {
         flex: 1 1 calc(60% - 1rem);
-    }
-    &:first-letter {
-        font-size
     }
 `;
 

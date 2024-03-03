@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { MdArrowRight } from "react-icons/md";
 import { MdLocationPin } from "react-icons/md";
 import { QualificationVerticalTimelineElementContainer } from "../qualificationCard/styledComponent";
-
+import { motion } from "framer-motion";
 export const ExperienceVerticalTimelineElementContainer = styled(
     QualificationVerticalTimelineElementContainer
 )``;
@@ -76,13 +76,12 @@ export const ExperienceCardSkillsTitle = styled.h5`
     font-size: clamp(0.3rem, 1vw + 0.55rem, 0.96rem);
     margin-bottom: 0.3em;
     margin-top: 0.5em;
-    /* outline: auto; */
     display: flex;
     align-items: center;
     gap: 0.2em;
 `;
 
-export const ExperienceCardSkillsContainer = styled.ul`
+export const ExperienceCardSkillsContainer = styled(motion.ul)`
     list-style-type: none;
     padding: 0;
     display: flex;

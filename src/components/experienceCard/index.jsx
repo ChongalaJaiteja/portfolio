@@ -70,11 +70,15 @@ const ExperienceSectionCard = ({ experience }) => {
                     </StyledComponent.ExperienceCardSkillsTitle>
                     {Object.keys(showSkillsMap).length !== 0 &&
                         showSkillsMap[id] && (
-                            <StyledComponent.ExperienceCardSkillsContainer>
-                                {skills.map((skill) => (
+                            <StyledComponent.ExperienceCardSkillsContainer
+                                initial={{ scaleY: 0 }}
+                                animate={{ scaleY: 1 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                {skills.map((skillName, index) => (
                                     <ExperienceCardSkillItem
                                         key={uuidv4()}
-                                        skillName={skill}
+                                        skillDetails={{ skillName, index }}
                                     />
                                 ))}
                             </StyledComponent.ExperienceCardSkillsContainer>

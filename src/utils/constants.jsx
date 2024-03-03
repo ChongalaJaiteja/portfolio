@@ -5,7 +5,7 @@ import About from "../components/about";
 import Qualification from "../components/qualification";
 import SkillsAndProjects from "../components/skillsAndProjects";
 import Experience from "../components/experience";
-// import Contact from "../components/contact";
+import Contact from "../components/contact";
 
 //Home page
 export const contactLinks = [
@@ -60,12 +60,12 @@ export const navLinkOptions = [
         route: "experience",
         component: Experience,
     },
-    // {
-    //     id: uuidv4(),
-    //     name: "Contact",
-    //     route: "contact",
-    //     component: Contact,
-    // },
+    {
+        id: uuidv4(),
+        name: "Contact",
+        route: "contact",
+        component: Contact,
+    },
 ];
 
 // Qualification Page
@@ -183,3 +183,6 @@ export const experienceList = [
         skills: ["JavaScript", "Python"],
     },
 ];
+
+// contact
+export const myEmailId = "chongalateja1234@gmail.com";

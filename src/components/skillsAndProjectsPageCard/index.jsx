@@ -1,16 +1,19 @@
+/* eslint-disable react/prop-types */
 import * as StyledComponent from "./styledComponent";
 
-const SkillsAndProjectPageCard = ({ categoryDetails }) => {
-    const animateSkillsAndProjectsCard = {
-        initial: { opacity: 0, y: 100 },
-        animate: {
-            opacity: 1,
-            y: 0,
-            transition: (index) => ({
-                delay: 0.5 * index,
-            }),
-        },
-    };
+export const animateSkillsAndProjectsCard = {
+    initial: { opacity: 0, y: 100 },
+    animate: {
+        opacity: 1,
+        y: 0,
+        transition: (index) => ({
+            delay: 0.7 * index,
+            type: "spring",
+        }),
+    },
+};
+
+export const SkillsAndProjectPageCard = ({ categoryDetails }) => {
     const { bgColor, index, route, icon, title } = categoryDetails;
     return (
         <StyledComponent.SkillsAndProjectsPageCard
@@ -30,5 +33,3 @@ const SkillsAndProjectPageCard = ({ categoryDetails }) => {
         </StyledComponent.SkillsAndProjectsPageCard>
     );
 };
-
-export default SkillsAndProjectPageCard;

@@ -1,8 +1,15 @@
 import * as StyledComponent from "./styledComponent";
-
-const ExperienceCardSkillItem = ({ skillName }) => {
+import { animateSkillsAndProjectsCard } from "../skillsAndProjectsPageCard";
+const ExperienceCardSkillItem = ({ skillDetails }) => {
+    const { skillName, index } = skillDetails;
     return (
-        <StyledComponent.ExperienceCardSkillItem>
+        <StyledComponent.ExperienceCardSkillItem
+            variants={animateSkillsAndProjectsCard}
+            initial="initial"
+            whileInView="animate"
+            custom={index}
+            viewport={{ once: true }}
+        >
             {skillName}
         </StyledComponent.ExperienceCardSkillItem>
     );

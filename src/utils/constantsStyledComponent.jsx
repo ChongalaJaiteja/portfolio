@@ -8,7 +8,6 @@ import { IoInformationCircle } from "react-icons/io5";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-
 const IconColor = css`
     color: white;
 `;

@@ -5,7 +5,6 @@ import {
     AboutPageSectionBodyContainer,
 } from "../about/styledComponent";
 import { QualificationVerticalTimelineContainer } from "../qualification/styledComponent";
-import { VerticalTimeline } from "react-vertical-timeline-component";
 
 export const ExperienceBgContainer = styled(AboutPageBgContainer)``;
 

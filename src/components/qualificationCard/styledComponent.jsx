@@ -17,6 +17,7 @@ export const QualificationVerticalTimelineElementContainer = styled(
     },
     iconStyle: {
         background: theme.primaryAccentColor,
+        color: "white",
     },
 }))`
     cursor: pointer;
@@ -77,9 +78,7 @@ export const ScoreIcon = styled(FaAward)`
     font-size: clamp(0.3rem, 1vw + 0.62rem, 1.33rem);
 `;
 
-export const QualificationCardDescription = styled.p`
-    /* color: red; */
-`;
+export const QualificationCardDescription = styled.p``;
 
 export const QualificationCardLink = styled.a`
     padding-left: 0.3em;

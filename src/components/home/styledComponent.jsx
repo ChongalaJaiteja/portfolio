@@ -10,6 +10,7 @@ export const HomeBgContainer = styled.div`
     align-items: center;
     padding: 1.4em var(--total-page-pd-sm);
     gap: 1em;
+    min-height: 83vh;
     @media (min-width: 620px) {
         flex-direction: row;
         align-items: center;
@@ -23,12 +24,14 @@ export const HomeBgContainer = styled.div`
 
 export const AnimatedDevContainer = styled(motion.div)`
     width: 97%;
+    /* outline: auto; */
     max-width: 28rem;
     @media (min-width: 620px) {
         & {
             width: 100%;
             order: 1;
-            align-self: flex-start;
+            margin-bottom: 1em;
+            /* align-self: flex-start; */
         }
     }
 `;
@@ -43,31 +46,9 @@ export const GreetingHeading = styled.h1`
     font-size: clamp(0.5rem, 1vw + 1.2rem, 2.4rem);
 `;
 
-export const Shake = keyframes`
-    0% {
-        transform: translateX(-3px) rotate(-2deg);
-    }
-    20% {
-        transform: translateX(3px) rotate(44deg);
-    }
-    40% {
-        transform: translateX(0px) rotate(20deg);
-    }
-    60% {
-        transform: translateX(0px) rotate(20deg);
-    }
-    80% {
-        transform: translateX(0px) rotate(0deg);
-    }
-    100% {
-        transform: translateX(0px) rotate(-2deg);
-    }
-`;
-
 export const HiEmoji = styled.span`
     font-size: clamp(0.2rem, 1vw + 1.66rem, 15rem);
     display: inline-block;
-    /* animation: ${Shake} 1.5s linear 0s infinite; */
     transition: transform 1s;
 `;
 
@@ -90,6 +71,7 @@ export const ContactLinksListContainer = styled.ul`
 `;
 
 export const ContactListItem = styled.li`
+    transition: transform 0.27s linear;
     &:hover {
         transform: scale(1.1);
     }

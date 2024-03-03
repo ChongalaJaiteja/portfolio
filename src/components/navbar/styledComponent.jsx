@@ -15,7 +15,7 @@ export const NavBar = styled.nav`
     justify-content: space-between;
     padding: clamp(0.2em, 1vw + 0.38em, 1em) clamp(0.3em, 1vw + 1em, 2.1em);
     --fs-theme-mode-logo: clamp(1rem, 1vw + 1.3rem, 1.8rem);
-    @media (min-width: 760px) {
+    @media (min-width: 827px) {
         border-radius: ${({ isScrollingDown }) =>
             isScrollingDown ? "32px" : "0px"};
         position: ${({ isScrollingDown }) =>
@@ -33,7 +33,7 @@ export const NavBar = styled.nav`
 
 export const NavBarHeading = styled.h1`
     font-size: clamp(0.4rem, 1vw + 1rem, 1.6rem);
-    @media (min-width: 760px) {
+    @media (min-width: 827px) {
         display: ${({ isScrollingDown }) =>
             isScrollingDown ? "none" : "auto"};
     }
@@ -41,7 +41,7 @@ export const NavBarHeading = styled.h1`
 
 export const NavListItemBgContainerLg = styled.ul`
     display: none;
-    @media (min-width: 760px) {
+    @media (min-width: 827px) {
         display: flex;
         justify-content: space-between;
         list-style-type: none;
@@ -100,13 +100,13 @@ export const HamburgIconAndThemeChangeBgContainer = styled.div`
 `;
 
 export const HamburgerBgContainer = styled.div`
-    @media (min-width: 760px) {
+    @media (min-width: 827px) {
         display: none;
     }
 `;
 
 export const ChangeThemeBgContainer = styled.div`
-    @media (min-width: 760px) {
+    @media (min-width: 827px) {
         display: ${({ isScrollingDown }) =>
             isScrollingDown ? "none" : "block"};
     }
@@ -142,7 +142,7 @@ export const StyledMenuContainer = styled(motion.div)`
     top: 14%;
     width: clamp(0.8rem, 1vw +40%, 10rem);
     right: 4%;
-    @media (min-width: 760px) {
+    @media (min-width: 827px) {
         display: none;
     }
 `;
