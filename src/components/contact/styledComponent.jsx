@@ -38,20 +38,18 @@ export const ContactFormBgContainer = styled.form`
 `;
 
 export const ContactFormContentBgContainer = styled.div``;
-
-export const ContactFormInputFieldsBgContainer = styled.div`
-    /* outline: auto; */
-    display: flex;
-    flex-direction: column;
-    gap: 1.3em;
-`;
-
 export const ContactFormHeading = styled.h2`
     font-size: clamp(0.3rem, 1vw + 1rem, 1.9rem);
 `;
 
 export const ContactFormDescription = styled.p`
     font-size: clamp(0.2rem, 1vw + 0.63rem, 1.1rem);
+`;
+export const ContactFormInputFieldsBgContainer = styled.div`
+    /* outline: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
 `;
 
 export const ContactFormInputField = styled.input`
@@ -120,4 +118,6 @@ export const EmailIcon = styled(MdOutlineMailOutline)`
     color: green;
 `;
 
-export const SocialLinkText = styled.a``;
+export const SocialLinkText = styled.a`
+    text-decoration: none;
+`;

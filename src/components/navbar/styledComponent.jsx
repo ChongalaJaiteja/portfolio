@@ -65,6 +65,7 @@ from {
 
 export const StyledActiveLink = styled(Link)`
     position: relative;
+    text-decoration: none;
     &.active:after {
         content: "";
         background-color: ${({ theme }) => theme.primaryAccentColor};

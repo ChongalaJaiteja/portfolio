@@ -1,6 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 import * as LottiePlayer from "@lottiefiles/lottie-player";
-import { contactLinks } from "../../utils/constants";
+import SocialMediaHandles from "../socialMediaHandles";
 import * as StyledComponent from "./styledComponent";
 
 const Home = ({ route }) => {
@@ -84,19 +84,7 @@ const Home = ({ route }) => {
                     computer science.
                 </StyledComponent.HomeContentPara>
 
-                <StyledComponent.ContactLinksListContainer>
-                    {contactLinks.map(({ id, link, url, name }) => (
-                        <StyledComponent.ContactListItem key={id}>
-                            <StyledComponent.ContactListItemLink href={link}>
-                                <StyledComponent.ContactListItemImg
-                                    src={url}
-                                    alt={name}
-                                />
-                            </StyledComponent.ContactListItemLink>
-                        </StyledComponent.ContactListItem>
-                    ))}
-                </StyledComponent.ContactLinksListContainer>
-
+                <SocialMediaHandles />
                 <StyledComponent.ResumeBtn onClick={openResume}>
                     <StyledComponent.ResumeBtnText>
                         Resume

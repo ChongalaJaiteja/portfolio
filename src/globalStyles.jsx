@@ -18,7 +18,10 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         user-select: none;
     }
-
+    a {
+        color: ${({ theme }) => theme.linkColor};
+        text-decoration: none;
+    }
     *::-webkit-scrollbar {
         width: 8px;
     }

@@ -61,28 +61,6 @@ export const HomeContentPara = styled.p`
     font-size: clamp(0.5rem, 1vw + 0.64rem, 1.23rem);
 `;
 
-export const ContactLinksListContainer = styled.ul`
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    gap: 1.3em;
-    flex-flow: row wrap;
-`;
-
-export const ContactListItem = styled.li`
-    transition: transform 0.27s linear;
-    &:hover {
-        transform: scale(1.1);
-    }
-`;
-
-export const ContactListItemLink = styled.a``;
-
-export const ContactListItemImg = styled.img`
-    width: clamp(0.5rem, 1vw + 1.67rem, 2.7rem);
-`;
-
 export const ResumeBtn = styled.button`
     background-color: ${({ theme }) => theme.primaryAccentColor};
     color: white;

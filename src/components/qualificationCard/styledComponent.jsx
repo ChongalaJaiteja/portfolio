@@ -83,6 +83,7 @@ export const QualificationCardDescription = styled.p``;
 export const QualificationCardLink = styled.a`
     padding-left: 0.3em;
     display: inline;
+    text-decoration: none;
     &:hover {
         text-decoration: underline;
     }

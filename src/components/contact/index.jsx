@@ -24,6 +24,7 @@ const Contact = ({ route }) => {
                                 message. I'd love to hear from you.
                             </StyledComponent.ContactFormDescription>
                         </StyledComponent.ContactFormContentBgContainer>
+
                         <StyledComponent.ContactFormInputFieldsBgContainer>
                             <StyledComponent.ContactFormInputField
                                 type="text"

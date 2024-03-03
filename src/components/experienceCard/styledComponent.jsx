@@ -67,6 +67,7 @@ export const ExperienceCardLink = styled.a`
     display: flex;
     align-items: center;
     gap: 0.5em;
+    text-decoration: none;
     &:hover {
         text-decoration: underline;
     }

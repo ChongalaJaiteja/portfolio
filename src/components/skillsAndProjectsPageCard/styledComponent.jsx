@@ -16,6 +16,7 @@ export const StyledLink = styled(Link)`
     display: flex;
     align-items: center;
     gap: 1em;
+    text-decoration: none;
 `;
 
 export const SkillsAndProjectsPageCardMainHeading = styled.h2`
