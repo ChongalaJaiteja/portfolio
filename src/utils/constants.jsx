@@ -11,18 +11,23 @@ import Contact from "../components/contact";
 export const contactLinks = [
     {
         name: "Stack Overflow",
-        url: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/40/000000/external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-color-tal-revivo.png",
+        icon: <StyledComponent.StackOverFlowIcon />,
         link: "https://stackoverflow.com/users/18161395/jai-teja-chongala",
     },
     {
         name: "Github",
-        url: "https://img.icons8.com/doodle/40/000000/github--v1.png",
+        icon: <StyledComponent.GithubIcon />,
         link: "https://github.com/ChongalaJaiteja",
     },
     {
         name: "LinkedIn",
-        url: "https://img.icons8.com/doodle/40/000000/linkedin--v2.png",
+        icon: <StyledComponent.LinkedInIcon />,
         link: "https://www.linkedin.com/in/jai-teja-chongala/",
+    },
+    {
+        name: "Email",
+        icon: <StyledComponent.EmailIcon />,
+        link: "mailto:chongalateja1234@gmail.com",
     },
 ];
 
@@ -180,6 +185,3 @@ export const experienceList = [
         skills: ["JavaScript", "Python"],
     },
 ];
-
-// contact
-export const myEmailId = "chongalateja1234@gmail.com";

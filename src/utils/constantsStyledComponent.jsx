@@ -7,11 +7,42 @@ import { FaCode } from "react-icons/fa";
 import { IoInformationCircle } from "react-icons/io5";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faStackOverflow,
+    faGithub,
+    faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const IconColor = css`
     color: white;
 `;
 const customeIcon = css``;
+
+export const StackOverFlowIcon = styled(FontAwesomeIcon).attrs(() => ({
+    icon: faStackOverflow,
+}))`
+    color: #ffd43b;
+    font-size: clamp(0.2rem, 1vw + 1.6rem, 2.5rem);
+`;
+
+export const GithubIcon = styled(StackOverFlowIcon).attrs(() => ({
+    icon: faGithub,
+}))`
+    color: white;
+`;
+
+export const LinkedInIcon = styled(StackOverFlowIcon).attrs(() => ({
+    icon: faLinkedin,
+}))`
+    color: #74c0fc;
+`;
+
+export const EmailIcon = styled(StackOverFlowIcon).attrs(() => ({
+    icon: faEnvelope,
+}))`
+    color: #ffd43b;
+`;
 
 export const GraduateIcon = styled(FaUserGraduate)`
     ${IconColor};

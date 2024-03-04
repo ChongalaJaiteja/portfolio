@@ -1,12 +1,12 @@
 import * as StyledComponent from "./styledComponent";
 
 const SocialMediaHandleItem = ({ socialMediaDetails }) => {
-    const { link, url, name } = socialMediaDetails;
+    const { link, name, icon } = socialMediaDetails;
 
     return (
         <StyledComponent.ContactListItem>
             <StyledComponent.ContactListItemLink href={link}>
-                <StyledComponent.ContactListItemImg src={url} alt={name} />
+                {icon}
             </StyledComponent.ContactListItemLink>
         </StyledComponent.ContactListItem>
     );

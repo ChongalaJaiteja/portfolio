@@ -13,6 +13,11 @@
     "dependencies": {
         "@fluentui/react-breadcrumb": "^9.0.16",
         "@formspree/react": "^2.5.1",
+        "@fortawesome/fontawesome-svg-core": "^6.5.1",
+        "@fortawesome/free-brands-svg-icons": "^6.5.1",
+        "@fortawesome/free-regular-svg-icons": "^6.5.1",
+        "@fortawesome/free-solid-svg-icons": "^6.5.1",
+        "@fortawesome/react-fontawesome": "^0.2.0",
         "@lottiefiles/lottie-player": "^2.0.3",
         "clsx": "^2.1.0",
         "env-cmd": "^10.1.0",

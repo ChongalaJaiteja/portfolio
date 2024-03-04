@@ -92,6 +92,7 @@ export const NavListItemLg = styled.li`
     color: ${({ theme }) => theme.color};
     padding: 0.4em 0.5em;
     font-size: clamp(0.2rem, 1vw + 0.5rem, 1rem);
+    cursor: pointer;
 `;
 
 export const HamburgIconAndThemeChangeBgContainer = styled.div`
@@ -163,6 +164,7 @@ export const NavListItem = styled.li`
     font-size: clamp(0.4em, 1vw + 0.65rem, 1rem);
     padding: 0.5em 3em 0.5em 0.4em;
     color: ${({ theme }) => theme.color};
+    cursor: pointer;
     &:hover {
         background-color: ${({ theme }) => theme.primaryAccentColor};
         color: white;

@@ -1,5 +1,6 @@
+import * as LottiePlayer from "@lottiefiles/lottie-player";
+import SocialMediaHandles from "../socialMediaHandles";
 import * as StyledComponent from "./styledComponent";
-import { myEmailId } from "../../utils/constants";
 
 const Contact = ({ route }) => {
     return (
@@ -10,6 +11,23 @@ const Contact = ({ route }) => {
 
             <StyledComponent.ContactPageSectionBodyContainer>
                 <StyledComponent.ContactPageContentBgContainer>
+                    <StyledComponent.ContactSectionAnimationImgBgContainer>
+                        <lottie-player
+                            src="https://lottie.host/a34e96a6-1509-4753-b093-3bd5cbf1abf6/fHhZLyaUAj.json"
+                            background="transparent"
+                            speed={0.7}
+                            style={{width:"85%"}}
+                            loop
+                            autoplay
+                            direction={1}
+                            mode="normal"
+                        ></lottie-player>
+                        <StyledComponent.SocialMediaHandlesBgContainerLg>
+                            <h1>Social Media</h1>
+                            <SocialMediaHandles />
+                        </StyledComponent.SocialMediaHandlesBgContainerLg>
+                    </StyledComponent.ContactSectionAnimationImgBgContainer>
+
                     <StyledComponent.ContactFormBgContainer
                         action="https://formspree.io/f/xvoerndy"
                         method="POST"
@@ -53,21 +71,15 @@ const Contact = ({ route }) => {
                             />
 
                             <StyledComponent.ContactFormSubmitBtn type="submit">
-                                Submit
+                                Send
                             </StyledComponent.ContactFormSubmitBtn>
                         </StyledComponent.ContactFormInputFieldsBgContainer>
                     </StyledComponent.ContactFormBgContainer>
 
-                    <StyledComponent.ContactSocialAccountsBgContainer>
-                        <StyledComponent.EmailMeContainer>
-                            <StyledComponent.EmailIcon />
-                            <StyledComponent.SocialLinkText
-                                href={`mailto:${myEmailId}`}
-                            >
-                                Email Me
-                            </StyledComponent.SocialLinkText>
-                        </StyledComponent.EmailMeContainer>
-                    </StyledComponent.ContactSocialAccountsBgContainer>
+                    <StyledComponent.SocialMediaHandlesBgContainerSm>
+                        <h1>Social Media</h1>
+                        <SocialMediaHandles />
+                    </StyledComponent.SocialMediaHandlesBgContainerSm>
                 </StyledComponent.ContactPageContentBgContainer>
             </StyledComponent.ContactPageSectionBodyContainer>
         </StyledComponent.ContactPageBgContainer>

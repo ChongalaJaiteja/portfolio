@@ -10,7 +10,3 @@ export const ContactListItem = styled.li`
 export const ContactListItemLink = styled.a`
     text-decoration: none;
 `;
-
-export const ContactListItemImg = styled.img`
-    width: clamp(0.5rem, 1vw + 1.67rem, 2.7rem);
-`;

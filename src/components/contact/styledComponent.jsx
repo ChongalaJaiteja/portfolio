@@ -5,8 +5,6 @@ import {
     AboutPageSectionBodyContainer,
 } from "../about/styledComponent";
 
-import { MdOutlineMailOutline } from "react-icons/md";
-
 export const ContactPageBgContainer = styled(AboutPageBgContainer)``;
 
 export const ContactPageHeading = styled(AboutPageHeading)``;
@@ -16,23 +14,19 @@ export const ContactPageSectionBodyContainer = styled(
 )``;
 
 export const ContactPageContentBgContainer = styled.div`
-    /* outline: auto; */
     @media (min-width: 620px) {
         display: flex;
-        /* align-items: center; */
         justify-content: space-evenly;
         gap: 1.3em;
     }
 `;
 
 export const ContactFormBgContainer = styled.form`
-    /* outline: auto; */
-    padding: 1em;
     display: flex;
     flex-direction: column;
     gap: 1.2em;
     @media (min-width: 620px) {
-        flex: 1 1 calc(70% - 1.3em);
+        flex: 1 1 calc(50% - 1.3em);
         max-width: 39rem;
     }
 `;
@@ -46,7 +40,6 @@ export const ContactFormDescription = styled.p`
     font-size: clamp(0.2rem, 1vw + 0.63rem, 1.1rem);
 `;
 export const ContactFormInputFieldsBgContainer = styled.div`
-    /* outline: auto; */
     display: flex;
     flex-direction: column;
     gap: 1.3em;
@@ -59,6 +52,7 @@ export const ContactFormInputField = styled.input`
     background-color: ${({ theme }) => theme.inputBackgroundColor};
     color: ${({ theme }) => theme.inputText};
     border: 1px solid ${({ theme }) => theme.inputBorderColor};
+
     &::placeholder {
         color: ${({ theme }) => theme.placeholderText};
         font-weight: 600;
@@ -82,42 +76,44 @@ export const ContactFormSubmitBtn = styled.button`
     background-color: ${({ theme }) => theme.primaryAccentColor};
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
-    padding: 0.8em 1.5em;
+    padding: 0.84em 1.6em;
+    font-size: clamp(0.3rem, 1vw + 0.51rem, 1rem);
     transition: transform 0.4s;
     &:hover {
-        transform: scale(1.05);
+        transform: scale(0.97);
     }
 `;
 
-export const ContactSocialAccountsBgContainer = styled.div`
-    outline: auto;
-    padding: 1em;
+export const ContactSectionAnimationImgBgContainer = styled.div`
     display: flex;
-    flex-direction: column;
-    @media (min-width: 620px) {
-        flex: 1 1 calc(30% - 1.3em);
-        max-width: 13rem;
-        /* align-self: flex-end; */
-    }
-`;
-
-export const EmailMeContainer = styled.div`
-    display: flex;
-    cursor: pointer;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    border: 1px solid ${({ theme }) => theme.divideLineColor};
-    padding-block: 1em;
-`;
-
-export const EmailIcon = styled(MdOutlineMailOutline)`
-    font-size: clamp(0.2rem, 1vw + 1.66rem, 125rem);
-    color: green;
+    @media (min-width: 620px) {
+        order: 1;
+        flex: 1 1 calc(50% - 1.3em);
+        max-width: 28rem;
+    }
 `;
 
 export const SocialLinkText = styled.a`
     text-decoration: none;
+`;
+
+export const SocialMediaHandlesBgContainerLg = styled.div`
+    display: none;
+    outline: auto;
+    align-self: stretch;
+    @media (min-width: 620px) {
+        display: block;
+    }
+`;
+
+export const SocialMediaHandlesBgContainerSm = styled.div`
+    outline: auto;
+    @media (min-width: 620px) {
+        display: none;
+    }
 `;
