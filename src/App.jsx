@@ -8,7 +8,7 @@ const App = () => (
     <ThemeContextProvider>
         <BrowserRouter>
             <Routes>
-                <Route path="/">
+                <Route path="/portfolio">
                     <Route index element={<MainPage />} />
                     <Route path="development" element={<h1>Development</h1>} />
                     <Route path="programming" element={<Programming />} />
