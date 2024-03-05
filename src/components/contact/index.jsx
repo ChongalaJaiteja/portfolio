@@ -11,19 +11,32 @@ const Contact = ({ route }) => {
 
             <StyledComponent.ContactPageSectionBodyContainer>
                 <StyledComponent.ContactPageContentBgContainer>
-                    <StyledComponent.ContactSectionAnimationImgBgContainer>
+                    <StyledComponent.ContactSectionAnimationImgBgContainer
+                        initial={{ x: 100, opacity: 0 }}
+                        whileInView={{
+                            x: 0,
+                            opacity: 1,
+                            transition: {
+                                duration: 1.1,
+                                type: "spring",
+                            },
+                        }}
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <lottie-player
                             src="https://lottie.host/a34e96a6-1509-4753-b093-3bd5cbf1abf6/fHhZLyaUAj.json"
                             background="transparent"
                             speed={0.7}
-                            style={{width:"85%"}}
+                            style={{ width: "85%" }}
                             loop
                             autoplay
                             direction={1}
                             mode="normal"
                         ></lottie-player>
                         <StyledComponent.SocialMediaHandlesBgContainerLg>
-                            <h1>Social Media</h1>
+                            <StyledComponent.SocialMediaHeading>
+                                Social Media
+                            </StyledComponent.SocialMediaHeading>
                             <SocialMediaHandles />
                         </StyledComponent.SocialMediaHandlesBgContainerLg>
                     </StyledComponent.ContactSectionAnimationImgBgContainer>
@@ -31,6 +44,16 @@ const Contact = ({ route }) => {
                     <StyledComponent.ContactFormBgContainer
                         action="https://formspree.io/f/xvoerndy"
                         method="POST"
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{
+                            x: 0,
+                            opacity: 1,
+                            transition: {
+                                duration: 1.1,
+                                type: "spring",
+                            },
+                        }}
+                        viewport={{ once: true, amount: 0.5 }}
                     >
                         <StyledComponent.ContactFormContentBgContainer>
                             <StyledComponent.ContactFormHeading>
@@ -76,8 +99,20 @@ const Contact = ({ route }) => {
                         </StyledComponent.ContactFormInputFieldsBgContainer>
                     </StyledComponent.ContactFormBgContainer>
 
-                    <StyledComponent.SocialMediaHandlesBgContainerSm>
-                        <h1>Social Media</h1>
+                    <StyledComponent.SocialMediaHandlesBgContainerSm
+                        initial={{ opacity: 0 }}
+                        whileInView={{
+                            opacity: 1,
+                            transition: {
+                                duration: 1.1,
+                                type: "spring",
+                            },
+                        }}
+                        viewport={{ amount: 0.5, once: true }}
+                    >
+                        <StyledComponent.SocialMediaHeading>
+                            Social Media
+                        </StyledComponent.SocialMediaHeading>
                         <SocialMediaHandles />
                     </StyledComponent.SocialMediaHandlesBgContainerSm>
                 </StyledComponent.ContactPageContentBgContainer>

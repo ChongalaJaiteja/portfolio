@@ -5,6 +5,7 @@ export const ContactLinksListContainer = styled.ul`
     padding: 0;
     display: flex;
     align-items: center;
-    gap: 1.3em;
+    gap: 1.5em;
     flex-flow: row wrap;
+    margin-top: 1em;
 `;

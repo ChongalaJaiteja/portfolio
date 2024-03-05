@@ -6,10 +6,10 @@ import SocialMediaHandleItem from "../socialMediaHandleItem";
 const SocialMediaHandles = () => {
     return (
         <StyledComponent.ContactLinksListContainer>
-            {contactLinks.map((socialMedia) => (
+            {contactLinks.map((socialMedia, index) => (
                 <SocialMediaHandleItem
                     key={uuidv4()}
-                    socialMediaDetails={socialMedia}
+                    socialMediaDetails={{ ...socialMedia, index }}
                 />
             ))}
         </StyledComponent.ContactLinksListContainer>

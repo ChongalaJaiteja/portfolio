@@ -23,25 +23,44 @@ export const StackOverFlowIcon = styled(FontAwesomeIcon).attrs(() => ({
     icon: faStackOverflow,
 }))`
     color: #ffd43b;
-    font-size: clamp(0.2rem, 1vw + 1.6rem, 2.5rem);
+    font-size: clamp(0.2rem, 1vw + 1.6rem, 2.2rem);
+    border-radius: 10px;
+    padding: 0.22em 0.32em;
+    background-color: white;
+    border: ${({ theme }) =>
+        theme.isLightTheme ? `1px solid ${theme.divideLineColor}` : "none"};
+    box-shadow: none;
+    transition: box-shadow 0.26s linear;
+    &:hover {
+        box-shadow: 3px 3px 3px 3px #1e1e1e;
+    }
 `;
 
 export const GithubIcon = styled(StackOverFlowIcon).attrs(() => ({
     icon: faGithub,
 }))`
-    color: white;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 0.22em;
 `;
 
 export const LinkedInIcon = styled(StackOverFlowIcon).attrs(() => ({
     icon: faLinkedin,
 }))`
-    color: #74c0fc;
+    color: white;
+    background-color: rgb(19, 132, 223);
+    border-radius: 10px;
+    padding: 0.22em;
 `;
 
 export const EmailIcon = styled(StackOverFlowIcon).attrs(() => ({
     icon: faEnvelope,
 }))`
-    color: #ffd43b;
+    color: white;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 0.22em;
 `;
 
 export const GraduateIcon = styled(FaUserGraduate)`

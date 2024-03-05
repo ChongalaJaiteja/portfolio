@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
+
 import {
     AboutPageHeading,
     AboutPageBgContainer,
@@ -21,7 +23,7 @@ export const ContactPageContentBgContainer = styled.div`
     }
 `;
 
-export const ContactFormBgContainer = styled.form`
+export const ContactFormBgContainer = styled(motion.form)`
     display: flex;
     flex-direction: column;
     gap: 1.2em;
@@ -51,8 +53,7 @@ export const ContactFormInputField = styled.input`
     outline: none;
     background-color: ${({ theme }) => theme.inputBackgroundColor};
     color: ${({ theme }) => theme.inputText};
-    border: 1px solid ${({ theme }) => theme.inputBorderColor};
-
+    border: 2px solid ${({ theme }) => theme.inputBorderColor};
     &::placeholder {
         color: ${({ theme }) => theme.placeholderText};
         font-weight: 600;
@@ -86,7 +87,7 @@ export const ContactFormSubmitBtn = styled.button`
     }
 `;
 
-export const ContactSectionAnimationImgBgContainer = styled.div`
+export const ContactSectionAnimationImgBgContainer = styled(motion.div)`
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -104,15 +105,24 @@ export const SocialLinkText = styled.a`
 
 export const SocialMediaHandlesBgContainerLg = styled.div`
     display: none;
-    outline: auto;
-    align-self: stretch;
+    margin-top: 1.5em;
     @media (min-width: 620px) {
         display: block;
     }
 `;
 
-export const SocialMediaHandlesBgContainerSm = styled.div`
-    outline: auto;
+export const SocialMediaHeading = styled.h2`
+    font-size: clamp(0.3rem, 1vw + 1rem, 1.9rem);
+    @media (min-width: 620px) {
+        text-align: center;
+    }
+`;
+
+export const SocialMediaHandlesBgContainerSm = styled(motion.div)`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
     @media (min-width: 620px) {
         display: none;
     }
