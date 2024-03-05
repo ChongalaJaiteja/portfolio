@@ -2,7 +2,7 @@ import * as StyledComponent from "./styledComponent";
 
 const SocialMediaHandleItem = ({ socialMediaDetails }) => {
     const animateSocialMediaHandles = {
-        initial: { opacity: 0, x: 100 },
+        initial: { opacity: 0, x: 15 },
         animate: {
             opacity: 1,
             x: 0,

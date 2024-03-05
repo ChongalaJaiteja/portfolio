@@ -12,7 +12,7 @@ const Contact = ({ route }) => {
             <StyledComponent.ContactPageSectionBodyContainer>
                 <StyledComponent.ContactPageContentBgContainer>
                     <StyledComponent.ContactSectionAnimationImgBgContainer
-                        initial={{ x: 100, opacity: 0 }}
+                        initial={{ x: 15, opacity: 0 }}
                         whileInView={{
                             x: 0,
                             opacity: 1,
@@ -44,7 +44,7 @@ const Contact = ({ route }) => {
                     <StyledComponent.ContactFormBgContainer
                         action="https://formspree.io/f/xvoerndy"
                         method="POST"
-                        initial={{ x: -100, opacity: 0 }}
+                        initial={{ x: -15, opacity: 0 }}
                         whileInView={{
                             x: 0,
                             opacity: 1,

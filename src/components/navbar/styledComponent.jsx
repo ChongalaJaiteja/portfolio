@@ -14,7 +14,6 @@ export const NavBar = styled.nav`
     z-index: 10;
     justify-content: space-between;
     padding: clamp(0.2em, 1vw + 0.38em, 1em) clamp(0.3em, 1vw + 1em, 2.1em);
-    --fs-theme-mode-logo: clamp(1rem, 1vw + 1.3rem, 1.8rem);
     @media (min-width: 827px) {
         border-radius: ${({ isScrollingDown }) =>
             isScrollingDown ? "32px" : "0px"};
@@ -108,6 +107,8 @@ export const HamburgerBgContainer = styled.div`
 `;
 
 export const ChangeThemeBgContainer = styled.div`
+    --fs-theme-mode-logo: clamp(1rem, 1vw + 1.3rem, 1.8rem);
+
     @media (min-width: 827px) {
         display: ${({ isScrollingDown }) =>
             isScrollingDown ? "none" : "block"};

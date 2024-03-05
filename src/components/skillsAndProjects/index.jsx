@@ -6,7 +6,7 @@ import * as StyledComponent from "./styledComponent";
 
 const SkillsAndProjects = ({ route }) => {
     const animateSkillsAndProjectImg = {
-        initial: { x: 20, opacity: 0 },
+        initial: { x: 15, opacity: 0 },
         animate: {
             x: 0,
             opacity: 1,

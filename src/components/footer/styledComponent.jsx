@@ -6,6 +6,7 @@ import {
 import { RiReactjsFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { SiStyledcomponents } from "react-icons/si";
+import { motion } from "framer-motion";
 
 export const FooterBgContainer = styled(AboutPageBgContainer)``;
 
@@ -20,7 +21,7 @@ export const FooterContentBgContainer = styled.div`
     gap: 3.1em;
 `;
 
-export const ThankYouNoteBgContainer = styled.div`
+export const ThankYouNoteBgContainer = styled(motion.div)`
     text-align: center;
 `;
 
@@ -37,7 +38,7 @@ export const MySignature = styled.h1`
     font-size: clamp(0.3rem, 1vw + 3rem, 5rem);
 `;
 
-export const MadeWithBgContainer = styled.div`
+export const MadeWithBgContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
     gap: 0.7em;

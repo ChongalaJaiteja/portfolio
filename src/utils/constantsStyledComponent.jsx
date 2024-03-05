@@ -14,6 +14,7 @@ import {
     faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 const IconColor = css`
     color: white;
 `;
@@ -27,8 +28,7 @@ export const StackOverFlowIcon = styled(FontAwesomeIcon).attrs(() => ({
     border-radius: 10px;
     padding: 0.22em 0.32em;
     background-color: white;
-    border: ${({ theme }) =>
-        theme.isLightTheme ? `1px solid ${theme.divideLineColor}` : "none"};
+    border: 1px solid ${({ theme }) => theme.divideLineColor};
     box-shadow: none;
     transition: box-shadow 0.26s linear;
     &:hover {

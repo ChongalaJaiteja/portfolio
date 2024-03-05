@@ -2,6 +2,7 @@ import { animateScroll } from "react-scroll";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import * as StyledComponent from "./styledComponent";
+import { useThemeContext } from "../../context/themeContext";
 
 const ScrollTop = () => {
     const animateIcon = {
@@ -27,7 +28,7 @@ const ScrollTop = () => {
         animateScroll.scrollToTop(options);
     };
     const [isScrollingDown, setIsScrollingDown] = useState(false);
-
+    const { toggleTheme, isLightTheme } = useThemeContext();
     useEffect(() => {
         const handleScroll = () => {
             const scrolledPastThreshold = window.scrollY > 80;
@@ -47,17 +48,34 @@ const ScrollTop = () => {
         <>
             {isScrollingDown && (
                 <AnimatePresence>
-                    <StyledComponent.MoveToTopIconBgContainer
-                        onClick={scrollToTop}
-                        variants={animateIcon}
-                        whileTap={{ scale: 1.3 }}
-                        initial="initial"
-                        animate="animate"
-                        transition="transition"
-                        exit="exit"
-                    >
-                        <StyledComponent.MoveTopIcon />
-                    </StyledComponent.MoveToTopIconBgContainer>
+                    <StyledComponent.FloatingBgContainer>
+                        <StyledComponent.ChangeThemeBgContainer
+                            onClick={toggleTheme}
+                            variants={animateIcon}
+                            whileTap={{ scale: 1.3 }}
+                            initial="initial"
+                            animate="animate"
+                            transition="transition"
+                            exit="exit"
+                        >
+                            {isLightTheme ? (
+                                <StyledComponent.FloatingDarkModeIcon />
+                            ) : (
+                                <StyledComponent.FloatingLightModeIcon />
+                            )}
+                        </StyledComponent.ChangeThemeBgContainer>
+                        <StyledComponent.MoveToTopIconBgContainer
+                            onClick={scrollToTop}
+                            variants={animateIcon}
+                            whileTap={{ scale: 1.3 }}
+                            initial="initial"
+                            animate="animate"
+                            transition="transition"
+                            exit="exit"
+                        >
+                            <StyledComponent.MoveTopIcon />
+                        </StyledComponent.MoveToTopIconBgContainer>
+                    </StyledComponent.FloatingBgContainer>
                 </AnimatePresence>
             )}
         </>

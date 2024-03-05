@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     --page-section-pb : clamp(1.4em, 1vw + 2.5em, 6em);
     --page-section-heading-mb : clamp(1em , 1vw + 1em, 6em);
     --page-section-heading-fs : clamp(0.5rem, 1vw + 1.61rem, 2.32rem);
+    --toggle-theme-transition : background-color 0.4s ease-out;
 }
     body {
         font-family: "Poppins", sans-serif;
@@ -17,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         box-sizing: border-box;
         user-select: none;
+        overflow-x: hidden;
     }
     a {
         color: ${({ theme }) => theme.linkColor};

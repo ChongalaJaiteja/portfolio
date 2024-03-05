@@ -5,7 +5,14 @@ const Footer = () => {
         <StyledComponent.FooterBgContainer>
             <StyledComponent.FooterPageSectionBodyContainer>
                 <StyledComponent.FooterContentBgContainer>
-                    <StyledComponent.ThankYouNoteBgContainer>
+                    <StyledComponent.ThankYouNoteBgContainer
+                        initial={{ opacity: 0 }}
+                        whileInView={{
+                            opacity: 1,
+                            transition: { duration: 0.6, type: "spring" },
+                        }}
+                        viewport={{ amount: 0.83, once: true }}
+                    >
                         <StyledComponent.ThankYouHeading>
                             that's all, folks!
                         </StyledComponent.ThankYouHeading>
@@ -14,7 +21,14 @@ const Footer = () => {
                         </StyledComponent.MySignature>
                     </StyledComponent.ThankYouNoteBgContainer>
 
-                    <StyledComponent.MadeWithBgContainer>
+                    <StyledComponent.MadeWithBgContainer
+                        initial={{ opacity: 0 }}
+                        whileInView={{
+                            opacity: 1,
+                            transition: { duration: 0.6, type: "spring" },
+                        }}
+                        viewport={{ amount: 0.5, once: true }}
+                    >
                         <StyledComponent.MadeWithHeading>
                             made with
                         </StyledComponent.MadeWithHeading>
