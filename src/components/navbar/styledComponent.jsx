@@ -6,8 +6,7 @@ import { BsMoonFill, BsFillSunFill } from "react-icons/bs";
 
 export const NavBar = styled.nav`
     color: var(--theme-page-text-color);
-    background-color: var(--theme-container-bg-color);
-    transition: var(--toggle-theme-transition);
+    background-color: ${({ theme }) => theme.containerBackground};
     display: flex;
     align-items: center;
     position: sticky;
@@ -152,7 +151,7 @@ export const StyledMenuContainer = styled(motion.div)`
 `;
 
 export const NavListItemBgContainer = styled.ul`
-    background-color: var(--theme-container-bg-color);
+    background-color: ${({ theme }) => theme.containerBackground};
     padding: 0;
     color: var(--theme-page-text-color);
     list-style-type: none;

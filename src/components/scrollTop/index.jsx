@@ -31,7 +31,7 @@ const ScrollTop = () => {
     const { toggleTheme, isLightTheme } = useThemeContext();
     useEffect(() => {
         const handleScroll = () => {
-            const scrolledPastThreshold = window.scrollY > 80;
+            const scrolledPastThreshold = window.scrollY > 50;
             if (isScrollingDown !== scrolledPastThreshold) {
                 setIsScrollingDown(scrolledPastThreshold);
             }
@@ -51,12 +51,15 @@ const ScrollTop = () => {
                     <StyledComponent.FloatingBgContainer>
                         <StyledComponent.ChangeThemeBgContainer
                             onClick={toggleTheme}
-                            variants={animateIcon}
                             whileTap={{ scale: 1.3 }}
-                            initial="initial"
-                            animate="animate"
-                            transition="transition"
-                            exit="exit"
+                            initial={{ y: -30 }}
+                            animate={{ y: 0 }}
+                            transition={{
+                                duration: 0.4,
+                                ease: "easeInOut",
+                                type: "spring",
+                            }}
+                            exit={{ y: -30 }}
                         >
                             {isLightTheme ? (
                                 <StyledComponent.FloatingDarkModeIcon />
