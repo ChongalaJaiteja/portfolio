@@ -20,6 +20,11 @@ const GlobalStyles = createGlobalStyle`
         user-select: none;
         overflow-x: hidden;
     }
+
+   *:focus {
+    outline: none;
+    }
+
     a {
         color: ${({ theme }) => theme.linkColor};
         text-decoration: none;
