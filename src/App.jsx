@@ -7,7 +7,7 @@ import { ThemeContextProvider } from "./context/themeContext";
 const App = () => (
     <ThemeContextProvider>
         <BrowserRouter>
-            <Routes>
+            <Routes basename="/portfolio">
                 <Route path="/portfolio">
                     <Route index element={<MainPage />} />
                     <Route path="development" element={<h1>Development</h1>} />
