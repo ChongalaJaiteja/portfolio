@@ -51,9 +51,21 @@ const ThemeContext = createContext();
 export const useThemeContext = () => useContext(ThemeContext);
 
 export const ThemeContextProvider = ({ children }) => {
-    const [isLightTheme, setIsLightTheme] = useState(false);
+    const [isLightTheme, setIsLightTheme] = useState(() => {
+        const storedTheme = localStorage.getItem("isLightTheme");
+        if (storedTheme !== null) {
+            return JSON.parse(storedTheme);
+        }
+        const currentHour = new Date().getHours();
+        // Assuming 6pm as the threshold
+        return currentHour >= 6 && currentHour < 18; // Night time
+    });
     const toggleTheme = () => {
-        setIsLightTheme((prev) => !prev);
+        setIsLightTheme((prev) => {
+            const newTheme = !prev;
+            localStorage.setItem("isLightTheme", JSON.stringify(newTheme));
+            return newTheme;
+        });
     };
 
     const currentTheme = {
