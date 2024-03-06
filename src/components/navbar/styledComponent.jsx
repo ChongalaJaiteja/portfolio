@@ -5,8 +5,9 @@ import { Link } from "react-scroll";
 import { BsMoonFill, BsFillSunFill } from "react-icons/bs";
 
 export const NavBar = styled.nav`
-    color: ${({ theme }) => theme.color};
-    background-color: ${({ theme }) => theme.containerBackground};
+    color: var(--theme-page-text-color);
+    background-color: var(--theme-container-bg-color);
+    transition: var(--toggle-theme-transition);
     display: flex;
     align-items: center;
     position: sticky;
@@ -88,7 +89,7 @@ export const StyledActiveLink = styled(Link)`
 `;
 
 export const NavListItemLg = styled.li`
-    color: ${({ theme }) => theme.color};
+    color: var(--theme-page-text-color);
     padding: 0.4em 0.5em;
     font-size: clamp(0.2rem, 1vw + 0.5rem, 1rem);
     cursor: pointer;
@@ -151,9 +152,9 @@ export const StyledMenuContainer = styled(motion.div)`
 `;
 
 export const NavListItemBgContainer = styled.ul`
-    background-color: ${({ theme }) => theme.containerBackground};
+    background-color: var(--theme-container-bg-color);
     padding: 0;
-    color: ${({ theme }) => theme.color};
+    color: var(--theme-page-text-color);
     list-style-type: none;
     padding: 0.4em;
     border-radius: 7px;
@@ -164,7 +165,7 @@ export const NavListItem = styled.li`
     border-radius: 7px;
     font-size: clamp(0.4em, 1vw + 0.65rem, 1rem);
     padding: 0.5em 3em 0.5em 0.4em;
-    color: ${({ theme }) => theme.color};
+    color: var(--theme-page-text-color);
     cursor: pointer;
     &:hover {
         background-color: ${({ theme }) => theme.primaryAccentColor};

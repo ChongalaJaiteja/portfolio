@@ -2,9 +2,10 @@ import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 
 export const AboutPageBgContainer = styled.div`
-    background-color: ${({ theme }) => theme.backgroundColor};
-    color: ${({ theme }) => theme.color};
+    background-color: var(--theme-page-bg-color);
+    color: var(--theme-page-text-color);
     padding-block: var(--page-section-pt) var(--page-section-pb);
+    transition: var(--toggle-theme-transition);
 `;
 
 export const AboutPageHeading = styled.h1`

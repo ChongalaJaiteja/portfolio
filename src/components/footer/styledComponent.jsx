@@ -26,7 +26,7 @@ export const ThankYouNoteBgContainer = styled(motion.div)`
 `;
 
 export const ThankYouHeading = styled.h4`
-    color: ${({ theme }) => theme.secondText};
+    color: var(--theme-second-text-color);
     font-weight: normal;
     font-size: clamp(0.2rem, 1vw + 0.45rem, 1rem);
     text-transform: uppercase;
@@ -78,7 +78,7 @@ export const StyledComponentIcon = styled(SiStyledcomponents)`
 export const PageInstructionsBgContainer = styled.div``;
 
 export const InstructionDescription = styled.p`
-    color: ${({ theme }) => theme.secondText};
+    color: var(--theme-second-text-color);
 `;
 
 export const HeartSymbol = styled.span`

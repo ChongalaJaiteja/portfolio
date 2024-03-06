@@ -10,6 +10,26 @@ const GlobalStyles = createGlobalStyle`
     --page-section-heading-mb : clamp(1em , 1vw + 1em, 6em);
     --page-section-heading-fs : clamp(0.5rem, 1vw + 1.61rem, 2.32rem);
     --toggle-theme-transition : background-color 0.4s ease-out;
+    --theme-page-bg-color:${({ theme }) => theme.backgroundColor};
+    --theme-page-text-color:${({ theme }) => theme.color};
+    --theme-container-bg-color:${({ theme }) => theme.containerBackground};
+    --theme-header-bg-color:${({ theme }) => theme.headerBackground};
+    --theme-primary-text-color:${({ theme }) => theme.primaryText};
+    --theme-second-text-color:${({ theme }) => theme.secondText};
+    --theme-header-text-color:${({ theme }) => theme.headerText};
+    --theme-border-color:${({ theme }) => theme.borderColor};
+    --theme-divide-line-color:${({ theme }) => theme.divideLineColor};
+    --theme-input-bg-color:${({ theme }) => theme.inputBackgroundColor};
+    --theme-input-text-color:${({ theme }) => theme.inputText};
+    --theme-input-border-color: ${({ theme }) => theme.inputBorderColor};
+    --theme-input-placeholder-text-color: ${({ theme }) => theme.placeholderText};
+    --theme-primary-color:${({ theme }) => theme.primaryAccentColor};
+    --theme-secondary-color:${({ theme }) => theme.secondaryAccentColor};
+    --theme-success-color:${({ theme }) => theme.successAccentColor};
+    --theme-warning-color:${({ theme }) => theme.warningAccentColor};
+    --theme-info-color:${({ theme }) => theme.infoAccentColor};
+    --theme-link-color : ${({ theme }) => theme.linkColor};
+    --toggle-theme-transition : background-color 0.4s ease-out;
 }
     html {
         -webkit-tap-highlight-color: transparent !important;

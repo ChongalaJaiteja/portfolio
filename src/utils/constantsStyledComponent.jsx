@@ -28,7 +28,7 @@ export const StackOverFlowIcon = styled(FontAwesomeIcon).attrs(() => ({
     border-radius: 10px;
     padding: 0.22em 0.32em;
     background-color: white;
-    border: 1px solid ${({ theme }) => theme.divideLineColor};
+    border: 1px solid var(--theme-divide-line-color);
     box-shadow: none;
     transition: box-shadow 0.26s linear;
     &:hover {

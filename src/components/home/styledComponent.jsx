@@ -8,6 +8,7 @@ export const HomeBgContainer = styled.div`
     background-image: ${({ theme }) =>
         theme.isLightTheme ? `url(${lightCloud})` : `url(${darkCloud})`};
     display: flex;
+    
     flex-direction: column;
     align-items: center;
     padding: 1.4em var(--total-page-pd-sm);
@@ -44,7 +45,7 @@ export const HomeContentContainer = styled(motion.div)`
 `;
 
 export const GreetingHeading = styled.h1`
-    color: ${({ theme }) => theme.color};
+    color: var(--theme-page-text-color);
     font-size: clamp(0.5rem, 1vw + 1.2rem, 2.4rem);
 `;
 
@@ -59,7 +60,7 @@ export const MyNameSpan = styled.span`
 `;
 
 export const HomeContentPara = styled.p`
-    color: ${({ theme }) => theme.color};
+    color: var(--theme-page-text-color);
     font-size: clamp(0.5rem, 1vw + 0.64rem, 1.23rem);
 `;
 

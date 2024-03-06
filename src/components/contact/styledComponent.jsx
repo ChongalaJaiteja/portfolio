@@ -51,11 +51,11 @@ export const ContactFormInputField = styled.input`
     padding: 1em;
     border-radius: 11px;
     outline: none;
-    background-color: ${({ theme }) => theme.inputBackgroundColor};
-    color: ${({ theme }) => theme.inputText};
-    border: 2px solid ${({ theme }) => theme.inputBorderColor};
+    background-color: var(--theme-input-bg-color);
+    color: var(--theme-input-text-color);
+    border: 2px solid var(--theme-input-border-color);
     &::placeholder {
-        color: ${({ theme }) => theme.placeholderText};
+        color: var(--theme-input-placeholder-text-color);
         font-weight: 600;
         font-size: clamp(0.2rem, 1vw + 0.5rem, 0.9rem);
     }
