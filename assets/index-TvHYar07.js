@@ -262,6 +262,11 @@ to {
         user-select: none;
         overflow-x: hidden;
     }
+
+   *:focus {
+    outline: none;
+    }
+
     a {
         color: ${({theme:h})=>h.linkColor};
         text-decoration: none;
