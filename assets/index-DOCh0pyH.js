@@ -253,6 +253,9 @@ to {
     --page-section-heading-fs : clamp(0.5rem, 1vw + 1.61rem, 2.32rem);
     --toggle-theme-transition : background-color 0.4s ease-out;
 }
+    html {
+        -webkit-tap-highlight-color: transparent !important;
+    }
     body {
         font-family: "Poppins", sans-serif;
         font-style: normal; 
