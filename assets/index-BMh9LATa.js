@@ -255,16 +255,12 @@ to {
 }
     body {
         font-family: "Poppins", sans-serif;
-        font-style: normal;
+        font-style: normal; 
         padding: 0;
         margin: 0;
         box-sizing: border-box;
         user-select: none;
         overflow-x: hidden;
-    }
-
-   *:focus {
-        outline: auto !important;
     }
 
     a {
