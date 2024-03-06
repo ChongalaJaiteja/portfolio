@@ -6,7 +6,7 @@ import { navLinkOptions } from "../../utils/constants";
 import { useThemeContext } from "../../context/themeContext";
 import * as StyledComponent from "./styledComponent";
 
-const NavBar = () => {
+const NavBar = ({ hideNavLinks = false }) => {
     const { toggleTheme, isLightTheme } = useThemeContext();
     const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
     const [isScrollingDown, setIsScrollingDown] = useState(false);
@@ -15,10 +15,12 @@ const NavBar = () => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
             const threshHold = 40;
-            if (currentScrollY > threshHold) {
-                setIsScrollingDown(true);
-            } else {
-                setIsScrollingDown(false);
+            if (!hideNavLinks) {
+                if (currentScrollY > threshHold) {
+                    setIsScrollingDown(true);
+                } else {
+                    setIsScrollingDown(false);
+                }
             }
         };
 
@@ -36,35 +38,39 @@ const NavBar = () => {
                 >
                     Jai teja
                 </StyledComponent.NavBarHeading>
-
-                <StyledComponent.NavListItemBgContainerLg
-                    isScrollingDown={isScrollingDown}
-                >
-                    {navLinkOptions.map((option) => (
-                        <StyledComponent.StyledActiveLink
-                            key={option.id}
-                            to={option.route.toUpperCase()}
-                            spy={true}
-                            smooth={true}
-                            activeClassName="active"
-                        >
-                            <StyledComponent.NavListItemLg>
-                                {option.name}
-                            </StyledComponent.NavListItemLg>
-                        </StyledComponent.StyledActiveLink>
-                    ))}
-                </StyledComponent.NavListItemBgContainerLg>
+                {!hideNavLinks && (
+                    <StyledComponent.NavListItemBgContainerLg
+                        isScrollingDown={isScrollingDown}
+                    >
+                        {navLinkOptions.map((option) => (
+                            <StyledComponent.StyledActiveLink
+                                key={option.id}
+                                to={option.route.toUpperCase()}
+                                spy={true}
+                                smooth={true}
+                                activeClassName="active"
+                            >
+                                <StyledComponent.NavListItemLg>
+                                    {option.name}
+                                </StyledComponent.NavListItemLg>
+                            </StyledComponent.StyledActiveLink>
+                        ))}
+                    </StyledComponent.NavListItemBgContainerLg>
+                )}
 
                 <StyledComponent.HamburgIconAndThemeChangeBgContainer>
-                    <StyledComponent.HamburgerBgContainer>
-                        <Hamburger
-                            size={22}
-                            duration={0.5}
-                            distance={"lg"}
-                            toggled={isHamburgerOpen}
-                            toggle={setIsHamburgerOpen}
-                        />
-                    </StyledComponent.HamburgerBgContainer>
+                    {!hideNavLinks && (
+                        <StyledComponent.HamburgerBgContainer>
+                            <Hamburger
+                                size={22}
+                                duration={0.5}
+                                distance={"lg"}
+                                toggled={isHamburgerOpen}
+                                toggle={setIsHamburgerOpen}
+                            />
+                        </StyledComponent.HamburgerBgContainer>
+                    )}
+
                     <StyledComponent.ChangeThemeBgContainer
                         onClick={toggleTheme}
                         isScrollingDown={isScrollingDown}
@@ -79,31 +85,35 @@ const NavBar = () => {
                 </StyledComponent.HamburgIconAndThemeChangeBgContainer>
             </StyledComponent.NavBar>
 
-            <AnimatePresence>
-                {isHamburgerOpen && (
-                    <StyledComponent.StyledMenuContainer
-                        initial={{ x: 100 }}
-                        animate={{ x: 0, transition: { type: "spring" } }}
-                        exit={{ x: 200, transition: { type: "spring" } }}
-                    >
-                        <StyledComponent.NavListItemBgContainer>
-                            {navLinkOptions.map((option) => (
-                                <Link
-                                    key={option.id}
-                                    to={option.route.toUpperCase()}
-                                    spy={true}
-                                    smooth={true}
-                                    onClick={() => setIsHamburgerOpen(false)}
-                                >
-                                    <StyledComponent.NavListItem>
-                                        {option.name}
-                                    </StyledComponent.NavListItem>
-                                </Link>
-                            ))}
-                        </StyledComponent.NavListItemBgContainer>
-                    </StyledComponent.StyledMenuContainer>
-                )}
-            </AnimatePresence>
+            {!hideNavLinks && (
+                <AnimatePresence>
+                    {isHamburgerOpen && (
+                        <StyledComponent.StyledMenuContainer
+                            initial={{ x: 100 }}
+                            animate={{ x: 0, transition: { type: "spring" } }}
+                            exit={{ x: 200, transition: { type: "spring" } }}
+                        >
+                            <StyledComponent.NavListItemBgContainer>
+                                {navLinkOptions.map((option) => (
+                                    <Link
+                                        key={option.id}
+                                        to={option.route.toUpperCase()}
+                                        spy={true}
+                                        smooth={true}
+                                        onClick={() =>
+                                            setIsHamburgerOpen(false)
+                                        }
+                                    >
+                                        <StyledComponent.NavListItem>
+                                            {option.name}
+                                        </StyledComponent.NavListItem>
+                                    </Link>
+                                ))}
+                            </StyledComponent.NavListItemBgContainer>
+                        </StyledComponent.StyledMenuContainer>
+                    )}
+                </AnimatePresence>
+            )}
         </>
     );
 };

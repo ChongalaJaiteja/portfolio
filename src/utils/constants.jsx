@@ -139,6 +139,13 @@ export const skillsAndProjectPageCategory = [
     },
 ];
 
+export const development = {
+    domains: [
+        {
+            name: "web Development",
+        },
+    ],
+};
 export const programming = [
     {
         skills: [

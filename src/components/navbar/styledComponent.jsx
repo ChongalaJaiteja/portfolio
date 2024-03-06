@@ -6,7 +6,7 @@ import { BsMoonFill, BsFillSunFill } from "react-icons/bs";
 
 export const NavBar = styled.nav`
     color: var(--theme-page-text-color);
-    background-color: ${({ theme }) => theme.containerBackground};
+    background-color: var(--theme-container-bg-color);
     display: flex;
     align-items: center;
     position: sticky;
@@ -22,11 +22,12 @@ export const NavBar = styled.nav`
         width: ${({ isScrollingDown }) =>
             isScrollingDown ? "min(82%,45rem)" : "auto"};
         inset: ${({ isScrollingDown }) =>
-            isScrollingDown ? "2% 0 auto 0" : "auto"};
+            isScrollingDown ? "2% 0 auto 0" : "0 auto auto auto"};
         margin: ${({ isScrollingDown }) => (isScrollingDown ? "auto" : "none")};
         opacity: ${({ isScrollingDown }) => (isScrollingDown ? 0.9 : 1)};
-        justify-content: ${({ isScrollingDown }) =>
-            isScrollingDown ? "space-between" : "space-evenly"};
+        /* justify-content: ${({ isScrollingDown }) =>
+            isScrollingDown ? "space-between" : "space-evenly"}; */
+        justify-content: space-between;
     }
 `;
 

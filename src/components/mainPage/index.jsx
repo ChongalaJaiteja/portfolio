@@ -3,6 +3,7 @@ import ScrollTop from "../scrollTop";
 import NavBar from "../navbar";
 import { navLinkOptions } from "../../utils/constants";
 import Footer from "../footer";
+
 const MainPage = () => {
     return (
         <>
