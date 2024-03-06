@@ -2,12 +2,13 @@ import { Typewriter } from "react-simple-typewriter";
 import * as LottiePlayer from "@lottiefiles/lottie-player";
 import SocialMediaHandles from "../socialMediaHandles";
 import * as StyledComponent from "./styledComponent";
+import resume from "../../assets/resume.pdf";
 
 const Home = ({ route }) => {
     const roles = ["Web Developer", "Competitive Coder", "AI Enthusiast"];
 
     const openResume = () => {
-        window.open("/resume.pdf", "_blank");
+        window.open(resume, "_blank");
     };
     return (
         <StyledComponent.HomeBgContainer id={route}>

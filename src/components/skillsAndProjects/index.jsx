@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import { skillsAndProjectPageCategory } from "../../utils/constants";
 import { SkillsAndProjectPageCard } from "../skillsAndProjectsPageCard";
 import * as StyledComponent from "./styledComponent";
+import { getImageUrl } from "../../utils/imageUtil";
 
 const SkillsAndProjects = ({ route }) => {
     const animateSkillsAndProjectImg = {
@@ -27,7 +28,9 @@ const SkillsAndProjects = ({ route }) => {
                         whileInView="animate"
                         viewport={{ amount: 0.5, once: true }}
                     >
-                        <StyledComponent.SkillsAndProjectsPageImg src="/webdev.svg" />
+                        <StyledComponent.SkillsAndProjectsPageImg
+                            src={getImageUrl("webdev.svg")}
+                        />
                     </StyledComponent.SkillsAndProjectsPageImgBgContainer>
                     <StyledComponent.SkillsAndProjectsPageCardsBgContainer>
                         {skillsAndProjectPageCategory.map((category, index) => (

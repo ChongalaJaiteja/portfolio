@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import "react-vertical-timeline-component/style.min.css";
 import * as StyledComponent from "./styledComponent";
+import { getImageUrl } from "../../utils/imageUtil";
 
 const QualificationSectionCard = ({ qualification }) => {
     const {
@@ -23,7 +24,7 @@ const QualificationSectionCard = ({ qualification }) => {
             <StyledComponent.QualificationCardContainer>
                 <StyledComponent.QualificationImgContainer>
                     <StyledComponent.QualificationCardImg
-                        src={imageUrl}
+                        src={getImageUrl(imageUrl)}
                         alt={title}
                     />
                 </StyledComponent.QualificationImgContainer>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import ExperienceCardSkillItem from "../experienceCardSkillItem";
 import * as StyledComponent from "./styledComponent";
+import { getImageUrl } from "../../utils/imageUtil";
 
 const ExperienceSectionCard = ({ experience }) => {
     const {
@@ -38,7 +39,7 @@ const ExperienceSectionCard = ({ experience }) => {
             <StyledComponent.ExperienceCardContainer>
                 <StyledComponent.ExperienceImgContainer>
                     <StyledComponent.ExperienceCardImg
-                        src={imageUrl}
+                        src={getImageUrl(imageUrl)}
                         alt={title}
                     />
                 </StyledComponent.ExperienceImgContainer>

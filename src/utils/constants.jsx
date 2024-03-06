@@ -74,7 +74,7 @@ export const navLinkOptions = [
 
 export const qualificationData = [
     {
-        imageUrl: "/nxtwave.png",
+        imageUrl: "nxtwave.png",
         icon: <StyledComponent.GraduateIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
         websiteUrl: "https://www.ccbp.in/",
@@ -85,7 +85,7 @@ export const qualificationData = [
             "NxtWave is an ed-tech startup based in Hyderabad, India that offers online training programs in Industry 4.0 careers",
     },
     {
-        imageUrl: "/gmrit.jpeg",
+        imageUrl: "gmrit.jpeg",
         icon: <StyledComponent.GraduateIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
         websiteUrl: "https://gmrit.edu.in/",
@@ -97,7 +97,7 @@ export const qualificationData = [
             "GMRIT is one of the most reputed college which offers admission to engineering courses in various streams",
     },
     {
-        imageUrl: "/sriviswa.avif",
+        imageUrl: "sriviswa.avif",
         icon: <StyledComponent.CollegeIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
         websiteUrl: "https://www.sriviswa.com/",
@@ -109,7 +109,7 @@ export const qualificationData = [
             "Sri Viswa IIT and Medical Academy is among the renowned junior colleges offering the best education",
     },
     {
-        imageUrl: "/ravindra-bharathi-school.png",
+        imageUrl: "ravindra-bharathi-school.png",
         icon: <StyledComponent.SchoolIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
         websiteUrl: "https://rbschools.in/",
@@ -157,7 +157,7 @@ export const programming = [
 export const experienceList = [
     {
         id: uuidv4(),
-        imageUrl: "/coding_club_gmrit_logo.jpeg",
+        imageUrl: "coding_club_gmrit_logo.jpeg",
         icon: <StyledComponent.DevelopmentIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
         navIcon: <StyledComponent.NavLinkIcon />,
@@ -171,7 +171,7 @@ export const experienceList = [
     },
     {
         id: uuidv4(),
-        imageUrl: "/nxtwave.png",
+        imageUrl: "nxtwave.png",
         icon: <StyledComponent.TeachingAssistantIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
         navIcon: <StyledComponent.NavLinkIcon />,

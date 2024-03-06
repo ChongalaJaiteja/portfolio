@@ -1,10 +1,12 @@
 import { MdOutlineFileDownload } from "react-icons/md";
 import { motion } from "framer-motion";
 import styled, { keyframes } from "styled-components";
+import darkCloud from "../../assets/cloudDark.png";
+import lightCloud from "../../assets/cloudBg.png";
 
 export const HomeBgContainer = styled.div`
     background-image: ${({ theme }) =>
-        theme.isLightTheme ? `url("/cloudBg.png")` : `url("/cloudDark.png")`};
+        theme.isLightTheme ? `url(${lightCloud})` : `url(${darkCloud})`};
     display: flex;
     flex-direction: column;
     align-items: center;

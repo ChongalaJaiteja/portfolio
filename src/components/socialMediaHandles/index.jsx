@@ -5,14 +5,16 @@ import SocialMediaHandleItem from "../socialMediaHandleItem";
 
 const SocialMediaHandles = () => {
     return (
-        <StyledComponent.ContactLinksListContainer>
-            {contactLinks.map((socialMedia, index) => (
-                <SocialMediaHandleItem
-                    key={uuidv4()}
-                    socialMediaDetails={{ ...socialMedia, index }}
-                />
-            ))}
-        </StyledComponent.ContactLinksListContainer>
+        <>
+            <StyledComponent.ContactLinksListContainer>
+                {contactLinks.map((socialMedia, index) => (
+                    <SocialMediaHandleItem
+                        key={uuidv4()}
+                        socialMediaDetails={{ ...socialMedia, index }}
+                    />
+                ))}
+            </StyledComponent.ContactLinksListContainer>
+        </>
     );
 };
 

@@ -1,4 +1,5 @@
 import * as StyledComponent from "./styledComponent";
+import { getImageUrl } from "../../utils/imageUtil";
 
 const About = ({ route }) => {
     return (
@@ -30,7 +31,9 @@ const About = ({ route }) => {
                         transition="transition"
                     >
                         <StyledComponent.AboutPageProfileBorderContainer>
-                            <StyledComponent.ProfileImg src="/profile.jpg" />
+                            <StyledComponent.ProfileImg
+                                src={getImageUrl("profile.jpg")}
+                            />
                         </StyledComponent.AboutPageProfileBorderContainer>
                     </StyledComponent.AboutPageProfileBgContainer>
 
