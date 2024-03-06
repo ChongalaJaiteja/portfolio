@@ -264,7 +264,7 @@ to {
     }
 
    *:focus {
-    outline: none;
+        outline: auto !important;
     }
 
     a {
