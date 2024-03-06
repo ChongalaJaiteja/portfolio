@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
    *:focus {
-    outline: none;
+        outline: auto !important;
     }
 
     a {
