@@ -32,7 +32,7 @@ const NavBar = ({ hideNavLinks = false }) => {
 
     return (
         <>
-            <StyledComponent.NavBar isScrollingDown={isScrollingDown}>
+            <StyledComponent.NavBar isScrollingDown={isScrollingDown} hideNavLinks={hideNavLinks}>
                 <StyledComponent.NavBarHeading
                     isScrollingDown={isScrollingDown}
                 >

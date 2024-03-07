@@ -14,5 +14,18 @@ export const DevelopmentSectionBodyContainer = styled(
 )``;
 
 export const DevelopmentPageContentBgContainer = styled.div`
-    min-height: 100vh;
+    min-height: 77.85vh;
+`;
+
+export const DomainsListBgContainer = styled.ul`
+    padding: 0;
+    list-style-type: none;
+    /* outline: auto; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 530px) {
+        justify-content: flex-start;
+    }
 `;

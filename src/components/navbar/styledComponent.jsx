@@ -13,7 +13,11 @@ export const NavBar = styled.nav`
     top: 0;
     z-index: 10;
     justify-content: space-between;
-    padding: clamp(0.2em, 1vw + 0.38em, 1em) clamp(0.3em, 1vw + 1em, 2.1em);
+    padding-inline: clamp(0.3em, 1vw + 1em, 2.1em);
+    padding-block: ${({ hideNavLinks }) =>
+        hideNavLinks
+            ? "clamp(0.2em, 1vw + 1em, 1em)"
+            : "clamp(0.2em, 1vw + 0.38em, 1em)"};
     @media (min-width: 827px) {
         border-radius: ${({ isScrollingDown }) =>
             isScrollingDown ? "32px" : "0px"};

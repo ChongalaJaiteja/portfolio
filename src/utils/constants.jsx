@@ -139,13 +139,59 @@ export const skillsAndProjectPageCategory = [
     },
 ];
 
-export const development = {
-    domains: [
-        {
-            name: "web Development",
+export const development = [
+    {
+        id: "web-development",
+        name: "Web Development",
+        image: "web-development.jpg",
+        description:
+            "Web development types have been classified into front-end development, back-end development, and full-stack development. For an excellently.",
+        domainDetails: {
+            skills: [
+                {
+                    name: "HTML",
+                    icon: "",
+                },
+                {
+                    name: "HTML",
+                    icon: "",
+                },
+                {
+                    name: "HTML",
+                    icon: "",
+                },
+                {
+                    name: "HTML",
+                    icon: "",
+                },
+            ],
+            projects: [
+                {
+                    name: "",
+                    thumbnailImage: "",
+                    deploymentLink: "",
+                    githubLink: "",
+                    description: "",
+                },
+                {
+                    name: "",
+                    thumbnailImage: "",
+                    deploymentLink: "",
+                    githubLink: "",
+                    description: "",
+                },
+                {
+                    name: "",
+                    thumbnailImage: "",
+                    deploymentLink: "",
+                    githubLink: "",
+                    description: "",
+                },
+            ],
+            certifications: [{}, {}, {}, {}],
         },
-    ],
-};
+    },
+];
 export const programming = [
     {
         skills: [
@@ -158,6 +204,10 @@ export const programming = [
         projects: [{}],
     },
 ];
+
+export const getDevelopmentPageData = (id) => {
+    return development.find((domain) => domain.id == id);
+};
 
 //experience Page
 

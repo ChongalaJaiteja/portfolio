@@ -1,5 +1,7 @@
+import { development } from "../../utils/constants";
 import NavBar from "../navbar";
-import * as StyledComponent from "./styledCompoent";
+import * as StyledComponent from "./styledComponent";
+import DevelopmentDomainCard from "../developmentDomainCard";
 
 const Development = () => {
     return (
@@ -8,7 +10,14 @@ const Development = () => {
             <StyledComponent.DevelopmentPageBgContainer>
                 <StyledComponent.DevelopmentSectionBodyContainer>
                     <StyledComponent.DevelopmentPageContentBgContainer>
-                        <h1>Development</h1>
+                        <StyledComponent.DomainsListBgContainer>
+                            {development.map((domain) => (
+                                <DevelopmentDomainCard
+                                    key={domain.id}
+                                    domain={domain}
+                                />
+                            ))}
+                        </StyledComponent.DomainsListBgContainer>
                     </StyledComponent.DevelopmentPageContentBgContainer>
                 </StyledComponent.DevelopmentSectionBodyContainer>
             </StyledComponent.DevelopmentPageBgContainer>
