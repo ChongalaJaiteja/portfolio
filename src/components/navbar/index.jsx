@@ -1,7 +1,7 @@
 import Hamburger from "hamburger-react";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { navLinkOptions } from "../../utils/constants";
 import { useThemeContext } from "../../context/themeContext";
 import * as StyledComponent from "./styledComponent";
@@ -38,14 +38,16 @@ const NavBar = ({ hideNavLinks = false }) => {
                 layout
                 transition={{
                     opacity: { ease: "easeOut" },
-                    layout: { duration: 0.3 },
+                    layout: { duration: 0.27 },
                 }}
             >
-                <StyledComponent.NavBarHeading
-                    isScrollingDown={isScrollingDown}
-                >
-                    Jai teja
-                </StyledComponent.NavBarHeading>
+                <StyledComponent.StyledLink to="/portfolio">
+                    <StyledComponent.NavBarHeading
+                        isScrollingDown={isScrollingDown}
+                    >
+                        Jai teja
+                    </StyledComponent.NavBarHeading>
+                </StyledComponent.StyledLink>
                 {!hideNavLinks && (
                     <StyledComponent.NavListItemBgContainerLg
                         isScrollingDown={isScrollingDown}

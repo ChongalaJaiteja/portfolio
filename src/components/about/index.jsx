@@ -41,13 +41,13 @@ const About = ({ route }) => {
                         variants={{
                             initial: {
                                 opacity: 0,
-                                x: -13,
+                                x: -10,
                             },
                             animate: {
                                 opacity: 1,
                                 x: 0,
                                 transition: {
-                                    duration: 1.7,
+                                    duration: 1.5,
                                     type: "spring",
                                 },
                             },

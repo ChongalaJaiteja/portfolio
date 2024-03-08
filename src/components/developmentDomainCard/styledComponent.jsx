@@ -24,7 +24,7 @@ export const DomainItemImageBgContainer = styled.div`
     overflow: hidden;
 `;
 
-export const DomainItemImage = styled(motion.img)`
+export const DomainItemImage = styled.img`
     width: 100%;
     /* transition: transform 0.7s ease-out;
     &:hover {

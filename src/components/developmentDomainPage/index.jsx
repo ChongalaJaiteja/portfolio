@@ -1,18 +1,18 @@
 import { useParams } from "react-router-dom";
 import { getDevelopmentPageData } from "../../utils/constants";
-// import NavBar from "../navbar";
+import SkillsAndProjectionSectionTabs from "../skillAndProjectSectionTabs";
+
 import * as StyledComponent from "./styledComponent";
+
 const DevelopmentDomainPage = () => {
     const { id } = useParams();
     const { domainDetails } = getDevelopmentPageData(id);
-    console.log(domainDetails);
     return (
         <>
-            {/* <NavBar hideNavLinks={true} /> */}
             <StyledComponent.DevelopmentDomainPageBgContainer>
                 <StyledComponent.DevelopmentDomainSectionBodyContainer>
                     <StyledComponent.DevelopmentDomainPageContentBgContainer>
-                        <h1>hi</h1>
+                        <SkillsAndProjectionSectionTabs data={domainDetails} />
                     </StyledComponent.DevelopmentDomainPageContentBgContainer>
                 </StyledComponent.DevelopmentDomainSectionBodyContainer>
             </StyledComponent.DevelopmentDomainPageBgContainer>

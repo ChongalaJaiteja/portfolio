@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
+
 import { BsMoonFill, BsFillSunFill } from "react-icons/bs";
 
 export const NavBar = styled(motion.nav)`
@@ -33,6 +35,10 @@ export const NavBar = styled(motion.nav)`
             isScrollingDown ? "space-between" : "space-evenly"}; */
         justify-content: space-between;
     }
+`;
+
+export const StyledLink = styled(RouterLink)`
+    color: var(--theme-page-text-color);
 `;
 
 export const NavBarHeading = styled.h1`

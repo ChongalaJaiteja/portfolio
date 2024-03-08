@@ -38,11 +38,6 @@ const DevelopmentDomainCard = ({ domain }) => {
                     <StyledComponent.DomainItemImage
                         src={getImageUrl(image)}
                         alt={name}
-                        initial={{ opacity: 0.6 }}
-                        animate={{
-                            opacity: 1,
-                            transition: { delay: 0.4, type: "spring" },
-                        }}
                     />
                 </StyledComponent.DomainItemImageBgContainer>
                 <StyledComponent.DomainItemContentBgContainer>
