@@ -128,13 +128,13 @@ export const skillsAndProjectPageCategory = [
     {
         title: "Development",
         icon: <StyledComponent.DevelopmentIcon />,
-        route: "/portfolio/development",
+        route: "development",
         bgColor: "#9AD0C2",
     },
     {
         title: "Programming",
         icon: <StyledComponent.ProgrammingIcon />,
-        route: "/portfolio/programming",
+        route: "programming",
         bgColor: "#FF8080",
     },
 ];

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
-export const DomainItemBgContainer = styled.li`
+export const DomainItemBgContainer = styled(motion.li)`
     background-color: var(--theme-container-bg-color);
     border: 2px solid var(--theme-divide-line-color);
     border-radius: 20px;
@@ -23,7 +24,7 @@ export const DomainItemImageBgContainer = styled.div`
     overflow: hidden;
 `;
 
-export const DomainItemImage = styled.img`
+export const DomainItemImage = styled(motion.img)`
     width: 100%;
     /* transition: transform 0.7s ease-out;
     &:hover {
@@ -58,7 +59,7 @@ export const DomainDetailsBgContainer = styled.ul`
     flex-flow: row wrap;
 `;
 
-export const DomainDetailsItem = styled.li`
+export const DomainDetailsItem = styled(motion.li)`
     background-color: ${({ theme }) =>
         theme.isLightTheme
             ? "rgba(46, 175, 255, 0.7)"

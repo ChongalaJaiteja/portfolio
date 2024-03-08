@@ -4,7 +4,7 @@ import NotFound from "./components/notFound";
 import Development from "./components/development";
 import Programming from "./components/programming";
 import DevelopmentDomainPage from "./components/developmentDomainPage";
-
+import NavBar from "./components/navbar";
 import { ThemeContextProvider } from "./context/themeContext";
 const App = () => (
     <ThemeContextProvider>
@@ -13,6 +13,7 @@ const App = () => (
                 <Route path="/portfolio">
                     <Route index element={<MainPage />} />
                     <Route path="development">
+                        {/* <NavBar hideNavLinks={true} /> */}
                         <Route index element={<Development />} />
                         <Route path=":id" element={<DevelopmentDomainPage />} />
                     </Route>

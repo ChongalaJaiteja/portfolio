@@ -11,10 +11,10 @@ const Development = () => {
                 <StyledComponent.DevelopmentSectionBodyContainer>
                     <StyledComponent.DevelopmentPageContentBgContainer>
                         <StyledComponent.DomainsListBgContainer>
-                            {development.map((domain) => (
+                            {development.map((domain, index) => (
                                 <DevelopmentDomainCard
                                     key={domain.id}
-                                    domain={domain}
+                                    domain={{ ...domain, index }}
                                 />
                             ))}
                         </StyledComponent.DomainsListBgContainer>
