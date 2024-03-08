@@ -6,14 +6,14 @@ import Programming from "./components/programming";
 import DevelopmentDomainPage from "./components/developmentDomainPage";
 import NavBar from "./components/navbar";
 import { ThemeContextProvider } from "./context/themeContext";
+import Layout from "./components/layout";
 const App = () => (
     <ThemeContextProvider>
         <BrowserRouter>
             <Routes basename="/portfolio">
                 <Route path="/portfolio">
                     <Route index element={<MainPage />} />
-                    <Route path="development">
-                        {/* <NavBar hideNavLinks={true} /> */}
+                    <Route path="development" element={<Layout />}>
                         <Route index element={<Development />} />
                         <Route path=":id" element={<DevelopmentDomainPage />} />
                     </Route>

@@ -1,12 +1,12 @@
 import { development } from "../../utils/constants";
-import NavBar from "../navbar";
+// import NavBar from "../navbar";
 import * as StyledComponent from "./styledComponent";
 import DevelopmentDomainCard from "../developmentDomainCard";
 
 const Development = () => {
     return (
         <>
-            <NavBar hideNavLinks={true} />
+            {/* <NavBar hideNavLinks={true} /> */}
             <StyledComponent.DevelopmentPageBgContainer>
                 <StyledComponent.DevelopmentSectionBodyContainer>
                     <StyledComponent.DevelopmentPageContentBgContainer>
