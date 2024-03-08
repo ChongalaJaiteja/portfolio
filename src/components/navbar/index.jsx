@@ -32,7 +32,15 @@ const NavBar = ({ hideNavLinks = false }) => {
 
     return (
         <>
-            <StyledComponent.NavBar isScrollingDown={isScrollingDown} hideNavLinks={hideNavLinks}>
+            <StyledComponent.NavBar
+                isScrollingDown={isScrollingDown}
+                hideNavLinks={hideNavLinks}
+                layout
+                transition={{
+                    opacity: { ease: "easeOut" },
+                    layout: { duration: 0.3 },
+                }}
+            >
                 <StyledComponent.NavBarHeading
                     isScrollingDown={isScrollingDown}
                 >

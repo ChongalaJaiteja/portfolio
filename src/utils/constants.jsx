@@ -242,3 +242,5 @@ export const experienceList = [
         skills: ["JavaScript", "Python"],
     },
 ];
+
+

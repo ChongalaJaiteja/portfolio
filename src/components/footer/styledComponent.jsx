@@ -6,6 +6,7 @@ import {
 import { RiReactjsFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { SiStyledcomponents } from "react-icons/si";
+import { SiMui } from "react-icons/si";
 import { motion } from "framer-motion";
 
 export const FooterBgContainer = styled(AboutPageBgContainer)``;
@@ -47,12 +48,15 @@ export const MadeWithBgContainer = styled(motion.div)`
 
 export const MadeWithHeading = styled(ThankYouHeading)``;
 
-export const TechnologiesUsedBgContainer = styled.div`
+export const MadeWithItemsBgContainer = styled.ul`
+    list-style-type: none;
     display: flex;
     justify-content: center;
     gap: clamp(0.3em, 1vw + 1.7em, 5em);
     cursor: pointer;
 `;
+
+export const MadeWithItem = styled.li``;
 
 const Rotate = keyframes`
 from {
@@ -72,6 +76,10 @@ export const FrameMotionIcon = styled(TbBrandFramerMotion)`
 `;
 
 export const StyledComponentIcon = styled(SiStyledcomponents)`
+    font-size: clamp(0.3rem, 1vw + 1.8rem, 4rem);
+`;
+
+export const MuiIcon = styled(SiMui)`
     font-size: clamp(0.3rem, 1vw + 1.8rem, 4rem);
 `;
 

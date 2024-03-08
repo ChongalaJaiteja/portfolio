@@ -36,7 +36,13 @@ const ExperienceSectionCard = ({ experience }) => {
             date={date}
             icon={icon}
         >
-            <StyledComponent.ExperienceCardContainer>
+            <StyledComponent.ExperienceCardContainer
+                layout
+                transition={{
+                    opacity: { ease: "linear" },
+                    layout: { duration: 0.3 },
+                }}
+            >
                 <StyledComponent.ExperienceImgContainer>
                     <StyledComponent.ExperienceCardImg
                         src={getImageUrl(imageUrl)}

@@ -1,6 +1,12 @@
+import { v4 as uuidv4 } from "uuid";
 import * as StyledComponent from "./styledComponent";
-
 const Footer = () => {
+    const madeWithTechnologiesIcons = [
+        <StyledComponent.ReactJsIcon />,
+        <StyledComponent.FrameMotionIcon />,
+        <StyledComponent.StyledComponentIcon />,
+        <StyledComponent.MuiIcon />,
+    ];
     return (
         <StyledComponent.FooterBgContainer>
             <StyledComponent.FooterPageSectionBodyContainer>
@@ -32,11 +38,13 @@ const Footer = () => {
                         <StyledComponent.MadeWithHeading>
                             made with
                         </StyledComponent.MadeWithHeading>
-                        <StyledComponent.TechnologiesUsedBgContainer>
-                            <StyledComponent.ReactJsIcon />
-                            <StyledComponent.FrameMotionIcon />
-                            <StyledComponent.StyledComponentIcon />
-                        </StyledComponent.TechnologiesUsedBgContainer>
+                        <StyledComponent.MadeWithItemsBgContainer>
+                            {madeWithTechnologiesIcons.map((icon) => (
+                                <StyledComponent.MadeWithItem key={uuidv4()}>
+                                    {icon}
+                                </StyledComponent.MadeWithItem>
+                            ))}
+                        </StyledComponent.MadeWithItemsBgContainer>
                         <StyledComponent.PageInstructionsBgContainer>
                             <StyledComponent.InstructionDescription>
                                 Hand-coded with 100% human efforts, zero AI.

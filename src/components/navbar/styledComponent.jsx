@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { BsMoonFill, BsFillSunFill } from "react-icons/bs";
 
-export const NavBar = styled.nav`
+export const NavBar = styled(motion.nav)`
     color: var(--theme-page-text-color);
     background-color: var(--theme-container-bg-color);
     display: flex;

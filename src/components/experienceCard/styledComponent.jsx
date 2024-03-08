@@ -7,7 +7,7 @@ export const ExperienceVerticalTimelineElementContainer = styled(
     QualificationVerticalTimelineElementContainer
 )``;
 
-export const ExperienceCardContainer = styled.div`
+export const ExperienceCardContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
     gap: 1em;
