@@ -22,7 +22,8 @@ const GlobalStyles = createGlobalStyle`
     --theme-input-bg-color:${({ theme }) => theme.inputBackgroundColor};
     --theme-input-text-color:${({ theme }) => theme.inputText};
     --theme-input-border-color: ${({ theme }) => theme.inputBorderColor};
-    --theme-input-placeholder-text-color: ${({ theme }) => theme.placeholderText};
+    --theme-input-placeholder-text-color: ${({ theme }) =>
+        theme.placeholderText};
     --theme-primary-color:${({ theme }) => theme.primaryAccentColor};
     --theme-secondary-color:${({ theme }) => theme.secondaryAccentColor};
     --theme-success-color:${({ theme }) => theme.successAccentColor};

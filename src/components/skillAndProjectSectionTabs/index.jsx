@@ -27,18 +27,22 @@ const SkillsAndProjectionSectionTabs = ({ data }) => {
     };
 
     return (
-        <>
-            <ul>
+        <StyledComponent.SkillAndProjectsCardBgContainer>
+            <StyledComponent.SkillAndProjectsTabsBgContainer>
                 {tabLabels.map((tabLabel) => (
                     <SkillsAndProjectionSectionTabItem
                         key={tabLabel}
                         tabLabel={tabLabel}
                         onSelectTab={handleTabClick}
+                        isActive={activeTab === tabLabel}
                     />
                 ))}
-            </ul>
-            {renderTabContent()}
-        </>
+            </StyledComponent.SkillAndProjectsTabsBgContainer>
+
+            <StyledComponent.SkillAndProjectsTabContentBgContainer>
+                {renderTabContent()}
+            </StyledComponent.SkillAndProjectsTabContentBgContainer>
+        </StyledComponent.SkillAndProjectsCardBgContainer>
     );
 };
 

@@ -189,6 +189,7 @@ export const development = [
                 },
             ],
             certifications: [{}, {}, {}, {}],
+            certificatwions: [{}, {}, {}, {}],
         },
     },
 ];
@@ -242,5 +243,3 @@ export const experienceList = [
         skills: ["JavaScript", "Python"],
     },
 ];
-
-

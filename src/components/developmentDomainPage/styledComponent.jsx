@@ -11,6 +11,4 @@ export const DevelopmentDomainSectionBodyContainer = styled(
     AboutPageSectionBodyContainer
 )``;
 
-export const DevelopmentDomainPageContentBgContainer = styled.div`
-    min-height: 100vh;
-`;
+export const DevelopmentDomainPageContentBgContainer = styled.div``;
