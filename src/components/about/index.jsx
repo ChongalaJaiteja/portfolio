@@ -33,6 +33,7 @@ const About = ({ route }) => {
                         <StyledComponent.AboutPageProfileBorderContainer>
                             <StyledComponent.ProfileImg
                                 src={getImageUrl("profile.jpg")}
+                                draggable="false"
                             />
                         </StyledComponent.AboutPageProfileBorderContainer>
                     </StyledComponent.AboutPageProfileBgContainer>

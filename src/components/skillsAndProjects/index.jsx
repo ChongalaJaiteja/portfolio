@@ -30,6 +30,7 @@ const SkillsAndProjects = ({ route }) => {
                     >
                         <StyledComponent.SkillsAndProjectsPageImg
                             src={getImageUrl("webdev.svg")}
+                            draggable="false"
                         />
                     </StyledComponent.SkillsAndProjectsPageImgBgContainer>
                     <StyledComponent.SkillsAndProjectsPageCardsBgContainer>

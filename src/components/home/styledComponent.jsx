@@ -8,7 +8,7 @@ export const HomeBgContainer = styled.div`
     background-image: ${({ theme }) =>
         theme.isLightTheme ? `url(${lightCloud})` : `url(${darkCloud})`};
     display: flex;
-    
+
     flex-direction: column;
     align-items: center;
     padding: 1.4em var(--total-page-pd-sm);
@@ -57,6 +57,10 @@ export const HiEmoji = styled.span`
 
 export const MyNameSpan = styled.span`
     color: ${({ theme }) => theme.primaryAccentColor};
+    background: linear-gradient(90deg, #f72798, #525ceb);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 `;
 
 export const HomeContentPara = styled.p`

@@ -149,20 +149,75 @@ export const development = [
         domainDetails: {
             skills: [
                 {
-                    name: "HTML",
-                    icon: "",
+                    category: "Frontend Development",
+                    skillSet: [
+                        {
+                            name: "html",
+                            icon: <i className="devicon-html5-plain colored" />,
+                        },
+                        {
+                            name: "css",
+                            icon: <i className="devicon-css3-plain colored" />,
+                        },
+                        {
+                            name: "js",
+                            icon: (
+                                <i className="devicon-javascript-plain colored" />
+                            ),
+                        },
+                        {
+                            name: "Reactjs",
+                            icon: (
+                                <i className="devicon-react-original colored" />
+                            ),
+                        },
+                        {
+                            name: "bootstrap",
+                            icon: (
+                                <i className="devicon-bootstrap-plain colored" />
+                            ),
+                        },
+                        {
+                            name: "tailwind css",
+                            icon: (
+                                <i className="devicon-tailwindcss-original colored" />
+                            ),
+                        },
+                    ],
                 },
                 {
-                    name: "HTML",
-                    icon: "",
+                    category: "Backend Development",
+                    skillSet: [
+                        {
+                            name: "nodejs",
+                            icon: (
+                                <i className="devicon-nodejs-plain-wordmark colored" />
+                            ),
+                        },
+                        {
+                            name: "sql",
+                            icon: (
+                                <i className="devicon-azuresqldatabase-plain colored" />
+                            ),
+                        },
+                        {
+                            name: "mongodb",
+                            icon: (
+                                <i className="devicon-mongodb-plain colored" />
+                            ),
+                        },
+                    ],
                 },
                 {
-                    name: "HTML",
-                    icon: "",
-                },
-                {
-                    name: "HTML",
-                    icon: "",
+                    category: "Tools",
+                    skillSet: [
+                        {
+                            name: "PostMan",
+                            icon: (
+                                <i className="devicon-postman-plain colored" />
+                            ),
+                        },
+                    ],
                 },
             ],
             projects: [
@@ -189,10 +244,10 @@ export const development = [
                 },
             ],
             certifications: [{}, {}, {}, {}],
-            certificatwions: [{}, {}, {}, {}],
         },
     },
 ];
+
 export const programming = [
     {
         skills: [

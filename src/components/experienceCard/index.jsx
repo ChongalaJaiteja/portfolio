@@ -47,6 +47,7 @@ const ExperienceSectionCard = ({ experience }) => {
                     <StyledComponent.ExperienceCardImg
                         src={getImageUrl(imageUrl)}
                         alt={title}
+                        draggable="false"
                     />
                 </StyledComponent.ExperienceImgContainer>
 
@@ -72,7 +73,9 @@ const ExperienceSectionCard = ({ experience }) => {
                     <StyledComponent.ExperienceCardSkillsTitle
                         onClick={() => toggleSkills(id)}
                     >
-                        <StyledComponent.ArrowRightIcon />
+                        <StyledComponent.ArrowRightIcon
+                            rotateArrow={showSkillsMap[id]}
+                        />
                         Skills
                     </StyledComponent.ExperienceCardSkillsTitle>
                     {Object.keys(showSkillsMap).length !== 0 &&

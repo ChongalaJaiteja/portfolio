@@ -45,7 +45,9 @@ const NavBar = ({ hideNavLinks = false }) => {
                     <StyledComponent.NavBarHeading
                         isScrollingDown={isScrollingDown}
                     >
-                        Jai teja
+                        <span>&lt;</span>
+                        <span> Jai teja </span>
+                        <span>/&gt;</span>
                     </StyledComponent.NavBarHeading>
                 </StyledComponent.StyledLink>
                 {!hideNavLinks && (

@@ -92,4 +92,5 @@ export const ExperienceCardSkillsContainer = styled(motion.ul)`
 
 export const ArrowRightIcon = styled(MdArrowRight)`
     font-size: clamp(0.2rem, 1vw + 0.8rem, 1.1rem);
+    rotate: ${({ rotateArrow }) => (rotateArrow ? "90deg" : "0deg")};
 `;

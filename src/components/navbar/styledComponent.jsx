@@ -84,7 +84,7 @@ export const StyledActiveLink = styled(Link)`
         top: 90%;
         left: 0;
         border-radius: 20px;
-        animation: ${onHoverOption} 0.15s ease-in 0s 1 forwards;
+        animation: ${onHoverOption} 0.25s ease-in 0s 1 forwards;
     }
     &:hover:after {
         content: "";
@@ -94,7 +94,7 @@ export const StyledActiveLink = styled(Link)`
         top: 90%;
         left: 0;
         border-radius: 20px;
-        animation: ${onHoverOption} 0.15s ease-in 0s 1 forwards;
+        animation: ${onHoverOption} 0.25s ease-in 0s 1 forwards;
     }
 `;
 

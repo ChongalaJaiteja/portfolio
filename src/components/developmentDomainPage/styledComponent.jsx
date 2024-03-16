@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {
-    AboutPageHeading,
     AboutPageBgContainer,
     AboutPageSectionBodyContainer,
 } from "../about/styledComponent";

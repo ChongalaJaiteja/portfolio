@@ -63,11 +63,11 @@ const Home = ({ route }) => {
                 viewport={{ amount: 0.5, once: true }}
             >
                 <StyledComponent.GreetingHeading>
-                    Hi <StyledComponent.HiEmoji>👋</StyledComponent.HiEmoji>, My
-                    name is{" "}
+                    Hi all, I'm{" "}
                     <StyledComponent.MyNameSpan>
                         Jai Teja
                     </StyledComponent.MyNameSpan>
+                    <StyledComponent.HiEmoji>👋</StyledComponent.HiEmoji>
                     <br />I am a{" "}
                     <StyledComponent.MyNameSpan>
                         <Typewriter
@@ -81,8 +81,8 @@ const Home = ({ route }) => {
                     </StyledComponent.MyNameSpan>
                 </StyledComponent.GreetingHeading>
                 <StyledComponent.HomeContentPara>
-                    I am a Full-Stack Developer. I am currently studying
-                    computer science.
+                    A passionate Full Stack Software Developer 🚀 having an
+                    experience of building Web applications.
                 </StyledComponent.HomeContentPara>
 
                 <SocialMediaHandles />

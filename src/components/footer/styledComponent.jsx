@@ -69,18 +69,30 @@ from {
 export const ReactJsIcon = styled(RiReactjsFill)`
     font-size: clamp(0.3rem, 1vw + 1.8rem, 4rem);
     animation: ${Rotate} 5s linear infinite;
+    &:hover {
+        color: var(--theme-primary-color);
+    }
 `;
 
 export const FrameMotionIcon = styled(TbBrandFramerMotion)`
     font-size: clamp(0.3rem, 1vw + 1.8rem, 4rem);
+    &:hover {
+        color: var(--theme-primary-color);
+    }
 `;
 
 export const StyledComponentIcon = styled(SiStyledcomponents)`
     font-size: clamp(0.3rem, 1vw + 1.8rem, 4rem);
+    &:hover {
+        color: var(--theme-primary-color);
+    }
 `;
 
 export const MuiIcon = styled(SiMui)`
     font-size: clamp(0.3rem, 1vw + 1.8rem, 4rem);
+    &:hover {
+        color: var(--theme-primary-color);
+    }
 `;
 
 export const PageInstructionsBgContainer = styled.div``;
