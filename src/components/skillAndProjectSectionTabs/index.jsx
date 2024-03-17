@@ -31,6 +31,10 @@ const SkillsAndProjectionSectionTabs = ({ data }) => {
             // Swipe left, go to next tab
             const nextTabIndex = tabLabels.indexOf(activeTab) + 1;
             setActiveTab(tabLabels[nextTabIndex]);
+        } else if (deltaX > minSwipeDistance && activeTab !== tabLabels[0]) {
+            // Swipe right, go to previous tab
+            const previousTabIndex = tabLabels.indexOf(activeTab) - 1;
+            setActiveTab(tabLabels[previousTabIndex]);
         }
 
         touchStartX.current = null;
