@@ -16,6 +16,7 @@ const SkillsTabSectionItem = ({ skillsItemData, index }) => {
             },
         }),
     };
+    
     return (
         <StyledComponent.SkillItemBgContainer
             initial="initial"

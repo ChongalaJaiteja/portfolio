@@ -244,26 +244,18 @@ export const development = [
                 },
             ],
             projects: [
-                // {
-                //     name: "",
-                //     thumbnailImage: "",
-                //     deploymentLink: "",
-                //     githubLink: "",
-                //     description: "",
-                // },
                 {
-                    name: "",
-                    thumbnailImage: "",
-                    deploymentLink: "",
-                    githubLink: "",
-                    description: "",
-                },
-                {
-                    name: "",
-                    thumbnailImage: "",
-                    deploymentLink: "",
-                    githubLink: "",
-                    description: "",
+                    category: "Frontend Development",
+                    projectList: [
+                        {
+                            name: "hi",
+                            icon: "",
+                            thumbnailImage: "",
+                            deploymentLink: "",
+                            githubLink: "",
+                            description: "",
+                        },
+                    ],
                 },
             ],
             certifications: [{}, {}, {}, {}],
