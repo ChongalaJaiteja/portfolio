@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import SkillsTabSection from "../skillsTabSection";
 import ProjectsTabSection from "../projectsTabSection";
 import CertificationsTabSection from "../certificationsTabSection";
@@ -9,6 +9,32 @@ const SkillsAndProjectionSectionTabs = ({ data }) => {
     const tabLabels = Object.keys(data);
     const [activeTab, setActiveTab] = useState(tabLabels[0]);
     const tabData = data[activeTab];
+    const touchStartX = useRef(null);
+
+    const handleTouchStart = (event) => {
+        touchStartX.current = event.touches[0].clientX;
+    };
+
+    const handleTouchEnd = (event) => {
+        if (!touchStartX.current) return;
+
+        const touchEndX = event.changedTouches[0].clientX;
+        const deltaX = touchEndX - touchStartX.current;
+
+        // Minimum distance for a swipe to be detected
+        const minSwipeDistance = 50;
+
+        if (
+            deltaX < -minSwipeDistance &&
+            activeTab !== tabLabels[tabLabels.length - 1]
+        ) {
+            // Swipe left, go to next tab
+            const nextTabIndex = tabLabels.indexOf(activeTab) + 1;
+            setActiveTab(tabLabels[nextTabIndex]);
+        }
+
+        touchStartX.current = null;
+    };
     const handleTabClick = (tab) => {
         setActiveTab(tab);
     };
@@ -38,7 +64,10 @@ const SkillsAndProjectionSectionTabs = ({ data }) => {
                 ))}
             </StyledComponent.SkillAndProjectsTabsBgContainer>
 
-            <StyledComponent.SkillAndProjectsTabContentBgContainer>
+            <StyledComponent.SkillAndProjectsTabContentBgContainer
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
+            >
                 {renderTabContent()}
             </StyledComponent.SkillAndProjectsTabContentBgContainer>
         </StyledComponent.SkillAndProjectsCardBgContainer>
