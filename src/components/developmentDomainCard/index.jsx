@@ -6,32 +6,33 @@ const DevelopmentDomainCard = ({ domain }) => {
     const { id, name, image, description, domainDetails, index } = domain;
     const animateDomainCard = {
         initial: { opacity: 0, y: 22 },
-        animate: {
+        animate: (index) => ({
             opacity: 1,
             y: 0,
-            transition: (index) => ({
-                delay: 0.2 * index,
-                type: "spring",
-            }),
-        },
+            // transition: {
+            //     delay: 0.2 * index,
+            //     type: "spring",
+            // },
+        }),
     };
 
     const animateDomainDetailsItem = {
-        initial: { opacity: 0 },
-        animate: {
+        initial: { opacity: 0, rotate: "6deg" },
+        animate: (index) => ({
             opacity: 1,
-            transition: (index) => ({
-                delay: 2 * index,
+            rotate: "0deg",
+            transition: {
+                delay: 0.3 * index,
                 type: "spring",
-            }),
-        },
+            },
+        }),
     };
     return (
         <StyledComponent.DomainItemBgContainer
             variants={animateDomainCard}
             initial="initial"
             whileInView="animate"
-            custom={index}
+            // custom={index}
         >
             <StyledComponent.StyledLink to={`/portfolio/development/${id}`}>
                 <StyledComponent.DomainItemImageBgContainer>

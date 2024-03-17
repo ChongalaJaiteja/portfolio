@@ -87,9 +87,7 @@ const Home = ({ route }) => {
 
                 <SocialMediaHandles />
                 <StyledComponent.ResumeBtn onClick={openResume}>
-                    <StyledComponent.ResumeBtnText>
-                        Resume
-                    </StyledComponent.ResumeBtnText>
+                    Resume
                     {/* <StyledComponent.DownloadBtnIcon /> */}
                 </StyledComponent.ResumeBtn>
             </StyledComponent.HomeContentContainer>

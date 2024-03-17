@@ -3,14 +3,14 @@ import * as StyledComponent from "./styledComponent";
 const SocialMediaHandleItem = ({ socialMediaDetails }) => {
     const animateSocialMediaHandles = {
         initial: { opacity: 0, x: 15 },
-        animate: {
+        animate: (index) => ({
             opacity: 1,
             x: 0,
-            transition: (index) => ({
-                delay: 1 * index,
+            transition: {
+                delay: 0.25 * index,
                 type: "spring",
-            }),
-        },
+            },
+        }),
     };
     const { link, name, icon, index } = socialMediaDetails;
 
@@ -20,7 +20,7 @@ const SocialMediaHandleItem = ({ socialMediaDetails }) => {
             initial="initial"
             whileInView="animate"
             custom={index}
-            viewport={{ once: true, amount: 0.7 }}
+            viewport={{ once: true }}
         >
             <StyledComponent.ContactListItemLink href={link}>
                 {icon}

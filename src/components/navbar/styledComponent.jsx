@@ -76,25 +76,27 @@ from {
 export const StyledActiveLink = styled(Link)`
     position: relative;
     text-decoration: none;
-    &.active:after {
-        content: "";
-        background-color: ${({ theme }) => theme.primaryAccentColor};
-        padding: 0.1em;
-        position: absolute;
-        top: 90%;
-        left: 0;
-        border-radius: 20px;
-        animation: ${onHoverOption} 0.25s ease-in 0s 1 forwards;
-    }
-    &:hover:after {
-        content: "";
-        background-color: ${({ theme }) => theme.primaryAccentColor};
-        padding: 0.1em;
-        position: absolute;
-        top: 90%;
-        left: 0;
-        border-radius: 20px;
-        animation: ${onHoverOption} 0.25s ease-in 0s 1 forwards;
+    @media (min-width: 827px) {
+        &.active:after {
+            content: "";
+            background-color: ${({ theme }) => theme.primaryAccentColor};
+            padding: 0.1em;
+            position: absolute;
+            top: 90%;
+            left: 0;
+            border-radius: 20px;
+            animation: ${onHoverOption} 0.25s ease-in 0s 1 forwards;
+        }
+        &:hover:after {
+            content: "";
+            background-color: ${({ theme }) => theme.primaryAccentColor};
+            padding: 0.1em;
+            position: absolute;
+            top: 90%;
+            left: 0;
+            border-radius: 20px;
+            animation: ${onHoverOption} 0.25s ease-in 0s 1 forwards;
+        }
     }
 `;
 
@@ -178,7 +180,7 @@ export const NavListItem = styled.li`
     color: var(--theme-page-text-color);
     cursor: pointer;
     &:hover {
-        background-color: ${({ theme }) => theme.primaryAccentColor};
+        background-color: var(--theme-primary-color);
         color: white;
     }
 `;

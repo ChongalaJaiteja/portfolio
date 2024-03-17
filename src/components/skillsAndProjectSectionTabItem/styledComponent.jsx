@@ -1,12 +1,11 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const SkillsAndProjectsTabItemBgContainer = styled.li`
-    /* background-color: ${({ isActive }) =>
-        isActive ? "rgb(30 41 59 / 1)" : "var(--theme-container-bg-color)"}; */
-    background-color: ${({ isLightTheme, isActive }) =>
+    background-color: ${({ theme, isActive }) =>
         isActive
-            ? isLightTheme
-                ? "red"
+            ? theme.isLightTheme
+                ? "rgb(46, 175, 255, 0.8)"
                 : "rgb(30 41 59 / 1)"
             : "var(--theme-container-bg-color)"};
     text-align: center;
@@ -16,8 +15,13 @@ export const SkillsAndProjectsTabItemBgContainer = styled.li`
     justify-content: center;
     align-items: center;
     max-height: 10rem;
+    position: relative;
     &:hover {
-        background-color: rgb(30 41 59 / 1);
+        background-color: ${({ theme, isActive }) =>
+            !isActive &&
+            (theme.isLightTheme
+                ? "rgb(46, 175, 255, 0.5)"
+                : "rgb(30 41 59 / 0.6)")};
     }
     @media (min-width: 800px) {
         width: 100%;
@@ -33,6 +37,27 @@ export const tabBtn = styled.button`
     width: 100%;
     height: 100%;
     background-color: transparent;
-    color: var(--theme-primary-text-color);
+    color: ${({ isActive, theme }) =>
+        theme.isLightTheme && isActive
+            ? "white"
+            : "var(--theme-primary-text-color)"};
+
     font-size: clamp(0.2rem, 1vw + 0.57rem, 1.17rem);
+`;
+
+export const TabUnderline = styled(motion.div)`
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--theme-primary-color);
+    box-shadow: 0px 3px 10px 2px var(--theme-primary-color);
+    @media (min-width: 800px) {
+        /* left: 20%; */
+        /* right: 0; */
+        height: 100%;
+        left: auto;
+        width: 3px;
+    }
 `;

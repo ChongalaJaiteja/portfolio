@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const ContactLinksListContainer = styled.ul`
+export const ContactLinksListContainer = styled(motion.ul)`
     list-style-type: none;
     padding: 0;
     display: flex;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const SkillItemBgContainer = styled.li``;
+export const SkillItemBgContainer = styled(motion.li)``;
 
 export const SkillCategoryBgContainer = styled.div`
     /* outline: auto; */
@@ -20,5 +21,5 @@ export const SkillsCategoryItemsBgContainer = styled.ul`
     /* outline: auto; */
     display: flex;
     flex-flow: row wrap;
-    gap: 1em;
+    gap: 1.5em 1em;
 `;

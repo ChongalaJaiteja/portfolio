@@ -7,6 +7,7 @@ import DevelopmentDomainPage from "./components/developmentDomainPage";
 import NavBar from "./components/navbar";
 import { ThemeContextProvider } from "./context/themeContext";
 import Layout from "./components/layout";
+
 const App = () => (
     <ThemeContextProvider>
         <BrowserRouter>

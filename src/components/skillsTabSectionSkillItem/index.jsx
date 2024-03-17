@@ -1,9 +1,27 @@
 import * as StyledComponent from "./styledComponent";
 
-const SkillsTabSectionSkillItem = ({ skillDetails }) => {
+const SkillsTabSectionSkillItem = ({ skillDetails, index }) => {
     const { icon, name } = skillDetails;
+    const animateSkillsItem = {
+        initial: { opacity: 0, y: 22 },
+        animate: (index) => ({
+            opacity: 1,
+            y: 0,
+            transition: {
+                delay: 0.16 * index,
+                type: "spring",
+            },
+        }),
+    };
     return (
-        <StyledComponent.SkillItem>
+        <StyledComponent.SkillItem
+            initial="initial"
+            variants={animateSkillsItem}
+            whileInView="animate"
+            custom={index}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.04 }}
+        >
             <StyledComponent.SkillItemIconBgContainer>
                 {icon}
             </StyledComponent.SkillItemIconBgContainer>

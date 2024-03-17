@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const SkillSetBgContainer = styled.ul`
+export const SkillSetBgContainer = styled(motion.ul)`
     list-style-type: none;
     /* outline: auto; */
     padding: 0;

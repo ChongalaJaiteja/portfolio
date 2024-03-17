@@ -12,9 +12,13 @@ const SkillsAndProjectionSectionTabItem = ({
         <StyledComponent.SkillsAndProjectsTabItemBgContainer
             isActive={isActive}
         >
-            <StyledComponent.tabBtn onClick={handleTabClick}>
+            <StyledComponent.tabBtn
+                onClick={handleTabClick}
+                isActive={isActive}
+            >
                 {tabLabel}
             </StyledComponent.tabBtn>
+            {isActive && <StyledComponent.TabUnderline layoutId="underline" />}
         </StyledComponent.SkillsAndProjectsTabItemBgContainer>
     );
 };

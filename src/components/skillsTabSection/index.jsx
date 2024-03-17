@@ -6,8 +6,12 @@ import SkillsTabSectionItem from "../skillsTabSectionItem";
 const SkillsTabSection = ({ skillsData }) => {
     return (
         <StyledComponent.SkillSetBgContainer>
-            {skillsData.map((skills) => (
-                <SkillsTabSectionItem key={uuidv4()} skillsItemData={skills} />
+            {skillsData.map((skills, index) => (
+                <SkillsTabSectionItem
+                    key={uuidv4()}
+                    skillsItemData={skills}
+                    index={index}
+                />
             ))}
         </StyledComponent.SkillSetBgContainer>
     );

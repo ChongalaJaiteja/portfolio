@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const SkillItem = styled.li`
+export const SkillItem = styled(motion.li)`
     display: flex;
     align-items: center;
     gap: 0.6em;
@@ -10,6 +11,7 @@ export const SkillItem = styled.li`
     --pd-l: clamp(0.1em, 1vw + 1em, 1.35em);
     --gap: 1em;
     padding-left: var(--pd-l);
+    padding-block: 0.22em;
     flex: 1 1 100%;
     @media (min-width: 350px) {
         flex: 0 1 calc(50% - (var(--gap) + var(--pd-l)));
@@ -39,4 +41,5 @@ export const SkillItemIconBgContainer = styled.div`
 export const SkillItemName = styled.p`
     font-size: clamp(0.2rem, 1vw + 0.71rem, 1.2rem);
     text-transform: capitalize;
+    padding-right: 0.4em;
 `;

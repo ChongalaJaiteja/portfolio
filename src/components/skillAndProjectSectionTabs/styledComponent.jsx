@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const SkillAndProjectsCardBgContainer = styled.div`
-    border-radius: 15px;
-    min-height: 80vh;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     background-color: var(--theme-container-bg-color);
@@ -10,7 +9,8 @@ export const SkillAndProjectsCardBgContainer = styled.div`
     overflow: hidden;
     @media (min-width: 800px) {
         flex-direction: row;
-        max-height: 15rem;
+        min-height: 80vh;
+        max-height: 35rem;
     }
 `;
 
@@ -46,8 +46,10 @@ export const SkillAndProjectsTabContentBgContainer = styled.div`
     &::-webkit-scrollbar {
         display: none !important;
     }
+    max-height: 34rem;
     @media (min-width: 800px) {
         padding-block: clamp(0.1em, 1vw + 1.5em, 2.7em);
         flex: 1 1 80%;
+        max-height: none;
     }
 `;

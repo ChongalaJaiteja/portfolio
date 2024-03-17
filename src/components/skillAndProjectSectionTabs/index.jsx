@@ -5,7 +5,6 @@ import ProjectsTabSection from "../projectsTabSection";
 import CertificationsTabSection from "../certificationsTabSection";
 import SkillsAndProjectionSectionTabItem from "../skillsAndProjectSectionTabItem";
 import * as StyledComponent from "./styledComponent";
-
 const SkillsAndProjectionSectionTabs = ({ data }) => {
     const tabLabels = Object.keys(data);
     const [activeTab, setActiveTab] = useState(tabLabels[0]);

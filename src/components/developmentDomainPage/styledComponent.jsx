@@ -4,7 +4,9 @@ import {
     AboutPageSectionBodyContainer,
 } from "../about/styledComponent";
 
-export const DevelopmentDomainPageBgContainer = styled(AboutPageBgContainer)``;
+export const DevelopmentDomainPageBgContainer = styled(AboutPageBgContainer)`
+    min-height: 79vh;
+`;
 
 export const DevelopmentDomainSectionBodyContainer = styled(
     AboutPageSectionBodyContainer

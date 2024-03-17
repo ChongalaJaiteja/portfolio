@@ -69,22 +69,23 @@ export const HomeContentPara = styled.p`
 `;
 
 export const ResumeBtn = styled.button`
-    background-color: ${({ theme }) => theme.primaryAccentColor};
+    background-color: var(--theme-primary-color);
     color: white;
     border: none;
     border-radius: 10px;
-    padding: 0.85em 0;
+    padding: 0.7em 0;
     width: min(42%, 28rem);
     margin-top: 1.8em;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-`;
-
-export const ResumeBtnText = styled.span`
     font-size: clamp(0.5rem, 1vw + 0.76rem, 1.3rem);
-    text-align: center;
+    transition: transform 0.23s linear;
+    border: 2px solid transparent;
+    &:hover {
+        transform: translateY(-4px);
+        background-color: white;
+        color: var(--theme-primary-color);
+        border-color: var(--theme-primary-color);
+    }
 `;
 
 export const DownloadBtnIcon = styled(MdOutlineFileDownload)`

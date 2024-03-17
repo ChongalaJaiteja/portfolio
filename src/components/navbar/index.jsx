@@ -107,7 +107,7 @@ const NavBar = ({ hideNavLinks = false }) => {
                         >
                             <StyledComponent.NavListItemBgContainer>
                                 {navLinkOptions.map((option) => (
-                                    <Link
+                                    <StyledComponent.StyledActiveLink
                                         key={option.id}
                                         to={option.route.toUpperCase()}
                                         spy={true}
@@ -119,7 +119,7 @@ const NavBar = ({ hideNavLinks = false }) => {
                                         <StyledComponent.NavListItem>
                                             {option.name}
                                         </StyledComponent.NavListItem>
-                                    </Link>
+                                    </StyledComponent.StyledActiveLink>
                                 ))}
                             </StyledComponent.NavListItemBgContainer>
                         </StyledComponent.StyledMenuContainer>

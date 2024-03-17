@@ -183,6 +183,18 @@ export const development = [
                                 <i className="devicon-tailwindcss-original colored" />
                             ),
                         },
+                        {
+                            name: "framer motion",
+                            icon: (
+                                <i className="devicon-framermotion-original" />
+                            ),
+                        },
+                        {
+                            name: "redux",
+                            icon: (
+                                <i className="devicon-redux-original colored" />
+                            ),
+                        },
                     ],
                 },
                 {
@@ -194,6 +206,11 @@ export const development = [
                                 <i className="devicon-nodejs-plain-wordmark colored" />
                             ),
                         },
+                        {
+                            name: "expressjs",
+                            icon: <i className="devicon-express-original" />,
+                        },
+
                         {
                             name: "sql",
                             icon: (
@@ -217,17 +234,23 @@ export const development = [
                                 <i className="devicon-postman-plain colored" />
                             ),
                         },
+                        {
+                            name: "heroku",
+                            icon: (
+                                <i className="devicon-heroku-original colored" />
+                            ),
+                        },
                     ],
                 },
             ],
             projects: [
-                {
-                    name: "",
-                    thumbnailImage: "",
-                    deploymentLink: "",
-                    githubLink: "",
-                    description: "",
-                },
+                // {
+                //     name: "",
+                //     thumbnailImage: "",
+                //     deploymentLink: "",
+                //     githubLink: "",
+                //     description: "",
+                // },
                 {
                     name: "",
                     thumbnailImage: "",
