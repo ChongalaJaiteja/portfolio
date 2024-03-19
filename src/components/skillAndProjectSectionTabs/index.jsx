@@ -5,10 +5,11 @@ import ProjectsTabSection from "../projectsTabSection";
 import CertificationsTabSection from "../certificationsTabSection";
 import SkillsAndProjectionSectionTabItem from "../skillsAndProjectSectionTabItem";
 import * as StyledComponent from "./styledComponent";
-const SkillsAndProjectionSectionTabs = ({ data }) => {
-    const tabLabels = Object.keys(data);
+
+const SkillsAndProjectionSectionTabs = ({ domainDetails }) => {
+    const tabLabels = Object.keys(domainDetails);
     const [activeTab, setActiveTab] = useState(tabLabels[0]);
-    const tabData = data[activeTab];
+    const tabData = domainDetails[activeTab];
     const touchStartX = useRef(null);
 
     const handleTouchStart = (event) => {
@@ -20,34 +21,32 @@ const SkillsAndProjectionSectionTabs = ({ data }) => {
 
         const touchEndX = event.changedTouches[0].clientX;
         const deltaX = touchEndX - touchStartX.current;
-
-        // Minimum distance for a swipe to be detected
         const minSwipeDistance = 50;
-
         if (
             deltaX < -minSwipeDistance &&
             activeTab !== tabLabels[tabLabels.length - 1]
         ) {
-            // Swipe left, go to next tab
             const nextTabIndex = tabLabels.indexOf(activeTab) + 1;
             setActiveTab(tabLabels[nextTabIndex]);
         } else if (deltaX > minSwipeDistance && activeTab !== tabLabels[0]) {
-            // Swipe right, go to previous tab
             const previousTabIndex = tabLabels.indexOf(activeTab) - 1;
             setActiveTab(tabLabels[previousTabIndex]);
         }
-
         touchStartX.current = null;
     };
+
     const handleTabClick = (tab) => {
         setActiveTab(tab);
     };
+
     const renderTabContent = () => {
         switch (activeTab) {
             case tabLabels[0]:
-                return <SkillsTabSection skillsData={tabData} />;
+                return <SkillsTabSection skillsData={tabData} id={activeTab} />;
             case tabLabels[1]:
-                return <ProjectsTabSection projectsData={tabData} />;
+                return (
+                    <ProjectsTabSection projectsData={tabData} id={activeTab} />
+                );
             case tabLabels[2]:
                 return (
                     <CertificationsTabSection certificationsData={tabData} />

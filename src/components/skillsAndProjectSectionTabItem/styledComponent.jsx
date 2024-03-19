@@ -5,7 +5,7 @@ export const SkillsAndProjectsTabItemBgContainer = styled.li`
     background-color: ${({ theme, isActive }) =>
         isActive
             ? theme.isLightTheme
-                ? "rgb(46, 175, 255, 0.8)"
+                ? "none"
                 : "rgb(30 41 59 / 1)"
             : "var(--theme-container-bg-color)"};
     text-align: center;
@@ -37,11 +37,7 @@ export const tabBtn = styled.button`
     width: 100%;
     height: 100%;
     background-color: transparent;
-    color: ${({ isActive, theme }) =>
-        theme.isLightTheme && isActive
-            ? "white"
-            : "var(--theme-primary-text-color)"};
-
+    color: var(--theme-primary-text-color);
     font-size: clamp(0.2rem, 1vw + 0.57rem, 1.17rem);
 `;
 

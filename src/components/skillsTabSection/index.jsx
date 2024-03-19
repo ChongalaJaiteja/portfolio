@@ -1,15 +1,18 @@
 import * as StyledComponent from "./styledComponent";
 import { v4 as uuidv4 } from "uuid";
-import SkillsTabSectionItem from "../skillsTabSectionItem";
+import SkillsTabSectionContentList from "../SkillsTabSectionContentList";
 
-const SkillsTabSection = ({ skillsData }) => {
+const SkillsTabSection = ({ skillsData, id }) => {
+    console.log(id);
+    console.log(skillsData);
     return (
         <StyledComponent.SkillSetBgContainer>
             {skillsData.map((skills, index) => (
-                <SkillsTabSectionItem
+                <SkillsTabSectionContentList
                     key={uuidv4()}
-                    skillsItemData={skills}
+                    data={skills}
                     index={index}
+                    id={id}
                 />
             ))}
         </StyledComponent.SkillSetBgContainer>

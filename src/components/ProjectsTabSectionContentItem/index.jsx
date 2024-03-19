@@ -1,8 +1,8 @@
 import * as StyledComponent from "./styledComponent";
 
-const SkillsTabSectionSkillItem = ({ skillDetails, index }) => {
-    const { icon, name } = skillDetails;
-    const animateSkillsItem = {
+const ProjectsTabSectionContentItem = ({ itemDetails, index, id }) => {
+    const { icon, name } = itemDetails;
+    const animateProjectsItem = {
         initial: { opacity: 0, y: 22 },
         animate: (index) => ({
             opacity: 1,
@@ -14,21 +14,21 @@ const SkillsTabSectionSkillItem = ({ skillDetails, index }) => {
         }),
     };
     return (
-        <StyledComponent.SkillItem
+        <StyledComponent.ProjectItem
             initial="initial"
-            variants={animateSkillsItem}
+            variants={animateProjectsItem}
             whileInView="animate"
             custom={index}
             viewport={{ once: true }}
             whileHover={{ scale: 1.04 }}
         >
-            <StyledComponent.SkillItemIconBgContainer>
+            <StyledComponent.ProjectItemIconBgContainer>
                 {icon}
-            </StyledComponent.SkillItemIconBgContainer>
-            <StyledComponent.SkillItemName>
+            </StyledComponent.ProjectItemIconBgContainer>
+            <StyledComponent.ProjectItemName>
                 {name}
-            </StyledComponent.SkillItemName>
-        </StyledComponent.SkillItem>
+            </StyledComponent.ProjectItemName>
+        </StyledComponent.ProjectItem>
     );
 };
-export default SkillsTabSectionSkillItem;
+export default ProjectsTabSectionContentItem;

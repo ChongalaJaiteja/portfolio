@@ -1,7 +1,6 @@
+import SkillsAndProjectionSectionTabs from "../skillAndProjectSectionTabs";
 import { useParams } from "react-router-dom";
 import { getDevelopmentPageData } from "../../utils/constants";
-import SkillsAndProjectionSectionTabs from "../skillAndProjectSectionTabs";
-
 import * as StyledComponent from "./styledComponent";
 
 const DevelopmentDomainPage = () => {
@@ -12,7 +11,9 @@ const DevelopmentDomainPage = () => {
             <StyledComponent.DevelopmentDomainPageBgContainer>
                 <StyledComponent.DevelopmentDomainSectionBodyContainer>
                     <StyledComponent.DevelopmentDomainPageContentBgContainer>
-                        <SkillsAndProjectionSectionTabs data={domainDetails} />
+                        <SkillsAndProjectionSectionTabs
+                            domainDetails={domainDetails}
+                        />
                     </StyledComponent.DevelopmentDomainPageContentBgContainer>
                 </StyledComponent.DevelopmentDomainSectionBodyContainer>
             </StyledComponent.DevelopmentDomainPageBgContainer>
