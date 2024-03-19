@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
 import { useState, useRef } from "react";
-import SkillsTabSection from "../skillsTabSection";
-import ProjectsTabSection from "../projectsTabSection";
-import CertificationsTabSection from "../certificationsTabSection";
+import TabSection from "../TabSection";
+// import ProjectsTabSection from "../projectsTabSection";
+// import CertificationsTabSection from "../certificationsTabSection";
 import SkillsAndProjectionSectionTabItem from "../skillsAndProjectSectionTabItem";
 import * as StyledComponent from "./styledComponent";
 
@@ -39,20 +39,18 @@ const SkillsAndProjectionSectionTabs = ({ domainDetails }) => {
         setActiveTab(tab);
     };
 
-    const renderTabContent = () => {
-        switch (activeTab) {
-            case tabLabels[0]:
-                return <SkillsTabSection skillsData={tabData} id={activeTab} />;
-            case tabLabels[1]:
-                return (
-                    <ProjectsTabSection projectsData={tabData} id={activeTab} />
-                );
-            case tabLabels[2]:
-                return (
-                    <CertificationsTabSection certificationsData={tabData} />
-                );
-        }
-    };
+    // const renderTabContent = () => {
+    //     switch (activeTab) {
+    //         case tabLabels[0]:
+    //             return <TabSection tabSectionData={tabData} id={activeTab} />;
+    //         case tabLabels[1]:
+    //             return <TabSection tabSectionData={tabData} id={activeTab} />;
+    //         case tabLabels[2]:
+    //             return (
+    //                 <CertificationsTabSection certificationsData={tabData} />
+    //             );
+    //     }
+    // };
 
     return (
         <StyledComponent.SkillAndProjectsCardBgContainer>
@@ -71,7 +69,7 @@ const SkillsAndProjectionSectionTabs = ({ domainDetails }) => {
                 onTouchStart={handleTouchStart}
                 onTouchEnd={handleTouchEnd}
             >
-                {renderTabContent()}
+                <TabSection tabSectionData={tabData} id={activeTab} />
             </StyledComponent.SkillAndProjectsTabContentBgContainer>
         </StyledComponent.SkillAndProjectsCardBgContainer>
     );

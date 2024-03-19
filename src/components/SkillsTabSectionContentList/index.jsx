@@ -41,6 +41,7 @@ const SkillsTabSectionContentList = ({ data, index, id }) => {
                             id={id}
                         />
                     ))}
+                    
                 </StyledComponent.SkillsAndProjectsCategoryItemsBgContainer>
             </StyledComponent.SkillsAndProjectsCategoryBgContainer>
         </StyledComponent.SkillsAndProjectsItemBgContainer>
