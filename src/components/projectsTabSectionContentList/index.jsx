@@ -3,6 +3,7 @@ import ProjectsTabSectionContentItem from "../ProjectsTabSectionContentItem";
 import * as StyledComponent from "./styledComponent";
 
 const ProjectsTabSectionContentList = ({ data, index, id }) => {
+    console.log("project", data);
     const { category = "", ...rest } = data;
     const categoryItemsList = Object.values(rest)[0];
     console.log(categoryItemsList);

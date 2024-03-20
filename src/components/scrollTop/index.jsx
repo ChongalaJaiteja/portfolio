@@ -27,6 +27,7 @@ const ScrollTop = () => {
 
         animateScroll.scrollToTop(options);
     };
+    
     const [isScrollingDown, setIsScrollingDown] = useState(false);
     const { toggleTheme, isLightTheme } = useThemeContext();
     useEffect(() => {

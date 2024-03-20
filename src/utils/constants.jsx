@@ -70,6 +70,13 @@ export const navLinkOptions = [
     },
 ];
 
+//About Page
+
+export const aboutPageData = {
+    profileImage: "profile.jpg",
+    hashImageUrl: "LtPi%_xa~LRj~VR*D*ofVof5V=of",
+};
+
 // Qualification Page
 
 export const qualificationData = [
@@ -144,6 +151,7 @@ export const development = [
         id: "web-development",
         name: "Web Development",
         image: "web-development.jpg",
+        hashImageUrl: "LpPj1Jay?tbcofW=WXjF_LW=Mynh",
         description:
             "Web development types have been classified into front-end development, back-end development, and full-stack development. For an excellently.",
         domainDetails: {
@@ -248,12 +256,48 @@ export const development = [
                     category: "Frontend Development",
                     projectList: [
                         {
-                            name: "hi",
-                            icon: "",
-                            thumbnailImage: "",
-                            deploymentLink: "",
-                            githubLink: "",
-                            description: "",
+                            projectCard: {
+                                name: "hi",
+                                bgImage: "calendar.png",
+                            },
+                            projectDetails: {
+                                icon: "",
+                                thumbnailImage: "",
+                                deploymentLink: "",
+                                githubLink: "",
+                                description: "",
+                            },
+                        },
+                        {
+                            projectCard: {
+                                name: "jai",
+                                bgImage: "",
+                            },
+                            projectDetails: {
+                                icon: "",
+                                thumbnailImage: "",
+                                deploymentLink: "",
+                                githubLink: "",
+                                description: "",
+                            },
+                        },
+                    ],
+                },
+                {
+                    category: "backend Development",
+                    projectList: [
+                        {
+                            projectCard: {
+                                name: "",
+                                bgImage: "",
+                            },
+                            projectDetails: {
+                                icon: "",
+                                thumbnailImage: "",
+                                deploymentLink: "",
+                                githubLink: "",
+                                description: "",
+                            },
                         },
                     ],
                 },

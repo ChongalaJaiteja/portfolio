@@ -1,7 +1,11 @@
 import * as StyledComponent from "./styledComponent";
 import { getImageUrl } from "../../utils/imageUtil";
+import BlurImage from "../blurImage";
+import { aboutPageData } from "../../utils/constants";
 
 const About = ({ route }) => {
+    const { profileImage, hashImageUrl } = aboutPageData;
+
     return (
         <StyledComponent.AboutPageBgContainer id={route}>
             <StyledComponent.AboutPageHeading>
@@ -31,10 +35,16 @@ const About = ({ route }) => {
                         transition="transition"
                     >
                         <StyledComponent.AboutPageProfileBorderContainer>
-                            <StyledComponent.ProfileImg
-                                src={getImageUrl("profile.jpg")}
-                                draggable="false"
-                            />
+                            <BlurImage
+                                hash={hashImageUrl}
+                                width={400}
+                                height={300}
+                            >
+                                <StyledComponent.ProfileImg
+                                    src={getImageUrl(profileImage)}
+                                    draggable="false"
+                                />
+                            </BlurImage>
                         </StyledComponent.AboutPageProfileBorderContainer>
                     </StyledComponent.AboutPageProfileBgContainer>
 

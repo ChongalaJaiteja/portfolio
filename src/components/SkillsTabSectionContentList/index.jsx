@@ -5,6 +5,7 @@ import * as StyledComponent from "./styledComponent";
 const SkillsTabSectionContentList = ({ data, index, id }) => {
     const { category = "", ...rest } = data;
     const categoryItemsList = Object.values(rest)[0];
+    
     const animateSkillsAndProjectsItemCategory = {
         initial: { opacity: 0, y: 22 },
         animate: (index) => ({
@@ -41,7 +42,7 @@ const SkillsTabSectionContentList = ({ data, index, id }) => {
                             id={id}
                         />
                     ))}
-                    
+
                 </StyledComponent.SkillsAndProjectsCategoryItemsBgContainer>
             </StyledComponent.SkillsAndProjectsCategoryBgContainer>
         </StyledComponent.SkillsAndProjectsItemBgContainer>

@@ -1,8 +1,15 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { getImageUrl } from "../../utils/imageUtil";
 
 export const ProjectItem = styled(motion.li)`
-    display: flex;
+    background-image: ${({ bgImage }) => `url(${getImageUrl(bgImage)})`};
+    background-size: cover;
+    object-fit: center;
+    outline: auto;
+    width: 100%;
+    height: 40vh;
+    /* display: flex;
     align-items: center;
     gap: 0.6em;
     border: 1px solid var(--theme-divide-line-color);
@@ -27,7 +34,7 @@ export const ProjectItem = styled(motion.li)`
     }
     @media (min-width: 1900px) {
         flex: 0 1 calc(16.6% - (var(--gap) + var(--pd-l)));
-    }
+    } */
 `;
 
 export const ProjectItemIconBgContainer = styled.div`

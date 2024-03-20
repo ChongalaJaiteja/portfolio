@@ -1,18 +1,20 @@
 import { getImageUrl } from "../../utils/imageUtil";
 import * as StyledComponent from "./styledComponent";
 import { v4 as uuidv4 } from "uuid";
+import BlurImage from "../blurImage";
 
 const DevelopmentDomainCard = ({ domain }) => {
-    const { id, name, image, description, domainDetails, index } = domain;
+    const { id, name, image, hashImageUrl, description, domainDetails, index } =
+        domain;
     const animateDomainCard = {
         initial: { opacity: 0, y: 22 },
         animate: (index) => ({
             opacity: 1,
             y: 0,
-            // transition: {
-            //     delay: 0.2 * index,
-            //     type: "spring",
-            // },
+            transition: {
+                delay: 0.2 * index,
+                type: "spring",
+            },
         }),
     };
 
@@ -32,14 +34,16 @@ const DevelopmentDomainCard = ({ domain }) => {
             variants={animateDomainCard}
             initial="initial"
             whileInView="animate"
-            // custom={index}
+            custom={index}
         >
             <StyledComponent.StyledLink to={`/portfolio/development/${id}`}>
                 <StyledComponent.DomainItemImageBgContainer>
-                    <StyledComponent.DomainItemImage
-                        src={getImageUrl(image)}
-                        alt={name}
-                    />
+                    <BlurImage hash={hashImageUrl} width={400} height={300}>
+                        <StyledComponent.DomainItemImage
+                            src={getImageUrl(image)}
+                            alt={name}
+                        />
+                    </BlurImage>
                 </StyledComponent.DomainItemImageBgContainer>
                 <StyledComponent.DomainItemContentBgContainer>
                     <StyledComponent.DomainHeading>

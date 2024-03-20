@@ -1,7 +1,12 @@
 import * as StyledComponent from "./styledComponent";
+import { getImageUrl } from "../../utils/imageUtil";
 
 const ProjectsTabSectionContentItem = ({ itemDetails, index, id }) => {
-    const { icon, name } = itemDetails;
+    const { projectCard, projectDetails } = itemDetails;
+    const { name, bgImage } = projectCard;
+    console.log(bgImage);
+    console.log(projectCard, projectDetails);
+
     const animateProjectsItem = {
         initial: { opacity: 0, y: 22 },
         animate: (index) => ({
@@ -21,13 +26,15 @@ const ProjectsTabSectionContentItem = ({ itemDetails, index, id }) => {
             custom={index}
             viewport={{ once: true }}
             whileHover={{ scale: 1.04 }}
+            bgImage={bgImage}
         >
-            <StyledComponent.ProjectItemIconBgContainer>
-                {icon}
+            <p>hi</p>
+            {/* <StyledComponent.ProjectItemIconBgContainer>
+                {name}
             </StyledComponent.ProjectItemIconBgContainer>
             <StyledComponent.ProjectItemName>
                 {name}
-            </StyledComponent.ProjectItemName>
+            </StyledComponent.ProjectItemName> */}
         </StyledComponent.ProjectItem>
     );
 };

@@ -5,8 +5,8 @@ import SkillsTabSectionContentList from "../SkillsTabSectionContentList";
 import ProjectsTabSectionContentList from "../projectsTabSectionContentList";
 
 const TabSection = ({ tabSectionData, id }) => {
-    console.log(id);
-    console.log(tabSectionData);
+    // console.log(id);
+    // console.log(tabSectionData);
     const renderTabSectionContentList = (tabDataList, index) => {
         switch (id) {
             case "skills":

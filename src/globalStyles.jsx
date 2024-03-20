@@ -34,6 +34,7 @@ const GlobalStyles = createGlobalStyle`
 }
     html {
         -webkit-tap-highlight-color: transparent !important;
+        scroll-behavior: smooth;
     }
     body {
         font-family: "Poppins", sans-serif;
