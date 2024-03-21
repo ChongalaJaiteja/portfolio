@@ -1,11 +1,9 @@
-import { getImageUrl } from "../../utils/imageUtil";
 import * as StyledComponent from "./styledComponent";
 import { v4 as uuidv4 } from "uuid";
-import BlurImage from "../blurImage";
+import LazyImageLoader from "../lazyImageLoader";
 
 const DevelopmentDomainCard = ({ domain }) => {
-    const { id, name, image, hashImageUrl, description, domainDetails, index } =
-        domain;
+    const { id, name, image, description, domainDetails, index } = domain;
     const animateDomainCard = {
         initial: { opacity: 0, y: 22 },
         animate: (index) => ({
@@ -38,12 +36,7 @@ const DevelopmentDomainCard = ({ domain }) => {
         >
             <StyledComponent.StyledLink to={`/portfolio/development/${id}`}>
                 <StyledComponent.DomainItemImageBgContainer>
-                    <BlurImage hash={hashImageUrl} width={400} height={300}>
-                        <StyledComponent.DomainItemImage
-                            src={getImageUrl(image)}
-                            alt={name}
-                        />
-                    </BlurImage>
+                    <LazyImageLoader altName={name} imageSrc={image} />
                 </StyledComponent.DomainItemImageBgContainer>
                 <StyledComponent.DomainItemContentBgContainer>
                     <StyledComponent.DomainHeading>

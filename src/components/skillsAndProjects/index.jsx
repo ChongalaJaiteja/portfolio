@@ -3,9 +3,12 @@ import { v4 as uuidv4 } from "uuid";
 import { skillsAndProjectPageCategory } from "../../utils/constants";
 import SkillsAndProjectPageCard from "../skillsAndProjectsPageCard";
 import * as StyledComponent from "./styledComponent";
-import { getImageUrl } from "../../utils/imageUtil";
+import { skillsAndProjectSection } from "../../utils/constants";
+import LazyImageLoader from "../lazyImageLoader";
 
 const SkillsAndProjects = ({ route }) => {
+    const { devIcon, altName } = skillsAndProjectSection;
+
     const animateSkillsAndProjectImg = {
         initial: { x: 15, opacity: 0 },
         animate: {
@@ -28,9 +31,12 @@ const SkillsAndProjects = ({ route }) => {
                         whileInView="animate"
                         viewport={{ amount: 0.5, once: true }}
                     >
-                        <StyledComponent.SkillsAndProjectsPageImg
-                            src={getImageUrl("webdev.svg")}
-                            draggable="false"
+                        <LazyImageLoader
+                            altName={altName}
+                            imageSrc={devIcon}
+                            styledComponent={
+                                StyledComponent.SkillsAndProjectsPageImg
+                            }
                         />
                     </StyledComponent.SkillsAndProjectsPageImgBgContainer>
                     <StyledComponent.SkillsAndProjectsPageCardsBgContainer>

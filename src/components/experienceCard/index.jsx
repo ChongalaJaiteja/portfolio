@@ -4,7 +4,7 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import ExperienceCardSkillItem from "../experienceCardSkillItem";
 import * as StyledComponent from "./styledComponent";
-import { getImageUrl } from "../../utils/imageUtil";
+import LazyImageLoader from "../lazyImageLoader";
 
 const ExperienceSectionCard = ({ experience }) => {
     const {
@@ -44,10 +44,10 @@ const ExperienceSectionCard = ({ experience }) => {
                 }}
             >
                 <StyledComponent.ExperienceImgContainer>
-                    <StyledComponent.ExperienceCardImg
-                        src={getImageUrl(imageUrl)}
-                        alt={title}
-                        draggable="false"
+                    <LazyImageLoader
+                        altName={title}
+                        imageSrc={imageUrl}
+                        styledComponent={StyledComponent.ExperienceCardImg}
                     />
                 </StyledComponent.ExperienceImgContainer>
 

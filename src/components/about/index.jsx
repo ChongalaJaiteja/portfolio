@@ -1,17 +1,23 @@
 import * as StyledComponent from "./styledComponent";
-import { getImageUrl } from "../../utils/imageUtil";
-import BlurImage from "../blurImage";
+import LazyImageLoader from "../lazyImageLoader";
 import { aboutPageData } from "../../utils/constants";
 
 const About = ({ route }) => {
-    const { profileImage, hashImageUrl } = aboutPageData;
+    const { profileImage, altName } = aboutPageData;
 
     return (
         <StyledComponent.AboutPageBgContainer id={route}>
             <StyledComponent.AboutPageHeading>
                 About Me
             </StyledComponent.AboutPageHeading>
-
+            {/* social media integration */}
+            {/* <iframe
+                src="https://www.juicer.io/api/feeds/jai-teja-chongala/iframe"
+                // frameborder="0"
+                width="100%"
+                height="1000"
+                style={{ display: "block", margin: "0 auto" }}
+            ></iframe> */}
             <StyledComponent.AboutPageSectionBodyContainer>
                 <StyledComponent.AboutPageContentBgContainer>
                     <StyledComponent.AboutPageProfileBgContainer
@@ -35,16 +41,11 @@ const About = ({ route }) => {
                         transition="transition"
                     >
                         <StyledComponent.AboutPageProfileBorderContainer>
-                            <BlurImage
-                                hash={hashImageUrl}
-                                width={400}
-                                height={300}
-                            >
-                                <StyledComponent.ProfileImg
-                                    src={getImageUrl(profileImage)}
-                                    draggable="false"
-                                />
-                            </BlurImage>
+                            <LazyImageLoader
+                                altName={altName}
+                                imageSrc={profileImage}
+                                styledComponent={StyledComponent.ProfileImg}
+                            />
                         </StyledComponent.AboutPageProfileBorderContainer>
                     </StyledComponent.AboutPageProfileBgContainer>
 

@@ -74,7 +74,7 @@ export const navLinkOptions = [
 
 export const aboutPageData = {
     profileImage: "profile.jpg",
-    hashImageUrl: "LtPi%_xa~LRj~VR*D*ofVof5V=of",
+    altName: "Jai Teja",
 };
 
 // Qualification Page
@@ -130,7 +130,10 @@ export const qualificationData = [
 ];
 
 //Skills & Project Page
-
+export const skillsAndProjectSection = {
+    devIcon: "webdev.svg",
+    altName: "Dev Icon",
+};
 export const skillsAndProjectPageCategory = [
     {
         title: "Development",
@@ -151,7 +154,6 @@ export const development = [
         id: "web-development",
         name: "Web Development",
         image: "web-development.jpg",
-        hashImageUrl: "LpPj1Jay?tbcofW=WXjF_LW=Mynh",
         description:
             "Web development types have been classified into front-end development, back-end development, and full-stack development. For an excellently.",
         domainDetails: {

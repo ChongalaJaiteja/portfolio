@@ -46,7 +46,7 @@ export const QualificationCardImg = styled.img`
     border-radius: 10px;
     transition: transform 0.19s ease-in;
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.07);
     }
 `;
 

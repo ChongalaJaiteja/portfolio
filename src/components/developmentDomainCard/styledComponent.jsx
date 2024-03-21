@@ -24,13 +24,13 @@ export const DomainItemImageBgContainer = styled.div`
     overflow: hidden;
 `;
 
-export const DomainItemImage = styled.img`
-    width: 100%;
-    /* transition: transform 0.7s ease-out;
-    &:hover {
-        transform: scale(1.1);
-    } */
-`;
+// export const DomainItemImage = styled.img`
+//     width: 100%;
+//     /* transition: transform 0.7s ease-out;
+//     &:hover {
+//         transform: scale(1.1);
+//     } */
+// `;
 
 export const DomainItemContentBgContainer = styled.div`
     padding-top: 0.5em;
