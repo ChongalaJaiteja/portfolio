@@ -1,6 +1,5 @@
 const CertificationsTabSection = ({ certificationsData }) => {
-    console.log(certificationsData);
-    return <h1>Certifications</h1>;
+    return <hs>Certifications</hs>;
 };
 
 export default CertificationsTabSection;

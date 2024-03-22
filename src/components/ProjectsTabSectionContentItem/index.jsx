@@ -1,5 +1,4 @@
 import * as StyledComponent from "./styledComponent";
-import { getImageUrl } from "../../utils/imageUtil";
 
 const ProjectsTabSectionContentItem = ({ itemDetails, index, id }) => {
     const { projectCard, projectDetails } = itemDetails;

@@ -3,6 +3,7 @@ import "react-vertical-timeline-component/style.min.css";
 import * as StyledComponent from "./styledComponent";
 import { experienceList } from "../../utils/constants";
 import ExperienceSectionCard from "../experienceCard";
+
 const Experience = ({ route }) => {
     return (
         <StyledComponent.ExperienceBgContainer id={route}>

@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-import ProjectsTabSectionContentItem from "../ProjectsTabSectionContentItem";
+import ProjectsTabSectionContentItem from "../projectsTabSectionContentItem";
 import * as StyledComponent from "./styledComponent";
 
 const ProjectsTabSectionContentList = ({ data, index, id }) => {

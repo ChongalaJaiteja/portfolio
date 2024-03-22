@@ -1,12 +1,14 @@
-import PageProgress from "../pageProgress";
-import ScrollTop from "../scrollTop";
-import NavBar from "../navbar";
 import { navLinkOptions } from "../../utils/constants";
-import Footer from "../footer";
+import { Suspense, lazy } from "react";
+import Loader from "../loader";
+const PageProgress = lazy(() => import("../pageProgress"));
+const ScrollTop = lazy(() => import("../scrollTop"));
+const NavBar = lazy(() => import("../navbar"));
+const Footer = lazy(() => import("../footer"));
 
 const MainPage = () => {
     return (
-        <>
+        <Suspense fallback={<Loader />}>
             <NavBar />
             <PageProgress />
             {navLinkOptions.map(({ component: Component, route }) => (
@@ -17,7 +19,7 @@ const MainPage = () => {
             ))}
             <ScrollTop />
             <Footer />
-        </>
+        </Suspense>
     );
 };
 

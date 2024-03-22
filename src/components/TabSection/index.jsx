@@ -1,8 +1,17 @@
 import * as StyledComponent from "./styledComponent";
-import React from "react";
+import { Suspense, lazy } from "react";
 import { v4 as uuidv4 } from "uuid";
-import SkillsTabSectionContentList from "../SkillsTabSectionContentList";
-import ProjectsTabSectionContentList from "../projectsTabSectionContentList";
+import Loader from "../loader";
+const SkillsTabSectionContentList = lazy(() =>
+    import("../skillsTabSectionContentList")
+);
+const ProjectsTabSectionContentList = lazy(() =>
+    import("../projectsTabSectionContentList")
+);
+
+const CertificationsTabSection = lazy(() =>
+    import("../certificationsTabSection")
+);
 
 const TabSection = ({ tabSectionData, id }) => {
     // console.log(id);
@@ -27,6 +36,15 @@ const TabSection = ({ tabSectionData, id }) => {
                         id={id}
                     />
                 );
+            case "certifications":
+                return (
+                    <CertificationsTabSection
+                        key={uuidv4()}
+                        data={tabDataList}
+                        index={index}
+                        id={id}
+                    />
+                );
             default:
                 return null;
         }
@@ -34,9 +52,11 @@ const TabSection = ({ tabSectionData, id }) => {
 
     return (
         <StyledComponent.SkillSetBgContainer>
-            {tabSectionData.map((tabDataList, index) => (
-                <>{renderTabSectionContentList(tabDataList, index)}</>
-            ))}
+            <Suspense fallback={<Loader />}>
+                {tabSectionData.map((tabDataList, index) => (
+                    <>{renderTabSectionContentList(tabDataList, index)}</>
+                ))}
+            </Suspense>
         </StyledComponent.SkillSetBgContainer>
     );
 };
