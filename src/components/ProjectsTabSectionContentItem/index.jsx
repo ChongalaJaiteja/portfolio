@@ -2,7 +2,7 @@ import * as StyledComponent from "./styledComponent";
 import LazyImageLoader from "../lazyImageLoader";
 
 const ProjectsTabSectionContentItem = ({ itemDetails, index }) => {
-    const { projectCard, projectDetails, id, category } = itemDetails;
+    const { projectCard, id, category } = itemDetails;
     const { name, image } = projectCard;
 
     const animateProjectsItem = {

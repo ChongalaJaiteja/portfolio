@@ -2,6 +2,7 @@ import { useLocation, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { development, programming } from "../../utils/constants";
 import * as StyledComponent from "./styledComponent";
+import Loader from "../loader";
 
 const ProjectMainPage = () => {
     const location = useLocation();
@@ -57,7 +58,7 @@ const ProjectMainPage = () => {
         <StyledComponent.ProjectMainPageBgContainer>
             <StyledComponent.ProjectMainPageBodyContainer>
                 {isLoading ? (
-                    <h1>LOading</h1>
+                    <Loader />
                 ) : (
                     <StyledComponent.ProjectMainPagContentBgContainer>
                         <h1>{projectDetails.name}</h1>
