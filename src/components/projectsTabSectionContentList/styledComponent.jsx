@@ -13,6 +13,7 @@ export const ProjectCategoryBgContainer = styled.div`
 export const ProjectCategoryMainHeading = styled.h4`
     font-size: clamp(0.1rem, 1vw + 0.73rem, 1.16rem);
     color: var(--theme-second-text-color);
+    text-transform: capitalize;
 `;
 
 export const ProjectsCategoryItemsBgContainer = styled.ul`

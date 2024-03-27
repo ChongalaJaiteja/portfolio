@@ -2,10 +2,10 @@ import { v4 as uuidv4 } from "uuid";
 import SkillsTabSectionContentItem from "../skillsTabSectionContentItem";
 import * as StyledComponent from "./styledComponent";
 
-const SkillsTabSectionContentList = ({ data, index, id }) => {
+const SkillsTabSectionContentList = ({ data, index }) => {
     const { category = "", ...rest } = data;
     const categoryItemsList = Object.values(rest)[0];
-    
+
     const animateSkillsAndProjectsItemCategory = {
         initial: { opacity: 0, y: 22 },
         animate: (index) => ({
@@ -39,10 +39,9 @@ const SkillsTabSectionContentList = ({ data, index, id }) => {
                             key={uuidv4()}
                             itemDetails={categoryItems}
                             index={index}
-                            id={id}
+                            // id={id}
                         />
                     ))}
-
                 </StyledComponent.SkillsAndProjectsCategoryItemsBgContainer>
             </StyledComponent.SkillsAndProjectsCategoryBgContainer>
         </StyledComponent.SkillsAndProjectsItemBgContainer>

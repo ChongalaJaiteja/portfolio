@@ -3,7 +3,8 @@ import { v4 as uuidv4 } from "uuid";
 import LazyImageLoader from "../lazyImageLoader";
 
 const DevelopmentDomainCard = ({ domain }) => {
-    const { id, name, image, description, domainDetails, index } = domain;
+    const { id, name, image, description, sectionDetails, index } = domain;
+    console.log("domain", sectionDetails);
     const animateDomainCard = {
         initial: { opacity: 0, y: 22 },
         animate: (index) => ({
@@ -27,6 +28,13 @@ const DevelopmentDomainCard = ({ domain }) => {
             },
         }),
     };
+
+    const getDomainDetailsItemCount = (itemName) => {
+        return sectionDetails[itemName].reduce(
+            (count, item) => count + Object.values(item)[1].length,
+            0
+        );
+    };
     return (
         <StyledComponent.DomainItemBgContainer
             variants={animateDomainCard}
@@ -34,7 +42,7 @@ const DevelopmentDomainCard = ({ domain }) => {
             whileInView="animate"
             custom={index}
         >
-            <StyledComponent.StyledLink to={`/portfolio/development/${id}`}>
+            <StyledComponent.StyledLink to={`${id}`}>
                 <StyledComponent.DomainItemImageBgContainer>
                     <LazyImageLoader altName={name} imageSrc={image} />
                 </StyledComponent.DomainItemImageBgContainer>
@@ -46,7 +54,7 @@ const DevelopmentDomainCard = ({ domain }) => {
                     {description}
                 </StyledComponent.DomainDescription> */}
                     <StyledComponent.DomainDetailsBgContainer>
-                        {Object.keys(domainDetails).map((keyname, index) => (
+                        {Object.keys(sectionDetails).map((keyname, index) => (
                             <StyledComponent.DomainDetailsItem
                                 key={uuidv4()}
                                 variants={animateDomainDetailsItem}
@@ -56,7 +64,7 @@ const DevelopmentDomainCard = ({ domain }) => {
                             >
                                 {keyname}
                                 <StyledComponent.DomainDetailsItemCount>
-                                    {domainDetails[keyname].length}
+                                    {getDomainDetailsItemCount(keyname)}
                                 </StyledComponent.DomainDetailsItemCount>
                             </StyledComponent.DomainDetailsItem>
                         ))}

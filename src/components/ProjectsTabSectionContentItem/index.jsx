@@ -1,10 +1,9 @@
 import * as StyledComponent from "./styledComponent";
+import LazyImageLoader from "../lazyImageLoader";
 
-const ProjectsTabSectionContentItem = ({ itemDetails, index, id }) => {
-    const { projectCard, projectDetails } = itemDetails;
-    const { name, bgImage } = projectCard;
-    console.log(bgImage);
-    console.log(projectCard, projectDetails);
+const ProjectsTabSectionContentItem = ({ itemDetails, index }) => {
+    const { projectCard, projectDetails, id, category } = itemDetails;
+    const { name, image } = projectCard;
 
     const animateProjectsItem = {
         initial: { opacity: 0, y: 22 },
@@ -17,6 +16,7 @@ const ProjectsTabSectionContentItem = ({ itemDetails, index, id }) => {
             },
         }),
     };
+
     return (
         <StyledComponent.ProjectItem
             initial="initial"
@@ -25,15 +25,25 @@ const ProjectsTabSectionContentItem = ({ itemDetails, index, id }) => {
             custom={index}
             viewport={{ once: true }}
             whileHover={{ scale: 1.04 }}
-            bgImage={bgImage}
         >
-            <p>hi</p>
-            {/* <StyledComponent.ProjectItemIconBgContainer>
-                {name}
-            </StyledComponent.ProjectItemIconBgContainer>
-            <StyledComponent.ProjectItemName>
-                {name}
-            </StyledComponent.ProjectItemName> */}
+            <StyledComponent.StyledLink
+                to={
+                    category !== ""
+                        ? `projects/${category}/${id}`
+                        : `projects/${id}`
+                }
+            >
+                <LazyImageLoader
+                    altName={name}
+                    imageSrc={image}
+                    styledComponent={StyledComponent.ProjectItemImage}
+                />
+                <StyledComponent.ProjectItemContentBgContainer>
+                    <StyledComponent.ProjectItemName>
+                        {name}
+                    </StyledComponent.ProjectItemName>
+                </StyledComponent.ProjectItemContentBgContainer>
+            </StyledComponent.StyledLink>
         </StyledComponent.ProjectItem>
     );
 };

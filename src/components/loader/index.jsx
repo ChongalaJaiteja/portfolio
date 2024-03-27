@@ -6,8 +6,8 @@ const Loader = () => {
         <StyledComponent.LoaderBgContainer>
             <TailSpin
                 visible={true}
-                height="80"
-                width="80"
+                height="90"
+                width="100"
                 color="rgb(46, 175, 255)"
                 ariaLabel="tail-spin-loading"
                 radius="1"

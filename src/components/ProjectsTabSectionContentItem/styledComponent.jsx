@@ -1,40 +1,65 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { getImageUrl } from "../../utils/imageUtil";
-
+import { Link } from "react-router-dom";
 export const ProjectItem = styled(motion.li)`
-    background-image: ${({ bgImage }) => `url(${getImageUrl(bgImage)})`};
-    background-size: cover;
-    object-fit: center;
-    outline: auto;
-    width: 100%;
-    height: 40vh;
-    /* display: flex;
-    align-items: center;
-    gap: 0.6em;
-    border: 1px solid var(--theme-divide-line-color);
-    border-radius: 0.7rem;
-    cursor: pointer;
-    --pd-l: clamp(0.1em, 1vw + 1em, 1.35em);
     --gap: 1em;
-    padding-left: var(--pd-l);
-    padding-block: 0.22em;
-    flex: 1 1 100%;
-    @media (min-width: 350px) {
-        flex: 0 1 calc(50% - (var(--gap) + var(--pd-l)));
+    cursor: pointer;
+    position: relative;
+    border-radius: 4rem;
+    border: 3px solid transparent;
+    overflow: hidden;
+    flex: 1 1 calc(100% - var(--gap));
+    height: clamp(15rem, 1vw + 1rem, 19rem);
+    @media (min-width: 510px) {
+        flex: 0 1 calc(50% - var(--gap));
     }
-    @media (min-width: 560px) {
-        flex: 0 1 calc(33.3% - (var(--gap) + var(--pd-l)));
+
+    @media (min-width: 1010px) {
+        flex: 0 1 calc(33.3% - var(--gap));
     }
-    @media (min-width: 960px) {
-        flex: 0 1 calc(25% - (var(--gap) + var(--pd-l)));
+
+    &:hover {
+        border-color: var(--theme-primary-color);
     }
-    @media (min-width: 1300px) {
-        flex: 0 1 calc(20% - (var(--gap) + var(--pd-l)));
+
+    &:hover div {
+        background-color: rgb(46, 175, 255, 0.4);
+        color: white;
+        border-color: transparent;
     }
-    @media (min-width: 1900px) {
-        flex: 0 1 calc(16.6% - (var(--gap) + var(--pd-l)));
-    } */
+`;
+export const StyledLink = styled(Link)`
+    color: var(--theme-page-text-color);
+`;
+
+export const ProjectItemImage = styled.img`
+    width: min(100%, 30rem);
+    object-fit: cover;
+    opacity: ${({ theme }) => (theme.isLightTheme ? "none" : "0.56")};
+`;
+
+export const ProjectItemContentBgContainer = styled.div`
+    --bg-color: ${({ theme }) =>
+        theme.isLightTheme ? "rgb(245, 245, 245,0.4)" : "rgb(30, 30, 30, 0.4)"};
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    z-index: 1;
+    border-radius: 2rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--theme-border-color);
+    padding-inline: 0.72em;
+    transition: background-color 0.34s linear;
+    width: 33%;
+`;
+
+export const ProjectItemName = styled.p`
+    font-size: clamp(0.2rem, 1vw + 0.6rem, 1.12rem);
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
 `;
 
 export const ProjectItemIconBgContainer = styled.div`
@@ -43,10 +68,4 @@ export const ProjectItemIconBgContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     /* outline: auto; */
-`;
-
-export const ProjectItemName = styled.p`
-    font-size: clamp(0.2rem, 1vw + 0.71rem, 1.2rem);
-    text-transform: capitalize;
-    padding-right: 0.4em;
 `;

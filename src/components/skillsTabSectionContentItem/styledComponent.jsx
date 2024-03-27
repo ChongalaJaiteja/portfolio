@@ -16,8 +16,8 @@ export const SkillItem = styled(motion.li)`
     @media (min-width: 350px) {
         flex: 0 1 calc(50% - (var(--gap) + var(--pd-l)));
     }
-    @media (min-width: 560px) {
-        flex: 0 1 calc(33.3% - (var(--gap) + var(--pd-l)));
+    @media (min-width: 695px) {
+        flex: 0 1 calc(33.33% - (var(--gap) + var(--pd-l)));
     }
     @media (min-width: 960px) {
         flex: 0 1 calc(25% - (var(--gap) + var(--pd-l)));

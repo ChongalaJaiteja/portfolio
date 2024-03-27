@@ -156,10 +156,10 @@ export const development = [
         image: "web-development.jpg",
         description:
             "Web development types have been classified into front-end development, back-end development, and full-stack development. For an excellently.",
-        domainDetails: {
+        sectionDetails: {
             skills: [
                 {
-                    category: "Frontend Development",
+                    category: "frontend development",
                     skillSet: [
                         {
                             name: "html",
@@ -208,7 +208,7 @@ export const development = [
                     ],
                 },
                 {
-                    category: "Backend Development",
+                    category: "backend development",
                     skillSet: [
                         {
                             name: "nodejs",
@@ -255,56 +255,83 @@ export const development = [
             ],
             projects: [
                 {
-                    category: "Frontend Development",
+                    category: "frontend development",
                     projectList: [
                         {
                             projectCard: {
-                                name: "hi",
-                                bgImage: "calendar.png",
+                                name: "emoji game",
+                                image: "emoji-game.png",
                             },
                             projectDetails: {
-                                icon: "",
-                                thumbnailImage: "",
-                                deploymentLink: "",
-                                githubLink: "",
+                                name: "emoji game",
+                                image: "emoji-game.png",
                                 description: "",
+                                videoUrl: "",
+                                deploymentLink:
+                                    "https://jaitejaemoji.ccbp.tech/",
+                                githubLink: "",
                             },
                         },
+
                         {
                             projectCard: {
-                                name: "jai",
-                                bgImage: "",
+                                name: "calendar",
+                                image: "calendar.png",
                             },
                             projectDetails: {
-                                icon: "",
-                                thumbnailImage: "",
-                                deploymentLink: "",
-                                githubLink: "",
+                                name: "calendar",
+                                image: "calendar.png",
                                 description: "",
+                                videoUrl: "",
+                                deploymentLink:
+                                    "https://jaitejaemoji.ccbp.tech/",
+                                githubLink: "",
                             },
                         },
                     ],
                 },
+                // {
+                //     category: "backend Development",
+                //     projectList: [
+                //         {
+                //             projectCard: {
+                //                 name: "",
+                //                 image: "",
+                //             },
+                //             projectDetails: {
+                //                 icon: "",
+                //                 thumbnailImage: "",
+                //                 deploymentLink: "",
+                //                 githubLink: "",
+                //                 description: "",
+                //             },
+                //         },
+                //     ],
+                // },
                 {
-                    category: "backend Development",
+                    category: "full stack development",
                     projectList: [
                         {
                             projectCard: {
-                                name: "",
-                                bgImage: "",
+                                name: "wikipedia search application",
+                                image: "wikipedia-fullstack-1.png",
                             },
                             projectDetails: {
-                                icon: "",
-                                thumbnailImage: "",
-                                deploymentLink: "",
-                                githubLink: "",
-                                description: "",
+                                name: "wikipedia search application",
+                                image: "wikipedia-fullstack-1.png",
+                                description:
+                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                videoUrl: "",
+                                deploymentLink:
+                                    "https://github.com/ChongalaJaiteja/wikipedia-search-app",
+                                githubLink:
+                                    "https://github.com/ChongalaJaiteja/wikipedia-search-app",
                             },
                         },
                     ],
                 },
             ],
-            certifications: [{}],
+            certifications: [{ category: "", certificationsList: [{}, {}] }],
         },
     },
 ];

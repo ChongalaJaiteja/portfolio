@@ -14,8 +14,6 @@ const CertificationsTabSection = lazy(() =>
 );
 
 const TabSection = ({ tabSectionData, id }) => {
-    // console.log(id);
-    // console.log(tabSectionData);
     const renderTabSectionContentList = (tabDataList, index) => {
         switch (id) {
             case "skills":
@@ -24,7 +22,7 @@ const TabSection = ({ tabSectionData, id }) => {
                         key={uuidv4()}
                         data={tabDataList}
                         index={index}
-                        id={id}
+                        // id={id}
                     />
                 );
             case "projects":
@@ -33,7 +31,7 @@ const TabSection = ({ tabSectionData, id }) => {
                         key={uuidv4()}
                         data={tabDataList}
                         index={index}
-                        id={id}
+                        // id={id}
                     />
                 );
             case "certifications":
@@ -42,7 +40,7 @@ const TabSection = ({ tabSectionData, id }) => {
                         key={uuidv4()}
                         data={tabDataList}
                         index={index}
-                        id={id}
+                        // id={id}
                     />
                 );
             default:

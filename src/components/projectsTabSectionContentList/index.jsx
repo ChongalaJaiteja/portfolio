@@ -1,12 +1,11 @@
-import { v4 as uuidv4 } from "uuid";
 import ProjectsTabSectionContentItem from "../projectsTabSectionContentItem";
 import * as StyledComponent from "./styledComponent";
+import { v4 as uuidv4 } from "uuid";
+import LazyImageLoader from "../lazyImageLoader";
 
-const ProjectsTabSectionContentList = ({ data, index, id }) => {
-    console.log("project", data);
+const ProjectsTabSectionContentList = ({ data, index }) => {
     const { category = "", ...rest } = data;
     const categoryItemsList = Object.values(rest)[0];
-    console.log(categoryItemsList);
     const animateProjectsItemCategory = {
         initial: { opacity: 0, y: 22 },
         animate: (index) => ({
@@ -38,9 +37,12 @@ const ProjectsTabSectionContentList = ({ data, index, id }) => {
                     {categoryItemsList.map((categoryItems, index) => (
                         <ProjectsTabSectionContentItem
                             key={uuidv4()}
-                            itemDetails={categoryItems}
+                            itemDetails={{
+                                ...categoryItems,
+                                category,
+                                id: index + 1,
+                            }}
                             index={index}
-                            id={id}
                         />
                     ))}
                 </StyledComponent.ProjectsCategoryItemsBgContainer>

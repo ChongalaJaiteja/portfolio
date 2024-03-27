@@ -5,14 +5,14 @@ import * as StyledComponent from "./styledComponent";
 
 const DevelopmentDomainPage = () => {
     const { id } = useParams();
-    const { domainDetails } = getDevelopmentPageData(id);
+    const { sectionDetails } = getDevelopmentPageData(id);
     return (
         <>
             <StyledComponent.DevelopmentDomainPageBgContainer>
                 <StyledComponent.DevelopmentDomainSectionBodyContainer>
                     <StyledComponent.DevelopmentDomainPageContentBgContainer>
                         <SkillsAndProjectionSectionTabs
-                            domainDetails={domainDetails}
+                            sectionDetails={sectionDetails}
                         />
                     </StyledComponent.DevelopmentDomainPageContentBgContainer>
                 </StyledComponent.DevelopmentDomainSectionBodyContainer>

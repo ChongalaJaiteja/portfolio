@@ -1,6 +1,6 @@
 import * as StyledComponent from "./styledComponent";
 
-const SkillsTabSectionContentItem = ({ itemDetails, index, id }) => {
+const SkillsTabSectionContentItem = ({ itemDetails, index }) => {
     const { icon, name } = itemDetails;
     const animateSkillsItem = {
         initial: { opacity: 0, y: 22 },

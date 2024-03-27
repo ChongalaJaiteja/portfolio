@@ -5,7 +5,7 @@ import GlobalStyles from "../globalStyles";
 const theme = {
     light: {
         color: "rgb(0, 0, 0)",
-        backgroundColor: "rgb(255,255,255)",
+        backgroundColor: "rgb(255, 247, 252)",
         containerBackground: "rgb(245, 245, 245)",
         headerBackground: "rgb(255,255,255)",
         primaryText: "rgb(51, 51, 51)",

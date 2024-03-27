@@ -6,10 +6,10 @@ import TabSection from "../TabSection";
 import SkillsAndProjectionSectionTabItem from "../skillsAndProjectSectionTabItem";
 import * as StyledComponent from "./styledComponent";
 
-const SkillsAndProjectionSectionTabs = ({ domainDetails }) => {
-    const tabLabels = Object.keys(domainDetails);
+const SkillsAndProjectionSectionTabs = ({ sectionDetails }) => {
+    const tabLabels = Object.keys(sectionDetails);
     const [activeTab, setActiveTab] = useState(tabLabels[0]);
-    const tabData = domainDetails[activeTab];
+    const tabData = sectionDetails[activeTab];
     const touchStartX = useRef(null);
 
     const handleTouchStart = (event) => {
@@ -18,7 +18,6 @@ const SkillsAndProjectionSectionTabs = ({ domainDetails }) => {
 
     const handleTouchEnd = (event) => {
         if (!touchStartX.current) return;
-
         const touchEndX = event.changedTouches[0].clientX;
         const deltaX = touchEndX - touchStartX.current;
         const minSwipeDistance = 50;

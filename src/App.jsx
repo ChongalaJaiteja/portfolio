@@ -4,10 +4,12 @@ import { Suspense, lazy } from "react";
 const MainPage = lazy(() => import("./components/mainPage"));
 const NotFound = lazy(() => import("./components/notFound"));
 const Development = lazy(() => import("./components/development"));
-const Programming = lazy(() => import("./components/programming"));
 const DevelopmentDomainPage = lazy(() =>
     import("./components/developmentDomainPage")
 );
+const ProjectMainPage = lazy(() => import("./components/projectsMainPage"));
+
+const Programming = lazy(() => import("./components/programming"));
 const Layout = lazy(() => import("./components/layout"));
 const Loader = lazy(() => import("./components/loader"));
 
@@ -20,10 +22,16 @@ const App = () => (
                         <Route index element={<MainPage />} />
                         <Route path="development" element={<Layout />}>
                             <Route index element={<Development />} />
-                            <Route
-                                path=":id"
-                                element={<DevelopmentDomainPage />}
-                            />
+                            <Route path=":id">
+                                <Route
+                                    index
+                                    element={<DevelopmentDomainPage />}
+                                />
+                                <Route
+                                    path="projects/*"
+                                    element={<ProjectMainPage />}
+                                />
+                            </Route>
                         </Route>
                         <Route path="programming" element={<Programming />} />
                     </Route>
