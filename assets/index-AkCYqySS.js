@@ -1,4 +1,4 @@
-import{u as a,h as o,j as t}from"./index-B7nADy_P.js";const b="#4fa94d",m={"aria-busy":!0,role:"progressbar"},k=a.div`
+import{u as a,h as o,j as t}from"./index-DIYihR5L.js";const b="#4fa94d",m={"aria-busy":!0,role:"progressbar"},k=a.div`
   display: ${s=>s.$visible?"flex":"none"};
 `,u="http://www.w3.org/2000/svg",e=242.776657104492,g=1.6,v=o`
 12.5% {
@@ -87,4 +87,4 @@ to {
     width: 100%;
     margin: auto;
     margin-top: 4rem;
-`,N=()=>t.jsx(S,{children:t.jsx(w,{visible:!0,height:"80",width:"80",color:"rgb(46, 175, 255)",ariaLabel:"tail-spin-loading",radius:"1",wrapperStyle:{},wrapperClass:""})});export{N as default};
+`,N=()=>t.jsx(S,{children:t.jsx(w,{visible:!0,height:"90",width:"100",color:"rgb(46, 175, 255)",ariaLabel:"tail-spin-loading",radius:"1",wrapperStyle:{},wrapperClass:""})});export{N as default};

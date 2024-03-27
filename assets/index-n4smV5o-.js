@@ -1,4 +1,4 @@
-import{u as i,j as e}from"./index-B7nADy_P.js";import{m,v as p}from"./constants-BX8pe3aa.js";const x=i(m.li)`
+import{u as i,j as e}from"./index-DIYihR5L.js";import{j as c,l as d}from"./constants-Cv4QlY0v.js";const p=i(c.li)`
     display: flex;
     align-items: center;
     gap: 0.6em;
@@ -13,8 +13,8 @@ import{u as i,j as e}from"./index-B7nADy_P.js";import{m,v as p}from"./constants-
     @media (min-width: 350px) {
         flex: 0 1 calc(50% - (var(--gap) + var(--pd-l)));
     }
-    @media (min-width: 560px) {
-        flex: 0 1 calc(33.3% - (var(--gap) + var(--pd-l)));
+    @media (min-width: 695px) {
+        flex: 0 1 calc(33.33% - (var(--gap) + var(--pd-l)));
     }
     @media (min-width: 960px) {
         flex: 0 1 calc(25% - (var(--gap) + var(--pd-l)));
@@ -25,29 +25,29 @@ import{u as i,j as e}from"./index-B7nADy_P.js";import{m,v as p}from"./constants-
     @media (min-width: 1900px) {
         flex: 0 1 calc(16.6% - (var(--gap) + var(--pd-l)));
     }
-`,g=i.div`
+`,x=i.div`
     font-size: clamp(0.2rem, 1vw + 1.8rem, 2.5rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* outline: auto; */
-`,v=i.p`
+`,g=i.p`
     font-size: clamp(0.2rem, 1vw + 0.71rem, 1.2rem);
     text-transform: capitalize;
     padding-right: 0.4em;
-`,y=({itemDetails:a,index:n,id:c})=>{const{icon:t,name:l}=a,o={initial:{opacity:0,y:22},animate:r=>({opacity:1,y:0,transition:{delay:.16*r,type:"spring"}})};return e.jsxs(x,{initial:"initial",variants:o,whileInView:"animate",custom:n,viewport:{once:!0},whileHover:{scale:1.04},children:[e.jsx(g,{children:t}),e.jsx(v,{children:l})]})},f=i(m.li)``,u=i.div`
+`,v=({itemDetails:a,index:n})=>{const{icon:t,name:l}=a,r={initial:{opacity:0,y:22},animate:o=>({opacity:1,y:0,transition:{delay:.16*o,type:"spring"}})};return e.jsxs(p,{initial:"initial",variants:r,whileInView:"animate",custom:n,viewport:{once:!0},whileHover:{scale:1.04},children:[e.jsx(x,{children:t}),e.jsx(g,{children:l})]})},y=i(c.li)``,f=i.div`
     /* outline: auto; */
     display: flex;
     flex-direction: column;
     gap: 1em;
-`,h=i.h4`
+`,u=i.h4`
     font-size: clamp(0.1rem, 1vw + 0.73rem, 1.16rem);
     color: var(--theme-second-text-color);
-`,w=i.ul`
+    text-transform: capitalize;
+`,h=i.ul`
     list-style-type: none;
     padding: 0;
-    /* outline: auto; */
     display: flex;
     flex-flow: row wrap;
     gap: 1.5em 1em;
-`,k=({data:a,index:n,id:c})=>{const{category:t="",...l}=a,o=Object.values(l)[0],r={initial:{opacity:0,y:22},animate:s=>({opacity:1,y:0,transition:{delay:.16*s,type:"spring"}})};return e.jsx(f,{initial:"initial",variants:r,whileInView:"animate",custom:n,viewport:{once:!0},children:e.jsxs(u,{children:[t&&e.jsx(h,{children:t}),e.jsx(w,{children:o.map((s,d)=>e.jsx(y,{itemDetails:s,index:d,id:c},p()))})]})})};export{k as default};
+`,S=({data:a,index:n})=>{const{category:t="",...l}=a,r=Object.values(l)[0],o={initial:{opacity:0,y:22},animate:s=>({opacity:1,y:0,transition:{delay:.16*s,type:"spring"}})};return e.jsx(y,{initial:"initial",variants:o,whileInView:"animate",custom:n,viewport:{once:!0},children:e.jsxs(f,{children:[t&&e.jsx(u,{children:t}),e.jsx(h,{children:r.map((s,m)=>e.jsx(v,{itemDetails:s,index:m},d()))})]})})};export{S as default};
