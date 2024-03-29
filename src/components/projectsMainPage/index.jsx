@@ -1,13 +1,18 @@
 import { useLocation, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { development, programming } from "../../utils/constants";
-import * as StyledComponent from "./styledComponent";
 import Loader from "../loader";
+import ProjectMainPagProjectDetails from "../projectMainPageProjectDetails";
+import ProjectMainPageProjectPosts from "../projectMainPageProjectPosts";
+import { v4 as uuidv4 } from "uuid";
+import * as StyledComponent from "./styledComponent";
 
 const ProjectMainPage = () => {
     const location = useLocation();
     const params = useParams();
     const [projectDetails, setProjectDetails] = useState(null);
+    const { postUrl, ...rest } = projectDetails || {};
+
     const [isLoading, setIsLoading] = useState(true);
 
     const getProjectDetails = () => {
@@ -45,6 +50,7 @@ const ProjectMainPage = () => {
                         item?.category?.toLowerCase() ===
                             projectCategory.toLowerCase())
             );
+
             const selectedProject =
                 projectItem.projectList[projectCategoryId - 1];
             setProjectDetails(selectedProject.projectDetails);
@@ -54,6 +60,7 @@ const ProjectMainPage = () => {
         getProjectDetails();
         setIsLoading(false);
     }, []);
+
     return (
         <StyledComponent.ProjectMainPageBgContainer>
             <StyledComponent.ProjectMainPageBodyContainer>
@@ -61,7 +68,12 @@ const ProjectMainPage = () => {
                     <Loader />
                 ) : (
                     <StyledComponent.ProjectMainPagContentBgContainer>
-                        <h1>{projectDetails.name}</h1>
+                        <StyledComponent.ProjectBgContainer>
+                            <ProjectMainPagProjectDetails
+                                projectDetails={rest}
+                            />
+                            <ProjectMainPageProjectPosts postUrl={postUrl} />
+                        </StyledComponent.ProjectBgContainer>
                     </StyledComponent.ProjectMainPagContentBgContainer>
                 )}
             </StyledComponent.ProjectMainPageBodyContainer>

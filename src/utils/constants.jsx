@@ -6,6 +6,7 @@ import Qualification from "../components/qualification";
 import SkillsAndProjects from "../components/skillsAndProjects";
 import Experience from "../components/experience";
 import Contact from "../components/contact";
+import { FaGithub } from "react-icons/fa";
 
 //Home page
 export const contactLinks = [
@@ -134,6 +135,7 @@ export const skillsAndProjectSection = {
     devIcon: "webdev.svg",
     altName: "Dev Icon",
 };
+
 export const skillsAndProjectPageCategory = [
     {
         title: "Development",
@@ -262,14 +264,35 @@ export const development = [
                                 name: "emoji game",
                                 image: "emoji-game.png",
                             },
+
                             projectDetails: {
                                 name: "emoji game",
-                                image: "emoji-game.png",
-                                description: "",
-                                videoUrl: "",
-                                deploymentLink:
-                                    "https://jaitejaemoji.ccbp.tech/",
-                                githubLink: "",
+                                image: ["emoji-game.png"],
+                                description:
+                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                technologies: [
+                                    "ReactJs",
+                                    "NodeJs",
+                                    "express",
+                                    "StyledComponents",
+                                    "mui",
+                                ],
+                                externalLinks: [
+                                    {
+                                        name: "demo video",
+                                        link: "tugvonfZmlw",
+                                    },
+                                    {
+                                        name: "deployment link",
+                                        link: "https://jaitejaemoji.ccbp.tech/",
+                                    },
+                                    {
+                                        name: "source code",
+                                        link: "https://github.com/ChongalaJaiteja/wikipedia-search-app",
+                                    },
+                                ],
+                                postUrl:
+                                    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7134396712307068928",
                             },
                         },
 
@@ -278,14 +301,35 @@ export const development = [
                                 name: "calendar",
                                 image: "calendar.png",
                             },
+
                             projectDetails: {
                                 name: "calendar",
-                                image: "calendar.png",
-                                description: "",
-                                videoUrl: "",
-                                deploymentLink:
-                                    "https://jaitejaemoji.ccbp.tech/",
-                                githubLink: "",
+                                image: ["calendar.png"],
+                                description:
+                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                technologies: [
+                                    "ReactJs",
+                                    "NodeJs",
+                                    "express",
+                                    "StyledComponents",
+                                    "mui",
+                                ],
+                                externalLinks: [
+                                    {
+                                        name: "demo video",
+                                        link: "tugvonfZmlw",
+                                    },
+                                    {
+                                        name: "deployment link",
+                                        link: "https://jaitejaemoji.ccbp.tech/",
+                                    },
+                                    {
+                                        name: "source code",
+                                        link: "https://github.com/ChongalaJaiteja/wikipedia-search-app",
+                                    },
+                                ],
+                                postUrl:
+                                    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7134396712307068928",
                             },
                         },
                     ],
@@ -318,14 +362,40 @@ export const development = [
                             },
                             projectDetails: {
                                 name: "wikipedia search application",
-                                image: "wikipedia-fullstack-1.png",
+                                image: [
+                                    "wikipedia-fullstack-1.png",
+                                    "wikipedia-fullstack-2.png",
+                                    "wikipedia-fullstack-3.png",
+                                    "wikipedia-fullstack-4.png",
+                                    "wikipedia-fullstack-5.png",
+                                    "wikipedia-fullstack-6.png",
+                                ],
                                 description:
                                     "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
-                                videoUrl: "",
-                                deploymentLink:
-                                    "https://github.com/ChongalaJaiteja/wikipedia-search-app",
-                                githubLink:
-                                    "https://github.com/ChongalaJaiteja/wikipedia-search-app",
+                                technologies: [
+                                    "ReactJs",
+                                    "NodeJs",
+                                    "express",
+                                    "StyledComponents",
+                                    "mui",
+                                ],
+                                externalLinks: [
+                                    {
+                                        name: "demo video",
+                                        link: "tugvonfZmlw",
+                                    },
+                                    {
+                                        name: "deployment link",
+                                        link: "https://chongalajaiteja.github.io/wikipedia-search-app/",
+                                    },
+                                    {
+                                        name: "source code",
+                                        icon: <FaGithub />,
+                                        link: "https://github.com/ChongalaJaiteja/wikipedia-search-app",
+                                    },
+                                ],
+                                postUrl:
+                                    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7134396712307068928",
                             },
                         },
                     ],

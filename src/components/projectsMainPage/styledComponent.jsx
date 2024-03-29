@@ -12,4 +12,18 @@ export const ProjectMainPageBodyContainer = styled(
 
 export const ProjectMainPagContentBgContainer = styled.div`
     min-height: 100vh;
+    outline: auto;
+    padding: 1em;
+`;
+
+export const ProjectBgContainer = styled.div`
+    /* outline: auto; */
+    display: flex;
+    flex-direction: column;
+    --gap: 1em;
+    gap: var(--gap);
+    @media (min-width: 650px) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 `;
