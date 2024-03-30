@@ -5,7 +5,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { v4 as uuidv4 } from "uuid";
 import * as StyledComponent from "./styledComponent";
 
-const AccordionComponent = ({ data = [] }) => {
+const AccordionComponent = ({ children, data = [], heading }) => {
     return (
         <StyledComponent.AccordionBgContainer>
             <AccordionSummary
@@ -13,16 +13,22 @@ const AccordionComponent = ({ data = [] }) => {
                 aria-controls="panel2-content"
                 id="panel2-header"
             >
-                <Typography>Skills</Typography>
+                <Typography sx={{ textTransform: "capitalize" }}>
+                    {heading}
+                </Typography>
             </AccordionSummary>
             <AccordionDetails>
-                <StyledComponent.TechnologiesBgContainer>
-                    {data.map((technologies) => (
-                        <StyledComponent.TechnologyItem key={uuidv4()}>
-                            {technologies}
-                        </StyledComponent.TechnologyItem>
-                    ))}
-                </StyledComponent.TechnologiesBgContainer>
+                {data.length > 1 ? (
+                    <StyledComponent.TechnologiesBgContainer>
+                        {data.map((technologies) => (
+                            <StyledComponent.TechnologyItem key={uuidv4()}>
+                                {technologies}
+                            </StyledComponent.TechnologyItem>
+                        ))}
+                    </StyledComponent.TechnologiesBgContainer>
+                ) : (
+                    <>{children}</>
+                )}
             </AccordionDetails>
         </StyledComponent.AccordionBgContainer>
     );

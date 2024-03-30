@@ -22,8 +22,11 @@ export const ProjectBgContainer = styled.div`
     flex-direction: column;
     --gap: 1em;
     gap: var(--gap);
-    @media (min-width: 650px) {
+    @media (min-width: 700px) {
         flex-direction: row;
         align-items: flex-start;
+    }
+    & > * {
+        outline: auto;
     }
 `;

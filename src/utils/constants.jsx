@@ -7,7 +7,8 @@ import SkillsAndProjects from "../components/skillsAndProjects";
 import Experience from "../components/experience";
 import Contact from "../components/contact";
 import { FaGithub } from "react-icons/fa";
-
+import { IoPlayCircle } from "react-icons/io5";
+import { FiLink } from "react-icons/fi";
 //Home page
 export const contactLinks = [
     {
@@ -202,7 +203,7 @@ export const development = [
                             ),
                         },
                         {
-                            name: "redux",
+                            name: "redux toolkit",
                             icon: (
                                 <i className="devicon-redux-original colored" />
                             ),
@@ -376,21 +377,27 @@ export const development = [
                                     "ReactJs",
                                     "NodeJs",
                                     "express",
-                                    "StyledComponents",
                                     "mui",
+                                    "sqlite",
+                                    "StyledComponents",
                                 ],
                                 externalLinks: [
                                     {
-                                        name: "demo video",
-                                        link: "tugvonfZmlw",
+                                        id: uuidv4(),
+                                        icon: <IoPlayCircle />,
+                                        name: "watch video",
+                                        link: "https://youtu.be/tugvonfZmlw",
                                     },
                                     {
+                                        id: uuidv4(),
+                                        icon: <FiLink />,
                                         name: "deployment link",
                                         link: "https://chongalajaiteja.github.io/wikipedia-search-app/",
                                     },
                                     {
-                                        name: "source code",
+                                        id: uuidv4(),
                                         icon: <FaGithub />,
+                                        name: "source code",
                                         link: "https://github.com/ChongalaJaiteja/wikipedia-search-app",
                                     },
                                 ],

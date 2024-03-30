@@ -5,6 +5,7 @@ import Loader from "../loader";
 import ProjectMainPagProjectDetails from "../projectMainPageProjectDetails";
 import ProjectMainPageProjectPosts from "../projectMainPageProjectPosts";
 import { v4 as uuidv4 } from "uuid";
+
 import * as StyledComponent from "./styledComponent";
 
 const ProjectMainPage = () => {
@@ -62,22 +63,26 @@ const ProjectMainPage = () => {
     }, []);
 
     return (
-        <StyledComponent.ProjectMainPageBgContainer>
-            <StyledComponent.ProjectMainPageBodyContainer>
-                {isLoading ? (
-                    <Loader />
-                ) : (
-                    <StyledComponent.ProjectMainPagContentBgContainer>
-                        <StyledComponent.ProjectBgContainer>
-                            <ProjectMainPagProjectDetails
-                                projectDetails={rest}
-                            />
-                            <ProjectMainPageProjectPosts postUrl={postUrl} />
-                        </StyledComponent.ProjectBgContainer>
-                    </StyledComponent.ProjectMainPagContentBgContainer>
-                )}
-            </StyledComponent.ProjectMainPageBodyContainer>
-        </StyledComponent.ProjectMainPageBgContainer>
+            <StyledComponent.ProjectMainPageBgContainer>
+                <StyledComponent.ProjectMainPageBodyContainer>
+                    {isLoading ? (
+                        <Loader />
+                    ) : (
+                        <StyledComponent.ProjectMainPagContentBgContainer>
+                            <StyledComponent.ProjectBgContainer>
+                                <ProjectMainPagProjectDetails
+                                    projectDetails={rest}
+                                />
+                                <ProjectMainPageProjectPosts
+                                    postUrl={postUrl}
+                                    image={rest.image}
+                                    name={rest.name}
+                                />
+                            </StyledComponent.ProjectBgContainer>
+                        </StyledComponent.ProjectMainPagContentBgContainer>
+                    )}
+                </StyledComponent.ProjectMainPageBodyContainer>
+            </StyledComponent.ProjectMainPageBgContainer>
     );
 };
 

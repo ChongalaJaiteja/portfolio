@@ -6,7 +6,7 @@ export const ProjectLinksAndResourcesBgContainer = styled.div``;
 export const ProjectLinksAndResourcesMainHeading = styled.h2``;
 
 export const ProjectLinksItemBgContainer = styled.ul`
-    margin-top: 1em;
+    margin-block: 1.2em;
     padding: 0;
     list-style-type: none;
     display: flex;
@@ -21,25 +21,31 @@ export const ProjectLinkItemContainer = styled(motion.li)`
             : "rgba(19, 78, 74, 0.4)"};
     color: ${({ theme }) =>
         theme.isLightTheme ? "white" : "rgba(45, 212, 191, 1)"};
-    font-weight: 700;
-    border-radius: 0.5rem;
+    font-weight: 600;
+    border-radius: 0.6rem;
     padding: 0.7em 1em;
-    font-size: clamp(0.1em, 1vw + 0.6em, 1em);
+    font-size: clamp(0.1rem, 1vw + 0.6rem, 1rem);
     display: flex;
     align-items: center;
-    gap: 0.3em;
-`;
+    gap: 0.45em;
+    transition: background-color 0.18s linear;
+    cursor: pointer;
+    &:hover {
+        background-color: ${({ theme }) =>
+            theme.isLightTheme
+                ? "rgba(46, 175, 255, 0.9)"
+                : "rgba(19, 78, 74, 0.65)"};
+    }
 
-export const ProjectLinkItem = styled.a`
-    color: var(--theme-text-color);
-    display: flex;
-    align-items: center;
-    gap: 0.4em;
+    &:hover > :first-child {
+        transform: scale(1.13);
+    }
 `;
 
 export const ProjectLinkItemIcon = styled.span`
-    font-size: clamp(0.2rem, 1vw + 1rem, 1.2rem);
+    font-size: clamp(0.2rem, 1vw + 0.81rem, 1.3rem);
     margin-top: 0.2em;
+    transition: transform 0.11s linear;
 `;
 
 export const ProjectLinkItemText = styled.span`
