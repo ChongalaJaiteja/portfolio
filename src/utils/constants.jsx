@@ -75,7 +75,7 @@ export const navLinkOptions = [
 //About Page
 
 export const aboutPageData = {
-    profileImage: "profile.jpg",
+    profileImage: "about/profile.jpg",
     altName: "Jai Teja",
 };
 
@@ -83,7 +83,7 @@ export const aboutPageData = {
 
 export const qualificationData = [
     {
-        imageUrl: "nxtwave.png",
+        imageUrl: "qualification/nxtwave.png",
         icon: <StyledComponent.GraduateIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
         websiteUrl: "https://www.ccbp.in/",
@@ -94,7 +94,7 @@ export const qualificationData = [
             "NxtWave is an ed-tech startup based in Hyderabad, India that offers online training programs in Industry 4.0 careers",
     },
     {
-        imageUrl: "gmrit.jpeg",
+        imageUrl: "qualification/gmrit.jpeg",
         icon: <StyledComponent.GraduateIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
         websiteUrl: "https://gmrit.edu.in/",
@@ -106,7 +106,7 @@ export const qualificationData = [
             "GMRIT is one of the most reputed college which offers admission to engineering courses in various streams",
     },
     {
-        imageUrl: "sriviswa.avif",
+        imageUrl: "qualification/sriviswa.avif",
         icon: <StyledComponent.CollegeIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
         websiteUrl: "https://www.sriviswa.com/",
@@ -118,7 +118,7 @@ export const qualificationData = [
             "Sri Viswa IIT and Medical Academy is among the renowned junior colleges offering the best education",
     },
     {
-        imageUrl: "ravindra-bharathi-school.png",
+        imageUrl: "qualification/ravindra-bharathi-school.png",
         icon: <StyledComponent.SchoolIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
         websiteUrl: "https://rbschools.in/",
@@ -156,7 +156,7 @@ export const development = [
     {
         id: "web-development",
         name: "Web Development",
-        image: "web-development.jpg",
+        image: "development/web-development/projects/web-development.jpg",
         description:
             "Web development types have been classified into front-end development, back-end development, and full-stack development. For an excellently.",
         sectionDetails: {
@@ -263,12 +263,14 @@ export const development = [
                         {
                             projectCard: {
                                 name: "emoji game",
-                                image: "emoji-game.png",
+                                image: "development/web-development/projects/emoji-game.png",
                             },
 
                             projectDetails: {
                                 name: "emoji game",
-                                image: ["emoji-game.png"],
+                                image: [
+                                    "development/web-development/projects/emoji-game.png",
+                                ],
                                 description:
                                     "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
                                 technologies: [
@@ -300,12 +302,14 @@ export const development = [
                         {
                             projectCard: {
                                 name: "calendar",
-                                image: "calendar.png",
+                                image: "development/web-development/projects/calendar.png",
                             },
 
                             projectDetails: {
                                 name: "calendar",
-                                image: ["calendar.png"],
+                                image: [
+                                    "development/web-development/projects/calendar.png",
+                                ],
                                 description:
                                     "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
                                 technologies: [
@@ -359,17 +363,17 @@ export const development = [
                         {
                             projectCard: {
                                 name: "wikipedia search application",
-                                image: "wikipedia-fullstack-1.png",
+                                image: "development/web-development/projects/wikipedia-fullstack-1.png",
                             },
                             projectDetails: {
                                 name: "wikipedia search application",
                                 image: [
-                                    "wikipedia-fullstack-1.png",
-                                    "wikipedia-fullstack-2.png",
-                                    "wikipedia-fullstack-3.png",
-                                    "wikipedia-fullstack-4.png",
-                                    "wikipedia-fullstack-5.png",
-                                    "wikipedia-fullstack-6.png",
+                                    "development/web-development/projects/wikipedia-fullstack-1.png",
+                                    "development/web-development/projects/wikipedia-fullstack-2.png",
+                                    "development/web-development/projects/wikipedia-fullstack-3.png",
+                                    "development/web-development/projects/wikipedia-fullstack-4.png",
+                                    "development/web-development/projects/wikipedia-fullstack-5.png",
+                                    "development/web-development/projects/wikipedia-fullstack-6.png",
                                 ],
                                 description:
                                     "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
@@ -435,7 +439,7 @@ export const getDevelopmentPageData = (id) => {
 export const experienceList = [
     {
         id: uuidv4(),
-        imageUrl: "coding_club_gmrit_logo.jpeg",
+        imageUrl: "experience/coding_club_gmrit_logo.jpeg",
         icon: <StyledComponent.DevelopmentIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
         navIcon: <StyledComponent.NavLinkIcon />,
@@ -449,7 +453,7 @@ export const experienceList = [
     },
     {
         id: uuidv4(),
-        imageUrl: "nxtwave.png",
+        imageUrl: "experience/nxtwave.png",
         icon: <StyledComponent.TeachingAssistantIcon />,
         infoIcon: <StyledComponent.InfoIcon />,
         navIcon: <StyledComponent.NavLinkIcon />,
