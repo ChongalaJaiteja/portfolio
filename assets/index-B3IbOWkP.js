@@ -1,4 +1,4 @@
-import{u as r,r as c,_ as h,j as e,b as v}from"./index-DIYihR5L.js";import{j as u,l as m,A as j,k as w,r as T}from"./constants-Cv4QlY0v.js";import S from"./index-AkCYqySS.js";const y=r(u.ul)`
+import{u as r,r as c,_ as h,j as e,b as v}from"./index-CMg8H1mC.js";import{j as u,l as m,A as j,k as w,r as T}from"./constants-CcZyEjjk.js";import S from"./index-BnWsxPr5.js";const y=r(u.ul)`
     list-style-type: none;
     /* outline: auto; */
     padding: 0;
@@ -6,7 +6,7 @@ import{u as r,r as c,_ as h,j as e,b as v}from"./index-DIYihR5L.js";import{j as 
     flex-direction: column;
     gap: 3em;
     flex-grow: 1;
-`,k=c.lazy(()=>h(()=>import("./index-n4smV5o-.js"),__vite__mapDeps([0,1,2,3,4]))),C=c.lazy(()=>h(()=>import("./index-DG5pIvuE.js"),__vite__mapDeps([5,1,2,3,4]))),P=c.lazy(()=>h(()=>import("./index-uQLRH3UK.js"),__vite__mapDeps([6,1,2]))),_=({tabSectionData:n,id:t})=>{const o=(i,l)=>{switch(t){case"skills":return e.jsx(k,{data:i,index:l},m());case"projects":return e.jsx(C,{data:i,index:l},m());case"certifications":return e.jsx(P,{data:i,index:l},m());default:return null}};return e.jsx(y,{children:e.jsx(c.Suspense,{fallback:e.jsx(S,{}),children:n.map((i,l)=>e.jsx(e.Fragment,{children:o(i,l)}))})})},D=r.li`
+`,k=c.lazy(()=>h(()=>import("./index-Dcm0twda.js"),__vite__mapDeps([0,1,2,3,4]))),C=c.lazy(()=>h(()=>import("./index-DBDy4EAz.js"),__vite__mapDeps([5,1,2,3,4]))),P=c.lazy(()=>h(()=>import("./index-BuK8Vmhm.js"),__vite__mapDeps([6,1,2]))),_=({tabSectionData:n,id:t})=>{const o=(i,l)=>{switch(t){case"skills":return e.jsx(k,{data:i,index:l},m());case"projects":return e.jsx(C,{data:i,index:l},m());case"certifications":return e.jsx(P,{data:i,index:l},m());default:return null}};return e.jsx(y,{children:e.jsx(c.Suspense,{fallback:e.jsx(S,{}),children:n.map((i,l)=>e.jsx(e.Fragment,{children:o(i,l)}))})})},D=r.li`
     background-color: ${({theme:n,isActive:t})=>t?n.isLightTheme?"none":"rgb(30 41 59 / 1)":"var(--theme-container-bg-color)"};
     text-align: center;
     width: clamp(8rem, 1vw + 30%, 10rem);
@@ -102,7 +102,7 @@ import{u as r,r as c,_ as h,j as e,b as v}from"./index-DIYihR5L.js";import{j as 
 `,R=r(w)``,z=r.div``,G=()=>{const{id:n}=v(),{sectionDetails:t}=T(n);return e.jsx(e.Fragment,{children:e.jsx(L,{children:e.jsx(R,{children:e.jsx(z,{children:e.jsx(X,{sectionDetails:t})})})})})};export{G as default};
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/index-n4smV5o-.js","assets/index-DIYihR5L.js","assets/index-NdIjxnzJ.css","assets/constants-Cv4QlY0v.js","assets/constants-cwqOqNE_.css","assets/index-DG5pIvuE.js","assets/index-uQLRH3UK.js"]
+    __vite__mapDeps.viteFileDeps = ["assets/index-Dcm0twda.js","assets/index-CMg8H1mC.js","assets/index-NdIjxnzJ.css","assets/constants-CcZyEjjk.js","assets/constants-cwqOqNE_.css","assets/index-DBDy4EAz.js","assets/index-BuK8Vmhm.js"]
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }

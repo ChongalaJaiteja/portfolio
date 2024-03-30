@@ -1,4 +1,4 @@
-import{u as i,j as e}from"./index-DIYihR5L.js";import{j as c,l as d}from"./constants-Cv4QlY0v.js";const p=i(c.li)`
+import{u as i,j as e}from"./index-CMg8H1mC.js";import{j as c,l as d}from"./constants-CcZyEjjk.js";const p=i(c.li)`
     display: flex;
     align-items: center;
     gap: 0.6em;
@@ -10,19 +10,19 @@ import{u as i,j as e}from"./index-DIYihR5L.js";import{j as c,l as d}from"./const
     padding-left: var(--pd-l);
     padding-block: 0.22em;
     flex: 1 1 100%;
-    @media (min-width: 350px) {
+    @media (min-width: 465px) {
         flex: 0 1 calc(50% - (var(--gap) + var(--pd-l)));
     }
-    @media (min-width: 695px) {
+    @media (min-width: 609px) {
         flex: 0 1 calc(33.33% - (var(--gap) + var(--pd-l)));
     }
-    @media (min-width: 960px) {
+    @media (min-width: 1115px) {
         flex: 0 1 calc(25% - (var(--gap) + var(--pd-l)));
     }
-    @media (min-width: 1300px) {
+    @media (min-width: 1500px) {
         flex: 0 1 calc(20% - (var(--gap) + var(--pd-l)));
     }
-    @media (min-width: 1900px) {
+    @media (min-width: 1850px) {
         flex: 0 1 calc(16.6% - (var(--gap) + var(--pd-l)));
     }
 `,x=i.div`
