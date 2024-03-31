@@ -7,7 +7,9 @@ export const ExperienceCardSkillItem = styled(motion.li)`
     border: 1px solid var(--theme-divide-line-color);
     border-radius: 20px;
     padding: 0.3em 0.5em;
+    text-transform: capitalize;
     &:hover {
         background-color: ${({ theme }) => theme.primaryAccentColor};
+        color: white;
     }
 `;

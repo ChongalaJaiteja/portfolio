@@ -1,8 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import { useState, useRef } from "react";
-import TabSection from "../TabSection";
-// import ProjectsTabSection from "../projectsTabSection";
-// import CertificationsTabSection from "../certificationsTabSection";
+import TabSection from "../tabSection";
 import SkillsAndProjectionSectionTabItem from "../skillsAndProjectSectionTabItem";
 import * as StyledComponent from "./styledComponent";
 
@@ -37,19 +35,6 @@ const SkillsAndProjectionSectionTabs = ({ sectionDetails }) => {
     const handleTabClick = (tab) => {
         setActiveTab(tab);
     };
-
-    // const renderTabContent = () => {
-    //     switch (activeTab) {
-    //         case tabLabels[0]:
-    //             return <TabSection tabSectionData={tabData} id={activeTab} />;
-    //         case tabLabels[1]:
-    //             return <TabSection tabSectionData={tabData} id={activeTab} />;
-    //         case tabLabels[2]:
-    //             return (
-    //                 <CertificationsTabSection certificationsData={tabData} />
-    //             );
-    //     }
-    // };
 
     return (
         <StyledComponent.SkillAndProjectsCardBgContainer>

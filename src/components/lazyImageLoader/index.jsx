@@ -6,7 +6,7 @@ const LazyImageLoader = ({
     altName,
     width = "100%",
     height = "100%",
-    threshold = 120,
+    threshold = 100,
     styledComponent: StyledComponent,
 }) => {
     const ImageComponent = StyledComponent || LazyLoadImage;

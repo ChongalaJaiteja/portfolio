@@ -70,6 +70,7 @@ const ExperienceSectionCard = ({ experience }) => {
                     >
                         Know More {navIcon}
                     </StyledComponent.ExperienceCardLink>
+                    
                     <StyledComponent.ExperienceCardSkillsTitle
                         onClick={() => toggleSkills(id)}
                     >

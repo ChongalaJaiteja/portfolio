@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const SkillSetBgContainer = styled(motion.ul)`
+export const TabSectionBgContainer = styled(motion.ul)`
     list-style-type: none;
     /* outline: auto; */
     padding: 0;

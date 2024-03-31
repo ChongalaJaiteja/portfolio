@@ -132,6 +132,7 @@ export const qualificationData = [
 ];
 
 //Skills & Project Page
+
 export const skillsAndProjectSection = {
     devIcon: "webdev.svg",
     altName: "Dev Icon",
@@ -412,7 +413,117 @@ export const development = [
                     ],
                 },
             ],
-            certifications: [{ category: "", certificationsList: [{}, {}] }],
+            certifications: [
+                {
+                    category: "frontend development",
+                    certificationsList: [
+                        {
+                            id: uuidv4(),
+                            name: "Build Your Own Static Website",
+                            image: "development/web-development/certifications/static-website-nxtwave.png",
+                            institute: "nxtwave",
+                            skills: ["html", "css", "bootstrap"],
+                            link: "https://certificates.ccbp.in/academy/static-website?id=UQMCYATAIT",
+                        },
+                        {
+                            id: uuidv4(),
+                            name: "Build Your Own Responsive Website",
+                            image: "development/web-development/certifications/responsive-website-nxtwave.png",
+                            institute: "nxtwave",
+                            skills: ["bootstrap", "flexbox"],
+                            link: "https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=GBEUWPSGEA",
+                        },
+                        {
+                            id: uuidv4(),
+                            name: "JavaScript Essentials",
+                            image: "development/web-development/certifications/javascript-essentials-nxtwave.png",
+                            institute: "nxtwave",
+                            skills: ["javascript"],
+                            link: "https://certificates.ccbp.in/academy/javascript-essentials?id=WTDGWVOTGG",
+                        },
+                        {
+                            id: uuidv4(),
+                            name: "Introduction to Web Development with HTML, CSS, JavaScript",
+                            image: "development/web-development/certifications/introduction-to-web-development-with-html-css-javascript-ibm.png",
+                            institute: "coursera",
+                            skills: ["html", "css", "javascript"],
+                            link: "https://www.coursera.org/account/accomplishments/verify/Q6HJTLGRS46G",
+                        },
+                        {
+                            id: uuidv4(),
+                            name: "Build Your Own Dynamic Web Application",
+                            image: "development/web-development/certifications/dynamic-website-nxtwave.png",
+                            institute: "nxtwave",
+                            skills: ["javascript"],
+                            link: "https://certificates.ccbp.in/academy/dynamic-web-application?id=LZVVDYXBSR",
+                        },
+
+                        {
+                            id: uuidv4(),
+                            name: "Responsive Web Design using Flexbox",
+                            image: "development/web-development/certifications/responsive-web-design-using-flexbox-nxtwave.png",
+                            institute: "nxtwave",
+                            skills: ["flexbox"],
+                            link: "https://certificates.ccbp.in/academy/responsive-web-design-using-flexbox?id=CMVEJPTGTR",
+                        },
+
+                        {
+                            id: uuidv4(),
+                            name: "react js",
+                            image: "development/web-development/certifications/reactjs-nxtwave.png",
+                            institute: "nxtwave",
+                            skills: ["reactjs"],
+                            link: "https://certificates.ccbp.in/academy/react-js?id=LQTPLBYEQU",
+                        },
+
+                        {
+                            id: uuidv4(),
+                            name: "Developing Front-End Apps with React",
+                            image: "development/web-development/certifications/reactjs-ibm.png",
+                            institute: "coursera",
+                            skills: ["reactjs"],
+                            link: "https://www.coursera.org/account/accomplishments/verify/ALRQYC62VQX4",
+                        },
+                    ],
+                },
+                {
+                    category: "backend development",
+                    certificationsList: [
+                        {
+                            id: uuidv4(),
+                            name: "Node.js",
+                            image: "development/web-development/certifications/nodejs-nxtwave.png",
+                            institute: "nxtwave",
+                            skills: ["nodejs"],
+                            link: "https://certificates.ccbp.in/academy/node-js?id=XJKWJWPMEV",
+                        },
+                        {
+                            id: uuidv4(),
+                            name: "introduction to databases",
+                            image: "development/web-development/certifications/introduction-to-databases-nxtwave.png",
+                            institute: "nxtwave",
+                            skills: ["sql"],
+                            link: "https://certificates.ccbp.in/academy/introduction-to-databases?id=YRTXIPBKWQ",
+                        },
+                        {
+                            id: uuidv4(),
+                            name: "SQL (Basic)",
+                            image: "development/web-development/certifications/sql(basic)-hackerrank.png",
+                            institute: "hackerrank",
+                            skills: ["sql"],
+                            link: "https://www.hackerrank.com/certificates/4e0a56751eef",
+                        },
+                        {
+                            id: uuidv4(),
+                            name: "SQL (Intermediate)",
+                            image: "development/web-development/certifications/sql(basic)-hackerrank.png",
+                            institute: "hackerrank",
+                            skills: ["sql"],
+                            link: "https://www.hackerrank.com/certificates/3359ea3c9060",
+                        },
+                    ],
+                },
+            ],
         },
     },
 ];
