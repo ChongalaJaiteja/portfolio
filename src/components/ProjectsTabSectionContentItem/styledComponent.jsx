@@ -10,6 +10,7 @@ export const ProjectItem = styled(motion.li)`
     overflow: hidden;
     flex: 1 1 calc(100% - var(--gap));
     height: clamp(15rem, 1vw + 1rem, 19rem);
+    box-shadow: var(--theme-box-shadow);
     @media (min-width: 510px) {
         flex: 0 1 calc(50% - var(--gap));
     }

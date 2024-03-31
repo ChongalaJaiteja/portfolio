@@ -12,7 +12,7 @@ export const DomainItemBgContainer = styled(motion.li)`
     box-shadow: none;
     transition: box-shadow 0.26s linear;
     &:hover {
-        box-shadow: 5px 5px 5px 5px #1e1e1e;
+        box-shadow: var(--theme-box-shadow);
     }
 `;
 

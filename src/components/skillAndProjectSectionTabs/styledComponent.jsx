@@ -7,6 +7,7 @@ export const SkillAndProjectsCardBgContainer = styled.div`
     background-color: var(--theme-container-bg-color);
     border: 2px solid var(--theme-divide-line-color);
     overflow: hidden;
+    box-shadow: var(--theme-box-shadow);
     @media (min-width: 800px) {
         flex-direction: row;
         min-height: 80vh;

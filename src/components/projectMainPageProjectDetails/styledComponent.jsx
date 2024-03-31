@@ -15,6 +15,7 @@ export const ProjectMainHeading = styled.h1`
 `;
 
 export const ProjectImageContainer = styled.div`
+    width: 100%;
     @media (min-width: 700px) {
         display: none;
     }

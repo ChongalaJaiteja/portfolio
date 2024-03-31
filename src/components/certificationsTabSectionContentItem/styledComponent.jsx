@@ -14,6 +14,7 @@ export const CertificationsItem = styled(motion.li)`
     display: flex;
     flex-direction: column;
     gap: 1em;
+    box-shadow: var(--theme-box-shadow);
     @media (min-width: 475px) {
         flex: 0 1 calc(50% - var(--gap));
     }

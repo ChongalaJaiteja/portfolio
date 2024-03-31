@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
     --theme-second-text-color:${({ theme }) => theme.secondText};
     --theme-header-text-color:${({ theme }) => theme.headerText};
     --theme-border-color:${({ theme }) => theme.borderColor};
+    --theme-box-shadow : ${({ theme }) => theme.boxShadow};
     --theme-divide-line-color:${({ theme }) => theme.divideLineColor};
     --theme-input-bg-color:${({ theme }) => theme.inputBackgroundColor};
     --theme-input-text-color:${({ theme }) => theme.inputText};

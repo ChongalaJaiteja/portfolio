@@ -114,7 +114,7 @@ const CertificationsTabSectionContentItem = ({ itemDetails, index }) => {
                 <StyledComponent.ViewCertificateBtn
                     onClick={handleViewCertificate}
                 >
-                    View certificate
+                    View Certificate
                 </StyledComponent.ViewCertificateBtn>
             </StyledComponent.ContentContainer>
         </StyledComponent.CertificationsItem>

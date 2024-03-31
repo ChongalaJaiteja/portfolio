@@ -8,6 +8,7 @@ export const SkillsAndProjectsPageCard = styled(motion.li)`
     cursor: pointer;
     background-color: ${({ bgColor }) => bgColor};
     border-radius: 10px;
+    box-shadow: var(--theme-box-shadow);
 `;
 
 export const StyledLink = styled(Link)`

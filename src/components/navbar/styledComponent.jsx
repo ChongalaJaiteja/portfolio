@@ -14,6 +14,7 @@ export const NavBar = styled(motion.nav)`
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: var(--theme-box-shadow);
     justify-content: space-between;
     padding-inline: clamp(0.3em, 1vw + 1em, 2.1em);
     padding-block: ${({ hideNavLinks }) =>

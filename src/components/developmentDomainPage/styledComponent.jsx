@@ -12,4 +12,6 @@ export const DevelopmentDomainSectionBodyContainer = styled(
     AboutPageSectionBodyContainer
 )``;
 
-export const DevelopmentDomainPageContentBgContainer = styled.div``;
+export const DevelopmentDomainPageContentBgContainer = styled.div`
+
+`;

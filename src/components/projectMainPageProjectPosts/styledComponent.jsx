@@ -11,6 +11,7 @@ export const ProjectPostsBgContainer = styled.div`
 
 export const ProjectImageContainer = styled.div`
     display: none;
+    width: 100%;
     @media (min-width: 700px) {
         display: block;
     }

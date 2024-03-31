@@ -35,7 +35,7 @@ export const StackOverFlowIcon = styled(FontAwesomeIcon).attrs(() => ({
     box-shadow: none;
     transition: box-shadow 0.26s linear;
     &:hover {
-        box-shadow: 3px 3px 3px 3px #1e1e1e;
+        box-shadow: var(--theme-box-shadow);
     }
 `;
 

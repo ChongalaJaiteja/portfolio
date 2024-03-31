@@ -13,6 +13,7 @@ export const SkillItem = styled(motion.li)`
     padding-left: var(--pd-l);
     padding-block: 0.22em;
     flex: 1 1 100%;
+    box-shadow: var(--theme-box-shadow);
     @media (min-width: 465px) {
         flex: 0 1 calc(50% - (var(--gap) + var(--pd-l)));
     }

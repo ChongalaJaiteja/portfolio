@@ -1,24 +1,39 @@
 import { v4 as uuidv4 } from "uuid";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ModalUnstyled from "../ModalPopUp";
 import ProjectDemoVideo from "../projectDemoVideo";
 import * as StyledComponent from "./styledComponent";
 
 const ProjectMainPageProjectLinks = ({ projectLinks }) => {
     const [openVideoModel, setOpenVideoModel] = useState(false);
-    const [videoLink, setVideLink] = useState(null);
+    const [videoLink, setVideoLink] = useState(null);
+    const threshold = 768;
 
     const navigateToLink = (linkName, link) => {
         const isVideoBtn = linkName.toLowerCase().trim() === "watch video";
-        const threshold = 768;
         if (isVideoBtn && window.innerWidth >= threshold) {
-            setVideLink(link);
+            setVideoLink(link);
             setOpenVideoModel(true);
         } else {
             setOpenVideoModel(false);
             window.open(link, "_blank");
         }
     };
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < threshold) {
+                console.log("min");
+                setOpenVideoModel(false);
+            }
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
     return (
         <>
