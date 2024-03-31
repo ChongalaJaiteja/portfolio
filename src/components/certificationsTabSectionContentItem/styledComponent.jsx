@@ -8,7 +8,7 @@ export const CertificationsItem = styled(motion.li)`
     position: relative;
     border: 2px solid var(--theme-divide-line-color);
     overflow: hidden;
-    flex: 1 1 calc(100% - (var(--gap) + var(--p)));
+    flex: 1 1 calc(100% - var(--gap));
     background-color: var(--theme-container-bg-color);
     border-radius: 10px;
     display: flex;
@@ -30,6 +30,8 @@ export const CertificationsItem = styled(motion.li)`
 export const ImageContainer = styled.div`
     align-self: center;
     padding: 0.7em;
+    width: 96%;
+    height: 50%;
 `;
 
 export const CertificationsItemImage = styled.img`
@@ -43,13 +45,16 @@ export const CertificationsItemImage = styled.img`
 export const ContentContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    gap: 0.61em;
     padding: 0.7em;
 `;
 
 export const CertificateHeading = styled.h2`
     text-transform: capitalize;
     font-size: clamp(0.2rem, 1vw + 0.7rem, 1.2rem);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     /* color: var( --theme-second-text-color); */
 `;
 
