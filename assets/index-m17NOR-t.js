@@ -1,14 +1,15 @@
-import{u as e,r as u,j as i}from"./index-GC7tL9c-.js";import{j as s,z as y,B as C,L as b,l as k,C as j}from"./constants-DAKkPJq8.js";const I=e(s.li)`
+import{u as e,r as u,j as i}from"./index-mmWVTv3e.js";import{j as s,z as y,B as b,L as C,l as k,C as j}from"./constants-CuOQBZze.js";const I=e(s.li)`
     --gap: 1em;
     position: relative;
     border: 2px solid var(--theme-divide-line-color);
     overflow: hidden;
-    flex: 1 1 calc(100% - (var(--gap) + var(--p)));
+    flex: 1 1 calc(100% - var(--gap));
     background-color: var(--theme-container-bg-color);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 1em;
+    box-shadow: var(--theme-box-shadow);
     @media (min-width: 475px) {
         flex: 0 1 calc(50% - var(--gap));
     }
@@ -23,6 +24,8 @@ import{u as e,r as u,j as i}from"./index-GC7tL9c-.js";import{j as s,z as y,B as 
 `,z=e.div`
     align-self: center;
     padding: 0.7em;
+    width: 96%;
+    height: 50%;
 `,S=e.img`
     width: min(100%, 30rem);
     object-fit: cover;
@@ -32,11 +35,14 @@ import{u as e,r as u,j as i}from"./index-GC7tL9c-.js";import{j as s,z as y,B as 
 `,L=e.div`
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    gap: 0.61em;
     padding: 0.7em;
 `,V=e.h2`
     text-transform: capitalize;
     font-size: clamp(0.2rem, 1vw + 0.7rem, 1.2rem);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     /* color: var( --theme-second-text-color); */
 `;e.ul``;const A=e.div`
     display: flex;
@@ -60,7 +66,7 @@ import{u as e,r as u,j as i}from"./index-GC7tL9c-.js";import{j as s,z as y,B as 
     flex-wrap: wrap;
     gap: 0.5em;
     margin-bottom: 0.7em;
-`,Y=e(C)`
+`,Y=e(b)`
     font-size: clamp(0.2rem, 1vw + 0.8rem, 1.1rem);
     rotate: ${({rotateArrow:r})=>r?"90deg":"0deg"};
 `,E=e(s.li)`
@@ -91,4 +97,4 @@ import{u as e,r as u,j as i}from"./index-GC7tL9c-.js";import{j as s,z as y,B as 
         color: var(--theme-primary-color);
         border-color: var(--theme-primary-color);
     }
-`,N=({itemDetails:r,index:m})=>{const{name:c,image:d,institute:p,skills:f,link:o,id:n}=r,g={initial:{opacity:0,y:22},animate:t=>({opacity:1,y:0,transition:{delay:.16*t,type:"spring"}})},h={initial:{opacity:0,y:20},animate:t=>({opacity:1,y:0,transition:{delay:.1*t,type:"spring"}})},[l,x]=u.useState({}),v=t=>{x(a=>({...a,[t]:!a[t]}))},w=()=>{o.split("/").pop().toLowerCase().endsWith(".pdf")?window.open(j(o),"_blank"):window.open(o,"_blank")};return i.jsxs(I,{initial:"initial",variants:g,whileInView:"animate",custom:m,viewport:{once:!0},whileHover:{scale:1.04},layout:!0,transition:{opacity:{ease:"linear"},layout:{duration:.3}},children:[i.jsx(z,{children:i.jsx(b,{altName:c,imageSrc:d,styledComponent:S})}),i.jsxs(L,{children:[i.jsx(V,{children:c}),i.jsxs(A,{children:[i.jsx(T,{}),i.jsx(B,{children:p})]}),i.jsxs(M,{onClick:()=>v(n),children:[i.jsx(Y,{rotateArrow:l[n]}),"Skills"]}),Object.keys(l).length!==0&&l[n]&&i.jsx(R,{initial:{scaleY:0},animate:{scaleY:1},transition:{duration:.3},children:f.map((t,a)=>i.jsx(E,{variants:h,initial:"initial",whileInView:"animate",custom:a,viewport:{once:!0},children:t},k()))}),i.jsx(H,{onClick:w,children:"View certificate"})]})]})};export{N as default};
+`,N=({itemDetails:r,index:m})=>{const{name:c,image:d,institute:p,skills:h,link:a,id:n}=r,f={initial:{opacity:0,y:22},animate:t=>({opacity:1,y:0,transition:{delay:.16*t,type:"spring"}})},g={initial:{opacity:0,y:20},animate:t=>({opacity:1,y:0,transition:{delay:.1*t,type:"spring"}})},[l,x]=u.useState({}),w=t=>{x(o=>({...o,[t]:!o[t]}))},v=()=>{a.split("/").pop().toLowerCase().endsWith(".pdf")?window.open(j(a),"_blank"):window.open(a,"_blank")};return i.jsxs(I,{initial:"initial",variants:f,whileInView:"animate",custom:m,viewport:{once:!0},whileHover:{scale:1.04},layout:!0,transition:{opacity:{ease:"linear"},layout:{duration:.3}},children:[i.jsx(z,{children:i.jsx(C,{altName:c,imageSrc:d,styledComponent:S})}),i.jsxs(L,{children:[i.jsx(V,{children:c}),i.jsxs(A,{children:[i.jsx(T,{}),i.jsx(B,{children:p})]}),i.jsxs(M,{onClick:()=>w(n),children:[i.jsx(Y,{rotateArrow:l[n]}),"Skills"]}),Object.keys(l).length!==0&&l[n]&&i.jsx(R,{initial:{scaleY:0},animate:{scaleY:1},transition:{duration:.3},children:h.map((t,o)=>i.jsx(E,{variants:g,initial:"initial",whileInView:"animate",custom:o,viewport:{once:!0},children:t},k()))}),i.jsx(H,{onClick:v,children:"View Certificate"})]})]})};export{N as default};

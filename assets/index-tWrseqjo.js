@@ -1,4 +1,4 @@
-import{u as e,L as d,j as r}from"./index-GC7tL9c-.js";import{j as p,L as g}from"./constants-DAKkPJq8.js";const h=e(p.li)`
+import{u as e,L as d,j as r}from"./index-mmWVTv3e.js";import{j as p,L as h}from"./constants-CuOQBZze.js";const g=e(p.li)`
     --gap: 1em;
     cursor: pointer;
     position: relative;
@@ -7,6 +7,7 @@ import{u as e,L as d,j as r}from"./index-GC7tL9c-.js";import{j as p,L as g}from"
     overflow: hidden;
     flex: 1 1 calc(100% - var(--gap));
     height: clamp(15rem, 1vw + 1rem, 19rem);
+    box-shadow: var(--theme-box-shadow);
     @media (min-width: 510px) {
         flex: 0 1 calc(50% - var(--gap));
     }
@@ -55,4 +56,4 @@ import{u as e,L as d,j as r}from"./index-GC7tL9c-.js";import{j as p,L as g}from"
     flex-direction: column;
     justify-content: center;
     /* outline: auto; */
-`;const w=({itemDetails:o,index:n})=>{const{projectCard:c,id:t,category:i}=o,{name:a,image:l}=c,m={initial:{opacity:0,y:22},animate:s=>({opacity:1,y:0,transition:{delay:.16*s,type:"spring"}})};return r.jsx(h,{initial:"initial",variants:m,whileInView:"animate",custom:n,viewport:{once:!0},whileHover:{scale:1.04},children:r.jsxs(v,{to:i!==""?`projects/${i}/${t}`:`projects/${t}`,children:[r.jsx(g,{altName:a,imageSrc:l,styledComponent:x}),r.jsx(b,{children:r.jsx(j,{children:a})})]})})};export{w as default};
+`;const f=({itemDetails:o,index:n})=>{const{projectCard:c,id:t,category:i}=o,{name:a,image:m}=c,s={initial:{opacity:0,y:22},animate:l=>({opacity:1,y:0,transition:{delay:.16*l,type:"spring"}})};return r.jsx(g,{initial:"initial",variants:s,whileInView:"animate",custom:n,viewport:{once:!0},whileHover:{scale:1.04},children:r.jsxs(v,{to:i!==""?`projects/${i}/${t}`:`projects/${t}`,children:[r.jsx(h,{altName:a,imageSrc:m,styledComponent:x}),r.jsx(b,{children:r.jsx(j,{children:a})})]})})};export{f as default};

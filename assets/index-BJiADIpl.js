@@ -1,4 +1,4 @@
-import{u as r,r as s,_ as u,j as e,b as j}from"./index-GC7tL9c-.js";import{j as g,l as p,A as w,k as y,r as C}from"./constants-DAKkPJq8.js";import v from"./index-DFJfNbwA.js";const T=r(g.ul)`
+import{u as r,r as s,_ as u,j as e,b as w}from"./index-mmWVTv3e.js";import{j as g,l as p,A as j,k as y,r as C}from"./constants-CuOQBZze.js";import v from"./index-yNnt_Xbt.js";const T=r(g.ul)`
     list-style-type: none;
     /* outline: auto; */
     padding: 0;
@@ -21,7 +21,7 @@ import{u as r,r as s,_ as u,j as e,b as j}from"./index-GC7tL9c-.js";import{j as 
     display: flex;
     flex-flow: row wrap;
     gap: 1.5em 1em;
-`,P=s.lazy(()=>u(()=>import("./index-DiuHjg_U.js"),__vite__mapDeps([0,1,2,3,4]))),_=s.lazy(()=>u(()=>import("./index-CdfElTGl.js"),__vite__mapDeps([5,1,2,3,4]))),E=s.lazy(()=>u(()=>import("./index-C58fam_S.js"),__vite__mapDeps([6,1,2,3,4]))),B=({data:o,index:t,id:i})=>{const{category:a="",...m}=o,c=Object.values(m)[0],d={initial:{opacity:0,y:22},animate:l=>({opacity:1,y:0,transition:{delay:.16*l,type:"spring"}})},h=(l,n)=>{switch(i){case"skills":return e.jsx(P,{itemDetails:l,index:n},p());case"projects":return e.jsx(_,{itemDetails:{...l,category:a,id:n+1},index:n},p());case"certifications":return e.jsx(E,{itemDetails:l,index:n},l.id)}};return e.jsx(S,{initial:"initial",variants:d,whileInView:"animate",custom:t,viewport:{once:!0},children:e.jsxs(k,{children:[a&&e.jsx(D,{children:a}),e.jsx(I,{children:e.jsx(s.Suspense,{fallback:e.jsx(v,{}),children:c.map((l,n)=>e.jsx(e.Fragment,{children:h(l,n)}))})})]})})},A=({tabSectionData:o,id:t})=>e.jsx(T,{children:e.jsx(s.Suspense,{fallback:e.jsx(v,{}),children:o.map((i,a)=>e.jsx(B,{data:i,index:a,id:t},p()))})}),F=r.li`
+`,P=s.lazy(()=>u(()=>import("./index-BKwWpryD.js"),__vite__mapDeps([0,1,2,3,4]))),_=s.lazy(()=>u(()=>import("./index-tWrseqjo.js"),__vite__mapDeps([5,1,2,3,4]))),E=s.lazy(()=>u(()=>import("./index-m17NOR-t.js"),__vite__mapDeps([6,1,2,3,4]))),B=({data:o,index:t,id:i})=>{const{category:a="",...m}=o,c=Object.values(m)[0],d={initial:{opacity:0,y:22},animate:l=>({opacity:1,y:0,transition:{delay:.16*l,type:"spring"}})},h=(l,n)=>{switch(i){case"skills":return e.jsx(P,{itemDetails:l,index:n},p());case"projects":return e.jsx(_,{itemDetails:{...l,category:a,id:n+1},index:n},p());case"certifications":return e.jsx(E,{itemDetails:l,index:n},l.id)}};return e.jsx(S,{initial:"initial",variants:d,whileInView:"animate",custom:t,viewport:{once:!0},children:e.jsxs(k,{children:[a&&e.jsx(D,{children:a}),e.jsx(I,{children:e.jsx(s.Suspense,{fallback:e.jsx(v,{}),children:c.map((l,n)=>e.jsx(e.Fragment,{children:h(l,n)}))})})]})})},A=({tabSectionData:o,id:t})=>e.jsx(T,{children:e.jsx(s.Suspense,{fallback:e.jsx(v,{}),children:o.map((i,a)=>e.jsx(B,{data:i,index:a,id:t},p()))})}),F=r.li`
     background-color: ${({theme:o,isActive:t})=>t?o.isLightTheme?"none":"rgb(30 41 59 / 1)":"var(--theme-container-bg-color)"};
     text-align: center;
     width: clamp(8rem, 1vw + 30%, 10rem);
@@ -71,6 +71,7 @@ import{u as r,r as s,_ as u,j as e,b as j}from"./index-GC7tL9c-.js";import{j as 
     background-color: var(--theme-container-bg-color);
     border: 2px solid var(--theme-divide-line-color);
     overflow: hidden;
+    box-shadow: var(--theme-box-shadow);
     @media (min-width: 800px) {
         flex-direction: row;
         min-height: 80vh;
@@ -112,12 +113,14 @@ import{u as r,r as s,_ as u,j as e,b as j}from"./index-GC7tL9c-.js";import{j as 
         flex: 1 1 80%;
         max-height: none;
     }
-`,$=({sectionDetails:o})=>{const t=Object.keys(o),[i,a]=s.useState(t[0]),m=o[i],c=s.useRef(null),d=n=>{c.current=n.touches[0].clientX},h=n=>{if(!c.current)return;const b=n.changedTouches[0].clientX-c.current,f=50;if(b<-f&&i!==t[t.length-1]){const x=t.indexOf(i)+1;a(t[x])}else if(b>f&&i!==t[0]){const x=t.indexOf(i)-1;a(t[x])}c.current=null},l=n=>{a(n)};return e.jsxs(X,{children:[e.jsx(R,{children:t.map(n=>e.jsx(L,{tabLabel:n,onSelectTab:l,isActive:i===n},n))}),e.jsx(V,{onTouchStart:d,onTouchEnd:h,children:e.jsx(A,{tabSectionData:m,id:i})})]})},H=r(w)`
+`,$=({sectionDetails:o})=>{const t=Object.keys(o),[i,a]=s.useState(t[0]),m=o[i],c=s.useRef(null),d=n=>{c.current=n.touches[0].clientX},h=n=>{if(!c.current)return;const b=n.changedTouches[0].clientX-c.current,f=50;if(b<-f&&i!==t[t.length-1]){const x=t.indexOf(i)+1;a(t[x])}else if(b>f&&i!==t[0]){const x=t.indexOf(i)-1;a(t[x])}c.current=null},l=n=>{a(n)};return e.jsxs(X,{children:[e.jsx(R,{children:t.map(n=>e.jsx(L,{tabLabel:n,onSelectTab:l,isActive:i===n},n))}),e.jsx(V,{onTouchStart:d,onTouchEnd:h,children:e.jsx(A,{tabSectionData:m,id:i})})]})},H=r(j)`
     min-height: 79vh;
-`,M=r(y)``,U=r.div``,N=()=>{const{id:o}=j(),{sectionDetails:t}=C(o);return e.jsx(e.Fragment,{children:e.jsx(H,{children:e.jsx(M,{children:e.jsx(U,{children:e.jsx($,{sectionDetails:t})})})})})};export{N as default};
+`,M=r(y)``,U=r.div`
+
+`,N=()=>{const{id:o}=w(),{sectionDetails:t}=C(o);return e.jsx(e.Fragment,{children:e.jsx(H,{children:e.jsx(M,{children:e.jsx(U,{children:e.jsx($,{sectionDetails:t})})})})})};export{N as default};
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/index-DiuHjg_U.js","assets/index-GC7tL9c-.js","assets/index-NdIjxnzJ.css","assets/constants-DAKkPJq8.js","assets/constants-cwqOqNE_.css","assets/index-CdfElTGl.js","assets/index-C58fam_S.js"]
+    __vite__mapDeps.viteFileDeps = ["assets/index-BKwWpryD.js","assets/index-mmWVTv3e.js","assets/index-NdIjxnzJ.css","assets/constants-CuOQBZze.js","assets/constants-cwqOqNE_.css","assets/index-tWrseqjo.js","assets/index-m17NOR-t.js"]
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }
