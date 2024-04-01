@@ -70,9 +70,16 @@ export const DomainDetailsItem = styled(motion.li)`
     border-radius: 1.5rem;
     padding: 0.5em 1em;
     font-size: clamp(0.1em, 1vw + 0.6em, 1em);
+    text-transform: capitalize;
     display: flex;
     align-items: center;
     gap: 0.3em;
+    &:hover {
+        background-color: ${({ theme }) =>
+        theme.isLightTheme
+            ? "rgba(46, 175, 255, 0.9)"
+            : "rgba(19, 78, 74, 0.7)"};
+    }
 `;
 
 export const DomainDetailsItemCount = styled.span`

@@ -30,6 +30,16 @@ export const SkillsAndProjectsPageImgBgContainer = styled(motion.div)`
         order: 1;
         max-width: 35rem;
     }
+    position: relative;
+    /* &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+
+        transform: translate(50%, 50%);
+        height: 3rem;
+        background: red;
+    } */
 `;
 
 export const AnimateSkillsAndProjectImg = keyframes`

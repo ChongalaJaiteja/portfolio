@@ -9,6 +9,10 @@ export const SkillsAndProjectsPageCard = styled(motion.li)`
     background-color: ${({ bgColor }) => bgColor};
     border-radius: 10px;
     box-shadow: var(--theme-box-shadow);
+    transition: box-shadow 0.4s ease-in;
+    &:hover {
+        box-shadow: none;
+    }
 `;
 
 export const StyledLink = styled(Link)`

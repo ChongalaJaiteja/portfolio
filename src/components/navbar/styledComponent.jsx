@@ -21,13 +21,13 @@ export const NavBar = styled(motion.nav)`
         hideNavLinks
             ? "clamp(0.2em, 1vw + 1em, 1em)"
             : "clamp(0.2em, 1vw + 0.38em, 1em)"};
-    @media (min-width: 827px) {
+    @media (min-width: 1060px) {
         border-radius: ${({ isScrollingDown }) =>
             isScrollingDown ? "32px" : "0px"};
         position: ${({ isScrollingDown }) =>
             isScrollingDown ? "fixed" : "sticky"};
         width: ${({ isScrollingDown }) =>
-            isScrollingDown ? "min(82%,45rem)" : "auto"};
+            isScrollingDown ? "min(82%,50rem)" : "auto"};
         inset: ${({ isScrollingDown }) =>
             isScrollingDown ? "2% 0 auto 0" : "0 auto auto auto"};
         margin: ${({ isScrollingDown }) => (isScrollingDown ? "auto" : "none")};
@@ -52,13 +52,13 @@ export const NavBarHeading = styled.h1`
 
 export const NavListItemBgContainerLg = styled.ul`
     display: none;
-    @media (min-width: 827px) {
+    @media (min-width: 1060px) {
         display: flex;
         justify-content: space-between;
         list-style-type: none;
         padding: 0;
         width: ${({ isScrollingDown }) =>
-            isScrollingDown ? "100%" : "min(73%, 40rem)"};
+            isScrollingDown ? "100%" : "min(70%, 50rem)"};
         margin-left: ${({ isScrollingDown }) =>
             isScrollingDown ? "none" : "auto"};
         margin-right: ${({ isScrollingDown }) =>
@@ -77,7 +77,7 @@ from {
 export const StyledActiveLink = styled(Link)`
     position: relative;
     text-decoration: none;
-    @media (min-width: 827px) {
+    @media (min-width: 1060px) {
         &.active:after {
             content: "";
             background-color: ${({ theme }) => theme.primaryAccentColor};
@@ -115,7 +115,7 @@ export const HamburgIconAndThemeChangeBgContainer = styled.div`
 `;
 
 export const HamburgerBgContainer = styled.div`
-    @media (min-width: 827px) {
+    @media (min-width: 1060px) {
         display: none;
     }
 `;
@@ -123,7 +123,7 @@ export const HamburgerBgContainer = styled.div`
 export const ChangeThemeBgContainer = styled.div`
     --fs-theme-mode-logo: clamp(1rem, 1vw + 1.3rem, 1.8rem);
 
-    @media (min-width: 827px) {
+    @media (min-width: 1060px) {
         display: ${({ isScrollingDown }) =>
             isScrollingDown ? "none" : "block"};
     }
@@ -157,9 +157,11 @@ export const StyledMenuContainer = styled(motion.div)`
     position: fixed;
     z-index: 3;
     top: 14%;
-    width: clamp(0.8rem, 1vw +40%, 10rem);
+    width: clamp(0.8rem, 1vw + 11rem, 19rem);
     right: 4%;
-    @media (min-width: 827px) {
+    box-shadow: var(--theme-box-shadow);
+    border-radius: 10px;
+    @media (min-width: 1060px) {
         display: none;
     }
 `;
@@ -169,7 +171,7 @@ export const NavListItemBgContainer = styled.ul`
     padding: 0;
     color: var(--theme-page-text-color);
     list-style-type: none;
-    padding: 0.4em;
+    padding: 0.4em 0.2em;
     border-radius: 7px;
     text-align: left;
 `;

@@ -22,7 +22,7 @@ const SocialMediaHandleItem = ({ socialMediaDetails }) => {
             custom={index}
             viewport={{ once: true }}
         >
-            <StyledComponent.ContactListItemLink href={link}>
+            <StyledComponent.ContactListItemLink href={link} target="_blank">
                 {icon}
             </StyledComponent.ContactListItemLink>
         </StyledComponent.ContactListItem>

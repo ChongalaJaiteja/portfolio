@@ -19,9 +19,7 @@ export const QualificationVerticalTimelineElementContainer = styled(
         background: theme.primaryAccentColor,
         color: "white",
     },
-}))`
-    cursor: pointer;
-`;
+}))``;
 
 export const QualificationCardContainer = styled.div`
     display: flex;

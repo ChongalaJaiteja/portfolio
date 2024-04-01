@@ -47,7 +47,8 @@ export const ContentContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.61em;
-    padding: 0.7em;
+    padding-inline: 0.9em;
+    padding-block: 0em 0.7em;
 `;
 
 export const CertificateHeading = styled.h2`

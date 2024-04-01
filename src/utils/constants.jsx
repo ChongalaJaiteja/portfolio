@@ -5,6 +5,7 @@ import About from "../components/about";
 import Qualification from "../components/qualification";
 import SkillsAndProjects from "../components/skillsAndProjects";
 import Experience from "../components/experience";
+import CodingProfiles from "../components/codingProfiles";
 import Contact from "../components/contact";
 import { FaGithub } from "react-icons/fa";
 import { IoPlayCircle } from "react-icons/io5";
@@ -66,6 +67,12 @@ export const navLinkOptions = [
     },
     {
         id: uuidv4(),
+        name: "Coding Profiles",
+        route: "coding-profiles",
+        component: CodingProfiles,
+    },
+    {
+        id: uuidv4(),
         name: "Contact",
         route: "contact",
         component: Contact,
@@ -80,7 +87,6 @@ export const aboutPageData = {
 };
 
 // Qualification Page
-
 export const qualificationData = [
     {
         imageUrl: "qualification/nxtwave.png",
@@ -132,7 +138,6 @@ export const qualificationData = [
 ];
 
 //Skills & Project Page
-
 export const skillsAndProjectSection = {
     devIcon: "webdev.svg",
     altName: "Dev Icon",
@@ -257,6 +262,7 @@ export const development = [
                     ],
                 },
             ],
+
             projects: [
                 {
                     category: "frontend development",
@@ -413,6 +419,7 @@ export const development = [
                     ],
                 },
             ],
+
             certifications: [
                 {
                     category: "frontend development",
@@ -546,7 +553,6 @@ export const getDevelopmentPageData = (id) => {
 };
 
 //experience Page
-
 export const experienceList = [
     {
         id: uuidv4(),
@@ -576,5 +582,39 @@ export const experienceList = [
         content:
             "Ravindra Bharathi School, a prestigious institution in India, offers English medium education from primary to secondary levels",
         skills: ["JavaScript", "Python"],
+    },
+];
+
+export const codingProfiles = [
+    {
+        name: "leetcode",
+        themeColor: "rgb(254, 161, 22)",
+        link: "https://leetcode.com/jaiteja123/",
+        icon: <StyledComponent.LeetcodeIcon />,
+    },
+    {
+        name: "code chef",
+        themeColor: "rgb(223, 168, 120)",
+        link: "https://www.codechef.com/users/jaiteja123",
+        icon: <StyledComponent.CodeChefIcon />,
+    },
+
+    {
+        name: "hacker rank",
+        themeColor: "rgb(6, 137, 50)",
+        link: "https://www.hackerrank.com/profile/chongalateja1234",
+        icon: <StyledComponent.HackerRankIcon />,
+    },
+    {
+        name: "coding ninjas",
+        themeColor: "rgb(250, 115, 40)",
+        link: "https://www.naukri.com/code360/profile/93385171-aea5-4e8b-83c8-1a1e3aca3e0e",
+        icon: <StyledComponent.CodingNinjasIcon />,
+    },
+    {
+        name: "geeks for geeks",
+        themeColor: "rgb(47, 141, 70)",
+        link: "https://auth.geeksforgeeks.org/user/chongala_jaiteja1234",
+        icon: <StyledComponent.GeeksForGeeksIcon />,
     },
 ];

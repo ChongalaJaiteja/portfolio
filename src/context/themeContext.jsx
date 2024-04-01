@@ -1,6 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import { createContext, useContext, useState } from "react";
 import GlobalStyles from "../globalStyles";
+
 // Define theme configurations for light and dark themes
 const theme = {
     light: {

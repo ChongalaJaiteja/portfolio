@@ -31,7 +31,7 @@ export const MoveTopIcon = styled(FaArrowCircleUp)`
 export const ChangeThemeBgContainer = styled(motion.div)`
     --fs-theme-mode-logo: clamp(1rem, 1vw + 1.3rem, 1.8rem);
     display: none;
-    @media (min-width: 827px) {
+    @media (min-width: 1060px) {
         display: block;
     }
 `;

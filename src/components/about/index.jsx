@@ -10,14 +10,7 @@ const About = ({ route }) => {
             <StyledComponent.AboutPageHeading>
                 About Me
             </StyledComponent.AboutPageHeading>
-            {/* social media integration */}
-            {/* <iframe
-                src="https://www.juicer.io/api/feeds/jai-teja-chongala/iframe"
-                // frameborder="0"
-                width="100%"
-                height="1000"
-                style={{ display: "block", margin: "0 auto" }}
-            ></iframe> */}
+
             <StyledComponent.AboutPageSectionBodyContainer>
                 <StyledComponent.AboutPageContentBgContainer>
                     <StyledComponent.AboutPageProfileBgContainer

@@ -80,6 +80,7 @@ export const ExperienceCardSkillsTitle = styled.h5`
     display: flex;
     align-items: center;
     gap: 0.2em;
+    cursor: pointer;
 `;
 
 export const ExperienceCardSkillsContainer = styled(motion.ul)`

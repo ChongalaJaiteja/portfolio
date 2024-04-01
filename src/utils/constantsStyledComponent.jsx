@@ -8,6 +8,11 @@ import { IoInformationCircle } from "react-icons/io5";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SiGeeksforgeeks } from "react-icons/si";
+import { TbBrandLeetcode } from "react-icons/tb";
+import { SiCodechef } from "react-icons/si";
+import { SiHackerrank } from "react-icons/si";
+import { SiCodingninjas } from "react-icons/si";
 
 import {
     faStackOverflow,
@@ -96,3 +101,23 @@ export const TeachingAssistantIcon = styled(FaChalkboardTeacher)`
 export const NavLinkIcon = styled(FaExternalLinkAlt)`
     font-size: clamp(0.1em, 1vw + 0.6em, 1em);
 `;
+
+export const GeeksForGeeksIcon = styled(SiGeeksforgeeks)`
+    font-size: clamp(0.4rem, 1vw + 1.3rem, 1.8rem);
+`;
+
+export const LeetcodeIcon = styled(GeeksForGeeksIcon).attrs({
+    as: TbBrandLeetcode,
+})``;
+
+export const CodeChefIcon = styled(GeeksForGeeksIcon).attrs({
+    as: SiCodechef,
+})``;
+
+export const HackerRankIcon = styled(GeeksForGeeksIcon).attrs({
+    as: SiHackerrank,
+})``;
+
+export const CodingNinjasIcon = styled(GeeksForGeeksIcon).attrs({
+    as: SiCodingninjas,
+})``;

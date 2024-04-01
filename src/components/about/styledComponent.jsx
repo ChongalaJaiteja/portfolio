@@ -69,7 +69,6 @@ export const AboutPageProfileBgContainer = styled(motion.div)`
     justify-content: center;
     align-items: center;
     flex: 1 1 100%;
-    cursor: pointer;
     user-select: none;
     & :hover {
         transform: scale(1.01);

@@ -10,6 +10,7 @@ const NavBar = ({ hideNavLinks = false }) => {
     const { toggleTheme, isLightTheme } = useThemeContext();
     const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
     const [isScrollingDown, setIsScrollingDown] = useState(false);
+    const navBarThreshold = 827;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,8 +26,17 @@ const NavBar = ({ hideNavLinks = false }) => {
         };
 
         window.addEventListener("scroll", handleScroll);
+        const handleResize = () => {
+            if (window.innerWidth > navBarThreshold) {
+                setIsHamburgerOpen(false);
+            }
+        };
+
+        window.addEventListener("resize", handleResize);
+
         return () => {
             window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("resize", handleResize);
         };
     }, []);
 

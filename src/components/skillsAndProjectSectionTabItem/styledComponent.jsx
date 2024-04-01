@@ -39,6 +39,7 @@ export const tabBtn = styled.button`
     background-color: transparent;
     color: var(--theme-primary-text-color);
     font-size: clamp(0.2rem, 1vw + 0.57rem, 1.17rem);
+    text-transform: capitalize;
 `;
 
 export const TabUnderline = styled(motion.div)`
