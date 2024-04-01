@@ -1,4 +1,4 @@
-import{u as e,r as u,j as i}from"./index-mmWVTv3e.js";import{j as s,z as y,B as b,L as C,l as k,C as j}from"./constants-CuOQBZze.js";const I=e(s.li)`
+import{u as e,r as u,j as i}from"./index-B21R_Z9g.js";import{j as s,B as y,C as b,L as C,n as k,D as j}from"./constants-BdDeFesR.js";const I=e(s.li)`
     --gap: 1em;
     position: relative;
     border: 2px solid var(--theme-divide-line-color);
@@ -21,12 +21,12 @@ import{u as e,r as u,j as i}from"./index-mmWVTv3e.js";import{j as s,z as y,B as 
     &:hover {
         border-color: var(--theme-primary-color);
     }
-`,z=e.div`
+`,S=e.div`
     align-self: center;
     padding: 0.7em;
     width: 96%;
     height: 50%;
-`,S=e.img`
+`,z=e.img`
     width: min(100%, 30rem);
     object-fit: cover;
     border-radius: 10px;
@@ -36,7 +36,8 @@ import{u as e,r as u,j as i}from"./index-mmWVTv3e.js";import{j as s,z as y,B as 
     display: flex;
     flex-direction: column;
     gap: 0.61em;
-    padding: 0.7em;
+    padding-inline: 0.9em;
+    padding-block: 0em 0.7em;
 `,V=e.h2`
     text-transform: capitalize;
     font-size: clamp(0.2rem, 1vw + 0.7rem, 1.2rem);
@@ -97,4 +98,4 @@ import{u as e,r as u,j as i}from"./index-mmWVTv3e.js";import{j as s,z as y,B as 
         color: var(--theme-primary-color);
         border-color: var(--theme-primary-color);
     }
-`,N=({itemDetails:r,index:m})=>{const{name:c,image:d,institute:p,skills:h,link:a,id:n}=r,f={initial:{opacity:0,y:22},animate:t=>({opacity:1,y:0,transition:{delay:.16*t,type:"spring"}})},g={initial:{opacity:0,y:20},animate:t=>({opacity:1,y:0,transition:{delay:.1*t,type:"spring"}})},[l,x]=u.useState({}),w=t=>{x(o=>({...o,[t]:!o[t]}))},v=()=>{a.split("/").pop().toLowerCase().endsWith(".pdf")?window.open(j(a),"_blank"):window.open(a,"_blank")};return i.jsxs(I,{initial:"initial",variants:f,whileInView:"animate",custom:m,viewport:{once:!0},whileHover:{scale:1.04},layout:!0,transition:{opacity:{ease:"linear"},layout:{duration:.3}},children:[i.jsx(z,{children:i.jsx(C,{altName:c,imageSrc:d,styledComponent:S})}),i.jsxs(L,{children:[i.jsx(V,{children:c}),i.jsxs(A,{children:[i.jsx(T,{}),i.jsx(B,{children:p})]}),i.jsxs(M,{onClick:()=>w(n),children:[i.jsx(Y,{rotateArrow:l[n]}),"Skills"]}),Object.keys(l).length!==0&&l[n]&&i.jsx(R,{initial:{scaleY:0},animate:{scaleY:1},transition:{duration:.3},children:h.map((t,o)=>i.jsx(E,{variants:g,initial:"initial",whileInView:"animate",custom:o,viewport:{once:!0},children:t},k()))}),i.jsx(H,{onClick:v,children:"View Certificate"})]})]})};export{N as default};
+`,D=({itemDetails:r,index:m})=>{const{name:c,image:d,institute:p,skills:h,link:a,id:n}=r,f={initial:{opacity:0,y:22},animate:t=>({opacity:1,y:0,transition:{delay:.16*t,type:"spring"}})},g={initial:{opacity:0,y:20},animate:t=>({opacity:1,y:0,transition:{delay:.1*t,type:"spring"}})},[l,x]=u.useState({}),w=t=>{x(o=>({...o,[t]:!o[t]}))},v=()=>{a.split("/").pop().toLowerCase().endsWith(".pdf")?window.open(j(a),"_blank"):window.open(a,"_blank")};return i.jsxs(I,{initial:"initial",variants:f,whileInView:"animate",custom:m,viewport:{once:!0},whileHover:{scale:1.04},layout:!0,transition:{opacity:{ease:"linear"},layout:{duration:.3}},children:[i.jsx(S,{children:i.jsx(C,{altName:c,imageSrc:d,styledComponent:z})}),i.jsxs(L,{children:[i.jsx(V,{children:c}),i.jsxs(A,{children:[i.jsx(T,{}),i.jsx(B,{children:p})]}),i.jsxs(M,{onClick:()=>w(n),children:[i.jsx(Y,{rotateArrow:l[n]}),"Skills"]}),Object.keys(l).length!==0&&l[n]&&i.jsx(R,{initial:{scaleY:0},animate:{scaleY:1},transition:{duration:.3},children:h.map((t,o)=>i.jsx(E,{variants:g,initial:"initial",whileInView:"animate",custom:o,viewport:{once:!0},children:t},k()))}),i.jsx(H,{onClick:v,children:"View Certificate"})]})]})};export{D as default};

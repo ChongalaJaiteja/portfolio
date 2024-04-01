@@ -1,4 +1,4 @@
-import{u as r,r as s,_ as u,j as e,b as w}from"./index-mmWVTv3e.js";import{j as g,l as p,A as j,k as y,r as C}from"./constants-CuOQBZze.js";import v from"./index-yNnt_Xbt.js";const T=r(g.ul)`
+import{u as r,r as s,_ as u,j as e,b as w}from"./index-B21R_Z9g.js";import{j as g,n as p,A as j,k as y,s as C}from"./constants-BdDeFesR.js";import v from"./index-CwSKzjOn.js";const T=r(g.ul)`
     list-style-type: none;
     /* outline: auto; */
     padding: 0;
@@ -21,7 +21,7 @@ import{u as r,r as s,_ as u,j as e,b as w}from"./index-mmWVTv3e.js";import{j as 
     display: flex;
     flex-flow: row wrap;
     gap: 1.5em 1em;
-`,P=s.lazy(()=>u(()=>import("./index-BKwWpryD.js"),__vite__mapDeps([0,1,2,3,4]))),_=s.lazy(()=>u(()=>import("./index-tWrseqjo.js"),__vite__mapDeps([5,1,2,3,4]))),E=s.lazy(()=>u(()=>import("./index-m17NOR-t.js"),__vite__mapDeps([6,1,2,3,4]))),B=({data:o,index:t,id:i})=>{const{category:a="",...m}=o,c=Object.values(m)[0],d={initial:{opacity:0,y:22},animate:l=>({opacity:1,y:0,transition:{delay:.16*l,type:"spring"}})},h=(l,n)=>{switch(i){case"skills":return e.jsx(P,{itemDetails:l,index:n},p());case"projects":return e.jsx(_,{itemDetails:{...l,category:a,id:n+1},index:n},p());case"certifications":return e.jsx(E,{itemDetails:l,index:n},l.id)}};return e.jsx(S,{initial:"initial",variants:d,whileInView:"animate",custom:t,viewport:{once:!0},children:e.jsxs(k,{children:[a&&e.jsx(D,{children:a}),e.jsx(I,{children:e.jsx(s.Suspense,{fallback:e.jsx(v,{}),children:c.map((l,n)=>e.jsx(e.Fragment,{children:h(l,n)}))})})]})})},A=({tabSectionData:o,id:t})=>e.jsx(T,{children:e.jsx(s.Suspense,{fallback:e.jsx(v,{}),children:o.map((i,a)=>e.jsx(B,{data:i,index:a,id:t},p()))})}),F=r.li`
+`,P=s.lazy(()=>u(()=>import("./index-Bkoc4tcF.js"),__vite__mapDeps([0,1,2,3,4]))),_=s.lazy(()=>u(()=>import("./index-fLGY64UP.js"),__vite__mapDeps([5,1,2,3,4]))),E=s.lazy(()=>u(()=>import("./index-B7Kl92o7.js"),__vite__mapDeps([6,1,2,3,4]))),B=({data:o,index:t,id:i})=>{const{category:a="",...m}=o,c=Object.values(m)[0],d={initial:{opacity:0,y:22},animate:l=>({opacity:1,y:0,transition:{delay:.16*l,type:"spring"}})},h=(l,n)=>{switch(i){case"skills":return e.jsx(P,{itemDetails:l,index:n},p());case"projects":return e.jsx(_,{itemDetails:{...l,category:a,id:n+1},index:n},p());case"certifications":return e.jsx(E,{itemDetails:l,index:n},l.id)}};return e.jsx(S,{initial:"initial",variants:d,whileInView:"animate",custom:t,viewport:{once:!0},children:e.jsxs(k,{children:[a&&e.jsx(D,{children:a}),e.jsx(I,{children:e.jsx(s.Suspense,{fallback:e.jsx(v,{}),children:c.map((l,n)=>e.jsx(e.Fragment,{children:h(l,n)}))})})]})})},A=({tabSectionData:o,id:t})=>e.jsx(T,{children:e.jsx(s.Suspense,{fallback:e.jsx(v,{}),children:o.map((i,a)=>e.jsx(B,{data:i,index:a,id:t},p()))})}),F=r.li`
     background-color: ${({theme:o,isActive:t})=>t?o.isLightTheme?"none":"rgb(30 41 59 / 1)":"var(--theme-container-bg-color)"};
     text-align: center;
     width: clamp(8rem, 1vw + 30%, 10rem);
@@ -40,7 +40,7 @@ import{u as r,r as s,_ as u,j as e,b as w}from"./index-mmWVTv3e.js";import{j as 
         /* min-height: 3rem; */
         max-height: 8.4rem;
     }
-`,O=r.button`
+`,z=r.button`
     cursor: pointer;
     padding: clamp(0.1em, 1vw + 0.9em, 1.2em) clamp(0.1em, 1vw + 1em, 1.4em);
     border: none;
@@ -49,7 +49,8 @@ import{u as r,r as s,_ as u,j as e,b as w}from"./index-mmWVTv3e.js";import{j as 
     background-color: transparent;
     color: var(--theme-primary-text-color);
     font-size: clamp(0.2rem, 1vw + 0.57rem, 1.17rem);
-`,z=r(g.div)`
+    text-transform: capitalize;
+`,O=r(g.div)`
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -64,7 +65,7 @@ import{u as r,r as s,_ as u,j as e,b as w}from"./index-mmWVTv3e.js";import{j as 
         left: auto;
         width: 3px;
     }
-`,L=({tabLabel:o,onSelectTab:t,isActive:i})=>{const a=()=>{t(o)};return e.jsxs(F,{isActive:i,children:[e.jsx(O,{onClick:a,isActive:i,children:o}),i&&e.jsx(z,{layoutId:"underline"})]})},X=r.div`
+`,L=({tabLabel:o,onSelectTab:t,isActive:i})=>{const a=()=>{t(o)};return e.jsxs(F,{isActive:i,children:[e.jsx(z,{onClick:a,isActive:i,children:o}),i&&e.jsx(O,{layoutId:"underline"})]})},X=r.div`
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -120,7 +121,7 @@ import{u as r,r as s,_ as u,j as e,b as w}from"./index-mmWVTv3e.js";import{j as 
 `,N=()=>{const{id:o}=w(),{sectionDetails:t}=C(o);return e.jsx(e.Fragment,{children:e.jsx(H,{children:e.jsx(M,{children:e.jsx(U,{children:e.jsx($,{sectionDetails:t})})})})})};export{N as default};
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/index-BKwWpryD.js","assets/index-mmWVTv3e.js","assets/index-NdIjxnzJ.css","assets/constants-CuOQBZze.js","assets/constants-cwqOqNE_.css","assets/index-tWrseqjo.js","assets/index-m17NOR-t.js"]
+    __vite__mapDeps.viteFileDeps = ["assets/index-Bkoc4tcF.js","assets/index-B21R_Z9g.js","assets/index-NdIjxnzJ.css","assets/constants-BdDeFesR.js","assets/constants-cwqOqNE_.css","assets/index-fLGY64UP.js","assets/index-B7Kl92o7.js"]
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }
