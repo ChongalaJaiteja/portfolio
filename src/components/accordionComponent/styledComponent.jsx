@@ -1,10 +1,14 @@
 import styled from "styled-components";
 import Accordion from "@mui/material/Accordion";
+import { motion } from "framer-motion";
 
 export const AccordionBgContainer = styled(Accordion)`
     margin-bottom: 1.2em;
     &.MuiAccordion-root {
-        background-color: var(--theme-container-bg-color);
+        background-color: ${({ theme }) =>
+            theme.isLightTheme
+                ? "rgb(243, 248, 255)"
+                : "var(--theme-container-bg-color)"};
         color: var(--theme-text-color);
         box-shadow: none;
         max-width: 31rem;
@@ -28,7 +32,7 @@ export const TechnologiesBgContainer = styled.ul`
     flex-flow: row wrap;
 `;
 
-export const TechnologyItem = styled.li`
+export const TechnologyItem = styled(motion.li)`
     text-transform: capitalize;
     background-color: ${({ theme }) =>
         theme.isLightTheme

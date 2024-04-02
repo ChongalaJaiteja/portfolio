@@ -130,7 +130,7 @@ export const qualificationData = [
         websiteUrl: "https://rbschools.in/",
         title: "Ravindra Bharathi School",
         subtitle: "Bobbili, India",
-        date: "2006 - 2019 (Primary Education)",
+        date: "2007 - 2019 (Primary Education)",
         score: "Grade : 9.8",
         content:
             "Ravindra Bharathi School, a prestigious institution in India, offers English medium education from primary to secondary levels",
@@ -179,7 +179,7 @@ export const development = [
                             icon: <i className="devicon-css3-plain colored" />,
                         },
                         {
-                            name: "js",
+                            name: "javascript",
                             icon: (
                                 <i className="devicon-javascript-plain colored" />
                             ),
@@ -270,12 +270,12 @@ export const development = [
                         {
                             projectCard: {
                                 name: "emoji game",
-                                image: "development/web-development/projects/emoji-game.png",
+                                image: "development/web-development/projects/frontend-development/emoji-game.png",
                             },
                             projectDetails: {
                                 name: "emoji game",
                                 image: [
-                                    "development/web-development/projects/emoji-game.png",
+                                    "development/web-development/projects/frontend-development/emoji-game.png",
                                 ],
                                 description:
                                     "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
@@ -291,14 +291,14 @@ export const development = [
                                         id: uuidv4(),
                                         icon: <FiLink />,
                                         name: "deployment link",
-                                        link: "https://jaitejaemoji.ccbp.tech/",
+                                        link: "https://chongalajaiteja.github.io/emojiGame/",
                                     },
-                                    //TODO:Add source code url
+
                                     {
                                         id: uuidv4(),
                                         icon: <FaGithub />,
                                         name: "source code",
-                                        link: "https://github.com/ChongalaJaiteja/wikipedia-search-app",
+                                        link: "https://github.com/ChongalaJaiteja/emojiGame",
                                     },
                                 ],
                                 postUrl:
@@ -308,40 +308,125 @@ export const development = [
 
                         {
                             projectCard: {
+                                name: "todos",
+                                image: "development/web-development/projects/frontend-development/todos-1.png",
+                            },
+                            projectDetails: {
+                                name: "todos",
+                                image: [
+                                    "development/web-development/projects/frontend-development/todos-1.png",
+                                    "development/web-development/projects/frontend-development/todos-2.png",
+                                    "development/web-development/projects/frontend-development/todos-3.png",
+                                ],
+                                description:
+                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                technologies: [
+                                    "html",
+                                    "css",
+                                    "javascript",
+                                    "bootstrap",
+                                ],
+                                externalLinks: [
+                                    {
+                                        id: uuidv4(),
+                                        icon: <IoPlayCircle />,
+                                        name: "watch video",
+                                        link: "https://youtu.be/gTTU-K_yJbY",
+                                    },
+                                    {
+                                        id: uuidv4(),
+                                        icon: <FiLink />,
+                                        name: "deployment link",
+                                        link: "https://chongalajaiteja.github.io/todo-application/",
+                                    },
+
+                                    {
+                                        id: uuidv4(),
+                                        icon: <FaGithub />,
+                                        name: "source code",
+                                        link: "https://github.com/ChongalaJaiteja/todo-application",
+                                    },
+                                ],
+                                postUrl:
+                                    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7078339428032679936",
+                            },
+                        },
+
+                        {
+                            projectCard: {
                                 name: "calendar",
-                                image: "development/web-development/projects/calendar.png",
+                                image: "development/web-development/projects/frontend-development/calendar.png",
                             },
 
                             projectDetails: {
                                 name: "calendar",
                                 image: [
-                                    "development/web-development/projects/calendar.png",
+                                    "development/web-development/projects/frontend-development/calendar.png",
                                 ],
                                 description:
                                     "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
-                                technologies: [
-                                    "ReactJs",
-                                    "NodeJs",
-                                    "express",
-                                    "StyledComponents",
-                                    "mui",
-                                ],
+                                technologies: ["html", "css", "javascript"],
                                 externalLinks: [
+                                    // {
+                                    //     id: uuidv4(),
+                                    //     icon: <IoPlayCircle />,
+                                    //     name: "demo video",
+                                    //     link: "tugvonfZmlw",
+                                    // },
                                     {
-                                        name: "demo video",
-                                        link: "tugvonfZmlw",
-                                    },
-                                    {
+                                        id: uuidv4(),
+                                        icon: <FiLink />,
                                         name: "deployment link",
-                                        link: "https://jaitejaemoji.ccbp.tech/",
+                                        link: "https://chongalajaiteja.github.io/dynamic-calendar/",
                                     },
                                     {
+                                        id: uuidv4(),
+                                        icon: <FaGithub />,
                                         name: "source code",
-                                        link: "https://github.com/ChongalaJaiteja/wikipedia-search-app",
+                                        link: "https://github.com/ChongalaJaiteja/dynamic-calendar",
                                     },
                                 ],
                                 postUrl:
-                                    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7134396712307068928",
+                                    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7050294367672008704",
+                            },
+                        },
+
+                        {
+                            projectCard: {
+                                name: "wikipedia search application",
+                                image: "development/web-development/projects/frontend-development/wikipedia-search-app.png",
+                            },
+                            projectDetails: {
+                                name: "wikipedia search application",
+                                image: [
+                                    "development/web-development/projects/frontend-development/wikipedia-search-app.png",
+                                ],
+                                description:
+                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                technologies: ["html", "css", "javascript"],
+                                externalLinks: [
+                                    {
+                                        id: uuidv4(),
+                                        icon: <IoPlayCircle />,
+                                        name: "watch video",
+                                        link: "https://youtu.be/0WTmjLKMWqw",
+                                    },
+                                    {
+                                        id: uuidv4(),
+                                        icon: <FiLink />,
+                                        name: "deployment link",
+                                        link: "https://chongalajaiteja.github.io/wikipedia-search-application-static/",
+                                    },
+
+                                    {
+                                        id: uuidv4(),
+                                        icon: <FaGithub />,
+                                        name: "source code",
+                                        link: "https://github.com/ChongalaJaiteja/wikipedia-search-application-static",
+                                    },
+                                ],
+                                postUrl:
+                                    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7073134321099812864",
                             },
                         },
                     ],
@@ -352,60 +437,78 @@ export const development = [
                         {
                             projectCard: {
                                 name: "Todos api",
-                                image: "development/web-development/projects/emoji-game.png",
+                                image: "development/web-development/projects/frontend-development/todos-1.png",
                             },
                             projectDetails: {
-                                name: "emoji game",
+                                name: "Todos appplication",
                                 image: [
-                                    "development/web-development/projects/emoji-game.png",
+                                    "development/web-development/projects/frontend-development/todos-1.png",
                                 ],
                                 description:
                                     "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
-                                technologies: ["ReactJs", "css"],
+                                technologies: [
+                                    "nodejs",
+                                    "express.js",
+                                    "sqlite",
+                                ],
                                 externalLinks: [
-                                    {
-                                        id: uuidv4(),
-                                        icon: <IoPlayCircle />,
-                                        name: "watch video",
-                                        link: "https://youtu.be/suR4DiJk4y8",
-                                    },
-                                    {
-                                        id: uuidv4(),
-                                        icon: <FiLink />,
-                                        name: "deployment link",
-                                        link: "https://jaitejaemoji.ccbp.tech/",
-                                    },
-                                    //TODO:Add source code url
                                     {
                                         id: uuidv4(),
                                         icon: <FaGithub />,
                                         name: "source code",
-                                        link: "https://github.com/ChongalaJaiteja/wikipedia-search-app",
+                                        link: "https://github.com/ChongalaJaiteja/todos-api",
                                     },
                                 ],
-                                postUrl:
-                                    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7094225130330992640",
+                            },
+                        },
+
+                        {
+                            projectCard: {
+                                name: "wikipedia search application",
+                                image: "development/web-development/projects/full-stack-development/wikipedia-fullstack-1.png",
+                            },
+                            projectDetails: {
+                                name: "wikipedia search application",
+                                image: [
+                                    "development/web-development/projects/full-stack-development/wikipedia-fullstack-1.png",
+                                ],
+                                description:
+                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                technologies: [
+                                    "nodejs",
+                                    "express.js",
+                                    "sqlite",
+                                ],
+                                externalLinks: [
+                                    {
+                                        id: uuidv4(),
+                                        icon: <FaGithub />,
+                                        name: "source code",
+                                        link: "https://github.com/ChongalaJaiteja/wikipedia-search-app-backend",
+                                    },
+                                ],
                             },
                         },
                     ],
                 },
+
                 {
                     category: "full stack development",
                     projectList: [
                         {
                             projectCard: {
                                 name: "wikipedia search application",
-                                image: "development/web-development/projects/wikipedia-fullstack-1.png",
+                                image: "development/web-development/projects/full-stack-development/wikipedia-fullstack-1.png",
                             },
                             projectDetails: {
                                 name: "wikipedia search application",
                                 image: [
-                                    "development/web-development/projects/wikipedia-fullstack-1.png",
-                                    "development/web-development/projects/wikipedia-fullstack-2.png",
-                                    "development/web-development/projects/wikipedia-fullstack-3.png",
-                                    "development/web-development/projects/wikipedia-fullstack-4.png",
-                                    "development/web-development/projects/wikipedia-fullstack-5.png",
-                                    "development/web-development/projects/wikipedia-fullstack-6.png",
+                                    "development/web-development/projects/full-stack-development/wikipedia-fullstack-1.png",
+                                    "development/web-development/projects/full-stack-development/wikipedia-fullstack-2.png",
+                                    "development/web-development/projects/full-stack-development/wikipedia-fullstack-3.png",
+                                    "development/web-development/projects/full-stack-development/wikipedia-fullstack-4.png",
+                                    "development/web-development/projects/full-stack-development/wikipedia-fullstack-5.png",
+                                    "development/web-development/projects/full-stack-development/wikipedia-fullstack-6.png",
                                 ],
                                 description:
                                     "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
@@ -444,7 +547,6 @@ export const development = [
                     ],
                 },
             ],
-
             certifications: [
                 {
                     category: "frontend development",
@@ -635,11 +737,13 @@ export const programming = {
                         image: [
                             "programming/projects/banking-management-system.png",
                         ],
-                        description:
-                            "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                        description: `The Banking Management System developed in C language provides various functionalities to manage accounts. The system uses file operations for data storage and retrieval, ensuring persistent data storage across sessions. 
+                        Key features include creating new accounts, removing existing accounts, performing transactions, updating account details, viewing account information, checking balance, and exiting the system. The system ensures data integrity and security by leveraging file operations and provides a user-friendly interface.
+                        `,
                         technologies: ["c programming"],
                         externalLinks: [
                             {
+                                icon: <FaGithub />,
                                 name: "source code",
                                 link: "https://github.com/ChongalaJaiteja/C-Bank-Managment-System",
                             },

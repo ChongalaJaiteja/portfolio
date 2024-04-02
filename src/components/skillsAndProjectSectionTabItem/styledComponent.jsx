@@ -5,7 +5,7 @@ export const SkillsAndProjectsTabItemBgContainer = styled.li`
     background-color: ${({ theme, isActive }) =>
         isActive
             ? theme.isLightTheme
-                ? "none"
+                ? "rgb(139, 147, 255,0.8)"
                 : "rgb(30 41 59 / 1)"
             : "var(--theme-container-bg-color)"};
     text-align: center;
@@ -20,7 +20,7 @@ export const SkillsAndProjectsTabItemBgContainer = styled.li`
         background-color: ${({ theme, isActive }) =>
             !isActive &&
             (theme.isLightTheme
-                ? "rgb(46, 175, 255, 0.5)"
+                ? "rgb(139, 147, 255,0.4)"
                 : "rgb(30 41 59 / 0.6)")};
     }
     @media (min-width: 800px) {
@@ -48,8 +48,14 @@ export const TabUnderline = styled(motion.div)`
     left: 0;
     right: 0;
     height: 3px;
-    background: var(--theme-primary-color);
-    box-shadow: 0px 3px 10px 2px var(--theme-primary-color);
+    background: ${({ theme }) =>
+        theme.isLightTheme
+            ? "rgb(139, 147, 255,1)"
+            : "var(--theme-primary-color)"};
+    box-shadow: ${({ theme }) =>
+        theme.isLightTheme
+            ? "0px 3px 10px 2px rgb(139, 147, 255,1)"
+            : "0px 3px 10px 2px var(--theme-primary-color)"};
     @media (min-width: 800px) {
         /* left: 20%; */
         /* right: 0; */

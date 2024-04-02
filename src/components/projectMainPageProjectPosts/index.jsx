@@ -18,7 +18,25 @@ const ProjectMainPageProjectPosts = ({
     name = "",
 }) => {
     return (
-        <StyledComponent.ProjectPostsBgContainer>
+        <StyledComponent.ProjectPostsBgContainer
+            variants={{
+                initial: {
+                    opacity: 0,
+                    x: 10,
+                },
+                animate: {
+                    opacity: 1,
+                    x: 0,
+                    transition: {
+                        duration: 1.5,
+                        type: "spring",
+                    },
+                },
+            }}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ amount: 0.5, once: true }}
+        >
             {image && (
                 <StyledComponent.ProjectImageContainer>
                     <ProjectMainPageProjectImage image={image} altName={name} />

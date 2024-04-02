@@ -35,6 +35,17 @@ const ProjectMainPageProjectLinks = ({ projectLinks }) => {
         };
     }, []);
 
+    const animateProjectLinks = {
+        initial: { opacity: 0, x: 15 },
+        animate: (index) => ({
+            opacity: 1,
+            x: 0,
+            transition: {
+                delay: 0.25 * index,
+                type: "spring",
+            },
+        }),
+    };
     return (
         <>
             <ModalUnstyled
@@ -48,10 +59,15 @@ const ProjectMainPageProjectLinks = ({ projectLinks }) => {
                     Project Links & Resources
                 </StyledComponent.ProjectLinksAndResourcesMainHeading>
                 <StyledComponent.ProjectLinksItemBgContainer>
-                    {projectLinks.map(({ name, icon, link, id }) => (
+                    {projectLinks.map(({ name, icon, link, id }, index) => (
                         <StyledComponent.ProjectLinkItemContainer
                             key={id}
                             onClick={() => navigateToLink(name, link)}
+                            variants={animateProjectLinks}
+                            initial="initial"
+                            whileInView="animate"
+                            custom={index}
+                            viewport={{ once: true }}
                         >
                             {icon && (
                                 <StyledComponent.ProjectLinkItemIcon>

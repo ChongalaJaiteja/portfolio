@@ -6,6 +6,17 @@ import { v4 as uuidv4 } from "uuid";
 import * as StyledComponent from "./styledComponent";
 
 const AccordionComponent = ({ children, data = [], heading }) => {
+    const animateAccordionItems = {
+        initial: { opacity: 0, x: 15 },
+        animate: (index) => ({
+            opacity: 1,
+            x: 0,
+            transition: {
+                delay: 0.25 * index,
+                type: "spring",
+            },
+        }),
+    };
     return (
         <StyledComponent.AccordionBgContainer>
             <AccordionSummary
@@ -20,8 +31,14 @@ const AccordionComponent = ({ children, data = [], heading }) => {
             <AccordionDetails>
                 {data.length > 0 ? (
                     <StyledComponent.TechnologiesBgContainer>
-                        {data.map((technologies) => (
-                            <StyledComponent.TechnologyItem key={uuidv4()}>
+                        {data.map((technologies, index) => (
+                            <StyledComponent.TechnologyItem
+                                key={uuidv4()}
+                                variants={animateAccordionItems}
+                                initial="initial"
+                                whileInView="animate"
+                                custom={index}
+                            >
                                 {technologies}
                             </StyledComponent.TechnologyItem>
                         ))}

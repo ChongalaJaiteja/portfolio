@@ -17,7 +17,7 @@ export const ProjectLinksItemBgContainer = styled.ul`
 export const ProjectLinkItemContainer = styled(motion.li)`
     background-color: ${({ theme }) =>
         theme.isLightTheme
-            ? "rgba(46, 175, 255, 0.7)"
+            ? "rgb(139, 147, 255,0.8)"
             : "rgba(19, 78, 74, 0.4)"};
     color: ${({ theme }) =>
         theme.isLightTheme ? "white" : "rgba(45, 212, 191, 1)"};
@@ -33,7 +33,7 @@ export const ProjectLinkItemContainer = styled(motion.li)`
     &:hover {
         background-color: ${({ theme }) =>
             theme.isLightTheme
-                ? "rgba(46, 175, 255, 0.9)"
+                ? "rgb(139, 147, 255,1)"
                 : "rgba(19, 78, 74, 0.65)"};
     }
 

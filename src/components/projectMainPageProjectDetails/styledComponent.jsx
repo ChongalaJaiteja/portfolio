@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const ProjectContentBgContainer = styled.div`
+export const ProjectContentBgContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
     gap: 1em;

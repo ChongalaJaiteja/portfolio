@@ -6,7 +6,9 @@ import {
 
 export const ProjectMainPageBgContainer = styled(AboutPageBgContainer)`
     padding-top: clamp(0.8em, 1vw + 2.6rem, 29rem);
-    padding-bottom: 0;
+    @media (min-width: 700px) {
+        padding-bottom: 0;
+    }
 `;
 
 export const ProjectMainPageBodyContainer = styled(
@@ -14,7 +16,7 @@ export const ProjectMainPageBodyContainer = styled(
 )``;
 
 export const ProjectMainPagContentBgContainer = styled.div`
-    min-height: 100vh;
+    min-height: 93vh;
 `;
 
 export const ProjectBgContainer = styled.div`

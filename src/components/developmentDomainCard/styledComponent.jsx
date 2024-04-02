@@ -61,9 +61,7 @@ export const DomainDetailsBgContainer = styled.ul`
 
 export const DomainDetailsItem = styled(motion.li)`
     background-color: ${({ theme }) =>
-        theme.isLightTheme
-            ? "rgba(46, 175, 255, 0.7)"
-            : "rgba(19, 78, 74, 0.4)"};
+        theme.isLightTheme ? "rgb(139, 147, 255,0.8)" : "rgba(19, 78, 74, 0.4)"};
     color: ${({ theme }) =>
         theme.isLightTheme ? "white" : "rgba(45, 212, 191, 1)"};
     font-weight: 700;
@@ -76,15 +74,15 @@ export const DomainDetailsItem = styled(motion.li)`
     gap: 0.3em;
     &:hover {
         background-color: ${({ theme }) =>
-        theme.isLightTheme
-            ? "rgba(46, 175, 255, 0.9)"
-            : "rgba(19, 78, 74, 0.7)"};
+            theme.isLightTheme
+                ? "rgb(139, 147, 255,1)"
+                : "rgba(19, 78, 74, 0.7)"};
     }
 `;
 
 export const DomainDetailsItemCount = styled.span`
     background-color: ${({ theme }) =>
-        theme.isLightTheme ? "rgba(46, 175, 255, 1)" : "rgba(19, 78, 74, 0.5)"};
+        theme.isLightTheme ? "rgb(139, 147, 255,1)" : "rgba(19, 78, 74, 0.5)"};
     padding: 0.2em 0.6em;
     border-radius: 20px;
 `;
