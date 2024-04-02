@@ -1,4 +1,4 @@
-import{u as t,L as x,j as e}from"./index-DPocOran.js";import{A as u,q as b,k as v,j as m,L as w,n as y,r as D}from"./constants-7SHXdq2d.js";const j=t(u)``;t(b)``;const f=t(v)``,C=t.div`
+import{u as t,L as x,j as e}from"./index-OLGqbvhD.js";import{A as u,q as b,k as v,j as m,L as w,n as y,r as D}from"./constants-Dn9oAIez.js";const j=t(u)``;t(b)``;const f=t(v)``,C=t.div`
     min-height: 77.85vh;
 `,I=t.ul`
     padding: 0;
@@ -47,7 +47,7 @@ import{u as t,L as x,j as e}from"./index-DPocOran.js";import{A as u,q as b,k as 
     gap: 1em;
     flex-flow: row wrap;
 `,A=t(m.li)`
-    background-color: ${({theme:i})=>i.isLightTheme?"rgba(46, 175, 255, 0.7)":"rgba(19, 78, 74, 0.4)"};
+    background-color: ${({theme:i})=>i.isLightTheme?"rgb(139, 147, 255,0.8)":"rgba(19, 78, 74, 0.4)"};
     color: ${({theme:i})=>i.isLightTheme?"white":"rgba(45, 212, 191, 1)"};
     font-weight: 700;
     border-radius: 1.5rem;
@@ -58,10 +58,10 @@ import{u as t,L as x,j as e}from"./index-DPocOran.js";import{A as u,q as b,k as 
     align-items: center;
     gap: 0.3em;
     &:hover {
-        background-color: ${({theme:i})=>i.isLightTheme?"rgba(46, 175, 255, 0.9)":"rgba(19, 78, 74, 0.7)"};
+        background-color: ${({theme:i})=>i.isLightTheme?"rgb(139, 147, 255,1)":"rgba(19, 78, 74, 0.7)"};
     }
 `,S=t.span`
-    background-color: ${({theme:i})=>i.isLightTheme?"rgba(46, 175, 255, 1)":"rgba(19, 78, 74, 0.5)"};
+    background-color: ${({theme:i})=>i.isLightTheme?"rgb(139, 147, 255,1)":"rgba(19, 78, 74, 0.5)"};
     padding: 0.2em 0.6em;
     border-radius: 20px;
 `,T=({domain:i})=>{const{id:o,name:s,image:l,description:H,sectionDetails:a,index:d}=i;console.log("domain",a);const c={initial:{opacity:0,y:22},animate:n=>({opacity:1,y:0,transition:{delay:.2*n,type:"spring"}})},g={initial:{opacity:0,rotate:"6deg"},animate:n=>({opacity:1,rotate:"0deg",transition:{delay:.3*n,type:"spring"}})},p=n=>a[n].reduce((r,h)=>r+Object.values(h)[1].length,0);return e.jsx(L,{variants:c,initial:"initial",whileInView:"animate",custom:d,children:e.jsxs(B,{to:`${o}`,children:[e.jsx(k,{children:e.jsx(w,{altName:s,imageSrc:l})}),e.jsxs(z,{children:[e.jsx(P,{children:s}),e.jsx($,{children:Object.keys(a).map((n,r)=>e.jsxs(A,{variants:g,custom:r,initial:"initial",whileInView:"animate",children:[n,e.jsx(S,{children:p(n)})]},y()))})]})]})})},q=()=>e.jsx(e.Fragment,{children:e.jsx(j,{children:e.jsx(f,{children:e.jsx(C,{children:e.jsx(I,{children:D.map((i,o)=>e.jsx(T,{domain:{...i,index:o}},i.id))})})})})});export{q as default};
