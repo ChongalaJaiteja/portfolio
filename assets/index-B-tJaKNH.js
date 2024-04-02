@@ -1,4 +1,4 @@
-import{u as a,r as s,_ as u,j as e}from"./index-OLGqbvhD.js";import{j as g,n as p}from"./constants-Dn9oAIez.js";import w from"./index-ophxlWln.js";const v=a(g.ul)`
+import{u as a,r as s,_ as u,j as e}from"./index-BTn9UXzf.js";import{j as g,n as p}from"./constants-BglLxwrp.js";import w from"./index-BCqVX46O.js";const v=a(g.ul)`
     list-style-type: none;
     /* outline: auto; */
     padding: 0;
@@ -21,7 +21,7 @@ import{u as a,r as s,_ as u,j as e}from"./index-OLGqbvhD.js";import{j as g,n as 
     display: flex;
     flex-flow: row wrap;
     gap: 1.5em 1em;
-`,C=s.lazy(()=>u(()=>import("./index-CjqENfLD.js"),__vite__mapDeps([0,1,2,3,4]))),k=s.lazy(()=>u(()=>import("./index-LkgB-0AB.js"),__vite__mapDeps([5,1,2,3,4]))),I=s.lazy(()=>u(()=>import("./index-By5skWLH.js"),__vite__mapDeps([6,1,2,3,4]))),_=({data:n,index:t,id:i})=>{const{category:r="",...m}=n,c=Object.values(m)[0],d={initial:{opacity:0,y:22},animate:l=>({opacity:1,y:0,transition:{delay:.16*l,type:"spring"}})},h=(l,o)=>{switch(i){case"skills":return e.jsx(C,{itemDetails:l,index:o},p());case"projects":return e.jsx(k,{itemDetails:{...l,category:r,id:o+1},index:o},p());case"certifications":return e.jsx(I,{itemDetails:l,index:o},l.id)}};return e.jsx(y,{initial:"initial",variants:d,whileInView:"animate",custom:t,viewport:{once:!0},children:e.jsxs(j,{children:[r&&e.jsx(T,{children:r}),e.jsx(S,{children:e.jsx(s.Suspense,{fallback:e.jsx(w,{}),children:c.map((l,o)=>e.jsx(e.Fragment,{children:h(l,o)}))})})]})})},E=({tabSectionData:n,id:t})=>e.jsx(v,{children:e.jsx(s.Suspense,{fallback:e.jsx(w,{}),children:n.map((i,r)=>e.jsx(_,{data:i,index:r,id:t},p()))})}),P=a.li`
+`,C=s.lazy(()=>u(()=>import("./index-rriXdzeH.js"),__vite__mapDeps([0,1,2,3,4]))),k=s.lazy(()=>u(()=>import("./index-GqeLSoCo.js"),__vite__mapDeps([5,1,2,3,4]))),I=s.lazy(()=>u(()=>import("./index-CaCJc9Jc.js"),__vite__mapDeps([6,1,2,3,4]))),_=({data:n,index:t,id:i})=>{const{category:r="",...m}=n,c=Object.values(m)[0],d={initial:{opacity:0,y:22},animate:l=>({opacity:1,y:0,transition:{delay:.16*l,type:"spring"}})},h=(l,o)=>{switch(i){case"skills":return e.jsx(C,{itemDetails:l,index:o},p());case"projects":return e.jsx(k,{itemDetails:{...l,category:r,id:o+1},index:o},p());case"certifications":return e.jsx(I,{itemDetails:l,index:o},l.id)}};return e.jsx(y,{initial:"initial",variants:d,whileInView:"animate",custom:t,viewport:{once:!0},children:e.jsxs(j,{children:[r&&e.jsx(T,{children:r}),e.jsx(S,{children:e.jsx(s.Suspense,{fallback:e.jsx(w,{}),children:c.map((l,o)=>e.jsx(e.Fragment,{children:h(l,o)}))})})]})})},E=({tabSectionData:n,id:t})=>e.jsx(v,{children:e.jsx(s.Suspense,{fallback:e.jsx(w,{}),children:n.map((i,r)=>e.jsx(_,{data:i,index:r,id:t},p()))})}),P=a.li`
     background-color: ${({theme:n,isActive:t})=>t?n.isLightTheme?"rgb(139, 147, 255,0.8)":"rgb(30 41 59 / 1)":"var(--theme-container-bg-color)"};
     text-align: center;
     width: clamp(8rem, 1vw + 30%, 10rem);
@@ -117,7 +117,7 @@ import{u as a,r as s,_ as u,j as e}from"./index-OLGqbvhD.js";import{j as g,n as 
 `,$=({sectionDetails:n})=>{const t=Object.keys(n),[i,r]=s.useState(t[0]),m=n[i],c=s.useRef(null),d=o=>{c.current=o.touches[0].clientX},h=o=>{if(!c.current)return;const b=o.changedTouches[0].clientX-c.current,f=50;if(b<-f&&i!==t[t.length-1]){const x=t.indexOf(i)+1;r(t[x])}else if(b>f&&i!==t[0]){const x=t.indexOf(i)-1;r(t[x])}c.current=null},l=o=>{r(o)};return e.jsxs(L,{children:[e.jsx(z,{children:t.map(o=>e.jsx(D,{tabLabel:o,onSelectTab:l,isActive:i===o},o))}),e.jsx(F,{onTouchStart:d,onTouchEnd:h,children:e.jsx(E,{tabSectionData:m,id:i})})]})};export{$ as S};
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/index-CjqENfLD.js","assets/index-OLGqbvhD.js","assets/index-NdIjxnzJ.css","assets/constants-Dn9oAIez.js","assets/constants-cwqOqNE_.css","assets/index-LkgB-0AB.js","assets/index-By5skWLH.js"]
+    __vite__mapDeps.viteFileDeps = ["assets/index-rriXdzeH.js","assets/index-BTn9UXzf.js","assets/index-NdIjxnzJ.css","assets/constants-BglLxwrp.js","assets/constants-cwqOqNE_.css","assets/index-GqeLSoCo.js","assets/index-CaCJc9Jc.js"]
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }
