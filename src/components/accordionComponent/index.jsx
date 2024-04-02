@@ -18,7 +18,7 @@ const AccordionComponent = ({ children, data = [], heading }) => {
                 </Typography>
             </AccordionSummary>
             <AccordionDetails>
-                {data.length > 1 ? (
+                {data.length > 0 ? (
                     <StyledComponent.TechnologiesBgContainer>
                         {data.map((technologies) => (
                             <StyledComponent.TechnologyItem key={uuidv4()}>

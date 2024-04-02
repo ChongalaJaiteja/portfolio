@@ -40,10 +40,11 @@ const CertificationsTabSectionContentItem = ({ itemDetails, index }) => {
     };
 
     const handleViewCertificate = () => {
-        if (link.split("/").pop().toLowerCase().endsWith(".pdf")) {
-            window.open(getImageUrl(link), "_blank");
+        const { type, source } = link;
+        if (type == "url") {
+            window.open(source, "_blank");
         } else {
-            window.open(link, "_blank");
+            window.open(getImageUrl(source), "_blank");
         }
     };
 

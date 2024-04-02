@@ -5,7 +5,7 @@ export const ProjectPostsBgContainer = styled.div`
     flex-direction: column;
     gap: 1em;
     @media (min-width: 700px) {
-        flex: 1 1 calc(40% - var(--gap));
+        flex: 1 1 calc(45% - var(--gap));
     }
 `;
 
@@ -31,7 +31,7 @@ export const ProjectPostBgContainerSmMainHeading = styled.h2`
 export const IframeProjectPost = styled.iframe`
     width: 100%;
     border-radius: 0.6rem;
-    box-shadow: 2px 2px 6px 0px grey;
+    box-shadow: var(--theme-box-shadow);
 `;
 
 export const ProjectPostBgContainerLg = styled.div`

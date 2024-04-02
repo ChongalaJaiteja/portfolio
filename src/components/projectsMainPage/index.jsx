@@ -5,7 +5,6 @@ import Loader from "../loader";
 import ProjectMainPagProjectDetails from "../projectMainPageProjectDetails";
 import ProjectMainPageProjectPosts from "../projectMainPageProjectPosts";
 import { v4 as uuidv4 } from "uuid";
-
 import * as StyledComponent from "./styledComponent";
 
 const ProjectMainPage = () => {
@@ -36,11 +35,7 @@ const ProjectMainPage = () => {
                     categoryId.toLowerCase()
             );
         } else if (skillAndProjectSectionCategory === "programming") {
-            // data = development.find(
-            //     (developmentItem) =>
-            //         developmentItem.id.toLowerCase() ===
-            //         categoryId.toLowerCase();
-            // );
+            data = { sectionDetails: programming };
         }
 
         if (data) {
@@ -57,32 +52,33 @@ const ProjectMainPage = () => {
             setProjectDetails(selectedProject.projectDetails);
         }
     };
+
     useEffect(() => {
         getProjectDetails();
         setIsLoading(false);
     }, []);
 
     return (
-            <StyledComponent.ProjectMainPageBgContainer>
-                <StyledComponent.ProjectMainPageBodyContainer>
-                    {isLoading ? (
-                        <Loader />
-                    ) : (
-                        <StyledComponent.ProjectMainPagContentBgContainer>
-                            <StyledComponent.ProjectBgContainer>
-                                <ProjectMainPagProjectDetails
-                                    projectDetails={rest}
-                                />
-                                <ProjectMainPageProjectPosts
-                                    postUrl={postUrl}
-                                    image={rest.image}
-                                    name={rest.name}
-                                />
-                            </StyledComponent.ProjectBgContainer>
-                        </StyledComponent.ProjectMainPagContentBgContainer>
-                    )}
-                </StyledComponent.ProjectMainPageBodyContainer>
-            </StyledComponent.ProjectMainPageBgContainer>
+        <StyledComponent.ProjectMainPageBgContainer>
+            <StyledComponent.ProjectMainPageBodyContainer>
+                {isLoading ? (
+                    <Loader />
+                ) : (
+                    <StyledComponent.ProjectMainPagContentBgContainer>
+                        <StyledComponent.ProjectBgContainer>
+                            <ProjectMainPagProjectDetails
+                                projectDetails={rest}
+                            />
+                            <ProjectMainPageProjectPosts
+                                postUrl={postUrl}
+                                image={rest.image}
+                                name={rest.name}
+                            />
+                        </StyledComponent.ProjectBgContainer>
+                    </StyledComponent.ProjectMainPagContentBgContainer>
+                )}
+            </StyledComponent.ProjectMainPageBodyContainer>
+        </StyledComponent.ProjectMainPageBgContainer>
     );
 };
 

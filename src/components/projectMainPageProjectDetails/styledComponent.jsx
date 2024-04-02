@@ -5,7 +5,7 @@ export const ProjectContentBgContainer = styled.div`
     flex-direction: column;
     gap: 1em;
     @media (min-width: 700px) {
-        flex: 1 1 calc(60% - var(--gap));
+        flex: 1 1 calc(55% - var(--gap));
     }
 `;
 

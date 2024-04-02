@@ -272,7 +272,6 @@ export const development = [
                                 name: "emoji game",
                                 image: "development/web-development/projects/emoji-game.png",
                             },
-
                             projectDetails: {
                                 name: "emoji game",
                                 image: [
@@ -280,29 +279,30 @@ export const development = [
                                 ],
                                 description:
                                     "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
-                                technologies: [
-                                    "ReactJs",
-                                    "NodeJs",
-                                    "express",
-                                    "StyledComponents",
-                                    "mui",
-                                ],
+                                technologies: ["ReactJs", "css"],
                                 externalLinks: [
                                     {
-                                        name: "demo video",
-                                        link: "tugvonfZmlw",
+                                        id: uuidv4(),
+                                        icon: <IoPlayCircle />,
+                                        name: "watch video",
+                                        link: "https://youtu.be/suR4DiJk4y8",
                                     },
                                     {
+                                        id: uuidv4(),
+                                        icon: <FiLink />,
                                         name: "deployment link",
                                         link: "https://jaitejaemoji.ccbp.tech/",
                                     },
+                                    //TODO:Add source code url
                                     {
+                                        id: uuidv4(),
+                                        icon: <FaGithub />,
                                         name: "source code",
                                         link: "https://github.com/ChongalaJaiteja/wikipedia-search-app",
                                     },
                                 ],
                                 postUrl:
-                                    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7134396712307068928",
+                                    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7094225130330992640",
                             },
                         },
 
@@ -346,24 +346,49 @@ export const development = [
                         },
                     ],
                 },
-                // {
-                //     category: "backend Development",
-                //     projectList: [
-                //         {
-                //             projectCard: {
-                //                 name: "",
-                //                 image: "",
-                //             },
-                //             projectDetails: {
-                //                 icon: "",
-                //                 thumbnailImage: "",
-                //                 deploymentLink: "",
-                //                 githubLink: "",
-                //                 description: "",
-                //             },
-                //         },
-                //     ],
-                // },
+                {
+                    category: "backend Development",
+                    projectList: [
+                        {
+                            projectCard: {
+                                name: "Todos api",
+                                image: "development/web-development/projects/emoji-game.png",
+                            },
+                            projectDetails: {
+                                name: "emoji game",
+                                image: [
+                                    "development/web-development/projects/emoji-game.png",
+                                ],
+                                description:
+                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                technologies: ["ReactJs", "css"],
+                                externalLinks: [
+                                    {
+                                        id: uuidv4(),
+                                        icon: <IoPlayCircle />,
+                                        name: "watch video",
+                                        link: "https://youtu.be/suR4DiJk4y8",
+                                    },
+                                    {
+                                        id: uuidv4(),
+                                        icon: <FiLink />,
+                                        name: "deployment link",
+                                        link: "https://jaitejaemoji.ccbp.tech/",
+                                    },
+                                    //TODO:Add source code url
+                                    {
+                                        id: uuidv4(),
+                                        icon: <FaGithub />,
+                                        name: "source code",
+                                        link: "https://github.com/ChongalaJaiteja/wikipedia-search-app",
+                                    },
+                                ],
+                                postUrl:
+                                    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7094225130330992640",
+                            },
+                        },
+                    ],
+                },
                 {
                     category: "full stack development",
                     projectList: [
@@ -430,7 +455,10 @@ export const development = [
                             image: "development/web-development/certifications/static-website-nxtwave.png",
                             institute: "nxtwave",
                             skills: ["html", "css", "bootstrap"],
-                            link: "https://certificates.ccbp.in/academy/static-website?id=UQMCYATAIT",
+                            link: {
+                                type: "url",
+                                source: "https://certificates.ccbp.in/academy/static-website?id=UQMCYATAIT",
+                            },
                         },
                         {
                             id: uuidv4(),
@@ -438,7 +466,10 @@ export const development = [
                             image: "development/web-development/certifications/responsive-website-nxtwave.png",
                             institute: "nxtwave",
                             skills: ["bootstrap", "flexbox"],
-                            link: "https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=GBEUWPSGEA",
+                            link: {
+                                type: "url",
+                                source: "https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=GBEUWPSGEA",
+                            },
                         },
                         {
                             id: uuidv4(),
@@ -446,7 +477,10 @@ export const development = [
                             image: "development/web-development/certifications/javascript-essentials-nxtwave.png",
                             institute: "nxtwave",
                             skills: ["javascript"],
-                            link: "https://certificates.ccbp.in/academy/javascript-essentials?id=WTDGWVOTGG",
+                            link: {
+                                type: "url",
+                                source: "https://certificates.ccbp.in/academy/javascript-essentials?id=WTDGWVOTGG",
+                            },
                         },
                         {
                             id: uuidv4(),
@@ -454,7 +488,10 @@ export const development = [
                             image: "development/web-development/certifications/introduction-to-web-development-with-html-css-javascript-ibm.png",
                             institute: "coursera",
                             skills: ["html", "css", "javascript"],
-                            link: "https://www.coursera.org/account/accomplishments/verify/Q6HJTLGRS46G",
+                            link: {
+                                type: "url",
+                                source: "https://www.coursera.org/account/accomplishments/verify/Q6HJTLGRS46G",
+                            },
                         },
                         {
                             id: uuidv4(),
@@ -462,7 +499,10 @@ export const development = [
                             image: "development/web-development/certifications/dynamic-website-nxtwave.png",
                             institute: "nxtwave",
                             skills: ["javascript"],
-                            link: "https://certificates.ccbp.in/academy/dynamic-web-application?id=LZVVDYXBSR",
+                            link: {
+                                type: "url",
+                                source: "https://certificates.ccbp.in/academy/dynamic-web-application?id=LZVVDYXBSR",
+                            },
                         },
 
                         {
@@ -471,7 +511,10 @@ export const development = [
                             image: "development/web-development/certifications/responsive-web-design-using-flexbox-nxtwave.png",
                             institute: "nxtwave",
                             skills: ["flexbox"],
-                            link: "https://certificates.ccbp.in/academy/responsive-web-design-using-flexbox?id=CMVEJPTGTR",
+                            link: {
+                                type: "url",
+                                source: "https://certificates.ccbp.in/academy/responsive-web-design-using-flexbox?id=CMVEJPTGTR",
+                            },
                         },
 
                         {
@@ -480,7 +523,10 @@ export const development = [
                             image: "development/web-development/certifications/reactjs-nxtwave.png",
                             institute: "nxtwave",
                             skills: ["reactjs"],
-                            link: "https://certificates.ccbp.in/academy/react-js?id=LQTPLBYEQU",
+                            link: {
+                                type: "url",
+                                source: "https://certificates.ccbp.in/academy/react-js?id=LQTPLBYEQU",
+                            },
                         },
 
                         {
@@ -489,7 +535,10 @@ export const development = [
                             image: "development/web-development/certifications/reactjs-ibm.png",
                             institute: "coursera",
                             skills: ["reactjs"],
-                            link: "https://www.coursera.org/account/accomplishments/verify/ALRQYC62VQX4",
+                            link: {
+                                type: "url",
+                                source: "https://www.coursera.org/account/accomplishments/verify/ALRQYC62VQX4",
+                            },
                         },
                     ],
                 },
@@ -502,7 +551,10 @@ export const development = [
                             image: "development/web-development/certifications/nodejs-nxtwave.png",
                             institute: "nxtwave",
                             skills: ["nodejs"],
-                            link: "https://certificates.ccbp.in/academy/node-js?id=XJKWJWPMEV",
+                            link: {
+                                type: "url",
+                                source: "https://certificates.ccbp.in/academy/node-js?id=XJKWJWPMEV",
+                            },
                         },
                         {
                             id: uuidv4(),
@@ -510,7 +562,10 @@ export const development = [
                             image: "development/web-development/certifications/introduction-to-databases-nxtwave.png",
                             institute: "nxtwave",
                             skills: ["sql"],
-                            link: "https://certificates.ccbp.in/academy/introduction-to-databases?id=YRTXIPBKWQ",
+                            link: {
+                                type: "url",
+                                source: "https://certificates.ccbp.in/academy/introduction-to-databases?id=YRTXIPBKWQ",
+                            },
                         },
                         {
                             id: uuidv4(),
@@ -518,7 +573,10 @@ export const development = [
                             image: "development/web-development/certifications/sql(basic)-hackerrank.png",
                             institute: "hackerrank",
                             skills: ["sql"],
-                            link: "https://www.hackerrank.com/certificates/4e0a56751eef",
+                            link: {
+                                type: "url",
+                                source: "https://www.hackerrank.com/certificates/4e0a56751eef",
+                            },
                         },
                         {
                             id: uuidv4(),
@@ -526,7 +584,10 @@ export const development = [
                             image: "development/web-development/certifications/sql(basic)-hackerrank.png",
                             institute: "hackerrank",
                             skills: ["sql"],
-                            link: "https://www.hackerrank.com/certificates/3359ea3c9060",
+                            link: {
+                                type: "url",
+                                source: "https://www.hackerrank.com/certificates/3359ea3c9060",
+                            },
                         },
                     ],
                 },
@@ -535,18 +596,112 @@ export const development = [
     },
 ];
 
-export const programming = [
-    {
-        skills: [
-            {
-                id: uuidv4(),
-                name: "Html",
-                icon: "",
-            },
-        ],
-        projects: [{}],
-    },
-];
+export const programming = {
+    skills: [
+        {
+            skillSet: [
+                {
+                    name: "c",
+                    icon: <i className="devicon-c-plain colored"></i>,
+                },
+                {
+                    name: "c++",
+                    icon: <i className="devicon-cplusplus-plain colored"></i>,
+                },
+                {
+                    name: "python",
+                    icon: <i className="devicon-python-plain"></i>,
+                },
+
+                {
+                    name: "java",
+                    icon: <i className="devicon-java-plain colored"></i>,
+                },
+            ],
+        },
+    ],
+
+    projects: [
+        {
+            projectList: [
+                {
+                    projectCard: {
+                        name: "banking management system",
+                        image: "programming/projects/banking-management-system.png",
+                    },
+
+                    projectDetails: {
+                        name: "banking management system",
+                        image: [
+                            "programming/projects/banking-management-system.png",
+                        ],
+                        description:
+                            "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                        technologies: ["c programming"],
+                        externalLinks: [
+                            {
+                                name: "source code",
+                                link: "https://github.com/ChongalaJaiteja/C-Bank-Managment-System",
+                            },
+                        ],
+                    },
+                },
+            ],
+        },
+    ],
+
+    certifications: [
+        {
+            certificationsList: [
+                {
+                    id: uuidv4(),
+                    name: "c++ programming",
+                    image: "programming/certifications/c++-programming-gfg.png",
+                    institute: "Geeks for Geeks",
+                    skills: ["c++"],
+                    link: {
+                        type: "url",
+                        source: "https://media.geeksforgeeks.org/courses/certificates/b2358c35afa95286fae7605c88225285.pdf",
+                    },
+                },
+                //TODO: adding certificate link
+                // {
+                //     id: uuidv4(),
+                //     name: "Master C++ Programming-Complete Beginner to Advanced",
+                //     image: "programming/certifications/programming-foundations-with-python-nxtwave.png",
+                //     institute: "Geeks for Geeks",
+                //     skills: ["c++", "c++ stl"],
+                //     link: {
+                //         type: "url",
+                //         source: "https://certificates.ccbp.in/academy/programming-foundations-with-python?id=MAIGNSTXKU",
+                //     },
+                // },
+                {
+                    id: uuidv4(),
+                    name: "Programming in Python",
+                    image: "programming/certifications/programming-in-python-meta.png",
+                    institute: "meta",
+                    skills: ["python"],
+                    link: {
+                        type: "url",
+                        source: "https://www.coursera.org/account/accomplishments/certificate/8HQMXDQCMQBK",
+                    },
+                },
+                {
+                    id: uuidv4(),
+                    name: "Programming Foundations with Python",
+                    image: "programming/certifications/programming-foundations-with-python-nxtwave.png",
+                    institute: "nxtwave",
+                    skills: ["python"],
+                    link: {
+                        type: "url",
+                        source: "https://certificates.ccbp.in/academy/programming-foundations-with-python?id=MAIGNSTXKU",
+                    },
+                },
+            ],
+        },
+    ],
+};
 
 export const getDevelopmentPageData = (id) => {
     return development.find((domain) => domain.id == id);

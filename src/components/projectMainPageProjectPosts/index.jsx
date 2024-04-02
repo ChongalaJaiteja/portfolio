@@ -12,25 +12,35 @@ const GetIframeProjectPost = ({ postUrl }) => (
     ></StyledComponent.IframeProjectPost>
 );
 
-const ProjectMainPageProjectPosts = ({ postUrl, image, name }) => {
+const ProjectMainPageProjectPosts = ({
+    postUrl = "",
+    image = [],
+    name = "",
+}) => {
     return (
         <StyledComponent.ProjectPostsBgContainer>
-            <StyledComponent.ProjectImageContainer>
-                <ProjectMainPageProjectImage image={image} altName={name} />
-            </StyledComponent.ProjectImageContainer>
+            {image && (
+                <StyledComponent.ProjectImageContainer>
+                    <ProjectMainPageProjectImage image={image} altName={name} />
+                </StyledComponent.ProjectImageContainer>
+            )}
 
-            <StyledComponent.ProjectPostBgContainerSm>
-                <StyledComponent.ProjectPostBgContainerSmMainHeading>
-                    Related Post
-                </StyledComponent.ProjectPostBgContainerSmMainHeading>
-                <GetIframeProjectPost postUrl={postUrl} />
-            </StyledComponent.ProjectPostBgContainerSm>
+            {postUrl && (
+                <>
+                    <StyledComponent.ProjectPostBgContainerSm>
+                        <StyledComponent.ProjectPostBgContainerSmMainHeading>
+                            Related Post
+                        </StyledComponent.ProjectPostBgContainerSmMainHeading>
+                        <GetIframeProjectPost postUrl={postUrl} />
+                    </StyledComponent.ProjectPostBgContainerSm>
 
-            <StyledComponent.ProjectPostBgContainerLg>
-                <AccordionComponent heading="related post">
-                    <GetIframeProjectPost postUrl={postUrl} />
-                </AccordionComponent>
-            </StyledComponent.ProjectPostBgContainerLg>
+                    <StyledComponent.ProjectPostBgContainerLg>
+                        <AccordionComponent heading="related post">
+                            <GetIframeProjectPost postUrl={postUrl} />
+                        </AccordionComponent>
+                    </StyledComponent.ProjectPostBgContainerLg>
+                </>
+            )}
         </StyledComponent.ProjectPostsBgContainer>
     );
 };

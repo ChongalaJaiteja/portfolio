@@ -33,7 +33,13 @@ const App = () => (
                                 />
                             </Route>
                         </Route>
-                        <Route path="programming" element={<Programming />} />
+                        <Route path="programming" element={<Layout />}>
+                            <Route index element={<Programming />} />
+                            <Route
+                                path="projects/*"
+                                element={<ProjectMainPage />}
+                            />
+                        </Route>
                     </Route>
                     <Route path="*" element={<NotFound />} />
                 </Routes>

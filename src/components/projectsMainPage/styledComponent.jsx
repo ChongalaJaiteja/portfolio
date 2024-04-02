@@ -4,7 +4,10 @@ import {
     AboutPageSectionBodyContainer,
 } from "../about/styledComponent";
 
-export const ProjectMainPageBgContainer = styled(AboutPageBgContainer)``;
+export const ProjectMainPageBgContainer = styled(AboutPageBgContainer)`
+    padding-top: clamp(0.8em, 1vw + 2.6rem, 29rem);
+    padding-bottom: 0;
+`;
 
 export const ProjectMainPageBodyContainer = styled(
     AboutPageSectionBodyContainer
@@ -12,12 +15,9 @@ export const ProjectMainPageBodyContainer = styled(
 
 export const ProjectMainPagContentBgContainer = styled.div`
     min-height: 100vh;
-    outline: auto;
-    padding: 1em;
 `;
 
 export const ProjectBgContainer = styled.div`
-    /* outline: auto; */
     display: flex;
     flex-direction: column;
     --gap: 1em;
@@ -25,8 +25,5 @@ export const ProjectBgContainer = styled.div`
     @media (min-width: 700px) {
         flex-direction: row;
         align-items: flex-start;
-    }
-    & > * {
-        outline: auto;
     }
 `;
