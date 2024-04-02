@@ -259,6 +259,21 @@ export const development = [
                                 <i className="devicon-heroku-original colored" />
                             ),
                         },
+                        {
+                            name: "git",
+                            icon: <i className="devicon-git-plain colored"></i>,
+                        },
+
+                        {
+                            name: "github",
+                            icon: <i className="devicon-github-original"></i>,
+                        },
+                        {
+                            name: "npm",
+                            icon: (
+                                <i className="devicon-npm-original-wordmark colored"></i>
+                            ),
+                        },
                     ],
                 },
             ],
@@ -277,8 +292,10 @@ export const development = [
                                 image: [
                                     "development/web-development/projects/frontend-development/emoji-game.png",
                                 ],
-                                description:
-                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                description: `
+                                Introducing Emoji Game! It is a React project designed to test your memory and agility. In this game, you'll be presented with a colorful world of emojis, and your task is to quickly click on symbols that haven't been selected yet. You'll earn points for each correct selection. 
+                                Matching your score with the number of emojis displayed unlocks golden coins, which can give you a second chance to play when you need it the most. The game also uses modern web technologies to provide an immersive experience. Join the fun and test your skills today!
+                                    `,
                                 technologies: ["ReactJs", "css"],
                                 externalLinks: [
                                     {
@@ -318,8 +335,10 @@ export const development = [
                                     "development/web-development/projects/frontend-development/todos-2.png",
                                     "development/web-development/projects/frontend-development/todos-3.png",
                                 ],
-                                description:
-                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                description: `Introducing the Todos application, designed to simplify your task management experience! With its streamlined features, you can effortlessly create and organize your to-do list, mark tasks as completed, and easily differentiate between pending and accomplished tasks. 
+                                
+                                Enhance your productivity by decluttering your list with the option to delete completed items. Your data is securely stored for peace of mind, ensuring accessibility even when you're away from the website. Dive into productivity with the Todos application today!
+                                    `,
                                 technologies: [
                                     "html",
                                     "css",
@@ -363,8 +382,8 @@ export const development = [
                                 image: [
                                     "development/web-development/projects/frontend-development/calendar.png",
                                 ],
-                                description:
-                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                description: `Users can now navigate to a specific year and month on the shared calendar, which also displays the current date and year. Its design, characterized by simplicity and intuitiveness, enhances usability for all individuals. 
+                                Whether you're scheduling events, planning tasks, or simply staying organized, this calendar offers a seamless experience for users of all levels.`,
                                 technologies: ["html", "css", "javascript"],
                                 externalLinks: [
                                     // {
@@ -401,8 +420,8 @@ export const development = [
                                 image: [
                                     "development/web-development/projects/frontend-development/wikipedia-search-app.png",
                                 ],
-                                description:
-                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                description: `The Wikipedia search application allows users to access and explore a vast array of Wikipedia articles directly. With this tool, users can effortlessly search for articles on any topic available within Wikipedia's extensive database. 
+                                By leveraging the Wikipedia API, the application seamlessly retrieves relevant articles based on user queries. Whether you're conducting research, seeking information, or simply satisfying your curiosity, this application provides quick and convenient access to the wealth of knowledge available on Wikipedia. Dive in and start exploring the world of information today!`,
                                 technologies: ["html", "css", "javascript"],
                                 externalLinks: [
                                     {
@@ -444,8 +463,9 @@ export const development = [
                                 image: [
                                     "development/web-development/projects/frontend-development/todos-1.png",
                                 ],
-                                description:
-                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                description: `The Todos API backend project serves as a robust platform for managing tasks efficiently. Designed to provide seamless integration with frontend applications, this API enables users to create, update, retrieve, and delete tasks effortlessly. 
+                                
+                                With endpoints for adding new tasks, marking tasks as completed, fetching pending or completed tasks, and removing completed tasks, this API offers comprehensive functionality for organizing and maintaining to-do lists. Built with scalability and reliability in mind, the Todos API backend ensures smooth task management operations for users, empowering them to stay productive and organized in their daily lives.`,
                                 technologies: [
                                     "nodejs",
                                     "express.js",
@@ -472,8 +492,8 @@ export const development = [
                                 image: [
                                     "development/web-development/projects/full-stack-development/wikipedia-fullstack-1.png",
                                 ],
-                                description:
-                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                description: `Introducing our Wikipedia Search Application, featuring robust features such as user authentication and seamless integration with the Wikipedia API for accessing articles and images, alongside an intuitive history tracking system. Users can effortlessly explore a vast array of Wikipedia articles and securely log in to personalize their experience.
+                                    Upon logging in, users can save favorite articles, track search history, and revisit previously visited Wikipedia pages with ease. Leveraging the power of the Wikipedia API, our application provides comprehensive search functionality, retrieving relevant articles and accompanying images based on user queries. Whether for research, learning, or curiosity, our user-friendly interface ensures a seamless browsing experience, backed by secure authentication and convenient history tracking features. Dive into the world of knowledge confidently with our Wikipedia Search Application!`,
                                 technologies: [
                                     "nodejs",
                                     "express.js",
@@ -510,8 +530,14 @@ export const development = [
                                     "development/web-development/projects/full-stack-development/wikipedia-fullstack-5.png",
                                     "development/web-development/projects/full-stack-development/wikipedia-fullstack-6.png",
                                 ],
-                                description:
-                                    "About The Wikipedia Search Application revolutionizes the way users interact with Wikipedia, offering a seamless exploration experience. With an intuitive search feature, users can effortlessly find articles of interest, while the dedicated 'Image' tab enhances visual learning.",
+                                description: `Introducing the Wikipedia Search Application, a full-stack project designed to revolutionize your research and sharing experience.
+
+                                    Navigating and sharing information from Wikipedia can be cumbersome, leading to inefficiencies in the learning process due to a lack of user-friendly interfaces and integrated sharing features.
+
+                                    The Wikipedia Search Application addresses these challenges by providing a comprehensive solution to streamline your Wikipedia exploration. Easily navigate Wikipedia articles with an intuitive interface. Enhance your learning experience by exploring related images in a dedicated 'Image' tab. Share Wikipedia URLs seamlessly across multiple platforms like WhatsApp, Facebook, Twitter, and email. Enjoy a user-friendly experience with pagination for both article and image search tabs.
+
+                                    With user authentication, your clicked URLs and visited Wikipedia pages are saved for easy reference. Customize your experience with light 🌞 and dark 🌙 modes. Easily customize your credentials for a more personalized journey. Review your search history in chronological order, with the option to delete entries for a clutter-free experience.
+                                    `,
                                 technologies: [
                                     "ReactJs",
                                     "NodeJs",
@@ -719,6 +745,15 @@ export const programming = {
                     name: "java",
                     icon: <i className="devicon-java-plain colored"></i>,
                 },
+
+                {
+                    name: "linux",
+                    icon: <i className="devicon-linux-plain"></i>,
+                },
+                {
+                    name: "ubuntu",
+                    icon: <i className="devicon-ubuntu-plain colored"></i>,
+                },
             ],
         },
     ],
@@ -824,7 +859,7 @@ export const experienceList = [
         location: "GMRIT",
         date: "2022 - present",
         content:
-            "Ravindra Bharathi School, a prestigious institution in India, offers English medium education from primary to secondary levels",
+            "I organized coding events and assisted students in enhancing their coding skills. Assisting students in enhancing their coding abilities and organizing coding events felt fulfilling.",
         skills: ["leadership", "teamwork", "communication", "problem solving"],
     },
     {
@@ -839,7 +874,7 @@ export const experienceList = [
         location: "On Site",
         date: "2021 - present",
         content:
-            "Ravindra Bharathi School, a prestigious institution in India, offers English medium education from primary to secondary levels",
+            "As a Teaching Assistant at NXTWave Academy, I helped students with JavaScript and Python questions, encouraging growth and providing practical examples for success.",
         skills: ["JavaScript", "Python"],
     },
 ];
