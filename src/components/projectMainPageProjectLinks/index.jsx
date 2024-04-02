@@ -23,7 +23,6 @@ const ProjectMainPageProjectLinks = ({ projectLinks }) => {
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth < threshold) {
-                console.log("min");
                 setOpenVideoModel(false);
             }
         };

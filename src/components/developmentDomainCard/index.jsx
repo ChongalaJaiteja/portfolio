@@ -4,7 +4,6 @@ import LazyImageLoader from "../lazyImageLoader";
 
 const DevelopmentDomainCard = ({ domain }) => {
     const { id, name, image, description, sectionDetails, index } = domain;
-    console.log("domain", sectionDetails);
     const animateDomainCard = {
         initial: { opacity: 0, y: 22 },
         animate: (index) => ({

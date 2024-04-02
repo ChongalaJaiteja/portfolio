@@ -8,7 +8,6 @@ const DevelopmentDomainPage = lazy(() =>
     import("./components/developmentDomainPage")
 );
 const ProjectMainPage = lazy(() => import("./components/projectsMainPage"));
-
 const Programming = lazy(() => import("./components/programming"));
 const Layout = lazy(() => import("./components/layout"));
 const Loader = lazy(() => import("./components/loader"));
