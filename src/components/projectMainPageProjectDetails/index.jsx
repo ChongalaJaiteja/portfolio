@@ -27,7 +27,7 @@ const ProjectMainPagProjectDetails = ({ projectDetails }) => {
             }}
             initial="initial"
             whileInView="animate"
-            viewport={{ amount: 0.5, once: true }}
+            viewport={{ once: true }}
         >
             <StyledComponent.ProjectMainHeading>
                 {name}

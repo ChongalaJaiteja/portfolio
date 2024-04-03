@@ -35,7 +35,7 @@ const ProjectMainPageProjectPosts = ({
             }}
             initial="initial"
             whileInView="animate"
-            viewport={{ amount: 0.5, once: true }}
+            viewport={{ once: true }}
         >
             {image && (
                 <StyledComponent.ProjectImageContainer>
