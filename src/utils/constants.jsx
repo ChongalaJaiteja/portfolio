@@ -573,6 +573,7 @@ export const development = [
                     ],
                 },
             ],
+
             certifications: [
                 {
                     category: "frontend development",
@@ -715,6 +716,22 @@ export const development = [
                             link: {
                                 type: "url",
                                 source: "https://www.hackerrank.com/certificates/3359ea3c9060",
+                            },
+                        },
+                        {
+                            id: uuidv4(),
+                            name: "backend development",
+                            image: "development/web-development/certifications/backend-development-pwskills.png",
+                            institute: "pw skills",
+                            skills: [
+                                "nodejs",
+                                "mongodb",
+                                "express.js",
+                                "javascript",
+                            ],
+                            link: {
+                                type: "url",
+                                source: "https://pwskills.com/learn/certificate/6c15b5bc-d4e1-43d6-9326-d115d7690df4/",
                             },
                         },
                     ],
