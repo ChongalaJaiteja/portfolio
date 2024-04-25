@@ -244,38 +244,6 @@ export const development = [
                         },
                     ],
                 },
-                {
-                    category: "Tools",
-                    skillSet: [
-                        {
-                            name: "PostMan",
-                            icon: (
-                                <i className="devicon-postman-plain colored" />
-                            ),
-                        },
-                        {
-                            name: "heroku",
-                            icon: (
-                                <i className="devicon-heroku-original colored" />
-                            ),
-                        },
-                        {
-                            name: "git",
-                            icon: <i className="devicon-git-plain colored"></i>,
-                        },
-
-                        {
-                            name: "github",
-                            icon: <i className="devicon-github-original"></i>,
-                        },
-                        {
-                            name: "npm",
-                            icon: (
-                                <i className="devicon-npm-original-wordmark colored"></i>
-                            ),
-                        },
-                    ],
-                },
             ],
 
             projects: [
@@ -733,6 +701,39 @@ export const development = [
                                 type: "url",
                                 source: "https://pwskills.com/learn/certificate/6c15b5bc-d4e1-43d6-9326-d115d7690df4/",
                             },
+                        },
+                    ],
+                },
+            ],
+            tools: [
+                {
+                    skillSet: [
+                        {
+                            name: "PostMan",
+                            icon: (
+                                <i className="devicon-postman-plain colored" />
+                            ),
+                        },
+                        {
+                            name: "heroku",
+                            icon: (
+                                <i className="devicon-heroku-original colored" />
+                            ),
+                        },
+                        {
+                            name: "git",
+                            icon: <i className="devicon-git-plain colored"></i>,
+                        },
+
+                        {
+                            name: "github",
+                            icon: <i className="devicon-github-original"></i>,
+                        },
+                        {
+                            name: "npm",
+                            icon: (
+                                <i className="devicon-npm-original-wordmark colored"></i>
+                            ),
                         },
                     ],
                 },

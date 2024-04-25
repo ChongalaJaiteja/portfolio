@@ -29,8 +29,13 @@ const DevelopmentDomainCard = ({ domain }) => {
     };
 
     const getDomainDetailsItemCount = (itemName) => {
+        console.log(sectionDetails["tools"]);
         return sectionDetails[itemName].reduce(
-            (count, item) => count + Object.values(item)[1].length,
+            (count, item) =>
+                count +
+                (Object.keys(item).length > 1
+                    ? Object.values(item)[1].length
+                    : Object.values(item)[0].length),
             0
         );
     };

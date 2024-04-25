@@ -13,6 +13,10 @@ const CertificationsTabSectionContentItem = lazy(() =>
 );
 import * as StyledComponent from "./styledComponent";
 
+const ToolsTabSectionContentItem = lazy(() =>
+    import("../toolsTabSectionContentItem")
+);
+
 const TabSectionContentList = ({ data, index, id }) => {
     const { category = "", ...rest } = data;
     const categoryItemsList = Object.values(rest)[0];
@@ -55,6 +59,14 @@ const TabSectionContentList = ({ data, index, id }) => {
             case "certifications":
                 return (
                     <CertificationsTabSectionContentItem
+                        key={categoryItems.id}
+                        itemDetails={categoryItems}
+                        index={index}
+                    />
+                );
+            case "tools":
+                return (
+                    <ToolsTabSectionContentItem
                         key={categoryItems.id}
                         itemDetails={categoryItems}
                         index={index}

@@ -5,6 +5,8 @@ import TabSectionContentList from "../tabSectionContentList";
 import Loader from "../loader";
 
 const TabSection = ({ tabSectionData, id }) => {
+
+
     return (
         <StyledComponent.TabSectionBgContainer>
             <Suspense fallback={<Loader />}>
