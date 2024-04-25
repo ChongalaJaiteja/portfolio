@@ -1,4 +1,4 @@
-import{u as a,r as s,_ as u,j as e}from"./index-CLOFrmZJ.js";import{j as g,n as p}from"./constants-Y-38_RZC.js";import w from"./index-DieskNZ7.js";const v=a(g.ul)`
+import{u as l,r as s,_ as m,j as e}from"./index-3frcORfc.js";import{j as g,n as u}from"./constants-BDSD8Aai.js";import w from"./index-7NcjYD4q.js";const v=l(g.ul)`
     list-style-type: none;
     /* outline: auto; */
     padding: 0;
@@ -6,22 +6,22 @@ import{u as a,r as s,_ as u,j as e}from"./index-CLOFrmZJ.js";import{j as g,n as 
     flex-direction: column;
     gap: 3em;
     flex-grow: 1;
-`,y=a(g.li)``,j=a.div`
+`,j=l(g.li)``,y=l.div`
     /* outline: auto; */
     display: flex;
     flex-direction: column;
     gap: 1em;
-`,T=a.h4`
+`,T=l.h4`
     font-size: clamp(0.1rem, 1vw + 0.73rem, 1.16rem);
     color: var(--theme-second-text-color);
     text-transform: capitalize;
-`,S=a.ul`
+`,S=l.ul`
     list-style-type: none;
     padding: 0;
     display: flex;
     flex-flow: row wrap;
     gap: 1.5em 1em;
-`,C=s.lazy(()=>u(()=>import("./index-BMViijUY.js"),__vite__mapDeps([0,1,2,3,4]))),k=s.lazy(()=>u(()=>import("./index-WGte4GEH.js"),__vite__mapDeps([5,1,2,3,4]))),I=s.lazy(()=>u(()=>import("./index-wORtLAOn.js"),__vite__mapDeps([6,1,2,3,4]))),_=({data:n,index:t,id:i})=>{const{category:r="",...m}=n,c=Object.values(m)[0],d={initial:{opacity:0,y:22},animate:l=>({opacity:1,y:0,transition:{delay:.16*l,type:"spring"}})},h=(l,o)=>{switch(i){case"skills":return e.jsx(C,{itemDetails:l,index:o},p());case"projects":return e.jsx(k,{itemDetails:{...l,category:r,id:o+1},index:o},p());case"certifications":return e.jsx(I,{itemDetails:l,index:o},l.id)}};return e.jsx(y,{initial:"initial",variants:d,whileInView:"animate",custom:t,viewport:{once:!0},children:e.jsxs(j,{children:[r&&e.jsx(T,{children:r}),e.jsx(S,{children:e.jsx(s.Suspense,{fallback:e.jsx(w,{}),children:c.map((l,o)=>e.jsx(e.Fragment,{children:h(l,o)}))})})]})})},E=({tabSectionData:n,id:t})=>e.jsx(v,{children:e.jsx(s.Suspense,{fallback:e.jsx(w,{}),children:n.map((i,r)=>e.jsx(_,{data:i,index:r,id:t},p()))})}),P=a.li`
+`,C=s.lazy(()=>m(()=>import("./index-CIW6SZv2.js"),__vite__mapDeps([0,1,2,3,4]))),k=s.lazy(()=>m(()=>import("./index-DAUp_5Bl.js"),__vite__mapDeps([5,1,2,3,4]))),_=s.lazy(()=>m(()=>import("./index-BRwFUhFF.js"),__vite__mapDeps([6,1,2,3,4]))),I=s.lazy(()=>m(()=>import("./index-cLI3X_yd.js"),__vite__mapDeps([7,1,2,3,4]))),E=({data:n,index:t,id:i})=>{const{category:a="",...d}=n,c=Object.values(d)[0],h={initial:{opacity:0,y:22},animate:r=>({opacity:1,y:0,transition:{delay:.16*r,type:"spring"}})},x=(r,o)=>{switch(i){case"skills":return e.jsx(C,{itemDetails:r,index:o},u());case"projects":return e.jsx(k,{itemDetails:{...r,category:a,id:o+1},index:o},u());case"certifications":return e.jsx(_,{itemDetails:r,index:o},r.id);case"tools":return e.jsx(I,{itemDetails:r,index:o},r.id)}};return e.jsx(j,{initial:"initial",variants:h,whileInView:"animate",custom:t,viewport:{once:!0},children:e.jsxs(y,{children:[a&&e.jsx(T,{children:a}),e.jsx(S,{children:e.jsx(s.Suspense,{fallback:e.jsx(w,{}),children:c.map((r,o)=>e.jsx(e.Fragment,{children:x(r,o)}))})})]})})},P=({tabSectionData:n,id:t})=>e.jsx(v,{children:e.jsx(s.Suspense,{fallback:e.jsx(w,{}),children:n.map((i,a)=>e.jsx(E,{data:i,index:a,id:t},u()))})}),A=l.li`
     background-color: ${({theme:n,isActive:t})=>t?n.isLightTheme?"rgb(139, 147, 255,0.8)":"rgb(30 41 59 / 1)":"var(--theme-container-bg-color)"};
     text-align: center;
     width: clamp(8rem, 1vw + 30%, 10rem);
@@ -40,7 +40,7 @@ import{u as a,r as s,_ as u,j as e}from"./index-CLOFrmZJ.js";import{j as g,n as 
         /* min-height: 3rem; */
         max-height: 8.4rem;
     }
-`,A=a.button`
+`,D=l.button`
     cursor: pointer;
     padding: clamp(0.1em, 1vw + 0.9em, 1.2em) clamp(0.1em, 1vw + 1em, 1.4em);
     border: none;
@@ -50,7 +50,7 @@ import{u as a,r as s,_ as u,j as e}from"./index-CLOFrmZJ.js";import{j as g,n as 
     color: var(--theme-primary-text-color);
     font-size: clamp(0.2rem, 1vw + 0.57rem, 1.17rem);
     text-transform: capitalize;
-`,B=a(g.div)`
+`,L=l(g.div)`
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -65,7 +65,7 @@ import{u as a,r as s,_ as u,j as e}from"./index-CLOFrmZJ.js";import{j as g,n as 
         left: auto;
         width: 3px;
     }
-`,D=({tabLabel:n,onSelectTab:t,isActive:i})=>{const r=()=>{t(n)};return e.jsxs(P,{isActive:i,children:[e.jsx(A,{onClick:r,isActive:i,children:n}),i&&e.jsx(B,{layoutId:"underline"})]})},L=a.div`
+`,z=({tabLabel:n,onSelectTab:t,isActive:i})=>{const a=()=>{t(n)};return e.jsxs(A,{isActive:i,children:[e.jsx(D,{onClick:a,isActive:i,children:n}),i&&e.jsx(L,{layoutId:"underline"})]})},B=l.div`
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@ import{u as a,r as s,_ as u,j as e}from"./index-CLOFrmZJ.js";import{j as g,n as 
         min-height: 80vh;
         max-height: 35rem;
     }
-`,z=a.ul`
+`,O=l.ul`
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -95,7 +95,7 @@ import{u as a,r as s,_ as u,j as e}from"./index-CLOFrmZJ.js";import{j as g,n as 
         justify-content: flex-start;
         flex: 1 1 20%;
     }
-`,F=a.div`
+`,F=l.div`
     /* outline: auto; */
     display: flex;
     flex-direction: column;
@@ -114,10 +114,10 @@ import{u as a,r as s,_ as u,j as e}from"./index-CLOFrmZJ.js";import{j as g,n as 
         flex: 1 1 80%;
         max-height: none;
     }
-`,$=({sectionDetails:n})=>{const t=Object.keys(n),[i,r]=s.useState(t[0]),m=n[i],c=s.useRef(null),d=o=>{c.current=o.touches[0].clientX},h=o=>{if(!c.current)return;const b=o.changedTouches[0].clientX-c.current,f=50;if(b<-f&&i!==t[t.length-1]){const x=t.indexOf(i)+1;r(t[x])}else if(b>f&&i!==t[0]){const x=t.indexOf(i)-1;r(t[x])}c.current=null},l=o=>{r(o)};return e.jsxs(L,{children:[e.jsx(z,{children:t.map(o=>e.jsx(D,{tabLabel:o,onSelectTab:l,isActive:i===o},o))}),e.jsx(F,{onTouchStart:d,onTouchEnd:h,children:e.jsx(E,{tabSectionData:m,id:i})})]})};export{$ as S};
+`,H=({sectionDetails:n})=>{const t=Object.keys(n),[i,a]=s.useState(t[0]),d=n[i],c=s.useRef(null),h=o=>{c.current=o.touches[0].clientX},x=o=>{if(!c.current)return;const b=o.changedTouches[0].clientX-c.current,f=50;if(b<-f&&i!==t[t.length-1]){const p=t.indexOf(i)+1;a(t[p])}else if(b>f&&i!==t[0]){const p=t.indexOf(i)-1;a(t[p])}c.current=null},r=o=>{a(o)};return e.jsxs(B,{children:[e.jsx(O,{children:t.map(o=>e.jsx(z,{tabLabel:o,onSelectTab:r,isActive:i===o},o))}),e.jsx(F,{onTouchStart:h,onTouchEnd:x,children:e.jsx(P,{tabSectionData:d,id:i})})]})};export{H as S};
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/index-BMViijUY.js","assets/index-CLOFrmZJ.js","assets/index-NdIjxnzJ.css","assets/constants-Y-38_RZC.js","assets/constants-cwqOqNE_.css","assets/index-WGte4GEH.js","assets/index-wORtLAOn.js"]
+    __vite__mapDeps.viteFileDeps = ["assets/index-CIW6SZv2.js","assets/index-3frcORfc.js","assets/index-NdIjxnzJ.css","assets/constants-BDSD8Aai.js","assets/constants-cwqOqNE_.css","assets/index-DAUp_5Bl.js","assets/index-BRwFUhFF.js","assets/index-cLI3X_yd.js"]
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }
