@@ -38,7 +38,7 @@ You can experience my portfolio in your preferred mode, with light and dark them
 
 ## Installation
 1. **Clone the repository**:
-`git clone https://github.com/ChongalaJaiteja/Sudoku-Solver.git`
+`git clone https://github.com/ChongalaJaiteja/portfolio.git`
 
 2. **Install dependencies**:
 `npm install`
