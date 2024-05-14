@@ -45,7 +45,7 @@ You can experience my portfolio in your preferred mode, with light and dark them
 
 ## Usage
 1. Run the development server:
-`npm run start`
+`npm start`
 
 2. Access the website in your browser at `http://localhost:5173`.
 
