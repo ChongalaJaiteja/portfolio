@@ -341,6 +341,49 @@ export const development = [
 
                         {
                             projectCard: {
+                                name: "sudoku solver",
+                                image: "development/web-development/projects/frontend-development/sudoku-solver-1.png",
+                            },
+                            projectDetails: {
+                                name: "sudoku solver",
+                                image: [
+                                    "development/web-development/projects/frontend-development/sudoku-solver-1.png",
+                                    "development/web-development/projects/frontend-development/sudoku-solver-2.png",
+                                    "development/web-development/projects/frontend-development/sudoku-solver-3.png",
+                                ],
+                                description: `
+                                The Sudoku Solver is a user-friendly web app designed for Sudoku enthusiasts. It offers a range of board sizes and employs an efficient solving algorithm, allowing users to tackle puzzles of varying complexity quickly and accurately.
+                                Built with Vite + ReactJS and Tailwind CSS, the app provides a seamless experience with a modern interface. Users can generate random puzzles, solve them with ease, and reset or refresh for new challenges. It's a simple yet effective tool for Sudoku lovers of all skill levels.
+                                    `,
+                                technologies: ["ReactJs", "TailwindCss"],
+                                externalLinks: [
+                                    {
+                                        id: uuidv4(),
+                                        icon: <IoPlayCircle />,
+                                        name: "watch video",
+                                        link: "https://youtu.be/Jz8roGdOZdg",
+                                    },
+                                    {
+                                        id: uuidv4(),
+                                        icon: <FiLink />,
+                                        name: "deployment link",
+                                        link: "https://chongalajaiteja.github.io/Sudoku-Solver/",
+                                    },
+
+                                    {
+                                        id: uuidv4(),
+                                        icon: <FaGithub />,
+                                        name: "source code",
+                                        link: "https://github.com/ChongalaJaiteja/Sudoku-Solver/tree/master",
+                                    },
+                                ],
+                                postUrl:
+                                    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7195988445138149377",
+                            },
+                        },
+
+                        {
+                            projectCard: {
                                 name: "calendar",
                                 image: "development/web-development/projects/frontend-development/calendar.png",
                             },
@@ -801,6 +844,48 @@ export const programming = {
                                 link: "https://github.com/ChongalaJaiteja/C-Bank-Managment-System",
                             },
                         ],
+                    },
+                },
+                {
+                    projectCard: {
+                        name: "sudoku solver",
+                        image: "development/web-development/projects/frontend-development/sudoku-solver-1.png",
+                    },
+                    projectDetails: {
+                        name: "sudoku solver",
+                        image: [
+                            "development/web-development/projects/frontend-development/sudoku-solver-1.png",
+                            "development/web-development/projects/frontend-development/sudoku-solver-2.png",
+                            "development/web-development/projects/frontend-development/sudoku-solver-3.png",
+                        ],
+                        description: `
+                        The Sudoku Solver is a user-friendly web app designed for Sudoku enthusiasts. It offers a range of board sizes and employs an efficient solving algorithm, allowing users to tackle puzzles of varying complexity quickly and accurately.
+                        Built with Vite + ReactJS and Tailwind CSS, the app provides a seamless experience with a modern interface. Users can generate random puzzles, solve them with ease, and reset or refresh for new challenges. It's a simple yet effective tool for Sudoku lovers of all skill levels.
+                            `,
+                        technologies: ["ReactJs", "TailwindCss"],
+                        externalLinks: [
+                            {
+                                id: uuidv4(),
+                                icon: <IoPlayCircle />,
+                                name: "watch video",
+                                link: "https://youtu.be/Jz8roGdOZdg",
+                            },
+                            {
+                                id: uuidv4(),
+                                icon: <FiLink />,
+                                name: "deployment link",
+                                link: "https://chongalajaiteja.github.io/Sudoku-Solver/",
+                            },
+
+                            {
+                                id: uuidv4(),
+                                icon: <FaGithub />,
+                                name: "source code",
+                                link: "https://github.com/ChongalaJaiteja/Sudoku-Solver/tree/master",
+                            },
+                        ],
+                        postUrl:
+                            "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7195988445138149377",
                     },
                 },
             ],
