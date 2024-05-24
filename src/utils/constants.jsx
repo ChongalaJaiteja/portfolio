@@ -758,6 +758,12 @@ export const development = [
                             ),
                         },
                         {
+                            name: "firebase",
+                            icon: (
+                                <i className="devicon-firebase-plain colored" />
+                            ),
+                        },
+                        {
                             name: "heroku",
                             icon: (
                                 <i className="devicon-heroku-original colored" />
