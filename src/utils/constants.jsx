@@ -242,6 +242,10 @@ export const development = [
                                 <i className="devicon-mongodb-plain colored" />
                             ),
                         },
+                        {
+                            name: "socket.io",
+                            icon: <i className="devicon-socketio-original"></i>,
+                        },
                     ],
                 },
             ],
@@ -678,6 +682,17 @@ export const development = [
                             link: {
                                 type: "url",
                                 source: "https://www.coursera.org/account/accomplishments/verify/ALRQYC62VQX4",
+                            },
+                        },
+                        {
+                            id: uuidv4(),
+                            name: "react basics",
+                            image: "development/web-development/certifications/react-basics-meta.png",
+                            institute: "coursera",
+                            skills: ["reactjs"],
+                            link: {
+                                type: "url",
+                                source: "https://www.coursera.org/account/accomplishments/verify/L24KM92AE4TG",
                             },
                         },
                     ],
