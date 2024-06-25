@@ -242,7 +242,10 @@ export const development = [
                                 <i className="devicon-mongodb-plain colored" />
                             ),
                         },
-                        
+                        {
+                            name: "socket.io",
+                            icon: <i className="devicon-socketio-original"></i>,
+                        },
                     ],
                 },
             ],
