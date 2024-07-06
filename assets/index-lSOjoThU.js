@@ -1,4 +1,4 @@
-import{u as i,j as e}from"./index-gqskP-i3.js";import{j as o}from"./constants-IOf0C8RB.js";const d=i(o.li)`
+import{u as a,j as e}from"./index-BNl1e79q.js";import{j as m}from"./constants-BpX1viYN.js";const d=a(m.li)`
     display: flex;
     align-items: center;
     gap: 0.6em;
@@ -26,14 +26,14 @@ import{u as i,j as e}from"./index-gqskP-i3.js";import{j as o}from"./constants-IO
     @media (min-width: 1850px) {
         flex: 0 1 calc(16.6% - (var(--gap) + var(--pd-l)));
     }
-`,p=i.div`
+`,p=a.div`
     font-size: clamp(0.2rem, 1vw + 1.8rem, 2.5rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* outline: auto; */
-`,c=i.p`
+`,c=a.p`
     font-size: clamp(0.2rem, 1vw + 0.71rem, 1.2rem);
     text-transform: capitalize;
     padding-right: 0.4em;
-`,v=({itemDetails:a,index:t})=>{const{icon:l,name:n}=a,r={initial:{opacity:0,y:22},animate:m=>({opacity:1,y:0,transition:{delay:.16*m,type:"spring"}})};return e.jsxs(d,{initial:"initial",variants:r,whileInView:"animate",custom:t,viewport:{once:!0},whileHover:{scale:1.04},children:[e.jsx(p,{children:l}),e.jsx(c,{children:n})]})};export{v as default};
+`,v=({itemDetails:i,index:t})=>{const{icon:o,name:n}=i,r={initial:{opacity:0,y:22},animate:l=>({opacity:1,y:0,transition:{delay:.16*l,type:"spring"}})};return e.jsxs(d,{initial:"initial",variants:r,whileInView:"animate",custom:t,viewport:{once:!0},whileHover:{scale:1.04},children:[e.jsx(p,{children:o}),e.jsx(c,{children:n})]})};export{v as default};
