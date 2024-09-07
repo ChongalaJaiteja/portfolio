@@ -585,6 +585,60 @@ export const development = [
                                     "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7134396712307068928",
                             },
                         },
+                        {
+                            projectCard: {
+                                name: "Elective Registration System",
+                                image: "development/web-development/projects/full-stack-development/elective-registration-system-1.png",
+                            },
+                            projectDetails: {
+                                name: "Elective Registration System",
+                                image: [
+                                    "development/web-development/projects/full-stack-development/elective-registration-system-1.png",
+                                    "development/web-development/projects/full-stack-development/elective-registration-system-2.png",
+                                    "development/web-development/projects/full-stack-development/elective-registration-system-3.png",
+                                    "development/web-development/projects/full-stack-development/elective-registration-system-4.png",
+                                    "development/web-development/projects/full-stack-development/elective-registration-system-5.png",
+                                    "development/web-development/projects/full-stack-development/elective-registration-system-6.png",
+                                    "development/web-development/projects/full-stack-development/elective-registration-system-7.png",
+                                    "development/web-development/projects/full-stack-development/elective-registration-system-8.png",
+                                ],
+                                description: `The Elective Registration System is a full-stack web application designed to simplify the process of elective course registration for students across various branches and semesters. It allows students to register for electives while providing administrators with tools to efficiently manage the process. With features like real-time seat availability, automated email reminders, and easy data upload via CSV or Excel, the system ensures a smooth registration experience. Admins can schedule electives, upload syllabi, and monitor ongoing registrations with real-time status updates, while students can browse courses, view details, and download their registration slips after successfully enrolling.
+
+                                Built with modern technologies like React.js, Tailwind CSS, Framer Motion, Node.js, and MongoDB, this system addresses real-world challenges in managing multiple elective registrations. Its standout features include parallel registration for different semesters and automated email reminders to ensure students are well-prepared before registration begins. The Elective Registration System offers an efficient, organized, and user-friendly solution for both students and administrators.
+                                    `,
+                                technologies: [
+                                    "MongoDB",
+                                    "Express.js",
+                                    "React.js",
+                                    "Node.js",
+                                    "Material-UI",
+                                    "Tailwind CSS",
+                                    "Cron Job",
+                                ],
+                                externalLinks: [
+                                    {
+                                        id: uuidv4(),
+                                        icon: <IoPlayCircle />,
+                                        name: "watch video",
+                                        link: "https://youtu.be/09ZvL2RxyKU",
+                                    },
+                                    {
+                                        id: uuidv4(),
+                                        icon: <FiLink />,
+                                        name: "deployment link",
+                                        link: "https://elective-registration-system-client.vercel.app/",
+                                    },
+                                    {
+                                        id: uuidv4(),
+                                        icon: <FaGithub />,
+                                        name: "source code",
+                                        link: "https://github.com/ChongalaJaiteja/elective-registration-system",
+                                    },
+                                ],
+                                postUrl:
+                                    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7238175148158115841",
+                            },
+                        },
                     ],
                 },
             ],
