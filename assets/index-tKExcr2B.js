@@ -1,4 +1,4 @@
-import{u as l,r as s,_ as m,j as e}from"./index-u6f28Asd.js";import{j as g,n as u}from"./constants-CAVgKY0c.js";import w from"./index-s1k_o0xt.js";const v=l(g.ul)`
+import{u as l,r as s,_ as m,j as e}from"./index-DUFkOQNL.js";import{j as g,n as u}from"./constants-DNQCt8Xs.js";import w from"./index-B37omZse.js";const v=l(g.ul)`
     list-style-type: none;
     /* outline: auto; */
     padding: 0;
@@ -21,7 +21,7 @@ import{u as l,r as s,_ as m,j as e}from"./index-u6f28Asd.js";import{j as g,n as 
     display: flex;
     flex-flow: row wrap;
     gap: 1.5em 1em;
-`,C=s.lazy(()=>m(()=>import("./index-dM8Gy15q.js"),__vite__mapDeps([0,1,2,3,4]))),k=s.lazy(()=>m(()=>import("./index-BU5Ih7F0.js"),__vite__mapDeps([5,1,2,3,4]))),_=s.lazy(()=>m(()=>import("./index-aAr5vlwF.js"),__vite__mapDeps([6,1,2,3,4]))),I=s.lazy(()=>m(()=>import("./index-B_LY2DUk.js"),__vite__mapDeps([7,1,2,3,4]))),E=({data:n,index:t,id:i})=>{const{category:a="",...d}=n,c=Object.values(d)[0],h={initial:{opacity:0,y:22},animate:r=>({opacity:1,y:0,transition:{delay:.16*r,type:"spring"}})},x=(r,o)=>{switch(i){case"skills":return e.jsx(C,{itemDetails:r,index:o},u());case"projects":return e.jsx(k,{itemDetails:{...r,category:a,id:o+1},index:o},u());case"certifications":return e.jsx(_,{itemDetails:r,index:o},r.id);case"tools":return e.jsx(I,{itemDetails:r,index:o},r.id)}};return e.jsx(j,{initial:"initial",variants:h,whileInView:"animate",custom:t,viewport:{once:!0},children:e.jsxs(y,{children:[a&&e.jsx(T,{children:a}),e.jsx(S,{children:e.jsx(s.Suspense,{fallback:e.jsx(w,{}),children:c.map((r,o)=>e.jsx(e.Fragment,{children:x(r,o)}))})})]})})},P=({tabSectionData:n,id:t})=>e.jsx(v,{children:e.jsx(s.Suspense,{fallback:e.jsx(w,{}),children:n.map((i,a)=>e.jsx(E,{data:i,index:a,id:t},u()))})}),A=l.li`
+`,C=s.lazy(()=>m(()=>import("./index-aa6jOAEl.js"),__vite__mapDeps([0,1,2,3,4]))),k=s.lazy(()=>m(()=>import("./index-B4sxG7ug.js"),__vite__mapDeps([5,1,2,3,4]))),_=s.lazy(()=>m(()=>import("./index-DhsT_QvI.js"),__vite__mapDeps([6,1,2,3,4]))),I=s.lazy(()=>m(()=>import("./index-lQ4g3eDh.js"),__vite__mapDeps([7,1,2,3,4]))),E=({data:n,index:t,id:i})=>{const{category:a="",...d}=n,c=Object.values(d)[0],h={initial:{opacity:0,y:22},animate:r=>({opacity:1,y:0,transition:{delay:.16*r,type:"spring"}})},x=(r,o)=>{switch(i){case"skills":return e.jsx(C,{itemDetails:r,index:o},u());case"projects":return e.jsx(k,{itemDetails:{...r,category:a,id:o+1},index:o},u());case"certifications":return e.jsx(_,{itemDetails:r,index:o},r.id);case"tools":return e.jsx(I,{itemDetails:r,index:o},r.id)}};return e.jsx(j,{initial:"initial",variants:h,whileInView:"animate",custom:t,viewport:{once:!0},children:e.jsxs(y,{children:[a&&e.jsx(T,{children:a}),e.jsx(S,{children:e.jsx(s.Suspense,{fallback:e.jsx(w,{}),children:c.map((r,o)=>e.jsx(e.Fragment,{children:x(r,o)}))})})]})})},P=({tabSectionData:n,id:t})=>e.jsx(v,{children:e.jsx(s.Suspense,{fallback:e.jsx(w,{}),children:n.map((i,a)=>e.jsx(E,{data:i,index:a,id:t},u()))})}),A=l.li`
     background-color: ${({theme:n,isActive:t})=>t?n.isLightTheme?"rgb(139, 147, 255,0.8)":"rgb(30 41 59 / 1)":"var(--theme-container-bg-color)"};
     text-align: center;
     width: clamp(8rem, 1vw + 30%, 10rem);
@@ -117,7 +117,7 @@ import{u as l,r as s,_ as m,j as e}from"./index-u6f28Asd.js";import{j as g,n as 
 `,H=({sectionDetails:n})=>{const t=Object.keys(n),[i,a]=s.useState(t[0]),d=n[i],c=s.useRef(null),h=o=>{c.current=o.touches[0].clientX},x=o=>{if(!c.current)return;const b=o.changedTouches[0].clientX-c.current,f=50;if(b<-f&&i!==t[t.length-1]){const p=t.indexOf(i)+1;a(t[p])}else if(b>f&&i!==t[0]){const p=t.indexOf(i)-1;a(t[p])}c.current=null},r=o=>{a(o)};return e.jsxs(B,{children:[e.jsx(O,{children:t.map(o=>e.jsx(z,{tabLabel:o,onSelectTab:r,isActive:i===o},o))}),e.jsx(F,{onTouchStart:h,onTouchEnd:x,children:e.jsx(P,{tabSectionData:d,id:i})})]})};export{H as S};
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/index-dM8Gy15q.js","assets/index-u6f28Asd.js","assets/index-NdIjxnzJ.css","assets/constants-CAVgKY0c.js","assets/constants-cwqOqNE_.css","assets/index-BU5Ih7F0.js","assets/index-aAr5vlwF.js","assets/index-B_LY2DUk.js"]
+    __vite__mapDeps.viteFileDeps = ["assets/index-aa6jOAEl.js","assets/index-DUFkOQNL.js","assets/index-NdIjxnzJ.css","assets/constants-DNQCt8Xs.js","assets/constants-cwqOqNE_.css","assets/index-B4sxG7ug.js","assets/index-DhsT_QvI.js","assets/index-lQ4g3eDh.js"]
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }
