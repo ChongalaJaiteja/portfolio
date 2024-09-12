@@ -6,6 +6,7 @@ import * as StyledComponent from "./styledComponent";
 const DevelopmentDomainPage = () => {
     const { id } = useParams();
     const { sectionDetails } = getDevelopmentPageData(id);
+    
     return (
         <>
             <StyledComponent.DevelopmentDomainPageBgContainer>
