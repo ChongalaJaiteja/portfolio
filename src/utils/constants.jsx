@@ -11,6 +11,12 @@ import { FaGithub } from "react-icons/fa";
 import { IoPlayCircle } from "react-icons/io5";
 import { FiLink } from "react-icons/fi";
 //Home page
+export const roles = [
+    "Full Stack Developer",
+    "Competitive Coder",
+    "Data Science Enthusiast",
+];
+
 export const contactLinks = [
     {
         name: "Stack Overflow",
