@@ -18,6 +18,7 @@ import {
     faStackOverflow,
     faGithub,
     faLinkedin,
+    faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -58,6 +59,21 @@ export const LinkedInIcon = styled(StackOverFlowIcon).attrs(() => ({
 }))`
     color: white;
     background-color: rgb(19, 132, 223);
+    border-radius: 10px;
+    padding: 0.22em;
+`;
+export const InstagramIcon = styled(StackOverFlowIcon).attrs(() => ({
+    icon: faInstagram,
+}))`
+    color: white;
+    background: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+    );
     border-radius: 10px;
     padding: 0.22em;
 `;

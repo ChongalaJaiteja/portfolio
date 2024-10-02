@@ -34,6 +34,11 @@ export const contactLinks = [
         link: "https://www.linkedin.com/in/jai-teja-chongala/",
     },
     {
+        name: "Instagram",
+        icon: <StyledComponent.InstagramIcon />,
+        link: "https://www.instagram.com/thejaitejachongala/",
+    },
+    {
         name: "Email",
         icon: <StyledComponent.EmailIcon />,
         link: "mailto:chongalateja1234@gmail.com",
