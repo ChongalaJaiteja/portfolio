@@ -82,7 +82,6 @@ export const ResumeBtn = styled.button`
     border: 2px solid transparent;
     &:hover {
         transform: translateY(-4px);
-        color: var(--theme-primary-color);
         border-color: var(--theme-primary-color);
     }
 `;

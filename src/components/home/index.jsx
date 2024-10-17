@@ -85,16 +85,12 @@ const Home = ({ route }) => {
                 </StyledComponent.HomeContentPara>
 
                 <SocialMediaHandles />
-                <StyledComponent.ResumeBtn>
-                    <a
-                        href={resumeLink}
-                        target="_blank"
-                        style={{ color: "white" }}
-                    >
+                <a href={resumeLink} target="_blank" style={{ color: "white" }}>
+                    <StyledComponent.ResumeBtn>
                         Resume
-                    </a>
-                    {/* <StyledComponent.DownloadBtnIcon /> */}
-                </StyledComponent.ResumeBtn>
+                        {/* <StyledComponent.DownloadBtnIcon /> */}
+                    </StyledComponent.ResumeBtn>
+                </a>
             </StyledComponent.HomeContentContainer>
         </StyledComponent.HomeBgContainer>
     );
