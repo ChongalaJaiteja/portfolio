@@ -82,7 +82,6 @@ export const ResumeBtn = styled.button`
     border: 2px solid transparent;
     &:hover {
         transform: translateY(-4px);
-        background-color: white;
         color: var(--theme-primary-color);
         border-color: var(--theme-primary-color);
     }

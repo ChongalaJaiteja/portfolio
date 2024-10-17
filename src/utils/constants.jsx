@@ -10,6 +10,7 @@ import Contact from "../components/contact";
 import { FaGithub } from "react-icons/fa";
 import { IoPlayCircle } from "react-icons/io5";
 import { FiLink } from "react-icons/fi";
+
 //Home page
 export const roles = [
     "Full Stack Developer",
@@ -17,6 +18,9 @@ export const roles = [
     "Data Science Enthusiast",
 ];
 
+export const resumeLink =
+    "https://drive.google.com/file/d/1MIbNPZgfqo1aq-ghaJekadQ4JeJWFSnY/view?usp=sharing";
+    
 export const contactLinks = [
     {
         name: "Stack Overflow",
