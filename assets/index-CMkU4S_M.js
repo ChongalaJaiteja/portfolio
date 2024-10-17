@@ -1,0 +1,1 @@
+import{j as t,O as r}from"./index-brnqcbpX.js";import{N as s}from"./index-DS3fGoWn.js";import"./constants-Cly-62BA.js";const i=()=>t.jsxs(t.Fragment,{children:[t.jsx(s,{hideNavLinks:!0}),t.jsx(r,{})]});export{i as default};
